@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE apk-english-books SYSTEM "apk_english.dtd">
+
+<apk-english-books>
+	<book code="001" btitle="Narada's Aphorisms on Bhakti">
+		<s1 title="Preface" page="0000f"></s1>
+		<s1 title="What Bhakti is --- Sutras: 1--6" page="0001"></s1>
+		<s1 title="Bhakti no worldly desire --- Sutras: 7--11" page="0003"></s1>
+		<s1 title="Life before and after the realisation of Bhakti --- Sutras: 12--14" page="0004"></s1>
+		<s1 title="The essence of Bhakti --- Sutras: 15--24" page="0005"></s1>
+		<s1 title="Bhakti the best of spiritual paths --- Sutras: 25--27" page="0008"></s1>
+		<s1 title="Bhakti its own fruit --- Sutras: 28--33" page="0009"></s1>
+		<s1 title="Accecssary means to Bhakti --- Sutras: 34--38" page="0010"></s1>
+		<s1 title="Company of the Spiritually great --- Sutras: 39--42" page="0011"></s1>
+		<s1 title="Dangers of evil association --- Sutras: 43--45" page="0012"></s1>
+		<s1 title="How to cross Maya --- Sutras: 46--50" page="0013"></s1>
+		<s1 title="Nature of God-love --- Sutras: 51--55" page="0015"></s1>
+		<s1 title="Secondary Bhakti --- Sutras: 56--57" page="0017"></s1>
+		<s1 title="Special features of the Path of Bhakti --- Sutras: 58--60" page="0018"></s1>
+		<s1 title="Life of a Seeker --- Sutras: 61--66" page="0019"></s1>
+		<s1 title="The Glory of Master-Bhaktas --- Sutras: 67--73" page="0020"></s1>
+		<s1 title="Advice to a would-be Bhakta --- Sutras: 74--80" page="0022"></s1>
+		<s1 title="Types of Bhakti-manifestations --- Sutras: 81--82" page="0024"></s1>
+		<s1 title="Teachers of Bhakti, Conclusion --- Sutras: 83--84" page="0025"></s1>
+	</book>
+	<book code="002" btitle="Minor Works of Sri Sankaracharya">
+		<s1 title="Advice to the Mind" page="0001"></s1>
+		<s1 title="Steps to Realisation" page="0003"></s1>
+		<s1 title="The Glory of Renunciation" page="0007"></s1>
+		<s1 title="Who are the Blessed ?" page="0009"></s1>
+		<s1 title="Morning Meditation" page="0013"></s1>
+		<s1 title="The Guru or the Master" page="0016"></s1>
+		<s1 title="The One Universal Teacher" page="0020"></s1>
+		<s1 title="The One Place of Pilgrimage" page="0027"></s1>
+		<s1 title="Who Am I ?" page="0030"></s1>
+		<s1 title="The Taintless Atman" page="0033"></s1>
+		<s1 title="The Light of Lights" page="0033"></s1>
+		<s1 title="The Eternal Consciousness" page="0034"></s1>
+		<s1 title="The Self as Pure Consciousness and Bliss" page="0041"></s1>
+		<s1 title="The Indiscribable Divine Principle in Man" page="0044"></s1>
+		<s1 title="The Boat of Wisdom" page="0050"></s1>
+		<s1 title="In the World, But Not of It" page="0054"></s1>
+	</book>
+	<book code="003" btitle="Śaṅkara's Clarification of Certain Vedȧntic Concepts">
+		<s1 title="The Ātman" page="0001"></s1>
+		<s1 title="Vidyā and Avidyā" page="0006"></s1>
+		<s1 title="Creation, Māyā and Causation" page="0013"></s1>
+		<s1 title="Īśvara" page="0026"></s1>
+		<s1 title="Bondage and Release" page="0039"></s1>
+		<s1 title="The Validity of Śāśtra" page="0044"></s1>
+		<s1 title="The Empirical and The Transcendental Views" page="0053"></s1>
+		<s1 title="Matter and Method" page="0058"></s1>
+		<s1 title="Sannyāsa and Yōga" page="0072"></s1>
+		<s1 title="Conclusion" page="0087"></s1>
+	</book>
+	<book code="004" btitle="How to Recognize the Method of Vedānta">
+		<s1 title="The Orthodox View of the Upanishads" page="0001"></s1>
+		<s1 title="The System and Method of Vedānta" page="0020"></s1>
+		<s1 title="The Vedānta Doctrine of Reality" page="0029"></s1>
+		<s1 title="The Two Standpoints" page="0052"></s1>
+		<s1 title="The Tradition Before Śaṅkara" page="0069"></s1>
+		<s1 title="Ancient Systems Diverging from the Tradition of Śaṅkara" page="0076"></s1>
+		<s1 title="Post-Śaṅkara Systems" page="0081"></s1>
+		<s1 title="Conclusion" page="0116"></s1>
+	</book>
+	<book code="005" btitle="Avasthatraya or The Unique Method of Vedanta">
+		<s1 title="Avasthatraya or The Unique Method of Vedanta" page="0001"></s1>
+	</book>
+	<book code="006" btitle="Salient Features of Śaṅkara's Vedānta">
+		<s1 title="Publishers' Note (First Edition)" page="0000c"></s1>
+		<s1 title="Preface (First Edition)" page="0000e"></s1>
+		<s1 title="Permission Letter" page="0000g"></s1>
+		<s1 title="Publishers' Note (Second Edition)" page="0000h"></s1>
+		<s1 title="Abbreviations" page="0000j"></s1>
+		<s1 title="Introduction" page="0000k"></s1>
+		<s1 title="Brahman as the Universal Witnessing Self" page="0001"></s1>
+		<s1 title="No Real Distinction of The Knower, Means of Knowledge and Object of Knowledge in Brahman" page="0006"></s1>
+		<s1 title="Śāstra the One Means of Self-knowledge" page="0012"></s1>
+		<s1 title="Reason Subservient to Self-realization" page="0020"></s1>
+		<s1 title="Spiritual Concentration" page="0029"></s1>
+		<s1 title="The Purport of the Vedantic Texts is to Teach the Nature of Ātman" page="0037"></s1>
+		<s1 title="Ātman as Above all the States of Consciousness" page="0048"></s1>
+		<s1 title="Ātman as Unborn and Non-dual" page="0060"></s1>
+		<s1 title="Practice and Final Goal" page="0067"></s1>
+		<s1 title="Review of Other Systems of Thought" page="0077"></s1>
+		<s1 title="Appendix-i : Cardinal Tenets of Śaṅkara's Vedanta" page="0079"></s1>
+		<s1 title="Appendix-ii : List of Sanskrit Quotations Adduced in this Book" page="0089"></s1>
+	</book>
+	<book code="007" btitle="Misconceptions About Śaṅkara">
+		<s1 title="Introduction" page="0001"></s1>
+		<s1 title="Śaṅkara's Mission in Life (Paras 1-6)" page="0003"></s1>
+		<s1 title="The Unique Feature of Śaṅkara's Work --- Adhyāsa (7) - Śruti and Intuition (7) - No hypothetical avidyā-śakti (8)." page="0007"></s1>
+		<s1 title="Avidyā and Māyā --- Not Synonymous (9)." page="0009"></s1>
+		<s1 title="Brahman and Iśvara --- Brahman as the cause of the universe (10) - Brahman as the Ruler (Iśvara) of individual selves (11)." page="0010"></s1>
+		<s1 title="Omniscience of Brahman --- Omniscience and omnipotence refer to the intrinsic nature of Brahman (12)." page="0012"></s1>
+		<s1 title="Cause and Effect --- Vedantic view of the relation between cause and effect contrasted with the views of the Sāmkhyas (13)." page="0013"></s1>
+		<s1 title="Empirical Reality of the Universe --- The Universe is not an illusion - Distinction between the empirical and the transcendental view concerning Pramāṇas (14)." page="0013"></s1>
+		<s1 title="The Distinctive Feature of Śruti-Pramāṇa --- Śruti concerning the nature of Brahman is the !!Ultimate Pramāṇa!! in as much as it sublates all convention of Pramāṇa and Prameya including the śruti-pramāṇa after the dawn of the intuition of Brahman (15)." page="0015"></s1>
+		<s1 title="The Usefulness of the Distinction of the Two Views --- Seeming self-contradictions in the Bhāshya are all dissolved and adverse criticisms lose all their force when one reminds himself of the distinction of Paramarthic and Vyavaharic views (16)." page="0017"></s1>
+		<s1 title="The Comprehensive Signification of the word `Ātmaikatva-Vidyā' --- The term does not denote merely the identity of Jiva and Isvara - Absolute unity of Ātman is what is meant (17)." page="0018"></s1>
+		<s1 title="The words Advaita and Advaya --- A baseless imputation levelled against Gaudapada in connection with the signification of the two words (18)." page="0019"></s1>
+		<s1 title="The Identity of the Jiva with Brahman --- What it implies (19)." page="0021"></s1>
+		<s1 title="The Essential Identity of the Universe with Brahman --- Two examples to illustrate this (20)." page="0022"></s1>
+		<s1 title="The Real and the unreal from the two view-points --- Pariṇāma or Transformation of Brahman into the Universe (21) - The Potential seed of the world, the so-called Śakti of Isvara (21) - Mistaken for the avidya-śakti by Post Śankaras (21)." page="0023"></s1>
+		<s1 title="Gaudapāda and Bādarāyaṇa --- The unjustifiable theory put forward by certain critics assigning lower rank to Badrayana in contrast with Gaudapada with regard to causality (22)." page="0026"></s1>
+		<s1 title="The Method of Superimpostion and Rescission --- Both Gaudapada and Badarayana recognize the method (23)." page="0027"></s1>
+		<s1 title="References to the Method in Śaṅkara's Work --- The maxim of the Arundhati Star in the Sutra-Bhashya (24)." page="0028"></s1>
+		<s1 title="Why this Method is adopted by the Vedantas --- Reference to the method by some ancient Vedantins in Gita Bhashya (25)." page="0030"></s1>
+		<s1 title="Vedic Vyavahāra --- Vedantic Vyavahara and its two aspects (26)." page="0031"></s1>
+		<s1 title="Fundamental Avidyā involved in all Vyavahāra --- Mutual superimposition of Ātman and not-Ātman (27)." page="0032"></s1>
+		<s1 title="An unexpected turn in the interpretation of Adhyāsa --- The compound word !!mithyājñānanimittah!! twisted and misinterpreted to mean having for its natural cause (mithya) undefinable avidya-śakti. The Gita-Bhashya in confirmation of the Adhyasa views (28)." page="0034"></s1>
+		<s1 title="Disputes about Avidyā-śakti --- The locus and object of avidya - About the number of avidyas - Śankara's text in the matter (29)." page="0036"></s1>
+		<s1 title="Why no Pramāṇa is needed to prove Avidyā or Ātman (30)." page="0040"></s1>
+		<s1 title="Misconception about Disembodiedness (31)." page="0041"></s1>
+		<s1 title="Misconception about the Beginninglessness of Samsāra (32)." page="0043"></s1>
+		<s1 title="The cause of Waking, Re-birth and Creation (33)" page="0044"></s1>
+		<s1 title="Misconception concerning the State of Deep Sleep (34)." page="0045"></s1>
+		<s1 title="Various Views concerning Deep Sleep (35)." page="0046"></s1>
+		<s1 title="Divergent Views about Avidyā in Trance (36)." page="0048"></s1>
+		<s1 title="Śaṅkara's Statements regarding the Potency of Distinctions in Sleep and Dissolution (37)." page="0048"></s1>
+		<s1 title="Misconception with regard to the identity of Jiva waking up from Sleep (38)." page="0050"></s1>
+		<s1 title="The Anology of Seed and Sprout as a Beginningless Series (39)." page="0052"></s1>
+		<s1 title="Some Needless Disputations regarding Avidyā and Jīvas --- Relative Priority of avidyas and Jivas (40) - The Upadhi of Jiva in Dream and waking (41) - Sleep and swoon (42) - Is jiva the object of me-notion (43) - Is Jiva like vision of Brahman limited by Upadhi or a reflection of Brahman in Upadhi ? (44) The Witness as many and one according to sub-commentaries (45) - Controversy about the number of Jivas (46) Prajna in sleep misinterpreted as mostly ignorant (47)." page="0053"></s1>
+		<s1 title="Needless Controversy over the Syntactical Relation of the words in the Text `Tat-tvam-asi' --- Two opposed views !!Bādhā-Samānādhikaraṇya!! and !!Primary Samānādhikaraṇya!! (48)." page="0064"></s1>
+		<s1 title="The Creatorship of Iśvara and the Transmigratory nature of Jīva (49)." page="0067"></s1>
+		<s1 title="The Anology of the Pot-Ether and Ether in General --- Gaudapada strictly Battered (50)." page="0078"></s1>
+		<s1 title="The Relation between Karma-kānda and Jñāna-kānda (51)." page="0070"></s1>
+		<s1 title="How Śaṅkara's Vedanta happens to be misunderstood by other Vedantins (52)." page="0073"></s1>
+		<s1 title="Can Upāsanā do away with Avidyā ? (53)." page="0075"></s1>
+		<s1 title="How does Jnāna destroy Avidyā ? (54)." page="0076"></s1>
+		<s1 title="The Central Philosophy of Śaṅkara's Tradition of Vedanta (55)." page="0080"></s1>
+		<s1 title="How the Majority of Vedantic Schools happened to miss the Importance of Jnāna-Texts (56)." page="0082"></s1>
+		<s1 title="Why does Bādarāyaṇa take pains to reconcile Śrutis teaching creation ? (57)." page="0084"></s1>
+		<s1 title="The Importance of the discussion about Īśvara and Jīva (58)." page="0089"></s1>
+		<s1 title="Means to Jñāna and Mukti (59)." page="0091"></s1>
+		<s1 title="Criticism of the Doctrine of Combined Practice of Karma and Jñāna (60)." page="0092"></s1>
+		<s1 title="The Legitimate Place of Karma and Upāsanā as means to Liberation Kama (61) - Self-control and the means to knowledge (62)." page="0093"></s1>
+		<s1 title="Mōksha in the case of the Meditator and of the Jñānin (63)." page="0095"></s1>
+		<s1 title="Adhyātma-Yoga (64)." page="0097"></s1>
+		<s1 title="Adhyātma-Yōga is no Upāsanā (65)." page="0102"></s1>
+		<s1 title="The Immediate Means to Knowledge Whether Śravaṇa etc. are enjoined for Samadhi (66)." page="0103"></s1>
+		<s1 title="Are Pānditya and other means the same as Śravaṇa Etc. ? (67)." page="0105"></s1>
+		<s1 title="Is a Combined Practice of all the three means absolutely necessary ? (68)." page="0105"></s1>
+		<s1 title="Śaṅkara's Verdict as regards the means of Knowledge (69)." page="0107"></s1>
+		<s1 title="Conclusion" page="0108"></s1>
+		<s1 title="Word Index" page="0112"></s1>
+	</book>
+	<book code="008" btitle="The Vision of Ātman">
+		<s1 title="The Introductory Episode" page="0001"></s1>
+		<s1 title="Ātman to be seen" page="0005"></s1>
+		<s1 title="Reflection and Reason" page="0027"></s1>
+		<s1 title="Nididhyāsana as the Continued Practice of S'ravaṇa and Manana" page="0037"></s1>
+		<s1 title="Manana further explained" page="0056"></s1>
+		<s1 title="Nididhyāsana, Upāsanā and Yōga" page="0069"></s1>
+		<s1 title="Are S'ravaṇa and other means enjoined ?" page="0092"></s1>
+		<s1 title="Relative importance of the Three means" page="0101"></s1>
+		<s1 title="Retrospect and Conclusion" page="0111"></s1>
+	</book>
+	<book code="009" btitle="Intuition of Reality">
+		<s1 title="The Vedāntic Intuition According to Sankara" page="0001"></s1>
+		<s1 title="Practical Life and Transcendental Reality" page="0012"></s1>
+		<s1 title="Ātman and Non-Ātman" page="0026"></s1>
+		<s1 title="The Genuine Intuition of Ātman" page="0036"></s1>
+		<s1 title="Intuition and Reason Subservient to it" page="0048"></s1>
+		<s1 title="Gradual Revelation of Brahman as Ātman" page="0055"></s1>
+		<s1 title="Pre-S'aṅkara Vedāntic Schools" page="0072"></s1>
+		<s1 title="Retrospect" page="0095"></s1>
+	</book>
+	<book code="010" btitle="The Upanishadic Approach to Reality">
+		<s1 title="The Wisdom of the Upanishads" page="0001"></s1>
+		<s1 title="Practical Life Confined to the Sphere of Avidyā" page="0011"></s1>
+		<s1 title="The Nature of Vidyā and Avidyā" page="0018"></s1>
+		<s1 title="The Language and Style of the Upanishads" page="0024"></s1>
+		<s1 title="The Vedānta-Śāstra as the only means of Right-Knowledge" page="0039"></s1>
+		<s1 title="The Method of Superimposition and Rescission" page="0044"></s1>
+		<s1 title="Innovations of Sub-commentaries" page="0054"></s1>
+	</book>
+	<book code="011" btitle="The Science of Being">
+		<s1 title="The Introductory Narrative" page="0001"></s1>
+		<s1 title="Being and Non-Being" page="0008"></s1>
+		<s1 title="The Cause as Consciousness" page="0014"></s1>
+		<s1 title="The Individual Self and the Doctrine of Mayic Existence of the Effect" page="0021"></s1>
+		<s1 title="Becomng one with Being" page="0035"></s1>
+		<s1 title="Being, The Most Subtle Entity" page="0055"></s1>
+		<s1 title="The Knower of Brahman and The Ignorant Person" page="0061"></s1>
+		<s1 title="Conclusion" page="0071"></s1>
+		<s1 title="Appendix: The Central Teaching" page="0077"></s1>
+	</book>
+	<book code="012" btitle="Essays on Vedanta">
+		<s1 title="Vedanta" page="0001"></s1>
+		<s1 title="The Teaching of the Upanishads" page="0009"></s1>
+		<s1 title="The All" page="0012"></s1>
+		<s1 title="The Method" page="0021"></s1>
+		<s1 title="Application of the Method (!!Agama and Reason!!)" page="0029"></s1>
+		<s1 title="Application of the Method (!!Avidya and Maya!!)" page="0041"></s1>
+		<s1 title="Application of the Method (!!Being and Becoming!!)" page="0049"></s1>
+		<s1 title="Application of the Method (!!Cause and Effect!!)" page="0058"></s1>
+		<s1 title="Application of the Method (!!Isvara and Jiva!!)" page="0073"></s1>
+		<s1 title="Application of the Method (!!The Universal and the Particular!!)" page="0088"></s1>
+		<s1 title="Application of the Method (!!Panchakosha!!) (!!The Jiva and the Real Atman!!)" page="0094"></s1>
+		<s1 title="Application of the Method (!!Examination of the States of Consciousness!!)" page="0101"></s1>
+		<s1 title="Application of the Method (!!Bondage and Release!!)" page="0131"></s1>
+		<s1 title="Application of the Method (!!Discipline and Goal!!)" page="0140"></s1>
+		<s1 title="Conclusion" page="0160"></s1>
+	</book>
+	<book code="013" btitle="S'uddha-S'āṅkara-Prakriyā-Bhāskara">
+		<s1 title="1. The System of Vedanta" page="0001">
+			<s2 title="Non-Advaitic Vedantins never referred to by S'aṅkara." page="0001"></s2>
+			<s2 title="Vedantins at the time of S'aṅkara were all Advaitins." page="0003"></s2>
+			<s2 title="No Vedantin recognizing the distinction of the Individual and the Supreme Self during Bādarāyana's time." page="0004"></s2>
+			<s2 title="Various Doctrines of other Advaitic Schools referred to by S'aṅkara." page="0006"></s2>
+			<s2 title="Conclusion." page="0013"></s2>
+		</s1>
+		<s1 title="2. The Tradition of S'aṅkara's School" page="0014">
+			<s2 title="S'aṅkara, the Resuscitator of an old Tradition." page="0014"></s2>
+			<s2 title="Gauḍapāda himself refers to more ancient teachers." page="0016"></s2>
+			<s2 title="S'aṅkara's earnestness with regard to Tradition." page="0018"></s2>
+			<s2 title="Draviḍācārya." page="0019"></s2>
+			<s2 title="Teacher Brahmanandin." page="0024"></s2>
+			<s2 title="Upavarshācārya." page="0027"></s2>
+			<s2 title="Dvaita-Vedanta conspicuous by its absence during S'aṅkara's time." page="0029"></s2>
+			<s2 title="Conclusion." page="0031"></s2>
+		</s1>
+		<s1 title="3. Landmarks in S'āṅkara-Vedanta" page="0032">
+			<s2 title="Self-evident nature of Brahman as one's own Self." page="0032"></s2>
+			<s2 title="The individual self is, by his very nature, no doer of action, for he is identical with Brahman as Pure Being." page="0034"></s2>
+			<s2 title="The individual soul is essentially Brahman, not a cognizer." page="0037"></s2>
+			<s2 title="Pramānās are such only till knowledge accrues." page="0041"></s2>
+			<s2 title="How S'āstra is the final Pramāṇa." page="0045"></s2>
+			<s2 title="Conclusion." page="0049"></s2>
+		</s1>
+		<s1 title="4. The Method of S'āṅkara-Vedanta" page="0051">
+			<s2 title="The Method in a nut-shell." page="0051"></s2>
+			<s2 title="Assumption of specific features is only a device employed for the purpose of teaching." page="0052"></s2>
+			<s2 title="The deliberate superimposition employed in Vedanta never affects its validity." page="0056"></s2>
+			<s2 title="Why the Method of Superimposition and Rescission alone is employed exclusively in Vedanta." page="0058"></s2>
+			<s2 title="That Brahman is known only through the negation of the superimposed is a teaching common to all the three Prasthānas." page="0059"></s2>
+			<s2 title="Teaching by means of superimposition, is only for negating what it is not." page="0060"></s2>
+			<s2 title="Extracts from the Bhāshyas." page="0063"></s2>
+		</s1>
+		<s1 title="5. Varieties of the Vedantic Method" page="0067">
+			<s2 title="Relation of the sequel to the preceding section." page="0067"></s2>
+			<s2 title="The Method of distinguishing Vidyā and Avidyā." page="0067"></s2>
+			<s2 title="The Method of S'āstra-Prāmāṇa." page="0070"></s2>
+			<s2 title="The Method of Creation." page="0073"></s2>
+			<s2 title="The Method of Cause and Effect." page="0076"></s2>
+			<s2 title="Brahman's entry into creation as a Jiva." page="0080"></s2>
+			<s2 title="The Method of Religious Works and Meditation." page="0082"></s2>
+			<s2 title="The Method of the Five Kōs'as." page="0083"></s2>
+			<s2 title="The Method of Self-effulgence." page="0085"></s2>
+			<s2 title="Exit, Going away and Returning, are all from the stand-point of Imputation." page="0086"></s2>
+			<s2 title="The Method of the Universal and the Particular." page="0088"></s2>
+			<s2 title="The Method of Three States also a device." page="0090"></s2>
+			<s2 title="The convention of Bondage and Release &amp; c." page="0091"></s2>
+		</s1>
+		<s1 title="6. S'aṅkara's School of Vedanta as Contrasted with other Schools" page="0098">
+			<s2 title="Relation of the sequel to the preceding section." page="0098"></s2>
+			<s2 title="Common characteristics of Ancient Schools." page="0098"></s2>
+		</s1>
+		<s1 title="Defects in the Ancient Schools" page="0102">
+			<s2 title="The Dogma that the Upanishads are injunctive in their Aim." page="0102"></s2>
+			<s2 title="The inconsistency of the S'āṅkara being composed afresh." page="0104"></s2>
+			<s2 title="No need for approaching an Ācārya." page="0105"></s2>
+			<s2 title="The misconception that Final Release is an effect." page="0106"></s2>
+			<s2 title="The doctrine of Release as the destruction of Avidyā." page="0106"></s2>
+			<s2 title="Vedic Authority cannot exculpate the Schools." page="0110"></s2>
+			<s2 title="Bringing forward a controverted argument." page="0110"></s2>
+		</s1>
+		<s1 title="Special features of S'aṅkara's Tradition" page="0000">
+			<s2 title="S'ruti and Reason conformable to Intuition." page="0111"></s2>
+			<s2 title="The Upanishads purport to teach Reality as without Specific Features." page="0113"></s2>
+			<s2 title="Release from Actual Bondage not assumed." page="0116"></s2>
+			<s2 title="All charges rebutted by assuming two different Stand-points." page="0118"></s2>
+		</s1>
+		<s1 title="7. Vedanta Contrasted with Buddhism" page="0122">
+			<s2 title="Objection." page="0122"></s2>
+			<s2 title="Suspicion of the admixture of Buddhistic Doctrine in this system." page="0124"></s2>
+			<s2 title="Reasons for trusting the Kārikā-tradition." page="0129"></s2>
+			<s2 title="The disparity of the two teachings with regard to Reality." page="0130"></s2>
+			<s2 title="Divergence of the two systems with regard to Non-origination." page="0134"></s2>
+			<s2 title="Disparity in the Methods of establishing Reality." page="0140"></s2>
+			<s2 title="Conclusion of the Comparison with the S'ūnya-doctrine." page="0146"></s2>
+			<s2 title="Vedantic Vijnāna contrasted with Buddhistic Vijnāna." page="0150"></s2>
+			<s2 title="Dissimilarity in the method of rejection of the external object in the two systems." page="0154"></s2>
+			<s2 title="Mere employment of the word `Citta' does not entail similarity." page="0158"></s2>
+			<s2 title="Not even the employment of the term `Lōkōttara' can engender the similarity of the systems." page="0160"></s2>
+			<s2 title="Dependence on Yōga and the absence of it sharply distinguish the two systems." page="0162"></s2>
+			<s2 title="Conclusion of the Contrast." page="0165"></s2>
+			<s2 title="Conclusion of the repudiation of Buddhistic Influence." page="0169"></s2>
+			<s2 title="Conclusion of the Section." page="0170"></s2>
+		</s1>
+	</book>
+	<book code="014" btitle="S'ankara's Sutra-Bhashya (Self-Explained)"> 
+		<s1 title="Prefatory Remarks" page="0000e"></s1>
+		<s1 title="वाचकेषु विज्ञप्तिः" page="0000l"></s1>
+		<s1 title="सङ्केताक्षरविवरणम्" page="0000m"></s1>
+		<s1 title="अशुद्धिशोधनम्" page="0000n"></s1>
+		<s1 title="Misconceptions about S'aṅkara" page="0000p"></s1>
+		<s1 title="विषयानुक्रमणिका" page="0000q"></s1>
+		<s1 title="शङ्करं वेदान्तमीमांसाभाष्यम्" page="0001">
+			<s2 title="अवतरणिका" page="0001"></s2>
+			<s2 title="उपोद्घातभाष्ये-अध्यासविषये शङ्का" page="0003"></s2>
+			<s2 title="अध्याससंभावनाभाष्यम्" page="0011"></s2>
+			<s2 title="अध्यासलक्षणम्" page="0014">
+				<s3 title="अध्यासविषये विप्रतिपत्तयः तत्स्वरूपविषये सर्वसंप्रतिपत्तिश्च" page="0018"></s3>
+			</s2>
+			<s2 title="प्रत्यगात्मानात्मनोरितरेतराध्यासविषये शङ्का परिहारश्च" page="0023"></s2>
+			<s2 title="आत्मानात्मनोरन्योन्याध्यास एवाविद्या" page="0026"></s2>
+			<s2 title="विद्याविद्याविवेकफलम्" page="0028"></s2>
+			<s2 title="अविद्यासभ्दावप्रतिपादनम्" page="0034"></s2>
+			<s2 title="विधिप्रतिषेधपराणि शास्राण्यपि यथोक्ताविद्यापुरःसरं प्रवृत्तानि" page="0043"></s2>
+			<s2 title="अध्यासप्रकारः" page="0045"></s2>
+			<s2 title="उपसंहारः" page="0054"></s2>
+		</s1>
+		<s1 title="परिशिष्टम्" page="0076">
+			<s2 title="मिथ्याज्ञानशब्दघटितभाSयवाक्यानि" page="0076"></s2>
+			<s2 title="माया (तत्पर्याय) शब्दघटितानि वाक्यानि" page="0078"></s2>
+			<s2 title="अध्यस्तदोषेण गुणेन वा अध्यासास्पदभूतं वस्तु न संबध्यते" page="0080"></s2>
+			<s2 title="आत्मनि देहादीनामविद्याकल्पितत्वम्, आत्मानात्मनोरन्योन्याध्यासश्च" page="0082"></s2>
+			<s2 title="अहंममेति व्यवहारः, तत्साक्षी च" page="0084"></s2>
+			<s2 title="प्रत्यगात्मशब्दघटितानि भाSयवाक्यानि" page="0091"></s2>
+			<s2 title="प्रत्यक्षशब्दघटितानि वाक्यानि" page="0092"></s2>
+			<s2 title="आत्मैकत्वशब्दघटितानि वाक्यानि" page="0094"></s2>
+			<s2 title="विद्यया नैसर्गिकी अविद्या सर्वथा बाध्यते इति बोधकानि वाक्यानि" page="0097"></s2>
+			<s2 title="आत्मैकत्वविद्यापराणि श्रुतिवाक्यानि" page="0100"></s2>
+			<s2 title="शब्दानुक्रमणिका" page="0103"></s2>
+		</s1>
+	</book>
+	<book code="015" btitle="Introductions (to vedānta texts)">
+		<s1 title="Preface" page="0000c"></s1>
+		<s1 title="Part - I : English Works" page="0001">
+			<s2 title="Īśāvāsyōpaniṣad" page="0001"></s2>
+			<s2 title="Intuition of Reality" page="0002"></s2>
+			<s2 title="Minor Works of Sri Śaṅkarācārya" page="0002"></s2>
+			<s2 title="Essays on Vedānta" page="0005"></s2>
+			<s2 title="The Vision of Ātman" page="0018"></s2>
+			<s2 title="Śaṅkara's Clarification of Certain Vedāntic Concepts" page="0021"></s2>
+			<s2 title="Misconceptions About Śaṅkara" page="0024"></s2>
+			<s2 title="Vedānta or The Science of Reality" page="0026"></s2>
+		</s1>
+		<s1 title="Part - II : Saṃskṛta Works" page="0047">
+			<s2 title="Kena Upaniṣad" page="0047"></s2>
+			<s2 title="Kāṭhaka Upaniṣad" page="0048"></s2>
+			<s2 title="The Muṇḍaka Upaniṣad" page="0056"></s2>
+			<s2 title="The Taittirîya Upaniṣad (Śīkṣāvallī)" page="0058"></s2>
+			<s2 title="The Taittirīya Upaniṣad (Ānandavallī - Bhrguvạllī)" page="0063"></s2>
+			<s2 title="Brahmavidyārahasya-Vivṛtiḥ" page="0073"></s2>
+			<s2 title="Gītā Śāstrārtha Vivekaḥ" page="0076"></s2>
+			<s2 title="Vedāntins Meet" page="0080"></s2>
+			<s2 title="Sūtra Bhāṣyārtha Tattwavivecanī (Part-I)" page="0091"></s2>
+			<s2 title="Sūtra Bhāṣyārtha Tattwavivecanī (Part-II)" page="0094"></s2>
+			<s2 title="Sūtra Bhāṣyārtha Tattwavivecanī (Part-III)" page="0097"></s2>
+			<s2 title="Śaṅkara's Sūtra Bhāṣya" page="0100"></s2>
+			<s2 title="Pañcapādikā-Prasthānam" page="0107"></s2>
+			<s2 title="Viśuddha Vedānta Sāraḥ" page="0116"></s2>
+			<s2 title="Viśuddha-Vedānta-Paribhāṣā" page="0119"></s2>
+			<s2 title="Naiṣkarmya-Siddhi" page="0122"></s2>
+			<s2 title="Māṇḍūkya Rahasya Vivṛtiḥ" page="0139"></s2>
+		</s1>
+	</book>
+	<book code="016" btitle="ĪS'āvāsyōpanishad (with the commentary of Sri S'ankaracharya)">
+		<s1 title="Sri S'aṅkara's Introduction" page="0001"></s1>
+		<s1 title="Devotion to Jñāna" page="0005"></s1>
+		<s1 title="Devotion to Karmas" page="0007"></s1>
+		<s1 title="Mutual Opposition of Jñāna and Karma" page="0009"></s1>
+		<s1 title="The Real Nature of Atman" page="0010"></s1>
+		<s1 title="Jñāna-Nishtha and Karma-Nishtha Distinguished" page="0022"></s1>
+		<s1 title="Relation of the Sequel to the Previous Part" page="0023"></s1>
+		<s1 title="The Combined Practice of Karma and Meditarion" page="0025"></s1>
+		<s1 title="The combined Practice of the Meditation of the Differentiated and the Undifferentiated" page="0028"></s1>
+		<s1 title="Relation of the Sequel to the Previous Portion" page="0031"></s1>
+		<s1 title="Prayer at the time of Death by the Practician of Karma and Meditation" page="0033"></s1>
+		<s1 title="A Discussion about Combination of Vidyā and Avidyā" page="0037"></s1>
+		<s1 title="Summary of the Teaching of the Upanishad" page="0041"></s1>
+		<s1 title="The ĪS'āvāsyōpanishad (Mādhyandina Recension)" page="0043"></s1>
+		<s1 title="Appendix" page="0045"></s1>
+		<s1 title="Alphabetical order of the Mantras" page="0050"></s1>
+		<s1 title="Glossarial Index of the Sanskrit Terms in the Text" page="0051"></s1>
+	</book>
+	<book code="017" btitle="Vedanta or the Science of Reality">
+		<s1 title="Foreword" page="0000ag"></s1>
+		<s1 title="Publishers' Note" page="0000al"></s1>
+		<s1 title="Publisher's Note" page="0000an"></s1>
+		<s1 title="Author's Preface" page="0000as"></s1>
+		<s1 title="Introductory Remarks" page="0000au"></s1>
+		<s1 title="Introduction" page="0000bo"></s1>
+		<s1 title="Letter of Permission" page="0000by"></s1>
+		<s1 title="Abbreviations" page="0000cf"></s1>
+		<s1 title="Introduction" page="0001"></s1>
+		<s1 title="Chapter I : The System of Vedanta" page="0036"></s1>
+		<s1 title="Chapter II : Basic Reality" page="0051"></s1>
+		<s1 title="Chapter III : Modes of Pure Consciousness" page="0066"></s1>
+		<s1 title="Chapter IV : God and Reality" page="0075"></s1>
+		<s1 title="Chapter V : Ethics of Vedanta" page="0086"></s1>
+		<s1 title="Chapter VI : Scepticism and Vedanta" page="0100"></s1>
+		<s1 title="Chapter VII : Appearance and Reality" page="0114"></s1>
+		<s1 title="Chapter VIII : Knowledge and Release" page="0130"></s1>
+		<s1 title="Chapter IX : Intuition of Pure Consciousness" page="0147"></s1>
+		<s1 title="Chapter X : Practice and Reflection" page="0157"></s1>
+		<s1 title="Chapter XI : Idealism and Realism" page="0170"></s1>
+		<s1 title="Chapter XII : Theology and Vedanta" page="0196"></s1>
+		<s1 title="Chapter XIII : Maya" page="0221"></s1>
+		<s1 title="Chapter XIV : Ethics and Eschatology" page="0235"></s1>
+		<s1 title="Chapter XV : Solipsism and Vedanta" page="0249"></s1>
+		<s1 title="Chapter XVI : Vedanta and Positivism" page="0256"></s1>
+		<s1 title="Chapter XVII : The Problem of Perception" page="0264"></s1>
+		<s1 title="Chapter XVIII : Aesthetics and Vedanta" page="0290"></s1>
+		<s1 title="Chapter XIX : Some Western Objections" page="0299"></s1>
+		<s1 title="Chapter XX : Vedanta and Greek Speculation" page="0322"></s1>
+		<s1 title="Chapter XXI : Modern Thought" page="0337"></s1>
+		<s1 title="Chapter XXII : Modern Thought ; Hegel and Schopenhauer" page="0358"></s1>
+		<s1 title="Chapter XXIII : British and American Thought" page="0403"></s1>
+		<s1 title="Chapter XXIV : Italian Idealists" page="0435"></s1>
+		<s1 title="Chapter XXV : Conclusion" page="0456"></s1>
+	</book>
+	<book code="018" btitle="Collected Works of K. A. Krishnaswamy Iyer">
+		<s1 title="1. Meditations" page="0001"></s1>
+		<s1 title="2. Some Views on Paul Deussen's Elements of Metaphysics" page="0078"></s1>
+		<s1 title="3. The Fundamentals of Vedanta" page="0093"></s1>
+		<s1 title="4. Uma's Mirror" page="0110"></s1>
+		<s1 title="5. The Drum-Beat of Angels" page="0133"></s1>
+		<s1 title="6. Heroes of ancient Ind." page="0163"></s1>
+		<s1 title="7. The Spirit of Vedic Ind." page="0166"></s1>
+		<s1 title="8. Was S'aṅkara a Crypto-Buddhist?" page="0169"></s1>
+		<s1 title="9. Vedic Support for Non-Dualism" page="0177"></s1>
+		<s1 title="10. The System of Ramanuja with side-lights on those of Madhva and S'aṅkara" page="0197"></s1>
+		<s1 title="11. The System of Sankhya" page="0227"></s1>
+		<s1 title="12. The System of Thought revealed in the Bhagavad-Gita" page="0235"></s1>
+		<s1 title="13. The Philosophy of Advaita or Non-dualism" page="0267"></s1>
+		<s1 title="14. Tiger's Varadachar" page="0316"></s1>
+		<s1 title="Books You ought to read - by Satchidanandendra Saraswathi Swamiji" page="0321"></s1>
+		<s1 title="Books You ought to read - by D. B. Gangolli" page="0326"></s1>
+	</book>
+	<book code="019" btitle="Sri Sri Satchidanandendra Saraswathi">
+		<s1 title="1. Introduction" page="0001"></s1>
+		<s1 title="2. Childhood, Yellambalase" page="0003"></s1>
+		<s1 title="3. Education - Upanayana" page="0009"></s1>
+		<s1 title="4. Education in different towns, marriage etc." page="0015"></s1>
+		<s1 title="5. Subbaraya in the teaching profession" page="0043"></s1>
+		<s1 title="6. Bhashya Shanthipatha Ceremony (1909-1911)" page="0052"></s1>
+		<s1 title="7. Bhashyapatha studies (1911)" page="0067"></s1>
+		<s1 title="8. Gondavali Maharaja's blessings" page="0071"></s1>
+		<s1 title="9. Restless for Satsanga" page="0079"></s1>
+		<s1 title="10. Living in Bangalore City" page="0089"></s1>
+		<s1 title="11. Birth of Adhyatma Prakasha Karyalaya" page="0101"></s1>
+		<s1 title="12. Organized activities" page="0121"></s1>
+		<s1 title="13. Progress of Karyalaya in Holenarasipur" page="0133"></s1>
+		<s1 title="14. New activities (1940-1944)" page="0141"></s1>
+		<s1 title="15. His Highness - Sri Mysore Maharaja's Compassion" page="0153"></s1>
+		<s1 title="16. Developments at Karyalaya (1947-1948)" page="0162"></s1>
+		<s1 title="17. Subbaraya takes to Turiyashrama" page="0165"></s1>
+		<s1 title="18. On the way to further Development (1949-1954)" page="0170"></s1>
+		<s1 title="19. On the path of progress (1955-1960)" page="0187"></s1>
+		<s1 title="20. Towards Greater progress (1961-1967)" page="0207"></s1>
+		<s1 title="21. On the path of advancement (1967-1972)" page="0233"></s1>
+		<s1 title="22. Epilogue" page="0246"></s1>
+		<s1 title="Appendix I : Vedantins Meet - Introduction - An appeal to thoughtful Vedantins - Summary of Contributions" page="0254"></s1>
+		<s1 title="Appendix II : List of English &amp; Sanskrit books Published from Karyalaya" page="0286"></s1>
+	</book>
+	<book code="021" btitle="The Relevance of Vedanta in this Modern Age of Civilization">
+		<s1 title="(A) Vedanta Alone is the Panacea for the `Scourge' of Civilization" page="0001">
+			<s2 title="1. The Validity of Vedanta" page="0001"></s2>
+			<s2 title="2. For Vedanta Universal Intuitive Experience Alone is the Prime Foundation or Substrate" page="0002"></s2>
+			<s2 title="3. The Present Subject-Matter For Deliberation" page="0004"></s2>
+			<s2 title="4. What Goes by the Name of `Civilization' is in Truth A `Malady'" page="0005"></s2>
+			<s2 title="5. The Cause of the Disease" page="0006"></s2>
+			<s2 title="6. Is Vedanta Alone the Solution for the Scourge of Civilization ?" page="0007"></s2>
+			<s2 title="7. Symptoms of the Disease" page="0007"></s2>
+			<s2 title="8. A General Perspective of Our Empirical Dealings" page="0013"></s2>
+			<s2 title="9. Whatever Wealth it may be, It is Not Permanent" page="0015"></s2>
+			<s2 title="10. Desire, Hatred and Lust and Their Respective Counter-Measures" page="0017"></s2>
+		</s1>
+		<s1 title="(B) Benefits Accruing from the Vedantic Viewpoint" page="0021">
+			<s2 title="11. Competition, Speed and Modern Appliances" page="0021"></s2>
+			<s2 title="12. Disadvantages or the Ill Effects Produced by Machines" page="0021"></s2>
+			<s2 title="13. The Modern Civilization Has Become a Veritable Hell" page="023"></s2>
+			<s2 title="14. The Help That Can Accrue to us from `Realized Souls'" page="0024"></s2>
+			<s2 title="15. Bookish Knowledge is not Enough Practice is Essential" page="0026"></s2>
+			<s2 title="16. Our Knowledge is Full of Defects or Blemishes" page="0027"></s2>
+			<s2 title="17. The Viewpoint of Vedantins" page="0028"></s2>
+			<s2 title="18. ``All this is Brahman Alone''" page="0030"></s2>
+			<s2 title="19. The Beneficial Fruits or Results that Accrue from Assiduous Faith in the Vedantic Teachings" page="0033"></s2>
+			<s2 title="20. The Indirect or External Knowledge of Brahman" page="0036"></s2>
+			<s2 title="21. `I' Notion is the Guise that Atman or the Self Puts on in The Empirical Sphere" page="0037"></s2>
+			<s2 title="22. One Gets Blissful in Establishing Oneself in Paramaatman or the Supreme Self" page="0038"></s2>
+			<s2 title="23. Spiritual Discipline" page="0040"></s2>
+			<s2 title="24. To Experience the Bliss or Happiness of Brahman or The Supreme Self Everyone has Equal Right" page="0043"></s2>
+		</s1>
+		<s1 title="(C) Everything is Full of Brahman or Pure Consciousness" page="0045">
+			<s2 title="25. The Gist of What has Been Previously Stated" page="0045"></s2>
+			<s2 title="26. Two Viewpoints" page="0051"></s2>
+			<s2 title="27. Bhagavan or the Supreme Lord Alone is the Fountainhead of all Aspects of Knowledge" page="0053"></s2>
+			<s2 title="28. The Transactions of Those Who are Established in or Endowed with The Introverted Viewpoint" page="0060"></s2>
+		</s1>
+	</book>
+	<book code="022" btitle="A Broad Outline of Vedanta">
+		<s1 title="Foreword" page="0000c"></s1>
+		<s1 title="A Broad Outline of Vedanta" page="0001"></s1>
+	</book>
+	<book code="023" btitle="The Reality Beyond All Empirical Dealings">
+		<s1 title="I. Dealing Involving The Enjoyer and the Enjoyed" page="0001"></s1>
+		<s1 title="II. The Transactions of Agent of Action, (The Means Of) Action and the Fruit of Action" page="0006"></s1>
+		<s1 title="III. The Transactions of the Knower, The Means of Knowledge and the Objects of Knowledge" page="0010"></s1>
+		<s1 title="IV. Dealings of Ignorance" page="0014"></s1>
+		<s1 title="V. The Dealings of `I' and `Mine'" page="0018"></s1>
+		<s1 title="VI. Dealings of Knowledge (!!Vidya!!) and Ignorance (!!Avidya!!)" page="0023"></s1>
+		<s1 title="VII. The Scriptures and the Valid Means to Cognize Reality" page="0026"></s1>
+		<s1 title="VIII. The Final Valid Means (!!Antyapramaana!!)" page="0031"></s1>
+		<s1 title="IX. In Praise of Shri Shankara Bhagavadpaada" page="0037"></s1>
+	</book>
+	<book code="024" btitle="Deliberation on The Ultimate Reality Culminating in Intuitive Experience">
+		<s1 title="I. The Methodology of Vedantic Deliberation" page="0001"></s1>
+		<s1 title="II. The Scriptural Method of Teaching Atman (The Reality)" page="0013"></s1>
+		<s1 title="III. Aagama (Scriptural, Traditional Methodoloty) and Tarka (Logic or Dialectics)" page="0025"></s1>
+		<s1 title="IV. Logic which is in Consonance with Intuitive Experience" page="0041"></s1>
+		<s1 title="V. Devices for the Intuitive Experience of Brahmaatman" page="0056"></s1>
+		<s1 title="VI. Ajaativaada or the Theory of Non-Creation" page="0068"></s1>
+	</book>
+	<book code="025" btitle="Brahmavidya or Knowledge of The Ultimate Reality">
+		<s1 title="I. The Greatness of Brahmavidya" page="0001"></s1>
+		<s1 title="II. Practical Means for Intuitive Knowledge or Jnaana" page="0006"></s1>
+		<s1 title="III. The Unique Methodology of Intuiting the Ultimate Reality of Brahman" page="0013"></s1>
+		<s1 title="IV. Intuitive Knowledge of the Nature of Discriminating between Atman and Anaatman" page="0022"></s1>
+		<s1 title="V. Removal of Misery by the Knowledge of Brahmaatman, the Ultimate Reality" page="0029"></s1>
+		<s1 title="VI. The Teaching Method Adopted by the Shaastras" page="0034"></s1>
+		<s1 title="VII. Instructions of the Preceptor - Grace of the Lord" page="0041"></s1>
+		<s1 title="VIII. Homage to Shri Shankara Bhagavatpaada" page="0047"></s1>
+	</book>
+	<book code="026" btitle="The Quintessence of Pristine Pure Vedanta">
+		<s1 title="I. Introduction" page="0001"></s1>
+		<s1 title="II. The Philosophical Teachings of Vedanta" page="0004"></s1>
+		<s1 title="III. For the Cognition of Non-Duality (of Atman) The Scriptural Viewpoint is Needed" page="0007"></s1>
+		<s1 title="IV. The Essential Nature of Atman as Indicated in the Shaastras" page="0016"></s1>
+		<s1 title="V. Mukhyaatma or the Absolute Self" page="0021"></s1>
+		<s1 title="VI. The Non-Duality of Atman" page="0027"></s1>
+		<s1 title="VII. Jnaana Saadhanas or Spiritual Practices for Attaining Intuitive Experience" page="0034"></s1>
+	</book>
+	<book code="027" btitle="The Philosophical Science of Vedanta">
+		<s1 title="I. Introduction" page="0001"></s1>
+		<s1 title="II. Anubandha Chatushtaya" page="0004"></s1>
+		<s1 title="III. Brahman and Jagat (World)" page="0009"></s1>
+		<s1 title="IV. Brahman and Jeeva" page="0014"></s1>
+		<s1 title="V. Brahma-Atma Jnaana or Self-Knowledge" page="0017"></s1>
+		<s1 title="VI. Upaasana or Meditation" page="0019"></s1>
+		<s1 title="VII. Mukti Saadhana or Spiritual Practices for Emancipation" page="0026"></s1>
+		<s1 title="VIII. Deliberation about Fruits of Spiritual Practices" page="0027"></s1>
+		<s1 title="Appendix I : Vedanta Philosphy according to Shri Raamaanujaachaarya" page="0033"></s1>
+		<s1 title="Appendix II : Vedanta Philosphy according to Shri Madhwaachaarya's Doctrines" page="0039"></s1>
+	</book>
+	<book code="028" btitle="Vedanta : The Only Consummate Spiritual Science">
+		<s1 title="I. Physical (Empirical) Sciences and Vedanta" page="0001"></s1>
+		<s1 title="II. The Limitations of Physical Sciences" page="0012"></s1>
+		<s1 title="III. Imperfect Philosophies" page="0021"></s1>
+		<s1 title="IV. Special Features of the Methodology of Shankara's Vedanta" page="0029"></s1>
+		<s1 title="V. Shaastra, Pramaana and Tarka Acceptable to Vedanta" page="0037"></s1>
+		<s1 title="VI. Intuition of Bṛahmaatman or Ultimate Reality" page="0045"></s1>
+		<s1 title="VII. Benefits Accruing from Vedantic Knowledge" page="0051"></s1>
+		<s1 title="VIII. Concluding Remarks" page="0058"></s1>
+	</book>
+	<book code="029" btitle="The Unique Teaching of Shankara">
+		<s1 title="I. The Need for the study of Shankara's Original Bhaashyas, Particularly His Adhyaasa Bhaashya" page="0001"></s1>
+		<s1 title="II. The Purport of the Upanishads" page="0004"></s1>
+		<s1 title="III. Adhyaasa or Misconception is in One's Experience" page="0009"></s1>
+		<s1 title="IV. The `I'-Notion Innately Associated with the Body, Senses and Mind is Misconception Alone" page="0012"></s1>
+		<s1 title="V. Our Atman or Self is the Essential Nature of Witness" page="0015"></s1>
+		<s1 title="VI. The Varieties of Adhyaasa" page="0018"></s1>
+		<s1 title="VII. Doubts About Adhyaasa and Their Solutions" page="0021"></s1>
+		<s1 title="VIII. The Cause for Avidya" page="0031"></s1>
+		<s1 title="IX. Is the Characteristic of Adhyaasa Acceptable to All the Schools ?" page="0033"></s1>
+		<s1 title="X. The Essential Natures of Vidya (Knowledge) and Avidya (Nescience or Ignorance)" page="0034"></s1>
+		<s1 title="XI. Adhyaasa is Established by Intuition" page="0036"></s1>
+		<s1 title="XII. The Dealings of Pramaana and Prameya Are in the Region of Avidya" page="0041"></s1>
+		<s1 title="XIII. Scriptural Transactions Are Also Prompted by Avidya Only" page="0046"></s1>
+		<s1 title="XIV. The Greatness of Vedaantic Knowledge" page="0051"></s1>
+		<s1 title="XV. How is the Non-Dual Knowledge of Atman Obtained" page="0053"></s1>
+		<s1 title="XVI. The Relationship Between the Brahma Sutras and the Upanishads" page="0057"></s1>
+	</book>
+	<book code="030" btitle="The Scientific Approach of Shankara Vedanta">
+		<s1 title="Preface" page="0000h"></s1>
+		<s1 title="I. Introduction" page="0001"></s1>
+		<s1 title="II. Genuine Tenets of Vedānta and Some Misconceptions About Them" page="0007"></s1>
+		<s1 title="III. Rudiments of Vedāntic Methodology" page="0018"></s1>
+		<s1 title="IV. The Rationale of Vedāntic Method" page="0035"></s1>
+		<s1 title="V. The Method Applied in Upanishads &#8212; Āgama &amp; Tarka" page="0039"></s1>
+		<s1 title="VI. AvidyA and Māyā" page="0047"></s1>
+		<s1 title="VII. Being an Becoming" page="0051"></s1>
+		<s1 title="VIII. Īshwara and Jīva" page="0058"></s1>
+		<s1 title="IX. Jīva and the Real Ātman" page="0067"></s1>
+		<s1 title="X. Avasthātraya Viveka" page="0071"></s1>
+		<s1 title="XI. Kāraṇa-Kārya Viveka" page="0084"></s1>
+		<s1 title="XII. Vedānta Shāstra &#8212; The One and Only Means for Self-Knowledge" page="0088"></s1>
+		<s1 title="XIII. Ekāyana Prakriyā" page="0091"></s1>
+		<s1 title="XIV. Sāmānya-Vishesha Prakriyā" page="0094"></s1>
+		<s1 title="XV. Discipline and Goal" page="0096"></s1>
+		<s1 title="XVI. Sadhānas" page="0099"></s1>
+		<s1 title="XVII. Conclusions" page="0104"></s1>
+	</book>
+	<book code="031" btitle="Sri Satchidānandendra Saraswati Swāmīji [An Advent of Ādi Śaṅkarāchārya in Our Own Times]">
+		<s1 title="Publishers' Note" page="0000d"></s1>
+		<s1 title="Sri Satchidānandendra Saraswati Swāmīji &#8212; An Advent of Ādi Śaṅkarāchārya in Our Own Times" page="0001"></s1>
+	</book>
+	<book code="032" btitle="The Magic Jewel of Intuition (The Tri Basic Method of Cognizing the Self)">
+		<s1 title="Foreword" page="0000d"></s1>
+		<s1 title="Preface" page="0000h"></s1>
+		<s1 title="Chapter I : Introduction" page="0001">
+			<s2 title="A) The Uniqueness of Vedanta Philosophy" page="0001"></s2>
+			<s2 title="B) The Greatness of Vedantic Knowledge" page="0021"></s2>
+			<s2 title="C) Who are Those Qualified or Fit for the Vedantic Discrimination" page="0031"></s2>
+		</s1>
+		<s1 title="Chapter II : Discrimination About the Ultimate Reality" page="0035">
+			<s2 title="A) The Viewpoint of the Three States of Consciousness" page="0035"></s2>
+			<s2 title="B) The Need for Discrimination on All the Three States of Consciousness" page="0042"></s2>
+			<s2 title="C) The Special Features of the Discriminative Method of the Three States of Consciousness" page="0050"></s2>
+			<s2 title="D) The Objections and Satisfactory Answers regarding the Method of the Three States" page="0063"></s2>
+			<s2 title="E) An Outline of the Method of the Three States" page="0088"></s2>
+			<s2 title="F) The Important Verdicts that Become Evident from the Discrimination about the Three States" page="0106"></s2>
+		</s1>
+		<s1 title="Chapter III : The Essential Nature of Existence" page="0114">
+			<s2 title="A) Atman or the Self Himself is the Real Existence" page="0114"></s2>
+			<s2 title="B) The Three Stages or Levels of Existence" page="0124"></s2>
+			<s2 title="C) Pure or Absolute Existence" page="0141"></s2>
+			<s2 title="D) The Varieties of or Different Forms of Existence" page="0154"></s2>
+			<s2 title="E) The Divisions of Reality and Unreality" page="0162"></s2>
+			<s2 title="F) The Existence of the Waking and the Dream is One Alone" page="0182"></s2>
+			<s2 title="G) The Nature of Pure Existence" page="0217"></s2>
+		</s1>
+		<s1 title="Chapter IV : The Essential Nature of Knowledge or Consciousness" page="0231">
+			<s2 title="A) Atman or the Self Alone is the Real Knowledge or Consciousness" page="0231"></s2>
+			<s2 title="B) The Three Levels of Knowledge or Consciousness" page="0260"></s2>
+			<s2 title="C) Pure or Absolute Consciousness or Knowledge" page="0277"></s2>
+			<s2 title="D) The Different Forms of Knowledge or Consciousness" page="0294"></s2>
+			<s2 title="E) The Divisions of Correct Knowledge and Wrond Knowledge" page="0298"></s2>
+			<s2 title="F) The Consciousness of Waking and Dream is One and the Same" page="0305"></s2>
+			<s2 title="G) The Essential Nature of Pure Knowledge or Consciousness" page="0345"></s2>
+		</s1>
+		<s1 title="Chapter V : The Essential Nature of Happiness" page="0384">
+			<s2 title="A) Atman Alone is Pure Happiness" page="0384"></s2>
+			<s2 title="B) Differences in Happiness" page="0400"></s2>
+			<s2 title="C) Pure or Absolute Happiness or Bliss" page="0406"></s2>
+			<s2 title="D) The Different Forms of Happiness or Bliss" page="0413"></s2>
+			<s2 title="E) The Divisions of Happiness and Grief" page="0415"></s2>
+			<s2 title="F) The Essential Nature of Pure Bliss" page="0423"></s2>
+		</s1>
+		<s1 title="Chapter VI : Conclusion" page="0432">
+			<s2 title="A) The Gist of What has been Stated so far" page="0432"></s2>
+			<s2 title="B) Benefits of the Knowledge of the Ultimate Reality" page="0453"></s2>
+			<s2 title="C) Conclusive Remarks" page="0465"></s2>
+		</s1>
+		<s1 title="Appendix &#8212; A Brief Comparative Study of Science and Spirituality" page="0477"></s1>
+	</book>
+	<book code="033" btitle="The Essential Ādi Shankara">
+		<s1 title="Preface" page="0000k"></s1>
+		<s1 title="I. Introduction" page="0001"></s1>
+		<s1 title="II. Vedanta" page="0006"></s1>
+		<s1 title="III. The Salient Features of Shankara's Vedanta" page="0011"></s1>
+		<s1 title="IV. Adhyaasa or Misconception" page="0017"></s1>
+		<s1 title="V. Avidya" page="0025"></s1>
+		<s1 title="VI. Adhyaaroapa and Apavaada" page="0033"></s1>
+		<s1 title="VII. Dealings of Pramaana and Prameya" page="0040"></s1>
+		<s1 title="VIII. Tarka or Logic" page="0051"></s1>
+		<s1 title="IX. Vedanta Vaakya" page="0057"></s1>
+		<s1 title="X. Vaakyajanya Jnaana" page="0067"></s1>
+		<s1 title="XI. Saakshi" page="0078"></s1>
+		<s1 title="XII. Atman as the Cause of the Universe" page="0087"></s1>
+		<s1 title="XIII. Satkaaryavaada" page="0094"></s1>
+		<s1 title="XIV. Maayaa" page="0105"></s1>
+		<s1 title="XV. Brahman is Nimitta Kaarana" page="0111"></s1>
+		<s1 title="XVI. Scriptural Texts on Creation" page="0118"></s1>
+		<s1 title="XVII. The Methodology of Saamaanya and Vishesha" page="0124"></s1>
+		<s1 title="XVIII. The Distinctions of Jeeva and Ishwara" page="0129"></s1>
+		<s1 title="XIX. Deliberation on Panchakoasha" page="0139"></s1>
+		<s1 title="XX. Deliberation on Three States of Consciousness" page="0146"></s1>
+		<s1 title="XXI. Dealings of Bandha and Moaksha" page="0155"></s1>
+		<s1 title="XXII. Apara Brahman" page="0163"></s1>
+		<s1 title="XXIII. Upaasana or Meditation" page="0171"></s1>
+		<s1 title="XXIV. Saadhanas for Aatma Vijnaana" page="0176"></s1>
+		<s1 title="XXV. Mukti Saadhanas" page="0187"></s1>
+		<s1 title="XXVI. Utilization of Jnaana Saadhanas" page="0192"></s1>
+		<s1 title="XXVII. Jnaani's Sense of Fulfilment" page="0203"></s1>
+		<s1 title="XXVIII. Conclusions" page="0218"></s1>
+	</book>
+	<book code="036" btitle="Intuitive Approach of Shankara's Vedanta">
+		<s1 title="I. Introduction" page="0001"></s1>
+		<s1 title="II. Shankara's Bhaashyas alone are the Principal Means to Determine the Spiritual Teaching of Vedanta" page="0007"></s1>
+		<s1 title="III. The Importance Given to Adhyaasa Bhaashya in Shaankara Prasthaana" page="0020"></s1>
+		<s1 title="IV. The Essential Nature of Adhyaasa and the Mundane Transactions Caused by it" page="0022"></s1>
+		<s1 title="V. Division into Vidyaa and Avidyaa and Avidyaakritya" page="0037"></s1>
+		<s1 title="VI. Saarvatrika Anubhava" page="0046"></s1>
+		<s1 title="VII. Brahman as the Cause of the World and Ishwaratwa" page="0057"></s1>
+		<s1 title="VIII. Ishwara and Jeevas" page="0076"></s1>
+		<s1 title="IX. Jeeva's Vyavahaara" page="0085"></s1>
+		<s1 title="X. Avastha Vyavahaara" page="0100"></s1>
+		<s1 title="XI. Bandha Moaksha Vyavahaara" page="0107"></s1>
+		<s1 title="XII. Moaksha Saadhana Vyavahaara" page="0112"></s1>
+		<s1 title="XIII. Conclusion" page="0125"></s1>
+	</book>
+	<book code="037" btitle="The Basic Tenets of Śāṅkara Vedānta">
+		<s1 title="I. Preparation for Vedāntic Knowledge" page="0001"></s1>
+		<s1 title="II. Ancient Vedāntic Schools" page="0008"></s1>
+		<s1 title="III. Śaṅkara's Methodology vs. Other Alien Methodologies" page="0023"></s1>
+		<s1 title="IV. Empirical Sciences" page="0035"></s1>
+		<s1 title="V. Varieties of Experiences" page="0042"></s1>
+		<s1 title="VI. Anubhava (Intuitive Experience)" page="0051"></s1>
+		<s1 title="VII. Anubhava Which is the Substrate for all Vyavahāra" page="0060"></s1>
+		<s1 title="VIII. The Changeless Anubhava Existing in All the Avasthās" page="0069"></s1>
+		<s1 title="IX. Ātman Who is Nirvishesha" page="0079"></s1>
+		<s1 title="X. The Reality Behind the Concepts of Kāraṇa and Kārya" page="0087"></s1>
+		<s1 title="XI. Jñātṛutattwa" page="0095"></s1>
+		<s1 title="XII. Amṛitatwa" page="0103"></s1>
+		<s1 title="XIII. Avasthātraya" page="0110"></s1>
+		<s1 title="XIV. Conclusion" page="0120"></s1>
+		<s1 title="XV. Asparsha Yōga" page="0127"></s1>
+		<s1 title="XVI. The Quintessence of the Teachings of Śāstra &amp; Āchārya" page="0139"></s1>
+		<s1 title="XVII. Brahmātma Vijñāna" page="0147"></s1>
+		<s1 title="XVIII. Satsampat from Sadvijñāna" page="0154"></s1>
+		<s1 title="XIX. Brahmātma Vidyā" page="0167"></s1>
+		<s1 title="XX. Sushuptātma Tattwa" page="0176"></s1>
+		<s1 title="XXI. Spiritual Practices for Adhyātmavidyā" page="0183"></s1>
+	</book>
+	<book code="038" btitle="The Pristine Pure Advaita Philosophy of Ādi Śaṅkara (Śaṅkara Siddhānta)">
+		<s1 title="Foreword" page="0000e"></s1>
+		<s1 title="Preface" page="0000g"></s1>
+		<s1 title="Contents" page="0000j"></s1>
+		<s1 title="Abbreviations" page="0000i"></s1>
+		<s1 title="I. Introduction" page="0001"></s1>
+		<s1 title="II. Deliberation on Avidyā" page="0032"></s1>
+		<s1 title="III. Deliberation on Vidyā (Self-Knowledge)" page="0045"></s1>
+		<s1 title="IV. The Judgement Evolving out of Deliberation on Vidyā and Avidyā" page="0064"></s1>
+		<s1 title="V. Conclusion" page="0101"></s1>
+		<s1 title="Some Questions Put to Mūlāvidyāvādins" page="0105"></s1>
+		<s1 title="The Final Judgement that Evolves from the Discussion of Mūlāvidyā" page="0000"></s1>
+	</book>
+	<book code="039" btitle="Advaita Pancharatnam (An Introduction to the Spiritual Science of Advaita Vedanta in Five Verses)">
+		<s1 title="Introduction" page="0001"></s1>
+		<s1 title="I. Aatmaanaatma Viveka" page="0004"></s1>
+		<s1 title="II. Dissolution of the Delusion of Jeevatwa" page="0023"></s1>
+		<s1 title="III. Dissolution of the Delusion about the World" page="0036"></s1>
+		<s1 title="IV. Dissolution of the Delusion of Steadfast Duality" page="0052"></s1>
+		<s1 title="V. Benefit Accruing from Vedanta Jnaana" page="0068"></s1>
+	</book>
+	<book code="040" btitle="The Principal Teachings of Bhagavadgeeta">
+		<s1 title="Part I" page="0000ag">
+			<s2 title="The Purport of Bhagavadgeeta" page="0000ai"></s2>
+		</s1>
+		<s1 title="Part II" page="0000bl">
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter I" page="0001"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter II" page="0007"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter III" page="0012"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter IV" page="0015"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter V" page="0022"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter VI" page="0026"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter VII" page="0030"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter VIII" page="0033"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter IX" page="0036"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter X" page="0039"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter XI" page="0042"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter XII" page="0045"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter XIII" page="0048"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter XIV" page="0054"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter XV" page="0057"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter XVI" page="0060"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter XVII" page="0064"></s2>
+			<s2 title="The Quintessence of Bhagavad - Geeta : Chapter XVIII" page="0067"></s2>
+		</s1>
+	</book>
+	<book code="042" btitle="The Heart of Sri Samkara">
+		<s1 title="Sanskrit Transliteration" page="0000ad"></s1>
+		<s1 title="Translator's Preface" page="0000ae"></s1>
+		<s1 title="Abbreviations" page="0000ag"></s1>
+		<s1 title="Latin Terms" page="0000ah"></s1>
+		<s1 title="Section Headings" page="0000ai"></s1>
+		<s1 title="The Heart of Śrī Śaṃkara" page="0001">
+			<s2 title="Part I : Introduction to the Subject" page="0001"></s2>
+			<s2 title="Part II : Examination of an Unorthodox View" page="0015"></s2>
+			<s2 title="Part III : Exposition of Our Own Doctrine" page="0075"></s2>
+			<s2 title="Part IV : Statement of Vedic and Other Authority" page="0145"></s2>
+		</s1>
+		<s1 title="Notes" page="0201"></s1>
+		<s1 title="Bibliography" page="0215"></s1>
+		<s1 title="Select Index of Concepts" page="0219"></s1>
+	</book>
+	<book code="043" btitle="Adhyatma Yoga">
+		<s1 title="Introduction" page="0000b"></s1>
+		<s1 title="Adhyatma" page="0001"></s1>
+		<s1 title="Adhyatma Yoga" page="0007"></s1>
+		<s1 title="Appendix" page="0021"></s1>
+	</book>
+</apk-english-books>
