@@ -1,0 +1,629 @@
+html, body {
+	background-color: #FFFFFF;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1.5;
+	margin: 0;
+	font-family: sans-serif; 
+}
+.page {
+	width: 980px;
+	margin: 0em auto 0em auto;
+	border: 1px solid #D2691E;
+}
+.header {
+	width: 100%;
+	clear: both;
+	padding-top: 1em;
+	background-color: #F6B47C;
+	background-image: -moz-radial-gradient(center 45deg, circle farthest-side, #F6B47C 0%, #D2691E 100%);
+	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 400, from(#F6B47C), to(#D2691E));
+}
+.header .logo{
+	float: left;
+	width: 6em;
+	text-align: center;
+}
+.header .logokalash{
+	float: right;
+	margin:0em 0.4em 0.4em 0.4em;
+	width: 5em;
+	text-align: center;
+}
+.header .title{
+	color:#3D3D3D;
+	font-size:2.2em;
+	text-align:center;
+	margin:0em 0em 0em 0em;
+}
+.header .subtitle{
+	color:#3D3D3D;
+	text-align:center;
+}
+#nav{
+	margin-top:1.5em;
+}
+#nav ul{
+	padding-left: 0.25em;
+}
+#nav li{
+	display:inline;
+	font-size: 0.9em;
+}
+#nav li a{
+	padding: 0.2em 1em 0.2em 1em ;
+	text-decoration:none;
+	color:#3D3D3D;
+}
+#nav li a.active{
+	color: #FFFFFF;
+	border-top:2px solid #FFFFFF;
+}
+#nav li a:HOVER{
+	color: #FFFFFF;
+	border-top:2px solid #FFFFFF;
+}
+#nav ul li ul{
+	padding-left: 0em;
+	text-align:center;
+	background-color:#FFFFFF;
+	display:none;
+	position:absolute;
+	border:1px solid #D2691E;
+	border-top:none;
+	-moz-border-radius: 0px 0px 15px 15px;
+	-webkit-border-radius: 0px 0px 15px 15px;
+	border-radius: 0px 0px 15px 15px;
+}
+#nav ul li:HOVER ul{
+	display:block;
+}
+#nav ul li ul li{
+	font-size: 0.9em;
+	text-align:center;
+	display:block;
+	margin:0.5em 0em 0.5em 0em;
+}
+#nav ul li ul li a{
+	border:none;
+	margin:none;
+	color:#D2691E;
+	text-decoration:none;
+}
+#nav ul li ul li a:HOVER{
+	color:#D2691E;
+	text-decoration:underline;
+}
+#magnav{
+	width:6.78em;
+	margin-left:17.65em;
+}
+#magnav ul{
+	text-align:center;
+	padding-left:0em;
+}
+#magnav li a{
+	border-left:none;
+	padding:0em;
+	display:block;
+}
+#magnav li a:HOVER{
+	border:none;
+	padding:0em;
+}
+#pubnav{
+	width:8.15em;
+	margin-left:24.8em;
+}
+#pubnav li a{
+	text-align:center;
+	display:block;
+	border-left:none;
+	padding:0em;
+}
+#pubnav li a:HOVER{
+	display:block;
+	border:none;
+	padding:0em;
+}
+
+.col1{
+	width: 72.1%;
+	float:left;
+	min-height: 20em;
+	color: #3D3D3D;
+	margin: 1.5em 1em 0em 1em;
+	border-top: 1px solid #D2691E;
+	border-right: 1px solid #D2691E;
+	-moz-border-radius: 0px 50px 0px 0px;
+	-webkit-border-radius: 0px 50px 0px 0px;
+	padding: 1em 1.5em 1.5em 0em;
+}
+.col1 p{
+	text-align: justify;
+	color: #3D3D3D;
+	font-size: 0.8em;
+}
+.col1 .title{
+	font-size: 1em;
+	color: #D2691E;
+	margin-bottom: 0.5em;
+}
+.col1 .subtitle{
+	font-size: 0.9em;
+	color: #D2691E;
+	text-align: center;
+}
+.col1 ul{
+	width:100%;
+}
+.col1 ul li{
+	font-size:0.8em;
+	list-style-type:disc;
+	list-style-position:inside;
+}
+.col1 li a{
+	color:#3D3D3D;
+}
+.col1 li a:HOVER{
+	background-color:none;
+}
+
+/* For categorywise display in Kannada Books*/
+.col1 ul li ul{
+	margin:0em 0em 0em 5em;
+	width:500px;
+	height:200px;
+	overflow:auto;
+	padding: 2em 1em 0em 2em;
+	background-color:#FFFFFF;
+	display:none;
+	position:absolute;
+	border:1px solid #D2691E;
+	-moz-border-radius: 15px 0px 0px 15px;
+	-webkit-border-radius: 15px 0px 0px 15px;
+	border-radius: 15px 0px 0px 15px;
+#	border-top:none;
+}
+.col1 ul li:HOVER ul{
+	display:block;
+}
+.col1 ul li ul li{
+	padding:0em 0em 0em 2em;
+	list-style-type:;
+	display:block;
+	margin:0.5em 0em 0.5em 0em;
+}
+.col1 ul li ul li a{
+	font-size:1.3em;
+	border:none;
+	margin:none;
+	color:#D2691E;
+	text-decoration:none;
+}
+.col1 ul li ul li a:HOVER{
+	color:#D2691E;
+	text-decoration:underline;
+}
+
+.alphabet{
+	width:100%;
+	background:#FFFFFF;
+	margin:0em auto 1em auto;
+#	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+.alphabet .letter {
+	font-size:14px;
+	color: #D2691E;
+	padding: 0 0.45em 0 0;
+}
+.alphabet .letter a{
+	color: #D2691E;
+	text-decoration:underline;
+}
+.alphabet .letter a:Hover{
+	color: #F05509;
+	text-decoration: underline;
+}
+.col2{
+	width: 20%;
+	float:left;
+	min-height: 30em;
+	margin-top: 1.5em;
+	border-top: 1px solid #D2691E;
+	border-left: 1px solid #D2691E;
+	-moz-border-radius: 50px 0px 0px 0px;
+	-webkit-border-radius: 50px 0px 0px 0px;
+	padding: 1em 0em 1em 0.5em;
+}
+.col2 p{
+	text-align: right;
+	color: #3D3D3D;
+	font-size: 0.8em;
+}
+.col2 .title{
+	font-size: 1em;
+	color: #D2691E;
+	margin-bottom: 0.5em;
+	text-align: right;
+}
+.news a{
+	color: #3D3D3D;
+	text-decoration: none;
+}
+.news a:HOVER{
+	text-decoration: underline;
+}
+.news1 a{
+	color: #0000FF;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+.news1 a:HOVER{
+	text-decoration: underline;
+}
+.lang a{
+	color: #D2691E;
+	text-decoration: none;
+}
+.lang a:HOVER{
+	text-decoration: underline;
+}
+.lang1 a{
+	font-size:1.1em;
+	color: #D2691E;
+	text-decoration: none;
+}
+.lang1 a:HOVER{
+	text-decoration: underline;
+}
+.bld a{
+	color: #3D3D3D;
+	text-decoration: underline;
+}
+.rule {
+	float:right;
+	width: 100%;
+	height: 1px;
+	margin: 1em 0 1em auto;
+	background-color: #CCCCCC;
+}
+.footer{
+	width:100%;
+	clear:both;
+	height: 2.2em;
+}
+.foot_box {
+	font-size: 0.6em;
+	margin: 0em 1em 0em 1em;
+	border-top: 1px solid #D2691E;
+}
+.foot_box .fleft{
+	float: left;
+	margin-top: 1em;
+	margin-bottom: 0.8em;
+	color: #3D3D3D;
+}
+.foot_box .fright{
+	float: right;
+	margin-top: 1em;
+	margin-bottom: 0.8em;
+}
+.foot_box .fright li{
+	display: inline;
+	color: #3D3D3D;
+}
+.foot_box .fright li a{
+	color: #3D3D3D;
+	text-decoration: none;
+}
+.foot_box .fleft li a:HOVER{
+	color: #3D3D3D;
+	text-decoration:underline;
+}
+.emph 
+{
+	color: #D2691E;
+}
+.emph a{
+	text-decoration:underline;
+	color: #D2691E;
+}
+.bld 
+{
+	font-weight:bold;
+	color: #D2691E;
+}
+.bld a{
+	text-decoration:underline;
+	color: #D2691E;
+}
+
+/* Titlespan, authorspan......*/
+.titlespan{
+	color: #D2691E;
+}
+.titlespan a{
+	color:#3D3D3D;
+	
+}
+.nobook{
+	color:#F00 !important; 
+}
+.nobook a{
+	color:#F00 !important;
+	
+}
+/* style for tables */
+
+.pubtbl{
+	width:600px;
+	font-size:0.8em;
+#	margin:0em auto 0em auto;
+}
+.pubtbl td{
+	vertical-align:top;
+	width:300px;
+	padding:1em;
+	border:1px solid #CCCCCC;
+}
+
+.voltbl{
+#	border:1px solid #CCCCCC;
+	margin:0em auto 0em auto;
+	width:100%;
+	font-size:0.8em;
+}
+.voltbl td{
+	width:120px;
+	text-align:center;
+	padding:0.6em;
+}
+.voltbl td a{
+	color:#3D3D3D;
+	text-decoration:none;;
+}
+.voltbl td a:HOVER{
+	color:#3D3D3D;
+	text-decoration:underline;
+}
+.singletbl{
+	width:600px;
+	font-size:0.8em;
+	margin:0em auto 0em auto;
+}
+.singletbl td{
+	text-align:center;
+	vertical-align:top;
+	padding:1em;
+}
+.announcetbl{
+	margin:1em 0em 1em 0em;
+	width:600px;
+	font-size:0.8em;
+}
+.announcetbl th{
+	width:300px;
+	background-color:#CCCCCC;
+	text-align:center;
+	border:1px solid #CCCCCC;
+}
+.announcetbl td{
+	width:300px;
+	text-align:center;
+	padding:0.2em;
+	border:1px solid #CCCCCC;
+#	border-right:1px solid #CCCCCC;
+}
+
+
+/* second part*/
+
+
+.colnav{
+	font-size:0.8em;
+	width: 6%;
+	float:left;
+	min-height: 35em;
+	color: #3D3D3D;
+	margin: 1.875em 1.25em 0em 1.25em;
+	border-top: 1px solid #D2691E;
+	border-right: 1px solid #D2691E;
+	-moz-border-radius: 0px 50px 0px 0px;
+	-webkit-border-radius: 0px 50px 0px 0px;
+	padding: 1.25em 1.875em 1.875em 0em;
+}
+
+.colmiddle{
+	width: 61%;
+	float:left;
+	min-height: 20em;
+	color: #3D3D3D;
+	margin: 1.5em 1em 0em 0em;
+	border-top: 1px solid #D2691E;
+	border-right: 1px solid #D2691E;
+	border-left: 1px solid #D2691E;
+	-moz-border-radius: 50px 50px 0px 0px;
+	-webkit-border-radius: 50px 50px 0px 0px;
+	padding: 1em 1em 1.5em 1em;
+}
+.colmiddle p{
+	text-align: justify;
+	color: #3D3D3D;
+	font-size: 0.8em;
+}
+.colmiddle .title{
+	font-size: 1em;
+	color: #D2691E;
+	margin:0em 0em 0.5em 1em;
+}
+.colmiddle ul li{
+	font-size:0.9em;
+	list-style-position:inside;
+	list-style-type:disc;
+}
+.colmiddle ul li a{
+	text-decoration:none;
+}
+.colmiddle ul li a:HOVER{
+	text-decoration:underline;
+}
+.colmiddle ul li ul{
+	margin-left:2em;
+	margin-top:1em;
+}
+.colmiddle ul li ul li{
+	margin-bottom:0.5em;
+	font-size:1em;
+	list-style-type:disc;
+}
+.colmiddle ul li ul li a{
+	color:#3D3D3D;
+}
+.rest {
+	display: none;
+}
+.visitors{
+	font-size:12px;
+	width:150px;
+	height:50px;
+	float:right;
+	border: 1px solid #CCCCCC;
+	margin: 20px 10px 0px 0px;
+}
+.visit{
+	width:150px;
+	height:50px;
+}
+.visit th{
+	font-weight:bold;
+	color:#3D3D3D;
+	text-align:center;
+}
+.visit td{
+	font-weight:bold;
+	color:#3D3D3D;
+	text-align:center;
+}
+/* For categorywise display in Kannada Books*/
+
+hr{
+	color:#D2691E;
+}
+.space_left{
+	margin-left: 4em;
+	font-size: 0.9em;
+}
+.clearfix {
+	clear: both;
+}
+.dnone{
+	display: none;
+}
+.archive_holder .treeview{
+    margin-left: 1.5em;
+    
+}
+.archive_holder .treeview ul li {
+	list-style-type: none;                                
+	list-style-position:outside;
+    padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	text-align: justify;
+	text-indent: -18px;
+    margin-right: 2em;
+}
+.archive_holder .treeview ul li img{ 
+	vertical-align: middle;
+}
+.colmiddlekannada{
+	width: 60.9%;
+	float:left;
+	min-height: 20em;
+	color: #3D3D3D;
+	margin: 1.5em 1em 0em 0em;
+	border-top: 1px solid #D2691E;
+	border-right: 1px solid #D2691E;
+	border-left: 1px solid #D2691E;
+	-moz-border-radius: 50px 50px 0px 0px;
+	-webkit-border-radius: 50px 50px 0px 0px;
+	padding: 1em 1em 1.5em 1em;
+}
+.s1{
+	color: #D2691E;
+
+}
+.colmiddlekannada p{
+	text-align: justify;
+	color: #3D3D3D;
+	font-size: 0.8em;
+}
+.colmiddlekannada .title{
+	font-size: 1em;
+	color: #D2691E;
+	margin:0em 0em 0.5em 1em;
+}
+.colmiddlekannada ul li{
+	font-size:0.9em;
+	list-style-position:inside;
+	list-style-type:disc;
+	color:#D2691E;
+}
+.colmiddlekannada ul li a{
+	text-decoration:none;
+	color:#D2691E;
+}
+.colmiddlekannada ul li a:HOVER{
+	text-decoration:underline;
+}
+.colmiddlekannada ul li ul{
+	margin-left:2em;
+	margin-top:1em;
+}
+.colmiddlekannada ul li ul li{
+	margin-bottom:0.5em;
+	font-size:0.9em;
+	list-style-type:disc;
+}
+.colmiddlekannada ul li ul li a{
+	color:#3D3D3D;
+}
+.intro_table{
+	font-size: 0.8em;
+	width: 80%;
+	margin-left: 3em;
+}
+.intro_table .left{
+	width: 25%;
+	height: 3em;
+	vertical-align: top;
+	text-align: right;
+	padding: 0.5em 2em 0.5em 0;
+}
+.intro_table .right{
+	vertical-align: top;
+	padding	: 0.5em 0 0.5em 0;
+}
+.author{
+	font-size: 1.2em; 
+	font-weight: bold;
+	color: #D2691E;
+	margin: 1em 0.5em 0.3em 0em;
+}
+
+.bkr{
+margin-left: 1.5em;
+font-size: 0.8em;
+}
+
+.djvu{
+font-size: 0.8em;
+}
+
+
+

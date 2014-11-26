@@ -19,3 +19,4 @@ perl toc_kannada.pl $host $db $usr $pwd
 
 perl bookid_sanskrit.pl $host $db $usr $pwd
 perl toc_sanskrit.pl $host $db $usr $pwd
+

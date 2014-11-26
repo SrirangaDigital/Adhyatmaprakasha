@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE apk-sanskrit-books SYSTEM "apk_sanskrit.dtd">
+<!DOCTYPE sanskrit SYSTEM "apk_sanskrit.dtd">
 
-<apk-sanskrit-books>
+<sanskrit>
 	<book code="001" btitle="ईशावास्योपनिषत् - सटिप्पणशाङ्करभाष्ययुता">
 		<s1 title="सामान्योपक्रमणिका [आंग्लभाषामयी]" page="0000h"></s1>
 		<s1 title="प्रस्तावना" page="0000i"></s1>
@@ -1058,4 +1058,4 @@
 		<s1 title="29. शङ्कराचार्योक्तमायालक्षणम् ।" page="1b0058"></s1>
 		<s1 title="30. अध्यासवादस्य महिमा अनिर्वाच्याविद्यावादस्य निस्सारत्वम् ।" page="1b0062"></s1>
 	</book>
-</apk-sanskrit-books>
+</sanskrit>

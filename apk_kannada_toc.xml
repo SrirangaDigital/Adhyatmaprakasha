@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE apk-kannada-books SYSTEM "apk_kannada.dtd">
+<!DOCTYPE kannada SYSTEM "apk_kannada.dtd">
 
-<apk-kannada-books>
+<kannada>
 	<book code="001" btitle="ಅಧ್ಯಾತ್ಮವೆಂದರೇನು (ಪ್ರಶ್ನೋತ್ತರ)">
 		<s1 title="ಅಧ್ಯಾತ್ಮವೆಂದರೇನು?" page="0003"></s1>
 		<s1 title="ಕೆಲವು ಪುಟ್ಟಪುಸ್ತಕಗಳು" page="0017"></s1>
@@ -5939,4 +5939,4 @@
 		<s1 title="ಶ" page="0045-0046"></s1>
 		<s1 title="ಸ" page="0046-0048"></s1>
 	</book>
-</apk-kannada-books>
+</kannada>

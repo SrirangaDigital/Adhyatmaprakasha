@@ -1,0 +1,33 @@
+#vlightbox {
+	width:100%;
+	zoom:1;	
+}
+.vlightbox {
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	position:relative;
+	vertical-align:top;
+	margin:3px;
+	width:160px;
+	font-family:Trebuchet,Tahoma,Arial,sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	opacity:0.87;
+}
+.vlightbox a{
+	margin:0;
+}
+.vlightbox:hover, .vlightbox a:hover{
+	text-decoration:underline;
+	opacity:1;
+}
+.vlightbox img{
+	display:block;
+	border:none;
+	margin:0;
+}
+.vlightbox div {display:none}

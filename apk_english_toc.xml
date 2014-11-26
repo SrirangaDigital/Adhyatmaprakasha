@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE apk-english-books SYSTEM "apk_english.dtd">
+<!DOCTYPE english SYSTEM "apk_english.dtd">
 
-<apk-english-books>
+<english>
 	<book code="001" btitle="Narada's Aphorisms on Bhakti">
 		<s1 title="Preface" page="0000f"></s1>
 		<s1 title="What Bhakti is --- Sutras: 1--6" page="0001"></s1>
@@ -785,4 +785,4 @@
 		<s1 title="Adhyatma Yoga" page="0007"></s1>
 		<s1 title="Appendix" page="0021"></s1>
 	</book>
-</apk-english-books>
+</english>

@@ -11,7 +11,7 @@ open(IN,"apk_book_id_kannada.xml") or die "can't open apk_book_id_kannada.xml\n"
 my $dbh=DBI->connect("DBI:mysql:database=$db;host=$host","$usr","$pwd");
 
 $sth1=$dbh->prepare("CREATE TABLE kannada_books_list(
-book_id varchar(4), 
+book_id varchar(10), 
 level int(2),
 title varchar(1000),
 authid varchar(200),
