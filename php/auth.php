@@ -33,9 +33,9 @@
 				</li>
 				<li><a class="active" href="publications.php">Publications</a>
 					<ul id="pubnav">
-						<li><a href="kannada_books.html">Kannada Books</a></li>
-						<li><a href="sanskrit_books.html">Sanskrit Books</a></li>
-						<li><a href="english_books.html">English Books</a></li>
+						<li><a href="kannada_books.php">Kannada Books</a></li>
+						<li><a href="sanskrit_books.php">Sanskrit Books</a></li>
+						<li><a href="english_books.php">English Books</a></li>
 					</ul>
 				</li>
 				<li><a href="appeal.php">Appeal</a></li>
@@ -49,8 +49,8 @@
             <p>
 				<br /><br />
 				<span class="lang1"><a href="kannada_books.php">Kannada</a></span><br /><br />
-				<span class="lang1"><a href="sanskrit_books.html">Sanskrit</a></span><br /><br />
-				<span class="lang1"><a href="english_books.html">English</a></span><br /><br />
+				<span class="lang1"><a href="sanskrit_books.php">Sanskrit</a></span><br /><br />
+				<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
 			</p>
 		</div>
 		<div class="colmiddlekannada">
@@ -63,7 +63,6 @@ require_once("common.php");
 if(isset($_GET['authid'])){$authid = $_GET['authid'];}else{$authid = '';}
 if(isset($_GET['author'])){$authorname = $_GET['author'];}else{$authorname = '';}
 
-$authorname = entityReferenceReplace($authorname);
 
 if(!(isValidAuthid($authid) && isValidAuthor($authorname)))
 {
@@ -128,11 +127,11 @@ if($num_rows > 0)
 		{
 			if($type == "kannada")
 			{
-				$query_aux = "select * from kannada_books_list where book_id=$book_id and type='".$type."'";
+				$query_aux = "select * from kannada_books_list where book_id='$book_id' and type='".$type."'";
 			}
 			else
 			{
-				$query_aux = "select * from ".$type."_books_list where book_id=$book_id and type='".$type."'";
+				$query_aux = "select * from ".$type."_books_list where book_id='$book_id' and type='".$type."'";
 			}
 			
 			//~ $result_aux = mysql_query($query_aux);
@@ -148,7 +147,6 @@ if($num_rows > 0)
 			$authorname=$row_aux['authorname'];
 			$type=$row_aux['type'];
 			$page=$row_aux['page'];
-			
 			$page_end=$row_aux['page_end'];
 			$edition=$row_aux['edition'];
 			$volume=$row_aux['volume'];
@@ -160,75 +158,60 @@ if($num_rows > 0)
 			if($result_aux){$result_aux->free();}
 			
 			$book_info = '';
-
-			if($type == 'kannada')
-			{
-				$book_info = $book_info . " ಕನ್ನಡ ";
-			}
-			elseif($type == 'eglish')
-			{
-				$book_info = $book_info . " English ";	
-			}
-			elseif($type == 'sanskrit')
-			{
-				$book_info = $book_info . " संस्कृतम् ";	
-			}
-			
-
-			if($edition != '00')
+            if($edition != '00')
 			{
 				if (intval($edition) == 1)
                 {
-                    $book_info = $book_info . "First Edition";
+                    $book_info = $book_info . "First Edition |";
                 }
                 if (intval($edition) == 2)
                 {
-                    $book_info = $book_info . "Second Edition";
+                    $book_info = $book_info . "Second Edition |";
                 }
                 if (intval($edition) == 3)
                 {
-                    $book_info = $book_info . "Third Edition";
+                    $book_info = $book_info . "Third Edition |";
                 }
                 if (intval($edition) == 4)
                 {
-                    $book_info = $book_info . "Fourth Edition";
+                    $book_info = $book_info . "Fourth Edition |";
                 }
                 if (intval($edition) == 5)
                 {
-                    $book_info = $book_info . "Fifth Edition";
+                    $book_info = $book_info . "Fifth Edition |";
                 }
                 if (intval($edition) == 6)
                 {
-                    $book_info = $book_info . "Sixth Edition";
+                    $book_info = $book_info . "Sixth Edition |";
                 }
                 if (intval($edition) == 7)
                 {
-                    $book_info = $book_info . "Seventh Edition";
+                    $book_info = $book_info . "Seventh Edition |";
                 }
                 if (intval($edition) == 9)
                 {
-                    $book_info = $book_info . "Ninth Edition";
+                    $book_info = $book_info . "Ninth Edition |";
                 }
                 if (intval($edition) == 10)
                 {
-                    $book_info = $book_info . "Tenth Edition";
+                    $book_info = $book_info . "Tenth Edition |";
                 }
                 if (intval($edition) == 19)
                 {
-                    $book_info = $book_info . "Ninteenth Edition";
+                    $book_info = $book_info . "Ninteenth Edition |";
                 }
 			}
 			if($volume != '00')
 			{
-				$book_info = $book_info . " | Volume " . intval($volume);
+				$book_info = $book_info . "  Volume " . intval($volume) . " | ";
 			}
 			if($part != '00')
 			{
-				$book_info = $book_info . " | Part " . intval($part);
+				$book_info = $book_info . " Part " . intval($part) . " | ";
 			}
 			if(intval($page) != 0)
 			{
-				$book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
+				$book_info = $book_info . " pp " . intval($page) . " - " . intval($page_end);	
 			}
 			
 			echo "<li><span class=\"motif ".$type."_motif\"></span>";
@@ -236,174 +219,6 @@ if($num_rows > 0)
 			echo "<br /><span class=\"bookspan\">$book_info</span>";
 			echo "<br /><span class=\"downloadspan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">View TOC</a>&nbsp;|&nbsp;<a target=\"_blank\" href=\"../Volumes/$type/$book_id/index.djvu?djvuopts&amp;page=1&amp;zoom=page\">Read Book</a>&nbsp;|&nbsp;<a href=\"\" target=\"_blank\">Download Book (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download Book (PDF)</a></span>";
 			echo "</li>\n";
-		}
-		elseif(($type == "sfs") || ($type == "cas") || ($type == "ess") || ($type == "spb") || ($type == "zlg"))
-		{
-			$book_info = "";
-			
-			$query_aux = "select * from ".$type."_books_list where book_id=$book_id and type='".$type."'";
-			
-			//~ $result_aux = mysql_query($query_aux);
-			//~ $num_rows_aux = mysql_num_rows($result_aux);			
-			//~ $row_aux=mysql_fetch_assoc($result_aux);
-
-			$result_aux = $db->query($query_aux); 
-			$num_rows_aux = $result_aux ? $result_aux->num_rows : 0;
-			$row_aux = $result_aux->fetch_assoc();
-			
-			$authid=$row_aux['authid'];
-			$authorname=$row_aux['authorname'];
-			
-			$btitle = $row_aux['title'];
-			$slno = $row_aux['slno'];
-			$edition = $row_aux['edition'];
-			$volume = $row_aux['volume'];
-			$part = $row_aux['part'];
-			$dpage = $row_aux['page'];
-			$dpage_end = $row_aux['page_end'];
-			$month = $row_aux['month'];
-			$year = $row_aux['year'];
-
-			if($result_aux){$result_aux->free();}
-
-			if($type == 'sfs')
-			{
-				$stitle = "State Fauna Series ";	
-			}
-			elseif($type == 'cas')
-			{
-				$stitle = "Conservation Area Series ";	
-			}
-			elseif($type == 'ess')
-			{
-				$stitle = "Ecosystem Series ";	
-			}
-			elseif($type == 'spb')
-			{
-				$stitle = "Special Publications ";	
-			}
-			elseif($type == 'zlg')
-			{
-				$stitle = "Zoologiana ";	
-			}
-			
-			if($btitle != '')
-			{
-				$book_info = $book_info . " | " . $btitle;
-			}
-			if($edition != '00')
-			{
-				$book_info = $book_info . " | Edition " . intval($edition);
-			}
-			if($volume != '00')
-			{
-				$book_info = $book_info . " | Volume " . intval($volume);
-			}
-			if($part != '00')
-			{
-				$book_info = $book_info . " | Part " . intval($part);
-			}
-			if(intval($dpage) != 0)
-			{
-				$book_info = $book_info . " | pp " . intval($dpage) . " - " . intval($dpage_end);	
-			}
-			if(intval($month) != 0)
-			{
-				$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);	
-			}
-
-			$book_info = preg_replace("/^ /", "", $book_info);
-			$book_info = preg_replace("/^\|/", "", $book_info);
-			$book_info = preg_replace("/^ /", "", $book_info);
-
-			echo "<li><span class=\"motif ".$type."_motif\"></span>";
-			echo "<span class=\"titlespan\"><a target=\"_blank\" href=\"../Volumes/$type/$book_id/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
-			echo "<span class=\"titlespan\">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class=\"yearspan\">$stitle</span><br /><span class=\"bookspan\">$book_info</span>";
-			echo "<br /><span class=\"downloadspan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($btitle) . "\">View TOC</a>&nbsp;|&nbsp;<a href=\"\" target=\"_blank\">Download Article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download Article (PDF)</a></span>";
-			echo "</li>\n";
-		}
-		elseif(($type == "type"))
-		{
-			$titleid = $book_id;
-
-			if(preg_match("/^rec/", $book_id))
-			{
-				$type = "records";
-				$dtype = "Records";
-			}
-			elseif(preg_match("/^mem/", $book_id))
-			{
-				$type = "memoirs";
-				$dtype = "Memoirs";
-			}
-			elseif(preg_match("/^occ/", $book_id))
-			{
-				$type = "occpapers";
-				$dtype = "Occasional Papers";
-			}
-			elseif(preg_match("/^bul/", $book_id))
-			{
-				$type = "bulletin";
-				$dtype = "Bulletin";
-			}
-						
-			$query_aux = "select * from article_".$type." where titleid='$titleid'";
-			
-			//~ $result_aux = mysql_query($query_aux);
-			$result_aux = $db->query($query_aux); 
-			//~ $row_aux=mysql_fetch_assoc($result_aux);
-			$row_aux = $result_aux->fetch_assoc();
-
-			$titleid=$row_aux['titleid'];
-			$title=$row_aux['title'];
-			$featid=$row_aux['featid'];
-			$page=$row_aux['page'];
-			$authid=$row_aux['authid'];
-			$volume=$row_aux['volume'];
-			$part=$row_aux['part'];
-			$year=$row_aux['year'];
-			$month=$row_aux['month'];
-			
-			if($result_aux){$result_aux->free();}
-			
-			$paper = $volume;	
-			$title1=addslashes($title);
-					
-			$query3 = "select feat_name from feature_".$type." where featid='$featid'";
-			
-			//~ $result3 = mysql_query($query3);		
-			//~ $row3=mysql_fetch_assoc($result3);
-			
-			$result3 = $db->query($query3); 
-			$row3 = $result3->fetch_assoc();
-			
-			$feature=$row3['feat_name'];
-			
-			if($result3){$result3->free();}
-					
-			if(($type == "records") || ($type == "memoirs") || ($type == "bulletin"))
-			{
-				echo "<li><span class=\"motif ".$type."_motif\"></span>";
-				echo "<span class=\"titlespan\"><a target=\"_blank\" href=\"../Volumes/$type/$volume/$part/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
-				echo "<br /><span class=\"featurespan\">$dtype&nbsp;&nbsp;|&nbsp;&nbsp;
-					<a href=\"$type/toc.php?vol=$volume&amp;part=$part\">Vol.&nbsp;".intval($volume)."&nbsp;(p. ".$part.")&nbsp;;&nbsp;" . $month_name{intval($month)}."&nbsp;".$year."</a>
-				</span>";
-				if($feature != "")
-				{
-					echo "<span class=\"titlespan\">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class=\"featurespan\"><a href=\"$type/feat.php?feature=" . urlencode($feature) . "&amp;featid=$featid\">$feature</a></span>";
-				}
-				
-				echo "<br /><span class=\"downloadspan\"><a href=\"../Volumes/$type/$volume/$part/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\" target=\"_blank\">View article</a>&nbsp;|&nbsp;<a href=\"#\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download article (PDF)</a></span>";
-				echo "</li>\n";
-			}
-			elseif($type == "occpapers")
-			{
-				echo "<li><span class=\"motif ".$type."_motif\"></span>";
-				echo "<span class=\"titlespan\"><a target=\"_blank\" href=\"../Volumes/occpapers/$paper/index.djvu?djvuopts&amp;page=1&amp;zoom=page\">$title</a></span>";
-				echo "<span class=\"featurespan\"><br />Occ. paper no.&nbsp;".intval($paper)."&nbsp;($year)</span>";
-				echo "<br /><span class=\"downloadspan\"><a href=\"../Volumes/occpapers/$paper/index.djvu?djvuopts&amp;page=1&amp;zoom=page\" target=\"_blank\">View article</a>&nbsp;|&nbsp;<a href=\"#\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download article (PDF)</a></span>";
-				echo "</li>\n";
-			}
 		}
 	}
 }

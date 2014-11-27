@@ -111,7 +111,7 @@ if($num_rows > 0)
 
 		if($authid != 0)
 		{
-			$disp_author =  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash;";
+			$disp_author =  "<span class=\"authorspan\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash;</span>";
 			$aut = preg_split('/;/',$authid);
 
 			$fl = 0;
@@ -150,46 +150,9 @@ if($num_rows > 0)
 		
 		if($edition != '00')
 		{
-			if (intval($edition) == 1)
-			{
-				$book_info = $book_info . "First Edition";
-			}
-			if (intval($edition) == 2)
-			{
-				$book_info = $book_info . "Second Edition";
-			}
-			if (intval($edition) == 3)
-			{
-				$book_info = $book_info . "Third Edition";
-			}
-			if (intval($edition) == 4)
-			{
-				$book_info = $book_info . "Fourth Edition";
-			}
-			if (intval($edition) == 5)
-			{
-				$book_info = $book_info . "Fifth Edition";
-			}
-			if (intval($edition) == 6)
-			{
-				$book_info = $book_info . "Sixth Edition";
-			}
-			if (intval($edition) == 7)
-			{
-				$book_info = $book_info . "Seventh Edition";
-			}
-			if (intval($edition) == 9)
-			{
-				$book_info = $book_info . "Ninth Edition";
-			}
-			if (intval($edition) == 10)
-			{
-				$book_info = $book_info . "Tenth Edition";
-			}
-			if (intval($edition) == 19)
-			{
-				$book_info = $book_info . "Ninteenth Edition";
-			}
+            $edition_name = array("1"=>"पहले ","2"=>"दूसरे ","3"=>"तीसरे ","4"=>"चौथे ","5"=>"पांचवें ");
+
+			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;संस्करण";
 		}
 		if($volume != '00')
 		{
@@ -204,20 +167,11 @@ if($num_rows > 0)
 			$book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
 		}
 		
-		if($type == 'fbi')
-		{
-			$book_info = $book_info . " | Fauna of British India ";	
-		}
-		elseif($type == 'fi')
-		{
-			$book_info = $book_info . " | Fauna of India ";	
-		}
-
-        $book_info = preg_replace("/^ /", "", $book_info);
+		$book_info = preg_replace("/^ /", "", $book_info);
 		$book_info = preg_replace("/^\|/", "", $book_info);
 		$book_info = preg_replace("/^ /", "", $book_info);
 			
-		if($page != "")
+		if($page != 0)
 		{
 			if($authid != 0)
 			{
@@ -225,9 +179,9 @@ if($num_rows > 0)
 			}
 			else
 			{
-				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />";
+				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			}
-			$title = $title . "<br /><span class=\"space_left\"><span class=\"featurespan\">$book_info</span></span>";
+			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
 		}
 		else
 		{

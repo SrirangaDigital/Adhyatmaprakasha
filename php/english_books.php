@@ -111,7 +111,7 @@ if($num_rows > 0)
 
 		if($authid != 0)
 		{
-			$disp_author =  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash;";
+			$disp_author =  "<span class=\"authorspan\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash;</span>";
 			$aut = preg_split('/;/',$authid);
 
 			$fl = 0;
@@ -204,22 +204,11 @@ if($num_rows > 0)
 			$book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
 		}
 		
-		if($type == 'fbi')
-		{
-			$book_info = $book_info . " | Fauna of British India ";	
-		}
-		elseif($type == 'fi')
-		{
-			$book_info = $book_info . " | Fauna of India ";	
-		}
-
-
-		
 		$book_info = preg_replace("/^ /", "", $book_info);
 		$book_info = preg_replace("/^\|/", "", $book_info);
 		$book_info = preg_replace("/^ /", "", $book_info);
 			
-		if($page != "")
+		if($page != 0)
 		{
 			if($authid != 0)
 			{
@@ -227,9 +216,9 @@ if($num_rows > 0)
 			}
 			else
 			{
-				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />";
+				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			}
-			$title = $title . "<br /><span class=\"space_left\"><span class=\"featurespan\">$book_info</span></span>";
+			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
 		}
 		else
 		{

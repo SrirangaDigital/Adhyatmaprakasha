@@ -33,9 +33,9 @@
 				</li>
 				<li><a class="active" href="publications.php">Publications</a>
 					<ul id="pubnav">
-						<li><a href="kannada_books.html">Kannada Books</a></li>
-						<li><a href="sanskrit_books.html">Sanskrit Books</a></li>
-						<li><a href="english_books.html">English Books</a></li>
+						<li><a href="../kannada_books.php">Kannada Books</a></li>
+						<li><a href="../sanskrit_books.php">Sanskrit Books</a></li>
+						<li><a href="../english_books.php">English Books</a></li>
 					</ul>
 				</li>
 				<li><a href="appeal.php">Appeal</a></li>
@@ -48,9 +48,9 @@
 		<div class="colnav">
             <p>
 				<br /><br />
-				<span class="lang1"><a href="kannada_books.php">Kannada</a></span><br /><br />
-				<span class="lang1"><a href="sanskrit_books.html">Sanskrit</a></span><br /><br />
-				<span class="lang1"><a href="english_books.html">English</a></span><br /><br />
+				<span class="lang1"><a href="../kannada_books.php">Kannada</a></span><br /><br />
+				<span class="lang1"><a href="../sanskrit_books.php">Sanskrit</a></span><br /><br />
+				<span class="lang1"><a href="../english_books.php">English</a></span><br /><br />
 			</p>
 		</div>
 		<div class="colmiddlekannada">
@@ -161,7 +161,7 @@ else
 /*
 echo "<div class=\"book_cover\"><img src=\"../images/cover.png\" alt=\"Book Cover\" /></div>";
 */
-echo "<div class=\"page_booktitle\"><span class=\"motif sse_motif\"></span><span class=\"itl\">$book_title</span></div>";
+echo "<div class=\"page_booktitle\">$book_title</div>";
 echo "<div class=\"page_subtitle\"><span class=\"itl\">$daname</span></div>";
 echo "<div class=\"page_other\">";
 
@@ -169,15 +169,15 @@ $book_info = '';
 		
 if($edition != '00')
 {
-	$book_info = $book_info . "Edition " . intval($edition);
+	$book_info = $book_info . "ಆವೃತ್ತಿ " . intval($edition);
 }
 if($volume != '00')
 {
-	$book_info = $book_info . " | Volume " . intval($volume);
+	$book_info = $book_info . " |  ಸಂಪುಟ " . intval($volume);
 }
 if($part != '00')
 {
-	$book_info = $book_info . " | Part " . intval($part);
+	$book_info = $book_info . " | ಭಾಗ  " . intval($part);
 }
 if(intval($page) != 0)
 {
@@ -207,7 +207,7 @@ if($num_rows > 0)
 		$type = $row['type'];
 		$slno = $row['slno'];
 		
-		$title = "<span class=\"titlespan\"><a target=\"_blank\" href=\"../../Volumes/$type/$book_id/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
+		$title = "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../../Volumes/$type/$book_id/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
 		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
 		if($first)
 		{

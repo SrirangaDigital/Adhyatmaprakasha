@@ -346,11 +346,37 @@ html, body {
 
 /* Titlespan, authorspan......*/
 .titlespan{
-	color: #D2691E;
+	color: #3D3D3D;
 }
 .titlespan a{
-	color:#3D3D3D;
-	
+	color: #D2691E;
+}
+.sub_titlespan{
+	color: #3D3D3D;
+}
+.sub_titlespan a{
+	color: #3D3D3D;
+}
+.infospan {
+	color: #B22222;
+	font-size: 0.9em; 
+}
+.infospan a{
+	color: #B22222;
+	text-decoration:none;
+}
+.infospan a:Hover{
+	text-decoration:underline;
+}
+.authorspan {
+	color: #3D3D3D;
+}
+.authorspan a{
+	color: #3D3D3D;
+	text-decoration:none;
+}
+.authorspan a:Hover{
+	text-decoration:underline;
 }
 .nobook{
 	color:#F00 !important; 
@@ -554,10 +580,13 @@ hr{
 	-webkit-border-radius: 50px 50px 0px 0px;
 	padding: 1em 1em 1.5em 1em;
 }
-.s1{
-	color: #D2691E;
-
+.colmiddlekannada ul li{
+	font-size:0.9em;
+	list-style-position:inside;
+	list-style-type:disc;
+	color:#D2691E;
 }
+
 .colmiddlekannada p{
 	text-align: justify;
 	color: #3D3D3D;
@@ -570,13 +599,10 @@ hr{
 }
 .colmiddlekannada ul li{
 	font-size:0.9em;
-	list-style-position:inside;
-	list-style-type:disc;
-	color:#D2691E;
 }
 .colmiddlekannada ul li a{
 	text-decoration:none;
-	color:#D2691E;
+
 }
 .colmiddlekannada ul li a:HOVER{
 	text-decoration:underline;
@@ -588,10 +614,8 @@ hr{
 .colmiddlekannada ul li ul li{
 	margin-bottom:0.5em;
 	font-size:0.9em;
-	list-style-type:disc;
 }
 .colmiddlekannada ul li ul li a{
-	color:#3D3D3D;
 }
 .intro_table{
 	font-size: 0.8em;
@@ -617,13 +641,85 @@ hr{
 }
 
 .bkr{
-margin-left: 1.5em;
-font-size: 0.8em;
+    margin-left: 1.5em;
+    font-size: 0.8em;
 }
 
 .djvu{
-font-size: 0.8em;
+    font-size: 0.8em;
 }
 
-
+.bookspan {
+	color: #8B0000;
+	font-size: 0.9em;
+}
+.bookspan a{
+	color: #8B0000;
+	text-decoration:none;
+}
+.bookspan a:Hover{
+	color: #8B0000;
+	text-decoration:underline;
+}
+.downloadspan {
+	font-size: 0.9em;
+	color: #3D3D3D; 
+	margin-left: 2em;
+}
+.downloadspan a{
+	color: #3D3D3D;
+	text-decoration:none;
+}
+.downloadspan a:Hover{
+	color: #000000;
+	text-decoration:none;
+}
+.archive_holder{
+	line-height: 2em;
+}
+.colmiddlekannada .archive_holder ul{
+	margin-left: 2em;
+}
+.colmiddlekannada .archive_holder ul li{
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px dotted #CCCCCC;
+}
+.colmiddlekannada .archive_holder ul li br{
+	margin-bottom: 1em;
+}
+.colmiddlekannada .archive_holder_volume ul{
+	margin-left: 0em;
+}
+.colmiddlekannada .archive_holder_volume ul li{
+	list-style-type: none;
+	margin-bottom: 0.75em;
+}
+.content .page_booktitle{
+	font-size: 1em;
+	color: #D2691E;
+    font-weight: bold;
+	width: 80%;
+	border-bottom: 1px solid #D2691E;
+}
+.content .page_subtitle{
+	font-size: 0.9em;
+	width: 80%;
+	text-align: right;
+	color: #D2691E;
+}
+.content .page_other{
+	margin-bottom: 2em;
+	font-size: 0.85em;
+	color: #B22222;
+	width: 80%;
+	text-align: left;
+}
+.content .page_title{
+	margin: 0em 0em 2em 0em;
+	font-size: 1em;
+	color: #D2691E;
+	width: 80%;
+	border-bottom: 1px solid #D2691E;	
+}
 
