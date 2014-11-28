@@ -106,37 +106,10 @@
 				ದೂ: 08175-273820
 			</p>
 		</div>
-		<div class="col2">
-			<div class="widget">
-				<div class="title">News updates</div>
-				<p>
-					<span class="news1"><a href="#" target="_blank">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
-				</p>
-			</div>
-			<div class="rule"></div>
-			<div class="widget">
-				<div class="title">Top viewed books</div>
-				<p><?php include("../topviewed.php")?></p>
-			</div>
-		</div>
+		<?php include("include_footer.php");?>
+        <div class="clearfix"></div>
 	</div>
-	<div class="footer">
-		<div class="foot_box">
-			<div class="fleft">
-				&copy;2007-2011 Adhyatmaprakasha Karyalaya, Holenarsipura. All Rights Reserved
-			</div>
-			<div class="fright">
-				<ul>
-					<li><a href="../#">Terms of Use</a></li>
-					<li>|</li>
-					<li><a href="../#">Privacy Policy</a></li>
-					<li>|</li>
-					<li><a href="../contact.php">Contact Us</a></li>
-					<li>&nbsp;</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	<?php include("include_footer_out.php");?>
 </div>
 </body>
 </html>

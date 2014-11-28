@@ -50,6 +50,8 @@
 		</div>
 		<div class="colmiddlekannada">
             <div class="archive_holder">
+                <div class="page_title">English Books</div>
+                
 <?php
 include("connect.php");
 
@@ -134,12 +136,12 @@ if($num_rows > 0)
 
 					if($fl == 0)
 					{
-						$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
+						$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=" . $type . "\">$authorname</a></span>";
 						$fl = 1;
 					}
 					else
 					{
-						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
+						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) ."&amp;type=" . $type . "\">$authorname</a></span>";
 					}
 				}
 				if($result2){$result2->free();}
@@ -150,46 +152,9 @@ if($num_rows > 0)
 		
 		if($edition != '00')
 		{
-			if (intval($edition) == 1)
-			{
-				$book_info = $book_info . "First Edition";
-			}
-			if (intval($edition) == 2)
-			{
-				$book_info = $book_info . "Second Edition";
-			}
-			if (intval($edition) == 3)
-			{
-				$book_info = $book_info . "Third Edition";
-			}
-			if (intval($edition) == 4)
-			{
-				$book_info = $book_info . "Fourth Edition";
-			}
-			if (intval($edition) == 5)
-			{
-				$book_info = $book_info . "Fifth Edition";
-			}
-			if (intval($edition) == 6)
-			{
-				$book_info = $book_info . "Sixth Edition";
-			}
-			if (intval($edition) == 7)
-			{
-				$book_info = $book_info . "Seventh Edition";
-			}
-			if (intval($edition) == 9)
-			{
-				$book_info = $book_info . "Ninth Edition";
-			}
-			if (intval($edition) == 10)
-			{
-				$book_info = $book_info . "Tenth Edition";
-			}
-			if (intval($edition) == 19)
-			{
-				$book_info = $book_info . "Ninteenth Edition";
-			}
+            $edition_name = array("1"=>"First","2"=>"Second","3"=>"Third","4"=>"Fourth","5"=>"Fifth");
+
+			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;Edition";
 		}
 		if($volume != '00')
 		{
@@ -318,54 +283,12 @@ function display_tabs($num)
 	return $str_tabs;
 }
 
-?>         </div>     
+?>
+            </div>
         </div>
-	<div class="col2">
-			<div class="widget">
-				<div class="title">News updates</div>
-				<p>
-					<span class="news"><a href="circulars/intro.php" target="_blank">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
-				</p>
-			</div>
-			<div class="rule"></div>
-			<div class="widget">
-				<div class="title">Top viewed books</div>
-				<p>
-<span class="lang"><a href="english_books.html">English</a></span><br />
-<span class="news"><a href="../Books/english/es1/es1.djvu?djvuopts&zoom=page" target="_blank">DakṣiṇaBhārata - ŚāṅkaraVedānta-VidvadGoṣṭhi (Commemoration Volume) - (दक्षिणभारत - शाङ्करवेदान्त -विद्वद्गोष्ठी (स्मरणसञ्चिका))</a></span><br />
-<span class="news"><a href="../Books/english/e1/e1.djvu?djvuopts&zoom=page" target="_blank">Nārada's Aphorisms on Bhakti</a></span><br />
-<span class="news"><a href="../Books/english/e9/e9.djvu?djvuopts&zoom=page" target="_blank">Intuition of Reality</a></span><br />
-
-<br /><span class="lang"><a href="kannada_books.html">ಕನ್ನಡ</a></span><br />
-<span class="news"><a href="openbook.php?bcode=k1&lang=kannada" target="_blank">ಅಧ್ಯಾತ್ಮವೆಂದರೇನು? (ಅಧ್ಯಾತ್ಮ - ಎಂಬ ಮಾತಿನ ವಿವರಣೆ)</a></span><br />
-<span class="news"><a href="openbook.php?bcode=k146&lang=kannada" target="_blank">ಸಂಸ್ಕತಪ್ರಥಮಪುಸ್ತಕಮ್</a></span><br />
-<span class="news"><a href="openbook.php?bcode=k82&lang=kannada" target="_blank">ಈಶಾವಾಸ್ಯೋಪನಿಷದ್ಭಾಷ್ಯ (ಮೂಲ, ಅನುವಾದ, ಟಿಪ್ಪಣಿ, ಪೀಠಿಕೆ)</a></span><br />
-
-<br /><span class="lang"><a href="sanskrit_books.html">संस्कृतम् </a></span><br />
-<span class="news"><a href="openbook.php?bcode=&lang=kannada" target="_blank">ಸರ್ವವೇದಾಂತ ಸಿದ್ಧಾಂತ ವ್ಯಾಸಂಗ</a></span><br />
-<span class="news"><a href="openbook.php?bcode=s1&lang=sanskrit" target="_blank">ईशावास्योपनिशत् (सभाष्याः)</a></span><br />
-<span class="news"><a href="openbook.php?bcode=s28&lang=sanskrit" target="_blank">भक्तिचन्द्रिका</a></span><br />
-</p>
-</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="foot_box">
-			<div class="fleft">
-				&copy;2007-2011 Adhyatmaprakasha Karyalaya, Holenarsipura. All Rights Reserved
-			</div>
-			<div class="fright">
-				<ul>
-					<li><a href="#">Terms of Use</a></li>
-					<li>|</li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li>|</li>
-					<li><a href="php/contact.php">Contact Us</a></li>
-					<li>&nbsp;</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        <?php include("include_footer.php");?>
+    </div>
+    <?php include("include_footer_out.php");?>
 </div>
 </body>
 </html>

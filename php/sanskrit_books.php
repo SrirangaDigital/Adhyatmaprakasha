@@ -50,6 +50,8 @@
 		</div>
 		<div class="colmiddlekannada">
             <div class="archive_holder">
+                <div class="page_title">संस्कृतम् की पुस्तकों</div>
+                
 <?php
 include("connect.php");
 
@@ -134,12 +136,12 @@ if($num_rows > 0)
 
 					if($fl == 0)
 					{
-						$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
+						$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=" . $type . "\">$authorname</a></span>";
 						$fl = 1;
 					}
 					else
 					{
-						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
+						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=" . $type . "\">$authorname</a></span>";
 					}
 				}
 				if($result2){$result2->free();}
@@ -284,67 +286,9 @@ function display_tabs($num)
 ?>                  
             </div>
         </div>
-		<div class="col2">
-			<div class="widget">
-				<div class="title">News updates</div>
-				<p>
-					<span class="news"><a href="circulars/intro.php" target="_blank">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
-				</p>
-			</div>
-			<div class="rule"></div>
-			<div class="widget">
-				<div class="title">Top viewed books</div>
-				<p>
-<span class="lang"><a href="english_books.html">English</a></span><br />
-<span class="news"><a href="openbook.php?bcode=es1&lang=english" target="_blank">DakṣiṇaBhārata - ŚāṅkaraVedānta-VidvadGoṣṭhi (Commemoration Volume) - (दक्षिणभारत - शाङ्करवेदान्त -विद्वद्गोष्ठी (स्मरणसञ्चिका))</a></span><br />
-<span class="news"><a href="openbook.php?bcode=e1&lang=english" target="_blank">Nārada's Aphorisms on Bhakti</a></span><br />
-<span class="news"><a href="openbook.php?bcode=e9&lang=english" target="_blank">Intuition of Reality</a></span><br />
-
-<br /><span class="lang"><a href="kannada_books.html">ಕನ್ನಡ</a></span><br />
-<span class="news"><a href="openbook.php?bcode=k1&lang=kannada" target="_blank">ಅಧ್ಯಾತ್ಮವೆಂದರೇನು? (ಅಧ್ಯಾತ್ಮ - ಎಂಬ ಮಾತಿನ ವಿವರಣೆ)</a></span><br />
-<span class="news"><a href="openbook.php?bcode=k146&lang=kannada" target="_blank">ಸಂಸ್ಕತಪ್ರಥಮಪುಸ್ತಕಮ್</a></span><br />
-<span class="news"><a href="openbook.php?bcode=k82&lang=kannada" target="_blank">ಈಶಾವಾಸ್ಯೋಪನಿಷದ್ಭಾಷ್ಯ (ಮೂಲ, ಅನುವಾದ, ಟಿಪ್ಪಣಿ, ಪೀಠಿಕೆ)</a></span><br />
-
-<br /><span class="lang"><a href="sanskrit_books.html">संस्कृतम् </a></span><br />
-<span class="news"><a href="openbook.php?bcode=&lang=kannada" target="_blank">ಸರ್ವವೇದಾಂತ ಸಿದ್ಧಾಂತ ವ್ಯಾಸಂಗ</a></span><br />
-<span class="news"><a href="../Books/sanskrit/s1/s1.djvu?djvuopts&zoom=page" target="_blank">ईशावास्योपनिशत् (सभाष्याः)</a></span><br />
-<span class="news"><a href="../Books/sanskrit/s28/s28.djvu?djvuopts&zoom=page" target="_blank">भक्तिचन्द्रिका</a></span><br />
-</p>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="foot_box">
-			<div class="fleft">
-				&copy;2007-2011 Adhyatmaprakasha Karyalaya, Holenarsipura. All Rights Reserved
-			</div>
-			<div class="fright">
-				<ul>
-					<li><a href="#">Terms of Use</a></li>
-					<li>|</li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li>|</li>
-					<li><a href="php/contact.php">Contact Us</a></li>
-					<li>&nbsp;</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s8/s8.djvu?djvuopts&zoom=page" target=_blank>सुगम</a></span></li>-->	
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s1/s1.djvu?djvuopts&zoom=page" target=_blank>ईशावास्योपनिशत् (सभाष्याः)</a></span></li>-->	
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s2/s2.djvu?djvuopts&zoom=page" target=_blank>केनोपनिषत् (सभाष्याः)</a></span></li>-->
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s3/s3.djvu?djvuopts&zoom=page" target=_blank>काटकोपनिषत् (सभाष्याः)</a></span></li>-->
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s9/s9.djvu?djvuopts&zoom=page" target=_blank>सूत्रभाष्यार्थतत्त्वविवेचानी जिज्ञासाधिकरणं (प्रथमो भागः)</a></span></li>-->
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s10/s10.djvu?djvuopts&zoom=page" target=_blank>सूत्रभाष्यार्थतत्त्वविवेचानी  जन्माध्याधिकरणं (द्वितीय भागः)</a></span></li>-->
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s13/s13.djvu?djvuopts&zoom=page" target=_blank>शुद्धशाङ्करप्रक्रियाभास्करः (३ - ४ - ५)</a></span></li>-->
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s15/s15.djvu?djvuopts&zoom=page" target=_blank>गीताशास्त्रार्थविवेकः</a></span></li>-->
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s16/s16.djvu?djvuopts&zoom=page" target=_blank>ब्रह्मविद्यारहस्यविवृतिः</a></span></li>-->
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s17/s17.djvu?djvuopts&zoom=page" target=_blank>नैष्कर्म्यसिद्धिः</a></span></li>-->
-	<!--<li><span class="titlespan"><a href="../Books/sanskrit/s19/s19.djvu?djvuopts&zoom=page" target=_blank>वेदान्तबालबोधिनी </a></span></li>
-		<li><span class="titlespan"><a href="../Books/sanskrit/s20/s20.djvu?djvuopts&zoom=page" target=_blank>वेदान्तडिन्डिमः</a></span></li>	
-		<li><span class="titlespan"><a href="../Books/sanskrit/s23/s23.djvu?djvuopts&zoom=page" target=_blank>शाङ्करं वेदान्तमीमाम्साभाष्यम्</a></span></li>
-		<li><span class="titlespan"><a href="../Books/sanskrit/s24/s24.djvu?djvuopts&zoom=page" target=_blank>वेदान्तविद्वग्दोष्ठी</a></span></li>
-	-->
+        <?php include("include_footer.php");?>
+    </div>
+    <?php include("include_footer_out.php");?>
 </div>
 </body>
 </html>

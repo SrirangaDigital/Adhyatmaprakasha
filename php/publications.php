@@ -28,9 +28,9 @@
 				</li>
 				<li><a class="active" href="publications.php">Publications</a>
 					<ul id="pubnav">
-						<li><a href="kannada_books.html">Kannada Books</a></li>
-						<li><a href="sanskrit_books.html">Sanskrit Books</a></li>
-						<li><a href="english_books.html">English Books</a></li>
+						<li><a href="kannada_books.php">Kannada Books</a></li>
+						<li><a href="sanskrit_books.php">Sanskrit Books</a></li>
+						<li><a href="english_books.php">English Books</a></li>
 					</ul>
 				</li>
 				<li><a href="appeal.php">Appeal</a></li>
@@ -43,14 +43,14 @@
 		<div class="colnav">
 				<p>
 					<br /><br />
-					<span class="lang1"><a href="kannada_books.html">Kannada</a></span><br /><br />
-					<span class="lang1"><a href="sanskrit_books.html">Sanskrit</a></span><br /><br />
-					<span class="lang1"><a href="english_books.html">English</a></span><br /><br />
+					<span class="lang1"><a href="kannada_books.php">Kannada</a></span><br /><br />
+					<span class="lang1"><a href="sanskrit_books.php">Sanskrit</a></span><br /><br />
+					<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
 				</p>
 		</div>
 		<div class="colmiddle">
 			<div class="title">Publications</div>
-				<p>The Adhytmaprakasha Karyalaya came into being with the publication of  Māndukyopanishat  (Kannada translation of the upanishat and Shankarabhasya) and book publication has continued to be its main stay. Sri Sri Satchidanandendra Saraswati wrote prolifically in <br /><span class="bld"><a href="kannada_books.html">Kannada</a></span>, <span class="bld"><a href="sanskrit_books.html">Sanskrit</a></span>, and <span class="bld"><a href="english_books.html">English</a></span>.<br /><br /> In addition to books authored by him, Karyalaya has also been publishing books written by his associates and desciples as well as translations of his works into other languages.<br /><br />
+				<p>The Adhytmaprakasha Karyalaya came into being with the publication of  Māndukyopanishat  (Kannada translation of the upanishat and Shankarabhasya) and book publication has continued to be its main stay. Sri Sri Satchidanandendra Saraswati wrote prolifically in <br /><span class="bld"><a href="kannada_books.php">Kannada</a></span>, <span class="bld"><a href="sanskrit_books.php">Sanskrit</a></span>, and <span class="bld"><a href="english_books.php">English</a></span>.<br /><br /> In addition to books authored by him, Karyalaya has also been publishing books written by his associates and desciples as well as translations of his works into other languages.<br /><br />
 
 				<span class="bld">Note</span> : Books are available in djvu format and to view them you must install djvu plugin which is the primary means of viewing DjVu documents. It runs inside most modern browsers including IE, Firefox and Safari. To download this plug-in
 				<a href="http://www.caminova.net/en/downloads/download.aspx?id=1" target="_blank">Click here.</a><br /><br />
@@ -202,37 +202,10 @@
 				</table>
 			</p>
 		</div>
-		<div class="col2">
-			<div class="widget">
-				<div class="title">News updates</div>
-				<p>
-					<span class="news"><a href="circulars/intro.php" target="_blank">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
-				</p>
-			</div>
-			<div class="rule"></div>
-			<div class="widget">
-			<div class="title">Top Viewed Books</div>
-			<p><?php include("topviewed.php");?></p>
-			</div>
-		</div>
+		<?php include("include_footer.php");?>
+        <div class="clearfix"></div>
 	</div>
-	<div class="footer">
-		<div class="foot_box">
-			<div class="fleft">
-				&copy;2007-2011 Adhyatmaprakasha Karyalaya, Holenarsipura. All Rights Reserved
-			</div>
-			<div class="fright">
-				<ul>
-					<li><a href="#">Terms of Use</a></li>
-					<li>|</li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li>|</li>
-					<li><a href="php/contact.php">Contact Us</a></li>
-					<li>&nbsp;</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	<?php include("include_footer_out.php");?>
 </div>
 </body>
 </html>

@@ -62,6 +62,7 @@ require_once("common.php");
 
 if(isset($_GET['authid'])){$authid = $_GET['authid'];}else{$authid = '';}
 if(isset($_GET['author'])){$authorname = $_GET['author'];}else{$authorname = '';}
+if(isset($_GET['type'])){$type = $_GET['type'];}else{$type = '';}
 
 
 if(!(isValidAuthid($authid) && isValidAuthor($authorname)))
@@ -93,12 +94,22 @@ if($db->connect_errno > 0)
 
 $month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"April","5"=>"May","6"=>"June","7"=>"July","8"=>"August","9"=>"September","10"=>"October","11"=>"November","12"=>"December");
 
-echo "<div class=\"page_title\">Bibliography of $authorname</div>";
+if($type == "kannada")
+{
+    echo "<div class=\"page_title\">$authorname ರಚಿಸಿರುವ ಗ್ರಂಥಗಳು</div>";
+    $query = "select type, book_id, title, page from kannada_books_list where authid like '%$authid%' and authorname = '$authorname' and type = '$type'"; 
+}
+if($type == "sanskrit")
+{
+    echo "<div class=\"page_title\">$authorname द्वारा लिखित पुस्तकों</div>";
+    $query = "select type, book_id, title, page from sanskrit_books_list where authid like '%$authid%' and authorname = '$authorname' and type = '$type'"; 
+}
+if($type == "english")
+{
+    echo "<div class=\"page_title\">Books written by $authorname</div>";
+    $query = "select type, book_id, title, page from english_books_list where authid like '%$authid%' and authorname = '$authorname' and type = '$type'"; 
+}
 echo "<ul>";
-
-$query = "(select type, book_id, title, page from kannada_books_list where authid like '%$authid%' and authorname = '$authorname') 
-UNION ALL (select type, book_id, title, page from sanskrit_books_list where authid like '%$authid%' and authorname = '$authorname') 
-UNION ALL (select type, book_id, title, page from english_books_list where authid like '%$authid%' and authorname = '$authorname')";
 
 // echo $query;
 
@@ -158,62 +169,74 @@ if($num_rows > 0)
 			if($result_aux){$result_aux->free();}
 			
 			$book_info = '';
-            if($edition != '00')
-			{
-				if (intval($edition) == 1)
+            if($type == "kannada")
+            {
+                if($edition != '00')
                 {
-                    $book_info = $book_info . "First Edition |";
+                    $edition_name = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ");
+
+                    $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ ";
                 }
-                if (intval($edition) == 2)
+            
+                if($volume != '00')
                 {
-                    $book_info = $book_info . "Second Edition |";
+                    $book_info = $book_info . "  | ಸಂಪುಟ " . intval($volume);
                 }
-                if (intval($edition) == 3)
+                if($part != '00')
                 {
-                    $book_info = $book_info . "Third Edition |";
+                    $book_info = $book_info . "  | ಭಾಗ " . intval($part);
                 }
-                if (intval($edition) == 4)
+                if(intval($page) != 0)
                 {
-                    $book_info = $book_info . "Fourth Edition |";
+                    $book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
                 }
-                if (intval($edition) == 5)
+            }
+            if($type == "sanskrit")
+            {
+                if($edition != '00')
                 {
-                    $book_info = $book_info . "Fifth Edition |";
+                    $edition_name = array("1"=>"पहले ","2"=>"दूसरे ","3"=>"तीसरे ","4"=>"चौथे ","5"=>"पांचवें ");
+
+                    $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;संस्करण";
                 }
-                if (intval($edition) == 6)
+                if($volume != '00')
                 {
-                    $book_info = $book_info . "Sixth Edition |";
+                    $book_info = $book_info . " | Volume " . intval($volume);
                 }
-                if (intval($edition) == 7)
+                if($part != '00')
                 {
-                    $book_info = $book_info . "Seventh Edition |";
+                    $book_info = $book_info . " | Part " . intval($part) ;
                 }
-                if (intval($edition) == 9)
+                if(intval($page) != 0)
                 {
-                    $book_info = $book_info . "Ninth Edition |";
+                    $book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
                 }
-                if (intval($edition) == 10)
+            }
+            if($type == "english")
+            {
+                if($edition != '00')
                 {
-                    $book_info = $book_info . "Tenth Edition |";
+                    $edition_name = array("1"=>"First","2"=>"Second","3"=>"Third","4"=>"Fourth","5"=>"Fifth");
+
+                    $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;Edition";
                 }
-                if (intval($edition) == 19)
+                if($volume != '00')
                 {
-                    $book_info = $book_info . "Ninteenth Edition |";
+                    $book_info = $book_info . " | Volume " . intval($volume);
                 }
-			}
-			if($volume != '00')
-			{
-				$book_info = $book_info . "  Volume " . intval($volume) . " | ";
-			}
-			if($part != '00')
-			{
-				$book_info = $book_info . " Part " . intval($part) . " | ";
-			}
-			if(intval($page) != 0)
-			{
-				$book_info = $book_info . " pp " . intval($page) . " - " . intval($page_end);	
-			}
-			
+                if($part != '00')
+                {
+                    $book_info = $book_info . " | Part " . intval($part);
+                }
+                if(intval($page) != 0)
+                {
+                    $book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);
+                }
+            }
+			$book_info = preg_replace("/^ /", "", $book_info);
+            $book_info = preg_replace("/^\|/", "", $book_info);
+            $book_info = preg_replace("/^ /", "", $book_info);
+            
 			echo "<li><span class=\"motif ".$type."_motif\"></span>";
 			echo "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			echo "<br /><span class=\"bookspan\">$book_info</span>";

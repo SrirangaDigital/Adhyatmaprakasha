@@ -346,7 +346,7 @@ html, body {
 
 /* Titlespan, authorspan......*/
 .titlespan{
-	color: #3D3D3D;
+	color: #D2691E;
 }
 .titlespan a{
 	color: #D2691E;
@@ -551,15 +551,12 @@ hr{
 .dnone{
 	display: none;
 }
-.archive_holder .treeview{
-    margin-left: 1.5em;
-    
-}
 .archive_holder .treeview ul li {
 	list-style-type: none;                                
 	list-style-position:outside;
     padding-bottom: 0.5em;
-	padding-top: 0.5em;
+	font-size: 0.95em;
+    padding-top: 0.5em;
 	text-align: justify;
 	text-indent: -18px;
     margin-right: 2em;
@@ -718,6 +715,7 @@ hr{
 .content .page_title{
 	margin: 0em 0em 2em 0em;
 	font-size: 1em;
+    font-weight: bold;
 	color: #D2691E;
 	width: 80%;
 	border-bottom: 1px solid #D2691E;	

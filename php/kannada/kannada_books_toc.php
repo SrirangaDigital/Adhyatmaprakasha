@@ -115,7 +115,6 @@ $month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"Ap
 //~ $plus_link = "+";
 //~ $bullet = ".";
 
-
 $query_aux = "select * from kannada_books_list where book_id='$book_id' and type='kannada'";
 
 $result_aux = $db->query($query_aux); 
@@ -236,7 +235,7 @@ if($num_rows > 0)
 			//echo "<ul>\n\t<li>$title(" . display_stack($stack) . ")\n";
 			//echo "<ul>\n\t<li>$title\n";
 			$deffer = "\n" . display_tabs(($level-1)) . "<ul class=\"dnone\" id=\"ul_id$ul_id\">\n";
-			$deffer = $deffer . display_tabs($level) ."<li id=\"li_id$li_id\">:rep:<span class=\"s1\">$title</span>";
+			$deffer = $deffer . display_tabs($level) ."<li id=\"li_id$li_id\">:rep:$title";
 		}
 		elseif($level < $stack[sizeof($stack)-1])
 		{
@@ -252,7 +251,7 @@ if($num_rows > 0)
 			$li_id++;
 			//echo "</li>\n<li>$title(" . display_stack($stack) . ")\n";
 			$deffer = display_tabs($level) . "</li>\n";
-			$deffer = $deffer . display_tabs($level) ."<li id=\"li_id$li_id\">:rep:<span class=\"s1\">$title</span>";
+			$deffer = $deffer . display_tabs($level) ."<li id=\"li_id$li_id\">:rep:$title";
 		}
 		elseif($level == $stack[sizeof($stack)-1])
 		{
@@ -262,7 +261,7 @@ if($num_rows > 0)
 			//echo "</li>\n<li>$title(" . display_stack($stack) . ")\n";
 			//echo "</li>\n<li>$title\n";
 			$deffer = "</li>\n";
-			$deffer = $deffer . display_tabs($level) ."<li id=\"li_id$li_id\">:rep:<span class=\"s1\">$title</span>";
+			$deffer = $deffer . display_tabs($level) ."<li id=\"li_id$li_id\">:rep:$title";
 		}
 	}
 

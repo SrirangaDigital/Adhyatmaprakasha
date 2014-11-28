@@ -1,4 +1,4 @@
-<!ELEMENT apk-english-books (book+)>
+<!ELEMENT english (book+)>
 <!ELEMENT book (s1*)>
 <!ATTLIST book code CDATA #REQUIRED>
 <!ATTLIST book btitle CDATA #REQUIRED>

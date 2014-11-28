@@ -1,4 +1,4 @@
-<!ELEMENT apk-sanskrit-books (book+)>
+<!ELEMENT sanskrit (book+)>
 <!ELEMENT book (s1*)>
 <!ATTLIST book code CDATA #REQUIRED>
 <!ATTLIST book btitle CDATA #REQUIRED>
