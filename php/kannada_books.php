@@ -52,7 +52,7 @@
 				<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
 			</p>
 		</div>
-		<div class="colmiddlekannada">
+		<div class="colmiddle">
             <div class="archive_holder">
                 <div class="page_title">ಕನ್ನಡ ಪುಸ್ತಕಗಳು</div>
                 
@@ -92,6 +92,7 @@ $ul_id = 0;
 $plus_link = "<img class=\"bpointer\" title=\"Expand\" src=\"images/plus.gif\" alt=\"Expand or Collapse\" onclick=\"display_block(this)\" />";
 //$plus_link = "<a href=\"#\" onclick=\"display_block(this)\"><img src=\"plus.gif\" alt=\"\"></a>";
 $bullet = "<img class=\"bpointer\" src=\"images/bullet_1.gif\" alt=\"Point\" />";
+$month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"April","5"=>"May","6"=>"June","7"=>"July","8"=>"August","9"=>"September","10"=>"October","11"=>"November","12"=>"December");
 
 if($num_rows > 0)
 {
@@ -140,12 +141,12 @@ if($num_rows > 0)
                 
 					if($fl == 0)
 					{
-						$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=" . $type . "\">$authorname</a></span>";
+						$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
 						$fl = 1;
 					}
 					else
 					{
-						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=" . $type . "\">$authorname</a></span>";
+						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
 					}
 				}
 				if($result2){$result2->free();}
@@ -158,21 +159,24 @@ if($num_rows > 0)
 		{
             $edition_name = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ");
 
-			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ ";
+			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ | ";
 		}
 		if($volume != '00')
 		{
-			$book_info = $book_info . "  | ಸಂಪುಟ " . intval($volume);
+			$book_info = $book_info . " ಸಂಪುಟ " . intval($volume) . " | ";
 		}
 		if($part != '00')
 		{
-			$book_info = $book_info . "  | ಭಾಗ  " . intval($part);
+			$book_info = $book_info . " ಭಾಗ  " . intval($part) . " | ";
 		}
 		if(intval($page) != 0)
 		{
-			$book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
+			$book_info = $book_info . " pp " . intval($page) . " - " . intval($page_end);
 		}
-		
+		if(intval($year) != 0)
+		{
+			$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);
+		}
 		$book_info = preg_replace("/^ /", "", $book_info);
 		$book_info = preg_replace("/^\|/", "", $book_info);
 		$book_info = preg_replace("/^ /", "", $book_info);
@@ -193,7 +197,6 @@ if($num_rows > 0)
 		{
 			$title = "<span class=\"titlespan\">$title</span>";
 		}
-				
 		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
 		$title = preg_replace('/---/', "&mdash;", $title);
 		$title = preg_replace('/--/', "&ndash;", $title);

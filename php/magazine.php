@@ -50,7 +50,7 @@
 		</div>
 		<div class="colmiddle">
 			<div class="title">Monthly Magazine</div>
-			<p>
+			<div class="list">
 				This Archive houses all the issues of Adhyatmaprakasha magazine from 1923 to 2006.<br /><br />
 				Adhyatmaprakasha, a monthly Spiritual Kannada magazine, published from the Karyalaya, was started in the year 1923, with Sri Yellambalase Subbarao as its editor and it's main contributor. In the words of the editor, in the first issue of the magazine, the basic premise with which the magazine was started is that the root of the tree of spiritual knowledge is Vedanta, which in turn resides in the Upanishads. Therefore our main purpose would be, to introduce to the Kannada speaking world, the doctrine of Upanishads and other schools of philosophy which support the teachings of Upanishads.<br /><br />
 				Currently it has around 3000 subscribers. In addition to articles on Adhyatma by various scholars, the magazine also contains information on Karyalaya's activities and Saptaha's and Shibiras as-well as information on Publications of the Karyalaya are announced in the news section.<br /><br />
@@ -65,8 +65,7 @@
 				Y. Narasappa (1949 - 1980)<br />
 				H. S. Lakshminarasimhamurthy (1980 - 2006)<br />
 				Chandramouli Avadhani<br />
-				</ul>
-			</p>
+			</div>
 		</div>
 		<?php include("include_footer.php");?>
         <div class="clearfix"></div>

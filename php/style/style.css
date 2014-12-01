@@ -142,7 +142,7 @@ html, body {
 	-webkit-border-radius: 0px 50px 0px 0px;
 	padding: 1em 1.5em 1.5em 0em;
 }
-.col1 p{
+.col1 .list{
 	text-align: justify;
 	color: #3D3D3D;
 	font-size: 0.8em;
@@ -162,6 +162,11 @@ html, body {
 }
 .col1 ul li{
 	font-size:0.8em;
+	list-style-type:disc;
+	list-style-position:inside;
+}
+.col1 .list ul li{
+	font-size:1em;
 	list-style-type:disc;
 	list-style-position:inside;
 }
@@ -343,7 +348,6 @@ html, body {
 	text-decoration:underline;
 	color: #D2691E;
 }
-
 /* Titlespan, authorspan......*/
 .titlespan{
 	color: #D2691E;
@@ -378,19 +382,22 @@ html, body {
 .authorspan a:Hover{
 	text-decoration:underline;
 }
-.nobook{
-	color:#F00 !important; 
-}
-.nobook a{
-	color:#F00 !important;
-	
-}
 /* style for tables */
-
-.pubtbl{
+.list .pubtbl{
+	width:600px;
+	font-size:1em;
+#	margin:0em auto 0em auto;
+}
+.pubtbl_contact{
 	width:600px;
 	font-size:0.8em;
 #	margin:0em auto 0em auto;
+}
+.pubtbl_contact td{
+	vertical-align:top;
+	width:300px;
+	padding:1em;
+	border:1px solid #CCCCCC;
 }
 .pubtbl td{
 	vertical-align:top;
@@ -398,7 +405,6 @@ html, body {
 	padding:1em;
 	border:1px solid #CCCCCC;
 }
-
 .voltbl{
 #	border:1px solid #CCCCCC;
 	margin:0em auto 0em auto;
@@ -446,11 +452,7 @@ html, body {
 	border:1px solid #CCCCCC;
 #	border-right:1px solid #CCCCCC;
 }
-
-
 /* second part*/
-
-
 .colnav{
 	font-size:0.8em;
 	width: 6%;
@@ -464,7 +466,6 @@ html, body {
 	-webkit-border-radius: 0px 50px 0px 0px;
 	padding: 1.25em 1.875em 1.875em 0em;
 }
-
 .colmiddle{
 	width: 61%;
 	float:left;
@@ -478,7 +479,7 @@ html, body {
 	-webkit-border-radius: 50px 50px 0px 0px;
 	padding: 1em 1em 1.5em 1em;
 }
-.colmiddle p{
+.colmiddle .list{
 	text-align: justify;
 	color: #3D3D3D;
 	font-size: 0.8em;
@@ -490,7 +491,8 @@ html, body {
 }
 .colmiddle ul li{
 	font-size:0.9em;
-	list-style-position:inside;
+	color: #D2691E;
+    list-style-position:inside;
 	list-style-type:disc;
 }
 .colmiddle ul li a{
@@ -510,9 +512,6 @@ html, body {
 }
 .colmiddle ul li ul li a{
 	color:#3D3D3D;
-}
-.rest {
-	display: none;
 }
 .visitors{
 	font-size:12px;
@@ -555,7 +554,7 @@ hr{
 	list-style-type: none;                                
 	list-style-position:outside;
     padding-bottom: 0.5em;
-	font-size: 0.95em;
+	font-size: 0.9em;
     padding-top: 0.5em;
 	text-align: justify;
 	text-indent: -18px;
@@ -564,55 +563,13 @@ hr{
 .archive_holder .treeview ul li img{ 
 	vertical-align: middle;
 }
-.colmiddlekannada{
-	width: 60.9%;
-	float:left;
-	min-height: 20em;
-	color: #3D3D3D;
-	margin: 1.5em 1em 0em 0em;
-	border-top: 1px solid #D2691E;
-	border-right: 1px solid #D2691E;
-	border-left: 1px solid #D2691E;
-	-moz-border-radius: 50px 50px 0px 0px;
-	-webkit-border-radius: 50px 50px 0px 0px;
-	padding: 1em 1em 1.5em 1em;
-}
-.colmiddlekannada ul li{
-	font-size:0.9em;
-	list-style-position:inside;
-	list-style-type:disc;
-	color:#D2691E;
-}
-
-.colmiddlekannada p{
-	text-align: justify;
-	color: #3D3D3D;
-	font-size: 0.8em;
+.itl{
+	font-style: italic
 }
 .colmiddlekannada .title{
 	font-size: 1em;
 	color: #D2691E;
 	margin:0em 0em 0.5em 1em;
-}
-.colmiddlekannada ul li{
-	font-size:0.9em;
-}
-.colmiddlekannada ul li a{
-	text-decoration:none;
-
-}
-.colmiddlekannada ul li a:HOVER{
-	text-decoration:underline;
-}
-.colmiddlekannada ul li ul{
-	margin-left:2em;
-	margin-top:1em;
-}
-.colmiddlekannada ul li ul li{
-	margin-bottom:0.5em;
-	font-size:0.9em;
-}
-.colmiddlekannada ul li ul li a{
 }
 .intro_table{
 	font-size: 0.8em;
@@ -630,22 +587,13 @@ hr{
 	vertical-align: top;
 	padding	: 0.5em 0 0.5em 0;
 }
-.author{
-	font-size: 1.2em; 
-	font-weight: bold;
-	color: #D2691E;
-	margin: 1em 0.5em 0.3em 0em;
-}
-
 .bkr{
     margin-left: 1.5em;
     font-size: 0.8em;
 }
-
 .djvu{
     font-size: 0.8em;
 }
-
 .bookspan {
 	color: #8B0000;
 	font-size: 0.9em;
@@ -674,23 +622,22 @@ hr{
 .archive_holder{
 	line-height: 2em;
 }
-.colmiddlekannada .archive_holder ul{
+.colmiddle .archive_holder ul{
 	margin-left: 2em;
 }
-.colmiddlekannada .archive_holder ul li{
+.colmiddle .archive_holder ul li{
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px dotted #CCCCCC;
 }
-.colmiddlekannada .archive_holder ul li br{
+.colmiddle .archive_holder ul li a{
+    text-decoration: none;
+}
+.colmiddle .archive_holder ul li a:hover{
+    text-decoration: underline;
+}
+.colmiddle .archive_holder ul li br{
 	margin-bottom: 1em;
-}
-.colmiddlekannada .archive_holder_volume ul{
-	margin-left: 0em;
-}
-.colmiddlekannada .archive_holder_volume ul li{
-	list-style-type: none;
-	margin-bottom: 0.75em;
 }
 .content .page_booktitle{
 	font-size: 1em;
@@ -720,4 +667,3 @@ hr{
 	width: 80%;
 	border-bottom: 1px solid #D2691E;	
 }
-

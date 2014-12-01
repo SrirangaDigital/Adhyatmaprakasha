@@ -42,10 +42,10 @@
 	<div class="content">
 		<div class="col1">
 			<div class="title">Adhyatma Vidyanilaya</div>
-			<p>
+			<div class="list">
 				The Adhyatma Vidyanilaya, with a five year course to train Vedantic Missionaries was started by Swamiji in 1937. He trained few students but paucity of dedicated seekers forced its stoppage. However, Sri Chandramouli Avadhani of mattur trained in the Vedantic lore of Swamiji came with a batch of ten students to Holenarasipura in February 2003 to revive this institution. Training in Sanskrit, Veda-Vedanta and Shankara Bhashya is imparted systematically. 
 				<br /><br />
-			</p>
+			</div>
 		</div>
 		<?php include("include_footer.php");?>
         <div class="clearfix"></div>

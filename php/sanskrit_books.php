@@ -48,9 +48,9 @@
 					<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
 				</p>
 		</div>
-		<div class="colmiddlekannada">
+		<div class="colmiddle">
             <div class="archive_holder">
-                <div class="page_title">संस्कृतम् की पुस्तकों</div>
+                <div class="page_title"><span style="font-weight: normal;">संस्कृतम् की पुस्तकों</span></div>
                 
 <?php
 include("connect.php");
@@ -88,6 +88,7 @@ $ul_id = 0;
 $plus_link = "<img class=\"bpointer\" title=\"Expand\" src=\"images/plus.gif\" alt=\"Expand or Collapse\" onclick=\"display_block(this)\" />";
 //$plus_link = "<a href=\"#\" onclick=\"display_block(this)\"><img src=\"plus.gif\" alt=\"\"></a>";
 $bullet = "<img class=\"bpointer\" src=\"images/bullet_1.gif\" alt=\"Point\" />";
+$month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"April","5"=>"May","6"=>"June","7"=>"July","8"=>"August","9"=>"September","10"=>"October","11"=>"November","12"=>"December");
 
 if($num_rows > 0)
 {
@@ -136,12 +137,12 @@ if($num_rows > 0)
 
 					if($fl == 0)
 					{
-						$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=" . $type . "\">$authorname</a></span>";
+						$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
 						$fl = 1;
 					}
 					else
 					{
-						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=" . $type . "\">$authorname</a></span>";
+						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
 					}
 				}
 				if($result2){$result2->free();}
@@ -168,7 +169,10 @@ if($num_rows > 0)
 		{
 			$book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
 		}
-		
+		if(intval($year) != 0)
+		{
+			$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);
+		}
 		$book_info = preg_replace("/^ /", "", $book_info);
 		$book_info = preg_replace("/^\|/", "", $book_info);
 		$book_info = preg_replace("/^ /", "", $book_info);
@@ -207,10 +211,10 @@ if($num_rows > 0)
 		elseif($level > $stack[sizeof($stack)-1])
 		{
 			$deffer = preg_replace('/:rep:/',"$plus_link",$deffer);
-			echo $deffer;			
+			echo $deffer;
 
-			$ul_id++;			
-			$li_id++;			
+			$ul_id++;
+			$li_id++;
 			array_push($stack,$level);
 			array_push($p_stack,$ul_id);
 			$deffer = "\n" . display_tabs(($level-1)) . "<ul class=\"dnone\" id=\"ul_id$ul_id\">\n";

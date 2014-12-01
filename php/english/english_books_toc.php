@@ -53,7 +53,7 @@
 				<span class="lang1"><a href="../english_books.php">English</a></span><br /><br />
 			</p>
 		</div>
-		<div class="colmiddlekannada">
+		<div class="colmiddle">
             <div class="archive_holder">
 <?php
 include("../connect.php");
@@ -115,7 +115,6 @@ $month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"Ap
 //~ $plus_link = "+";
 //~ $bullet = ".";
 
-
 $query_aux = "select * from english_books_list where book_id='$book_id' and type='english'";
 
 $result_aux = $db->query($query_aux); 
@@ -161,7 +160,7 @@ else
 /*
 echo "<div class=\"book_cover\"><img src=\"../images/cover.png\" alt=\"Book Cover\" /></div>";
 */
-echo "<div class=\"page_booktitle\"><span class=\"motif sse_motif\"></span><span class=\"itl\">$book_title</span></div>";
+echo "<div class=\"page_booktitle\"><span class=\"itl\">$book_title</span></div>";
 echo "<div class=\"page_subtitle\"><span class=\"itl\">$daname</span></div>";
 echo "<div class=\"page_other\">";
 
@@ -183,7 +182,7 @@ if(intval($page) != 0)
 {
 	$book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
 }
-if(intval($month) != 0)
+if(intval($year) != 0)
 {
 	$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);
 }
