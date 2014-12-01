@@ -53,7 +53,7 @@
 				<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
 			</p>
 		</div>
-		<div class="colmiddlekannada">
+		<div class="colmiddle">
             <div class="archive_holder">
                 
 <?php
@@ -251,7 +251,7 @@ else
 }
 if($result){$result->free();}
 $db->close();
-?>               
+?>               </ul>
             </div>
         </div>
         <?php include("include_footer.php");?>

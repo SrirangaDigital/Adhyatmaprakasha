@@ -42,11 +42,11 @@
 	<div class="content">
 		<div class="col1">
 			<div class="title">Introduction</div>
-			<p>Adhyatmaprakasha Karyalaya was founded in 1920 by Sri Yellambalase Subbarao (1880-1975), a school teacher in Karnataka; (he also used the name Yellambalase Subrahmanya Sharma in some of the books he authored to distinguish himself from Sri Yedatore Subbarao, another author of many books on spirituality). After his retirement he moved to Holenarasipura in 1937 and established the Karyalaya on its own premises there. Sri Subbarao took to Sanyasa in 1948 with the monastic name <span class="emph">Sri Sri Satchidanandendra Saraswati.</span><br /><br />
+			<div class="list">Adhyatmaprakasha Karyalaya was founded in 1920 by Sri Yellambalase Subbarao (1880-1975), a school teacher in Karnataka; (he also used the name Yellambalase Subrahmanya Sharma in some of the books he authored to distinguish himself from Sri Yedatore Subbarao, another author of many books on spirituality). After his retirement he moved to Holenarasipura in 1937 and established the Karyalaya on its own premises there. Sri Subbarao took to Sanyasa in 1948 with the monastic name <span class="emph">Sri Sri Satchidanandendra Saraswati.</span><br /><br />
 				Right from his childhood until his nirvana at the age of 96, Swamiji was deeply involved in the study of Vedanta, particularly the works of <span class="emph">Sri Shankaracharya.</span> He lectured extensively and wrote articles and books prolifically on this subject in Kannada, Sanskrit and English, thus earning the epithet Purusha Saraswati.<br /><br />
 				The Karyalaya, which was registered as a Public Charitable Trust in 1992, has continued the work for which it was founded using the three principal instruments - lectures, books and monthly magazine and Vidyanilaya - selected by Swamiji for this purpose.<br /><br />
 				The Karyalaya has four branches in addition, at Bangalore, Mysore, Mattur (Shimoga) and Rayadurga (A.P.).
-			</p>
+			</div>
 		</div>
 		<div class="col2">
 			<div class="widget">
@@ -59,33 +59,35 @@
 			<div class="widget">
 				<div class="title">Top viewed books</div>
 				<p>
-<span class="lang"><a href="php/english_books.php">English</a></span><br />
-<span class="news"><a href="openbook.php?bcode=es1&lang=english" target="_blank">DakṣiṇaBhārata - ŚāṅkaraVedānta-VidvadGoṣṭhi (Commemoration Volume) - (दक्षिणभारत - शाङ्करवेदान्त -विद्वद्गोष्ठी (स्मरणसञ्चिका))</a></span><br />
-<span class="news"><a href="openbook.php?bcode=e1&lang=english" target="_blank">Nārada's Aphorisms on Bhakti</a></span><br />
-<span class="news"><a href="openbook.php?bcode=e9&lang=english" target="_blank">Intuition of Reality</a></span><br />
+                    <span class="lang"><a href="php/english_books.php">English</a></span><br />
+                    <span class="news"><a href="openbook.php?bcode=es1&amp;lang=english" target="_blank">DakṣiṇaBhārata - ŚāṅkaraVedānta-VidvadGoṣṭhi (Commemoration Volume) - (दक्षिणभारत - शाङ्करवेदान्त -विद्वद्गोष्ठी (स्मरणसञ्चिका))</a></span><br />
+                    <span class="news"><a href="openbook.php?bcode=e1&amp;lang=english" target="_blank">Nārada's Aphorisms on Bhakti</a></span><br />
+                    <span class="news"><a href="openbook.php?bcode=e9&amp;lang=english" target="_blank">Intuition of Reality</a></span><br />
 
-<br /><span class="lang"><a href="php/kannada_books.php">ಕನ್ನಡ</a></span><br />
-<span class="news"><a href="../Books/kannada/k146/k146.djvu?djvuopts&zoom=page" target="_blank">ಸಂಸ್ಕತಪ್ರಥಮಪುಸ್ತಕಮ್</a></span><br />
-<span class="news"><a href="../Books/kannada/k1/k1.djvu?djvuopts&zoom=page" target="_blank">ಅಧ್ಯಾತ್ಮವೆಂದರೇನು? (ಅಧ್ಯಾತ್ಮ - ಎಂಬ ಮಾತಿನ ವಿವರಣೆ)</a></span><br />
-<span class="news"><a href="../Books/kannada/k82/k82.djvu?djvuopts&zoom=page" target="_blank">ಈಶಾವಾಸ್ಯೋಪನಿಷದ್ಭಾಷ್ಯ (ಮೂಲ, ಅನುವಾದ, ಟಿಪ್ಪಣಿ, ಪೀಠಿಕೆ)</a></span><br />
+                    <br /><span class="lang"><a href="php/kannada_books.php">ಕನ್ನಡ</a></span><br />
+                    <span class="news"><a href="../Books/kannada/k146/k146.djvu?djvuopts&amp;zoom=page" target="_blank">ಸಂಸ್ಕತಪ್ರಥಮಪುಸ್ತಕಮ್</a></span><br />
+                    <span class="news"><a href="../Books/kannada/k1/k1.djvu?djvuopts&amp;zoom=page" target="_blank">ಅಧ್ಯಾತ್ಮವೆಂದರೇನು? (ಅಧ್ಯಾತ್ಮ - ಎಂಬ ಮಾತಿನ ವಿವರಣೆ)</a></span><br />
+                    <span class="news"><a href="../Books/kannada/k82/k82.djvu?djvuopts&amp;zoom=page" target="_blank">ಈಶಾವಾಸ್ಯೋಪನಿಷದ್ಭಾಷ್ಯ (ಮೂಲ, ಅನುವಾದ, ಟಿಪ್ಪಣಿ, ಪೀಠಿಕೆ)</a></span><br />
 
-<br /><span class="lang"><a href="php/sanskrit_books.php">संस्कृतम् </a></span><br />
-<span class="news"><a href="../Books/kannada//.djvu?djvuopts&zoom=page" target="_blank">ಸರ್ವವೇದಾಂತ ಸಿದ್ಧಾಂತ ವ್ಯಾಸಂಗ</a></span><br />
-<span class="news"><a href="openbook.php?bcode=s1&lang=sanskrit" target="_blank">ईशावास्योपनिशत् (सभाष्याः)</a></span><br />
-<span class="news"><a href="openbook.php?bcode=s28&lang=sanskrit" target="_blank">भक्तिचन्द्रिका</a></span><br />
-</p>
+                    <br /><span class="lang"><a href="php/sanskrit_books.php">संस्कृतम् </a></span><br />
+                    <span class="news"><a href="../Books/kannada//.djvu?djvuopts&amp;zoom=page" target="_blank">ಸರ್ವವೇದಾಂತ ಸಿದ್ಧಾಂತ ವ್ಯಾಸಂಗ</a></span><br />
+                    <span class="news"><a href="openbook.php?bcode=s1&amp;lang=sanskrit" target="_blank">ईशावास्योपनिशत् (सभाष्याः)</a></span><br />
+                    <span class="news"><a href="openbook.php?bcode=s28&amp;lang=sanskrit" target="_blank">भक्तिचन्द्रिका</a></span><br />
+                </p>
 			</div>
             <div class="visitors">
-			<table class="visit">
-				<th>Visitors</th>
-				<tr>
-					<td>
-					<?php 
-						include("php/count.php");
-					?>
-					</td>
-				</tr>
-			</table>
+                <table class="visit">
+                    <tr>
+                        <th>Visitors</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <?php 
+                            include("php/count.php");
+                            ?>
+                        </td>
+                    </tr>
+                </table>
 			</div>
 		</div>
 	</div>

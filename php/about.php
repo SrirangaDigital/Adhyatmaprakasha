@@ -42,7 +42,7 @@
 	<div class="content">
 		<div class="col1">
 			<div class="title">About Us</div>
-			<p>
+			<div class="list">
 				AdhyatmaPrakasha Karyalaya is governed by a trust committee. The present Trust Committee members are:
 				<ul>
 				<li>K. Srinivasa, Holenarasipura (President)</li>
@@ -54,7 +54,7 @@
 				<li>Dr. Y. Ananthanarayana (Member - Chairman Working Committee)</li>
 				<li> L. Vijaya Raghav (Member)</li>
 				</ul>
-			</p>
+			</div>
 		</div>
 		<?php include("include_footer.php");?>
         <div class="clearfix"></div>
