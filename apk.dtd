@@ -1,0 +1,12 @@
+<!ELEMENT apk (volume*)>
+<!ELEMENT volume (issue*)>
+<!ATTLIST volume vnum CDATA #REQUIRED>
+<!ELEMENT issue (entry+)>
+<!ATTLIST issue inum CDATA #REQUIRED>
+<!ATTLIST issue month CDATA #REQUIRED>
+<!ATTLIST issue year CDATA #REQUIRED>
+<!ELEMENT entry (title,page,allauthors)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT page (#PCDATA)>
+<!ELEMENT allauthors (author*)>
+<!ELEMENT author (#PCDATA)>
