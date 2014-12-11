@@ -28,9 +28,9 @@
 				</li>
 				<li><a href="publications.php">Publications</a>
 					<ul id="pubnav">
-						<li><a href="kannada_books.html">Kannada Books</a></li>
-						<li><a href="sanskrit_books.html">Sanskrit Books</a></li>
-						<li><a href="english_books.html">English Books</a></li>
+						<li><a href="kannada_books.php">Kannada Books</a></li>
+						<li><a href="sanskrit_books.php">Sanskrit Books</a></li>
+						<li><a href="english_books.php">English Books</a></li>
 					</ul>
 				</li>
 				<li><a href="appeal.php">Appeal</a></li>
@@ -48,106 +48,101 @@
 					<span class="lang1"><a href="authors.php">Authors</a></span><br /><br />
 				</p>
 		</div>
-		<div class="colmiddle">
-			<div class="title">Volumes</div>
-			<?php
-				$cnt= 1;
-				include("connect.php");
-				$db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
-				$rs = mysql_select_db($database,$db) or die("No Database");
+		<div class="archive_holder_volume">
+            <div class="page_title">Volumes</div>
+			<div class="column1"><ul>
+<?php
 
-				$query = "select distinct volume from article order by volume";
-				$result = mysql_query($query);
+include("connect.php");
 
-				$num_rows = mysql_num_rows($result);
-				
-				if($num_rows)
-				{
-					echo ("<table class=\"voltbl\"><tr><td>");
-					for($i=1;$i<=$num_rows;$i++)
-					{	
-						echo ("<table>");
-						$row=mysql_fetch_assoc($result);
-						$volume = $row['volume']; 
-						
-							$query3 = "select distinct year from article where volume=$volume";
-							$result3 = mysql_query($query3);
-							$num_rows3 = mysql_num_rows($result3);
-							if($num_rows3)
-							{
-								$cn=0;
-								$yy='';
-								for($j=0;$j<=$num_rows3;$j++)
-								{	
-									
-									$row3=mysql_fetch_assoc($result3);
-									$year = $row3['year'];
-									if($cn<$num_rows3)
-									{
-										if($j==0)
-										{
-											$yy = $year;
-										}
-										else
-										{
-											$yy = "$yy"."-"."$year";
-										}
-									}
-									$cn = $cn+1;
-								}
-							}
-						
-						
-						//if($volume<10){$volume1 = "0"."$volume";}
-						echo("<tr><td><a href=\"mon.php?volume=$volume&year=$yy\">Vol-$volume<br />($yy)</a></td></tr>");
-						
-						if($cnt==$num_rows)
-						{
-							echo("</table>");
-						}
-						else if($cnt%15==0)
-						{
-							echo("</table></td><td><table>");
-						}
-						$cnt = $cnt +1;
-					}
-					echo("</td></tr></table>");
-					
-				}
-			?>
+$db = @new mysqli('localhost', "$user", "$password", "$database");
+if($db->connect_errno > 0)
+{
+	echo '<li>Not connected to the database [' . $db->connect_errno . ']</li>';
+	echo "</ul></div></div></div>";
+	include("include_footer.php");
+	echo "<div class=\"clearfix\"></div></div>";
+	include("include_footer_out.php");
+	echo "</body></html>";
+	exit(1);
+}
+
+//~ $db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
+//~ $rs = mysql_select_db($database,$db) or die("No Database");
+
+$row_count = 30;
+
+$query = "select distinct volume from article order by volume";
+
+$result = $db->query($query); 
+$num_rows = $result ? $result->num_rows : 0;
+
+//~ $result = mysql_query($query);
+//~ $num_rows = mysql_num_rows($result);
+
+$count = 0;
+$col = 1;
+
+if($num_rows > 0)
+{
+	for($i=1;$i<=$num_rows;$i++)
+	{
+		//~ $row=mysql_fetch_assoc($result);
+		$row = $result->fetch_assoc();
+		$volume=$row['volume'];
+
+		$query1 = "select distinct year from article where volume='$volume'";
 		
+		//~ $result1 = mysql_query($query1);
+		//~ $num_rows1 = mysql_num_rows($result1);
+		$result1 = $db->query($query1); 
+		$num_rows1 = $result1 ? $result1->num_rows : 0;
+		
+		if($num_rows1 > 0)
+		{
+			for($i1=1;$i1<=$num_rows1;$i1++)
+			{
+				//~ $row1=mysql_fetch_assoc($result1);
+				$row1 = $result1->fetch_assoc();
+				
+				if($i1==1)
+				{
+					$year=$row1['year'];
+				}
+				else if($i1==2)
+				{
+					$year2 = $row1['year'];
+					$year21 = preg_split('//',$year2);
+					$year=$year."-".$year21[3].$year21[4];
+				}
+			}
+			$count++;
+			$volume_int = intval($volume);
+			if($count > $row_count)
+			{
+				$col++;
+				echo "</ul></div>\n
+				<div class=\"column$col\"><ul>";
+				$count = 1;
+			}
+			echo "<li><span class=\"yearspan\"><a href=\"issue.php?vol=$volume&amp;year=$year\">Volume&nbsp;$volume_int ($year)</a></span></li>";
+		}
+		if($result1){$result1->free();}
+	}
+}
+else
+{
+	echo "No data in the database";
+}
+if($result){$result->free();}
+$db->close();
+
+?>                
+            </ul></div>
 		</div>
-		<div class="col2">
-			<div class="widget">
-				<div class="title">News updates</div>
-				<p>
-					<span class="news"><a href="circulars/intro.php" target="_blank">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
-				</p>
-			</div>
-			<div class="rule"></div>
-			<div class="widget">
-				<div class="title">Top viewed books</div>
-				<p><?php include("topviewed.php")?></p>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="foot_box">
-			<div class="fleft">
-				&copy;2007-2011 Adhyatmaprakasha Karyalaya, Holenarsipura. All Rights Reserved
-			</div>
-			<div class="fright">
-				<ul>
-					<li><a href="#">Terms of Use</a></li>
-					<li>|</li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li>|</li>
-					<li><a href="php/contact.php">Contact Us</a></li>
-					<li>&nbsp;</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        <?php include("include_footer.php");?>
+    </div>
+    <?php include("include_footer_out.php");?>
 </div>
 </body>
 </html>

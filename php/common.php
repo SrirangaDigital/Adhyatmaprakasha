@@ -17,7 +17,16 @@ function isValidTitle($title)
 {
 	return is_array($title) ? false : true;
 }
-
+function isValidVolume($vol)
+{
+	if(is_array($vol)){return false;}
+	return preg_match("/^[0-9][0-9][0-9]$/", $vol) ? true : false;
+}
+function isValidPart($issue)
+{
+	if(is_array($issue)){return false;}
+	return preg_match("/^([0-9][0-9]|[0-9][0-9]\-[0-9][0-9])$/", $issue) ? true : false;
+}
 function isValidYear($year)
 {
 	if(is_array($year)){return false;}
