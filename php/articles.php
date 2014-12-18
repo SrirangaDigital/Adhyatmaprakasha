@@ -28,9 +28,9 @@
 				</li>
 				<li><a href="publications.php">Publications</a>
 					<ul id="pubnav">
-						<li><a href="kannada_books.html">Kannada Books</a></li>
-						<li><a href="sanskrit_books.html">Sanskrit Books</a></li>
-						<li><a href="english_books.html">English Books</a></li>
+						<li><a href="kannada_books.php">Kannada Books</a></li>
+						<li><a href="sanskrit_books.php">Sanskrit Books</a></li>
+						<li><a href="english_books.php">English Books</a></li>
 					</ul>
 				</li>
 				<li><a href="appeal.php">Appeal</a></li>
@@ -155,8 +155,7 @@ if($db->connect_errno > 0)
 if($letter == 'Special')
 {
 	$query = "(select * from article where title regexp '^[a-zA-Z]')
-    UNION ALL (select * from article where title like '(%')
-    UNION ALL (select * from article where title like '`%') order by title, volume, issue, page";
+    UNION ALL (select * from article where title like '(%') order by title, volume, issue, page";
 }
 
 else
@@ -188,8 +187,6 @@ if($num_rows > 0)
 		
 		$title1=addslashes($title);
 		
-		
-				
 		echo "<li>";
 		echo "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
 		echo "
@@ -198,11 +195,9 @@ if($num_rows > 0)
 			<a href=\"toc.php?vol=$volume&amp;issue=$issue\">Vol.&nbsp;".intval($volume)."&nbsp;(issue. ".$issue.")&nbsp;;&nbsp;$month&nbsp;".$year."</a>
 		</span>";
 		
-		
 		if($authid != 0)
 		{
-
-			echo "<br />&mdash;";
+            echo "<br />&mdash;";
 			$aut = preg_split('/;/',$authid);
 
 			$fl = 0;
@@ -222,12 +217,12 @@ if($num_rows > 0)
 					
 					if($fl == 0)
 					{
-						echo "<span class=\"authorspan\"><a href=\"../auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$sal&nbsp;$authorname</span></a></span>";
+						echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$sal&nbsp;$authorname</span></a></span>";
 						$fl = 1;
 					}
 					else
 					{
-						echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"../auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$sal&nbsp;$authorname</span></a></span>";
+						echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$sal&nbsp;$authorname</span></a></span>";
 					}
 				}
 				if($result2){$result2->free();}

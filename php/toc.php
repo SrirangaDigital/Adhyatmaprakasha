@@ -109,7 +109,6 @@ if($num_rows > 0)
 	$dissue = preg_replace("/\-0/", "-", $dissue);
 	
 	echo "<div class=\"page_title\"><span style=\"font-size: 1.1em;\">ಸಂಪುಟ</span>&nbsp;".intval($volume)."&nbsp;- <span style=\"font-size: 1.1em;\">ಸಂಚಿಕೆ</span>&nbsp;".$dissue."&nbsp;&nbsp;:&nbsp;&nbsp;<span style=\"font-size: 1.1em;\">$month</span>&nbsp;".$year."</div>";
-	echo "<ul class=\"dot\">";
 }
 
 if($result){$result->free();}
@@ -124,6 +123,8 @@ $num_rows1 = $result1 ? $result1->num_rows : 0;
 
 if($num_rows1 > 0)
 {
+    echo "<ul class=\"dot\">";
+
 	for($i=1;$i<=$num_rows1;$i++)
 	{
 		//~ $row1=mysql_fetch_assoc($result1);
@@ -169,23 +170,26 @@ if($num_rows1 > 0)
 					$row2 = $result2->fetch_assoc();
 					
 					$authorname=$row2['authorname'];
+                    $sal=$row2['sal'];
 
 					if($fl == 0)
 					{
-						echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$authorname</span></a></span>";
+						echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$sal&nbsp;$authorname</span></a></span>";
 						$fl = 1;
 					}
 					else
 					{
-						echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
+						echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
 					}
 				}
 				if($result2){$result2->free();}
 			}
 		}
-		echo "<br /><span class=\"downloadspan\"><a href=\"../../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\" target=\"_blank\">View article</a>&nbsp;|&nbsp;<a href=\"#\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download article (PDF)</a></span>";
+		echo "<br /><span class=\"downloadspan\"><a href=\"../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\" target=\"_blank\">View article</a>&nbsp;|&nbsp;<a href=\"#\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download article (PDF)</a></span>";
 		echo "</li>\n";
 	}
+    echo "</ul>";
+
 }
 else
 {
@@ -194,7 +198,6 @@ else
 
 if($result1){$result1->free();}
 $db->close();
-echo "</ul>";
 ?>            
             </div>
         </div>

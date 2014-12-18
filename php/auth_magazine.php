@@ -47,7 +47,7 @@
 					<span class="lang1"><a href="articles.php">Articles</a></span><br /><br />
 					<span class="lang1"><a href="authors.php">Authors</a></span><br /><br />
 				</p>
-		</div>
+        </div>
 		<div class="colmiddle">
             <div class="archive_holder">
 <?php
@@ -89,7 +89,7 @@ if($db->connect_errno > 0)
 
 
 echo "<div class=\"page_title\">Bibliography of $authorname</div>";
-echo "<ul>";
+echo "<ul class=\"dot\">";
 
 $query = "select * from article where authid like '%$authid%'";
 
