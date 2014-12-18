@@ -33,7 +33,7 @@ while($line)
 	if($line =~ /<volume vnum="(.*)">/)
 	{
 		$volume = $1;
-		print $volume . "\n";
+		#print $volume . "\n";
 	}
 	elsif($line =~ /<issue inum="(.*)" month="(.*)" year="(.*)">/)
 	{
@@ -54,20 +54,21 @@ while($line)
 		if($pages eq $prev_pages)
 		{
 			$count++;
-			$id = "rec_" . $volume . "_" . $part . "_" . $page . "_" . $page_end . "_" . $count; 
+			$id = "rec_" . $volume . "_" . $issue . "_" . $page . "_" . $page_end . "_" . $count; 
 		}
 		else
 		{
-			$id = "rec_" . $volume . "_" . $part . "_" . $page . "_" . $page_end . "_0";
+			$id = "rec_" . $volume . "_" . $issue . "_" . $page . "_" . $page_end . "_0";
 			$count = 0;
 		}
 		$prev_pages = $pages;
 	}	
-	elsif($line =~ /<author>(.*)<\/author>/)
+	elsif($line =~ /<author sal="(.*)">(.*)<\/author>/)
 	{
-		$authorname = $1;
+        $sal = $1;
+		$authorname = $2;
 		$authids = $authids . ";" . get_authid($authorname);
-		$author_name = $author_name . ";" .$authorname;
+		$author_name = $author_name . ";" . $sal . $authorname;
 	}
 	elsif($line =~ /<allauthors\/>/)
 	{
@@ -110,7 +111,7 @@ sub get_authid()
 
 	$authorname =~ s/'/\\'/g;
 	
-	$sth=$dbh->prepare("select authid from author where authorname='$authorname'");
+	$sth=$dbh->prepare("select authid from author where authorname='$authorname' and sal='$sal'");
 	$sth->execute();
 			
 	my $ref = $sth->fetchrow_hashref();

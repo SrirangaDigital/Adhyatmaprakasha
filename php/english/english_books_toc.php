@@ -26,9 +26,9 @@
 				<li><a href="../activity.php">Activities</a></li>
 				<li><a href="../magazine.php">Magazine</a>
 					<ul id="magnav">
-						<li><a href="volumes.php">Volumes</a></li>
-						<li><a href="articles.php?letter= ">Articles</a></li>
-						<li><a href="authors.php?letter= ">Authors</a></li>
+						<li><a href="../volumes.php">Volumes</a></li>
+						<li><a href="../articles.php">Articles</a></li>
+						<li><a href="../authors.php">Authors</a></li>
 					</ul>
 				</li>
 				<li><a class="active" href="publications.php">Publications</a>
@@ -160,9 +160,8 @@ else
 /*
 echo "<div class=\"book_cover\"><img src=\"../images/cover.png\" alt=\"Book Cover\" /></div>";
 */
-echo "<div class=\"page_booktitle\"><span class=\"itl\">$book_title</span></div>";
+echo "<div class=\"page_booktitle\">$book_title</div>";
 echo "<div class=\"page_subtitle\"><span class=\"itl\">$daname</span></div>";
-echo "<div class=\"page_other\">";
 
 $book_info = '';
 		
@@ -191,7 +190,8 @@ $book_info = preg_replace("/^ /", "", $book_info);
 $book_info = preg_replace("/^\|/", "", $book_info);
 $book_info = preg_replace("/^ /", "", $book_info);
 
-echo "$book_info</div>";
+echo "<div class=\"page_other\">$book_info</div>";
+
 if($num_rows > 0)
 {
 	echo "<div class=\"treeview\">";

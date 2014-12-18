@@ -84,7 +84,7 @@ if($db->connect_errno > 0)
 //~ $db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
 //~ $rs = mysql_select_db($database,$db) or die("No Database");
 
-echo "<div class=\"page_title\">Volume&nbsp;".intval($volume)."&nbsp;(".$year.")</div>";
+echo "<div class=\"page_title\"><span style=\"font-size: 1.2em;\">ಸಂಪುಟ</span>&nbsp;".intval($volume)."&nbsp;(".$year.")</div>";
 ?>
                 <div class="column1">
                     <ul>
@@ -172,7 +172,7 @@ if($num_rows > 0)
 			$dissue = preg_replace("/^0/", "", $issue);
 			$dissue = preg_replace("/\-0/", "-", $dissue);
 			
-			echo "\n<li class=\"li_below\"><span class=\"yearspan\"><a href=\"toc.php?vol=$volume&amp;issue=$issue\">issue&nbsp;".$dissue;
+			echo "\n<li class=\"li_below\"><span class=\"yearspan\"><a href=\"toc.php?vol=$volume&amp;issue=$issue\"><span style=\"font-size: 1.15em;\">ಸಂಚಿಕೆ</span>&nbsp;".$dissue;
 			if($month != '')
 			{
 				echo "&nbsp;($month)";

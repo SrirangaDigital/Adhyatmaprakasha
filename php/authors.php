@@ -22,15 +22,15 @@
 				<li><a class="active" href="magazine.php">Magazine</a>
 					<ul id="magnav">
 						<li><a href="volumes.php">Volumes</a></li>
-						<li><a href="articles.php?letter= ">Articles</a></li>
+						<li><a href="articles.php">Articles</a></li>
 						<li><a href="authors.php">Authors</a></li>
 					</ul>
 				</li>
 				<li><a href="publications.php">Publications</a>
 					<ul id="pubnav">
-						<li><a href="kannada_books.html">Kannada Books</a></li>
-						<li><a href="sanskrit_books.html">Sanskrit Books</a></li>
-						<li><a href="english_books.html">English Books</a></li>
+						<li><a href="kannada_books.php">Kannada Books</a></li>
+						<li><a href="sanskrit_books.php">Sanskrit Books</a></li>
+						<li><a href="english_books.php">English Books</a></li>
 					</ul>
 				</li>
 				<li><a href="appeal.php">Appeal</a></li>
@@ -48,92 +48,166 @@
 					<span class="lang1"><a href="authors.php">Authors</a></span><br /><br />
 				</p>
 		</div>
-		<div class="colmiddle">
-			<div class="title">List of Authors</div>
-			<div class="alphabet">
-				<span class="letter"><a href="authors.php?letter= ">All</a></span>
-				<span class="letter"><a href="authors.php?letter=ಅ">ಅ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಆ">ಆ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಇ">ಇ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಉ">ಉ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಋ">ಋ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಎ">ಎ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಒ">ಒ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಕ">ಕ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಗ">ಗ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಚ">ಚ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಜ">ಜ</a></span>
-				<span class="letter"><a href="authors.php?letter=ತ">ತ</a></span>
-				<span class="letter"><a href="authors.php?letter=ದ">ದ</a></span>
-				<span class="letter"><a href="authors.php?letter=ನ">ನ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಪ">ಪ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಮ">ಮ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಯ">ಯ</a></span>
-				<span class="letter"><a href="authors.php?letter=ರ">ರ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಲ">ಲ</a></span>
-				<span class="letter"><a href="authors.php?letter=ವ">ವ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಶ">ಶ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಸ">ಸ</a></span>
-				<span class="letter"><a href="authors.php?letter=ಹ">ಹ</a></span>		
-			</div>
-			<?php
-				include("connect.php");
-				$db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
-				$rs = mysql_select_db($database,$db) or die("No Database");
+        <div class="colmiddle">
+            <div class="archive_holder">
+                <div class="page_title">List of Authors</div>
+                <table class="letter_tab">
+                    <tr class="level1">
+                        <td>
+                            <div class="letter"><a href="authors.php?letter=ಅ">ಅ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಆ">ಆ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಇ">ಇ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಈ">ಈ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಉ">ಉ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಊ">ಊ</a></div>                        
+                            <div class="letter"><a href="authors.php?letter=ಋ">ಋ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಎ">ಎ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಏ">ಏ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಐ">ಐ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಒ">ಒ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಓ">ಓ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಔ">ಔ</a></div>
+                        </td>
+                    </tr>
+                    <tr class="level2">
+                        <td>
+                            <div class="letter"><a href="authors.php?letter=ಕ">ಕ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಖ">ಖ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಗ">ಗ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಘ">ಘ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಚ">ಚ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಛ">ಛ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಜ">ಜ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಟ">ಟ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಡ">ಡ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ತ">ತ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಥ">ಥ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ದ">ದ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಧ">ಧ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ನ">ನ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಪ">ಪ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಫ">ಫ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಬ">ಬ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಭ">ಭ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಮ">ಮ</a></div>
+                        </td>
+                    </tr>
+                    <tr class="level3">
+                        <td>
+                            <div class="letter"><a href="authors.php?letter=ಯ">ಯ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ರ">ರ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಲ">ಲ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ವ">ವ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಶ">ಶ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಷ">ಷ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಸ">ಸ</a></div>
+                            <div class="letter"><a href="authors.php?letter=ಹ">ಹ</a></div>
+                            <div class="letter"><a href="authors.php?letter=Special">#</a></div>
+                        </td>
+                    </tr>
+                </table>
+                <ul class="dot">
+<?php
 
-				$letter=$_GET['letter'];
+include("connect.php");
+require_once("common.php");
 
-				$query = "select authorname from author where authorname like '$letter%' order by authorname";
-				$result = mysql_query($query);
+if(isset($_GET['letter']))
+{
+	$letter=$_GET['letter'];
 
-				$num_rows = mysql_num_rows($result);
-				
-				if($num_rows)
-				{
-					echo("<ul>");
-					for($i=1;$i<=$num_rows;$i++)
-					{	
-						$row=mysql_fetch_assoc($result);
-						$authorname = $row['authorname'];
-						echo("<li>");
-						echo("<span class=\"titlespan\"><a href=\"authart.php?authorname=$authorname\">$authorname</a></span><br /><br />");
-						echo("</li>\n");
-					}
-					echo("</ul>");
-				}
-			?>
+	if(!(isValidLetter($letter)))
+	{
+		echo "<li>Invalid URL</li>";
+		
+		echo "</ul></div></div>";
+		include("include_footer.php");
+		echo "<div class=\"clearfix\"></div></div>";
+		include("include_footer_out.php");
+		echo "</body></html>";
+		exit(1);
+	}
+
+	if($letter == '')
+	{
+		$letter = 'ಅ';
+	}
+}
+else
+{
+	$letter = 'ಅ';
+}
+
+$db = @new mysqli('localhost', "$user", "$password", "$database");
+if($db->connect_errno > 0)
+{
+	echo '<li>Not connected to the database [' . $db->connect_errno . ']</li>';
+	echo "</ul></div></div>";
+	include("include_footer.php");
+	echo "<div class=\"clearfix\"></div></div>";
+	include("include_footer_out.php");
+	echo "</body></html>";
+	exit(1);
+}
+
+//~ $db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
+//~ $rs = mysql_select_db($database,$db) or die("No Database");
+if($letter == 'Special')
+{
+	$query = "select * from author where authorname regexp '^[a-zA-Z]' order by authorname";
+}
+
+else
+{
+    $query = "select * from author where authorname like '$letter%' order by authorname";
+}
+/*
+$query = "select * from author where authorname like '$letter%' order by authorname";
+*/
+
+//~ $result = mysql_query($query);
+//~ $num_rows = mysql_num_rows($result);
+
+$result = $db->query($query); 
+$num_rows = $result ? $result->num_rows : 0;
+
+if($num_rows > 0)
+{
+	for($i=1;$i<=$num_rows;$i++)
+	{
+		//~ $row=mysql_fetch_assoc($result);
+		$row = $result->fetch_assoc();
+
+		$authid=$row['authid'];
+		$authorname=$row['authorname'];
+        $sal=$row['sal'];
+        
+		echo "<li>";
+        if($sal != '')
+        {
+            echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
+        }
+        else
+        {
+            echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$authorname</a></span>";
+        }
+		echo "</li>\n";
+	}
+}
+else
+{
+	echo "<li>Sorry! No author names were found to begin with the letter '$letter'</li>";
+}
+
+if($result){$result->free();}
+$db->close();
+?>
+                </ul>
+            </div>
 		</div>
-		<div class="col2">
-			<div class="widget">
-				<div class="title">News updates</div>
-				<p>
-					<span class="news"><a href="circulars/intro.php" target="_blank">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
-				</p>
-			</div>
-			<div class="rule"></div>
-			<div class="widget">
-				<div class="title">Top viewed books</div>
-				<p><?php include("topviewed.php")?></p>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="foot_box">
-			<div class="fleft">
-				&copy;2007-2011 Adhyatmaprakasha Karyalaya, Holenarsipura. All Rights Reserved
-			</div>
-			<div class="fright">
-				<ul>
-					<li><a href="#">Terms of Use</a></li>
-					<li>|</li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li>|</li>
-					<li><a href="php/contact.php">Contact Us</a></li>
-					<li>&nbsp;</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        <?php include("include_footer.php");?>
+    </div>
+    <?php include("include_footer_out.php");?>
 </div>
 </body>
 </html>

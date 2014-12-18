@@ -7,6 +7,9 @@ pwd="mysql"
 
 echo "drop database apk; create database apk;" | /usr/bin/mysql -uroot -pmysql
 
+perl author_magazine.pl $host $db $usr $pwd
+perl article_magazine.pl $host $db $usr $pwd
+
 perl author_english.pl $host $db $usr $pwd
 perl author_kannada.pl $host $db $usr $pwd
 perl author_sanskrit.pl $host $db $usr $pwd

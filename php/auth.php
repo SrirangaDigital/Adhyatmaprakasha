@@ -249,9 +249,10 @@ else
 {
 	echo "No data in the database";
 }
+echo "</ul>";
 if($result){$result->free();}
 $db->close();
-?>               </ul>
+?> 
             </div>
         </div>
         <?php include("include_footer.php");?>

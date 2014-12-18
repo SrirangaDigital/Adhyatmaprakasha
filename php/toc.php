@@ -108,7 +108,7 @@ if($num_rows > 0)
 	$dissue = preg_replace("/^0/", "", $issue);
 	$dissue = preg_replace("/\-0/", "-", $dissue);
 	
-	echo "<div class=\"page_title\"><span class=\"motif rec_motif\"></span>Volume&nbsp;".intval($volume)."&nbsp;- Issue&nbsp;".$dissue."&nbsp;&nbsp;:&nbsp;&nbsp;$month&nbsp;".$year."</div>";
+	echo "<div class=\"page_title\"><span style=\"font-size: 1.1em;\">ಸಂಪುಟ</span>&nbsp;".intval($volume)."&nbsp;- <span style=\"font-size: 1.1em;\">ಸಂಚಿಕೆ</span>&nbsp;".$dissue."&nbsp;&nbsp;:&nbsp;&nbsp;<span style=\"font-size: 1.1em;\">$month</span>&nbsp;".$year."</div>";
 	echo "<ul class=\"dot\">";
 }
 
@@ -149,7 +149,7 @@ if($num_rows1 > 0)
 		if($authid != 0)
 		{
 
-			echo "<br />&nbsp;&nbsp;&nbsp;<span style=\"color: #3D3D3D;\">&mdash;</span>";
+			echo "<br />&mdash;";
 			$aut = preg_split('/;/',$authid);
 
 			$fl = 0;
@@ -172,12 +172,12 @@ if($num_rows1 > 0)
 
 					if($fl == 0)
 					{
-						echo "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$authorname</span></a></span>";
+						echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$authorname</span></a></span>";
 						$fl = 1;
 					}
 					else
 					{
-						echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
+						echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
 					}
 				}
 				if($result2){$result2->free();}

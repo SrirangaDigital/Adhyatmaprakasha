@@ -5,7 +5,10 @@ function isValidId($book_id)
 	if(is_array($book_id)){return false;}
 	return preg_match("/^[0-9][0-9][0-9]|[0-9][0-9][0-9][A-Z]$/", $book_id) ? true : false;
 }
-
+function isValidLetter($letter)
+{
+	return is_array($letter) ? false : true;
+}
 function isValidType($type)
 {
 	if(is_array($type)){return false;}

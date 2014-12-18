@@ -26,8 +26,8 @@
 				<li><a href="magazine.php">Magazine</a>
 					<ul id="magnav">
 						<li><a href="volumes.php">Volumes</a></li>
-						<li><a href="articles.php?letter= ">Articles</a></li>
-						<li><a href="authors.php?letter= ">Authors</a></li>
+						<li><a href="articles.php">Articles</a></li>
+						<li><a href="authors.php">Authors</a></li>
 					</ul>
 				</li>
 				<li><a class="active" href="publications.php">Publications</a>
@@ -146,7 +146,7 @@ if($num_rows > 0)
 					}
 					else
 					{
-						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
+						$disp_author = $disp_author .  "<span class=\"authorspan\">&nbsp;;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
 					}
 				}
 				if($result2){$result2->free();}
@@ -154,12 +154,12 @@ if($num_rows > 0)
 		}
 
 		$book_info = '';
-		
+
 		if($edition != '00')
 		{
             $edition_name = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ");
 
-			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ | ";
+			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ  | ";
 		}
 		if($volume != '00')
 		{

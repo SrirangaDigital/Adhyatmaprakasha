@@ -22,8 +22,8 @@
 				<li><a href="magazine.php">Magazine</a>
 					<ul id="magnav">
 						<li><a href="volumes.php">Volumes</a></li>
-						<li><a href="articles.php?letter= ">Articles</a></li>
-						<li><a href="authors.php?letter= ">Authors</a></li>
+						<li><a href="articles.php">Articles</a></li>
+						<li><a href="authors.php">Authors</a></li>
 					</ul>
 				</li>
 				<li><a class="active" href="publications.php">Publications</a>
@@ -50,7 +50,7 @@
 		</div>
 		<div class="colmiddle">
             <div class="archive_holder">
-                <div class="page_title"><span style="font-weight: normal;">संस्कृतम् की पुस्तकों</span></div>
+                <div class="page_title"><span style="font-size: 0.9em">संस्कृतम् की पुस्तकों</span></div>
                 
 <?php
 include("connect.php");

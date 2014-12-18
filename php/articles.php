@@ -22,8 +22,8 @@
 				<li><a class="active" href="magazine.php">Magazine</a>
 					<ul id="magnav">
 						<li><a href="volumes.php">Volumes</a></li>
-						<li><a href="articles.php?letter= ">Articles</a></li>
-						<li><a href="authors.php?letter= ">Authors</a></li>
+						<li><a href="articles.php">Articles</a></li>
+						<li><a href="authors.php">Authors</a></li>
 					</ul>
 				</li>
 				<li><a href="publications.php">Publications</a>
@@ -49,102 +49,208 @@
 				</p>
 		</div>
 		<div class="colmiddle">
-			<div class="title">List of Articles</div>
-			<div class="alphabet">
-				<span class="letter"><a href="articles.php?letter= ">All</a></span>
-						<span class="letter"><a href="articles.php?letter=ಅ">ಅ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಆ">ಆ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಇ">ಇ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಉ">ಉ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಋ">ಋ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಎ">ಎ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಒ">ಒ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಕ">ಕ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಗ">ಗ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಚ">ಚ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಜ">ಜ</a></span>
-						<span class="letter"><a href="articles.php?letter=ತ">ತ</a></span>
-						<span class="letter"><a href="articles.php?letter=ದ">ದ</a></span>
-						<span class="letter"><a href="articles.php?letter=ನ">ನ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಪ">ಪ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಮ">ಮ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಯ">ಯ</a></span>
-						<span class="letter"><a href="articles.php?letter=ರ">ರ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಲ">ಲ</a></span>
-						<span class="letter"><a href="articles.php?letter=ವ">ವ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಶ">ಶ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಸ">ಸ</a></span>
-						<span class="letter"><a href="articles.php?letter=ಹ">ಹ</a></span>		
-			</div>
-			<?php
-				include("connect.php");
-				$db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
-				$rs = mysql_select_db($database,$db) or die("No Database");
+            <div class="archive_holder">
+                <div class="page_title">List Of Articles</div>
+                <table class="letter_tab">
+                    <tr class="level1">
+                        <td>
+                            <div class="letter"><a href="articles.php?letter=ಅ">ಅ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಆ">ಆ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಇ">ಇ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಈ">ಈ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಉ">ಉ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಊ">ಊ</a></div>                        
+                            <div class="letter"><a href="articles.php?letter=ಋ">ಋ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಎ">ಎ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಏ">ಏ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಐ">ಐ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಒ">ಒ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಓ">ಓ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಔ">ಔ</a></div>
+                        </td>
+                    </tr>
+                    <tr class="level2">
+                        <td>
+                            <div class="letter"><a href="articles.php?letter=ಕ">ಕ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಖ">ಖ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಗ">ಗ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಘ">ಘ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಚ">ಚ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಛ">ಛ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಜ">ಜ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಟ">ಟ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಡ">ಡ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ತ">ತ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಥ">ಥ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ದ">ದ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಧ">ಧ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ನ">ನ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಪ">ಪ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಫ">ಫ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಬ">ಬ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಭ">ಭ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಮ">ಮ</a></div>
+                        </td>
+                    </tr>
+                    <tr class="level3">
+                        <td>
+                            <div class="letter"><a href="articles.php?letter=ಯ">ಯ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ರ">ರ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಲ">ಲ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ವ">ವ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಶ">ಶ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಷ">ಷ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಸ">ಸ</a></div>
+                            <div class="letter"><a href="articles.php?letter=ಹ">ಹ</a></div>
+                            <div class="letter"><a href="articles.php?letter=Special">#</a></div>
+                        </td>
+                    </tr>
+                </table>
+                <ul class="dot">
+<?php
 
-				$letter=$_GET['letter'];
+include("connect.php");
+require_once("common.php");
 
-				$query = "select * from article where title like '$letter%' order by title, volume, issue, page";
-				$result = mysql_query($query);
+if(isset($_GET['letter']))
+{
+	$letter=$_GET['letter'];
+	
+	if(!(isValidLetter($letter)))
+	{
+		echo "<li>Invalid URL</li>";
+		
+		echo "</ul></div></div>";
+		include("include_footer.php");
+		echo "<div class=\"clearfix\"></div></div>";
+		include("include_footer_out.php");
+		echo "</body></html>";
+		exit(1);
+	}
+	
+	if($letter == '')
+	{
+		$letter = 'ಅ';
+	}
+}
+else
+{
+	$letter = 'ಅ';
+}
+//~ $db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
+//~ $rs = mysql_select_db($database,$db) or die("No Database");
 
-				$num_rows = mysql_num_rows($result);
+$db = @new mysqli('localhost', "$user", "$password", "$database");
+if($db->connect_errno > 0)
+{
+	echo '<li>Not connected to the database [' . $db->connect_errno . ']</li>';
+	echo "</ul></div></div>";
+	include("include_footer.php");
+	echo "<div class=\"clearfix\"></div></div>";
+	include("include_footer_out.php");
+	echo "</body></html>";
+	exit(1);
+}
+
+if($letter == 'Special')
+{
+	$query = "(select * from article where title regexp '^[a-zA-Z]')
+    UNION ALL (select * from article where title like '(%')
+    UNION ALL (select * from article where title like '`%') order by title, volume, issue, page";
+}
+
+else
+{
+	$query = "select * from article where title like '$letter%' order by title, volume, issue, page";
+}
+
+//~ $result = mysql_query($query);
+//~ $num_rows = mysql_num_rows($result);
+
+$result = $db->query($query); 
+$num_rows = $result ? $result->num_rows : 0;
+
+if($num_rows > 0)
+{
+	for($i=1;$i<=$num_rows;$i++)
+	{
+		//~ $row=mysql_fetch_assoc($result);
+		$row = $result->fetch_assoc();
+		
+		$titleid=$row['titleid'];
+		$title=$row['title'];
+		$page=$row['page'];
+		$authid=$row['authid'];
+		$volume=$row['volume'];
+		$issue=$row['issue'];
+		$year=$row['year'];
+		$month=$row['month'];
+		
+		$title1=addslashes($title);
+		
+		
 				
-				if($num_rows)
+		echo "<li>";
+		echo "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
+		echo "
+		<span class=\"sub_titlespan\">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+		<span class=\"yearspan\">
+			<a href=\"toc.php?vol=$volume&amp;issue=$issue\">Vol.&nbsp;".intval($volume)."&nbsp;(issue. ".$issue.")&nbsp;;&nbsp;$month&nbsp;".$year."</a>
+		</span>";
+		
+		
+		if($authid != 0)
+		{
+
+			echo "<br />&mdash;";
+			$aut = preg_split('/;/',$authid);
+
+			$fl = 0;
+			foreach ($aut as $aid)
+			{
+				$query2 = "select * from author where authid=$aid";
+
+				$result2 = $db->query($query2); 
+				$num_rows2 = $result2 ? $result2->num_rows : 0;
+				
+				if($num_rows2 > 0)
 				{
-					echo("<ul>");
-					for($i=1;$i<=$num_rows;$i++)
-					{	
-						$row=mysql_fetch_assoc($result);
-						$title = $row['title'];
-						$year = $row['year'];
-						$month = $row['month'];
-						$page = $row['page'];  
-						$issue = $row['issue'];
-						$volume = $row['volume'];
-						$authorname = $row['authorname'];
-						$jn = "$volume"."_"."$issue";
-			//			if($volume<10){$volume1 = "0"."$volume"; $volume = $volume1;}
-			//			if($issue<10){$issue1 = "0"."$issue";}
-			//			if($issue>=10){$issue1 = $issue;}
-						
-						echo("<li>");
-						echo("<span class=\"titlespan\"><a href=\"../Volumes/apm$volume/apm$jn/apm$jn.djvu?djvuopts&page=$page&zoom=page\" target=\"_blank\">$title</a></span>&nbsp;|&nbsp;<span class=\"titlespan\"><a href=\"monthly.php?volume=$volume&issue=$issue&year=$year&month=$month\">$year,$month</a></span><br />&nbsp;&nbsp;&nbsp;<span class=\"titlespan\"><a href=\"authart.php?authorname=$authorname\">$authorname</a></span><br /><br />");
-						echo("</li>\n");
+					$row2 = $result2->fetch_assoc();
+
+					$authorname=$row2['authorname'];
+                    $sal=$row2['sal'];
+					
+					if($fl == 0)
+					{
+						echo "<span class=\"authorspan\"><a href=\"../auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$sal&nbsp;$authorname</span></a></span>";
+						$fl = 1;
 					}
-					echo("</ul>");
+					else
+					{
+						echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"../auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$sal&nbsp;$authorname</span></a></span>";
+					}
 				}
-			?>
+				if($result2){$result2->free();}
+			}
+		}
+		echo "<br /><span class=\"downloadspan\"><a href=\"../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\" target=\"_blank\">View article</a>&nbsp;|&nbsp;<a href=\"#\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download article (PDF)</a></span>";
+
+		echo "</li>\n";
+	}
+}
+else
+{
+	echo "<li>Sorry! No articles were found to begin with the letter '$letter'</li>";
+}
+if($result){$result->free();}
+$db->close();
+?>
+			</ul>
+            </div>
 		</div>
-		<div class="col2">
-			<div class="widget">
-				<div class="title">News updates</div>
-				<p>
-					<span class="news"><a href="circulars/intro.php" target="_blank">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
-				</p>
-			</div>
-			<div class="rule"></div>
-			<div class="widget">
-				<div class="title">Top viewed books</div>
-				<p><?php include("topviewed.php")?></p>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="foot_box">
-			<div class="fleft">
-				&copy;2007-2011 Adhyatmaprakasha Karyalaya, Holenarsipura. All Rights Reserved
-			</div>
-			<div class="fright">
-				<ul>
-					<li><a href="#">Terms of Use</a></li>
-					<li>|</li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li>|</li>
-					<li><a href="php/contact.php">Contact Us</a></li>
-					<li>&nbsp;</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        <?php include("include_footer.php");?>
+    </div>
+    <?php include("include_footer_out.php");?>
 </div>
 </body>
 </html>

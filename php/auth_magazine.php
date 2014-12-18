@@ -48,18 +48,23 @@
 					<span class="lang1"><a href="authors.php">Authors</a></span><br /><br />
 				</p>
 		</div>
-		<div class="archive_holder_volume">
-            <div class="page_title"><span style="font-size: 1.2em;">ಸಂಪುಟಗಳು</span></div>
-			<div class="column1"><ul>
+		<div class="colmiddle">
+            <div class="archive_holder">
 <?php
 
 include("connect.php");
+require_once("common.php");
 
-$db = @new mysqli('localhost', "$user", "$password", "$database");
-if($db->connect_errno > 0)
+if(isset($_GET['authid'])){$authid = $_GET['authid'];}else{$authid = '';}
+if(isset($_GET['author'])){$authorname = $_GET['author'];}else{$authorname = '';}
+
+$authorname = entityReferenceReplace($authorname);
+
+if(!(isValidAuthid($authid) && isValidAuthor($authorname)))
 {
-	echo '<li>Not connected to the database [' . $db->connect_errno . ']</li>';
-	echo "</ul></div></div></div>";
+	echo "Invalid URL";
+	
+	echo "</div></div>";
 	include("include_footer.php");
 	echo "<div class=\"clearfix\"></div></div>";
 	include("include_footer_out.php");
@@ -70,18 +75,31 @@ if($db->connect_errno > 0)
 //~ $db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
 //~ $rs = mysql_select_db($database,$db) or die("No Database");
 
-$row_count = 30;
+$db = @new mysqli('localhost', "$user", "$password", "$database");
+if($db->connect_errno > 0)
+{
+	echo 'Not connected to the database [' . $db->connect_errno . ']';
+	echo "</div></div>";
+	include("include_footer.php");
+	echo "<div class=\"clearfix\"></div></div>";
+	include("include_footer_out.php");
+	echo "</body></html>";
+	exit(1);
+}
 
-$query = "select distinct volume from article order by volume";
 
-$result = $db->query($query); 
-$num_rows = $result ? $result->num_rows : 0;
+echo "<div class=\"page_title\">Bibliography of $authorname</div>";
+echo "<ul>";
+
+$query = "select * from article where authid like '%$authid%'";
+
+// echo $query;
 
 //~ $result = mysql_query($query);
 //~ $num_rows = mysql_num_rows($result);
 
-$count = 0;
-$col = 1;
+$result = $db->query($query); 
+$num_rows = $result ? $result->num_rows : 0;
 
 if($num_rows > 0)
 {
@@ -89,45 +107,24 @@ if($num_rows > 0)
 	{
 		//~ $row=mysql_fetch_assoc($result);
 		$row = $result->fetch_assoc();
-		$volume=$row['volume'];
 
-		$query1 = "select distinct year from article where volume='$volume'";
-		
-		//~ $result1 = mysql_query($query1);
-		//~ $num_rows1 = mysql_num_rows($result1);
-		$result1 = $db->query($query1); 
-		$num_rows1 = $result1 ? $result1->num_rows : 0;
-		
-		if($num_rows1 > 0)
-		{
-			for($i1=1;$i1<=$num_rows1;$i1++)
-			{
-				//~ $row1=mysql_fetch_assoc($result1);
-				$row1 = $result1->fetch_assoc();
-				
-				if($i1==1)
-				{
-					$year=$row1['year'];
-				}
-				else if($i1==2)
-				{
-					$year2 = $row1['year'];
-					$year21 = preg_split('//',$year2);
-					$year=$year."-".$year21[3].$year21[4];
-				}
-			}
-			$count++;
-			$volume_int = intval($volume);
-			if($count > $row_count)
-			{
-				$col++;
-				echo "</ul></div>\n
-				<div class=\"column$col\"><ul>";
-				$count = 1;
-			}
-			echo "<li><span class=\"yearspan\"><a href=\"issue.php?vol=$volume&amp;year=$year\"><span style=\"font-size: 1.15em;\">ಸಂಪುಟ</span>&nbsp;$volume_int ($year)</a></span></li>";
-		}
-		if($result1){$result1->free();}
+		$titleid=$row['titleid'];
+        $title=$row['title'];
+		$page=$row['page'];
+		$authid=$row['authid'];
+		$volume=$row['volume'];
+		$issue=$row['issue'];
+		$year=$row['year'];
+		$month=$row['month'];
+		echo "<li>";
+		echo "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
+		echo "
+		<span class=\"sub_titlespan\">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+		<span class=\"yearspan\">
+			<a href=\"toc.php?vol=$volume&amp;issue=$issue\">Vol.&nbsp;".intval($volume)."&nbsp;(issue. ".$issue.")&nbsp;;&nbsp;$month&nbsp;".$year."</a>
+		</span>";
+        echo "<br /><span class=\"downloadspan\"><a href=\"../../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\" target=\"_blank\">View article</a>&nbsp;|&nbsp;<a href=\"#\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download article (PDF)</a></span>";
+		echo "</li>\n";
 	}
 }
 else
@@ -137,8 +134,10 @@ else
 if($result){$result->free();}
 $db->close();
 
-?>                
-            </ul></div>
+echo "</ul>";
+
+?>
+            </div>
 		</div>
         <?php include("include_footer.php");?>
     </div>
