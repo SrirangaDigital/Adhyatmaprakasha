@@ -22,8 +22,8 @@
 				<li><a class="active" href="magazine.php">Magazine</a>
 					<ul id="magnav">
 						<li><a href="volumes.php">Volumes</a></li>
-						<li><a href="articles.php?letter= ">Articles</a></li>
-						<li><a href="authors.php?letter= ">Authors</a></li>
+						<li><a href="articles.php">Articles</a></li>
+						<li><a href="authors.php">Authors</a></li>
 					</ul>
 				</li>
 				<li><a href="publications.php">Publications</a>
@@ -56,8 +56,8 @@
 				Currently it has around 3000 subscribers. In addition to articles on Adhyatma by various scholars, the magazine also contains information on Karyalaya's activities and Saptaha's and Shibiras as-well as information on Publications of the Karyalaya are announced in the news section.<br /><br />
 
 				This Magazine can be browsed by 
-				<span class="emph"><a href="articles.php?letter=">Articles</a></span>, 
-				<span class="emph"><a href="authors.php?letter=">Authors</a></span> and by 
+				<span class="emph"><a href="articles.php">Articles</a></span>, 
+				<span class="emph"><a href="authors.php">Authors</a></span> and by 
 				<span class="emph"><a href="volumes.php">Volumes</a></span>.<br /><br />
 			
 				Editors:<br />

@@ -220,7 +220,6 @@ html, body {
 	margin:0em auto 1em auto;
 #	text-align:center;
 	font-size:14px;
-	font-weight:bold;
 }
 .alphabet .letter {
 	font-size:14px;
@@ -229,7 +228,7 @@ html, body {
 }
 .alphabet .letter a{
 	color: #D2691E;
-	text-decoration:underline;
+	text-decoration:none;
 }
 .alphabet .letter a:Hover{
 	color: #F05509;
@@ -642,7 +641,6 @@ hr{
 .content .page_booktitle{
 	font-size: 1em;
 	color: #D2691E;
-    font-weight: bold;
 	width: 80%;
 	border-bottom: 1px solid #D2691E;
 }
@@ -661,20 +659,18 @@ hr{
 }
 .content .page_title{
 	margin: 0em 0em 2em 0em;
-	font-size: 1em;
-    font-weight: bold;
+	font-size: 1.1em;
 	color: #D2691E;
 	width: 80%;
-	border-bottom: 1px solid #D2691E;	
+	border-bottom: 1px solid #D2691E;
 }
-
 .content .archive_holder_volume{
     width: 62%;
 	float:left;
 	min-height: 68em;
 	color: #3D3D3D;
 	font-size: 0.85em;
-    margin: 1.5em 1em 0em 0em;
+    margin: 1.8em 1em 0em 0em;
 	border-top: 1px solid #D2691E;
 	border-right: 1px solid #D2691E;
 	border-left: 1px solid #D2691E;
@@ -718,9 +714,23 @@ hr{
 	margin-left: 1.5em;
 	border-right: 1px solid #CCCCCC;
 }
+.magazine_author{
+	color: #D2691E;
+}
+.magazine_author a{
+	color: #D2691E;
+	text-decoration:none;
+}
+.magazine_author a:Hover{
+	text-decoration:underline;
+}
+.dot .magazine_title{
+    color: #3D3D3D;
+}
 .yearspan {
 	color: #555555;
 	font-size: 0.85em;
+    white-space: nowrap;
 }
 .yearspan a{
 	color: #555555;
@@ -760,6 +770,8 @@ hr{
 .letter{
 	display: inline;
 }
+.letter .other{
+}
 .letter a{
 	text-decoration: none;
 	color: #D2691E;
@@ -767,5 +779,6 @@ hr{
 }
 .letter a:hover{
 	text-decoration: underline;
+	color: #F05509;
     font-weight: bold;
 }

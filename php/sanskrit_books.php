@@ -41,16 +41,16 @@
 	</div>
 	<div class="content">
 		<div class="colnav">
-				<p>
-					<br /><br />
-					<span class="lang1"><a href="kannada_books.php">Kannada</a></span><br /><br />
-					<span class="lang1"><a href="sanskrit_books.php">Sanskrit</a></span><br /><br />
-					<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
-				</p>
+            <p>
+				<br /><br />
+				<span class="lang1"><a href="kannada_books.php">Kannada</a></span><br /><br />
+				<span class="lang1"><a href="sanskrit_books.php">Sanskrit</a></span><br /><br />
+				<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
+			</p>
 		</div>
 		<div class="colmiddle">
             <div class="archive_holder">
-                <div class="page_title"><span style="font-size: 0.9em">संस्कृतम् की पुस्तकों</span></div>
+                <div class="page_title">संस्कृतम् की पुस्तकों</div>
                 
 <?php
 include("connect.php");
@@ -291,6 +291,7 @@ function display_tabs($num)
             </div>
         </div>
         <?php include("include_footer.php");?>
+        <div class="clearfix"></div>
     </div>
     <?php include("include_footer_out.php");?>
 </div>

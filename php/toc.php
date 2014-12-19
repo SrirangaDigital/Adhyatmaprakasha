@@ -108,7 +108,7 @@ if($num_rows > 0)
 	$dissue = preg_replace("/^0/", "", $issue);
 	$dissue = preg_replace("/\-0/", "-", $dissue);
 	
-	echo "<div class=\"page_title\"><span style=\"font-size: 1.1em;\">ಸಂಪುಟ</span>&nbsp;".intval($volume)."&nbsp;- <span style=\"font-size: 1.1em;\">ಸಂಚಿಕೆ</span>&nbsp;".$dissue."&nbsp;&nbsp;:&nbsp;&nbsp;<span style=\"font-size: 1.1em;\">$month</span>&nbsp;".$year."</div>";
+	echo "<div class=\"page_title\">ಸಂಪುಟ&nbsp;".intval($volume)."&nbsp;- ಸಂಚಿಕೆ&nbsp;".$dissue."&nbsp;&nbsp;:&nbsp;&nbsp;$month&nbsp;".$year."</div>";
 }
 
 if($result){$result->free();}
@@ -141,8 +141,6 @@ if($num_rows1 > 0)
 		
 		$title1=addslashes($title);
 		
-		
-		
 		echo "<li>";
 		echo "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
 		
@@ -150,7 +148,7 @@ if($num_rows1 > 0)
 		if($authid != 0)
 		{
 
-			echo "<br />&mdash;";
+			echo "<br /><span style=\"color: #D2691E\">&mdash;</span>";
 			$aut = preg_split('/;/',$authid);
 
 			$fl = 0;
@@ -171,16 +169,30 @@ if($num_rows1 > 0)
 					
 					$authorname=$row2['authorname'];
                     $sal=$row2['sal'];
-
-					if($fl == 0)
-					{
-						echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$sal&nbsp;$authorname</span></a></span>";
-						$fl = 1;
-					}
-					else
-					{
-						echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
-					}
+                    if($sal != '')
+                    {
+                        if($fl == 0)
+                        {
+                            echo "<span class=\"magazine_author\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$sal&nbsp;$authorname</span></a></span>";
+                            $fl = 1;
+                        }
+                        else
+                        {
+                            echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"magazine_author\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
+                        }
+                    }
+                    else
+                    {
+                        if($fl == 0)
+                        {
+                            echo "<span class=\"magazine_author\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\"><span style=\"color: #D2691E\">$authorname</span></a></span>";
+                            $fl = 1;
+                        }
+                        else
+                        {
+                            echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"magazine_author\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
+                        }                        
+                    }
 				}
 				if($result2){$result2->free();}
 			}
@@ -202,6 +214,7 @@ $db->close();
             </div>
         </div>
         <?php include("include_footer.php");?>
+        <div class="clearfix"></div>
     </div>
     <?php include("include_footer_out.php");?>
 </div>

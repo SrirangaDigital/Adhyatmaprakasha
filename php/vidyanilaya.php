@@ -22,8 +22,8 @@
 				<li><a href="magazine.php">Magazine</a>
 					<ul id="magnav">
 						<li><a href="volumes.php">Volumes</a></li>
-						<li><a href="articles.php?letter= ">Articles</a></li>
-						<li><a href="authors.php?letter= ">Authors</a></li>
+						<li><a href="articles.php">Articles</a></li>
+						<li><a href="authors.php">Authors</a></li>
 					</ul>
 				</li>
 				<li><a class="active" href="publications.php">Publications</a>

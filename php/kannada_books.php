@@ -101,7 +101,7 @@ if($num_rows > 0)
 	{
 		//~ $row=mysql_fetch_assoc($result);
 		$row = $result->fetch_assoc();
-		
+
 		$book_id = $row['book_id'];
 		$level = $row['level'];
 		$title = $row['title'];
@@ -294,6 +294,7 @@ function display_tabs($num)
            </div>
         </div>
         <?php include("include_footer.php");?>
+        <div class="clearfix"></div>
     </div>
     <?php include("include_footer_out.php");?>
 </div>

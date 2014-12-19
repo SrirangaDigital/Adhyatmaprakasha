@@ -109,7 +109,7 @@ if($num_rows > 0)
 				{
 					$year=$row1['year'];
 				}
-				else if($i1==2)
+				elseif($i1==2)
 				{
 					$year2 = $row1['year'];
 					$year21 = preg_split('//',$year2);
@@ -141,6 +141,7 @@ $db->close();
             </ul></div>
 		</div>
         <?php include("include_footer.php");?>
+        <div class="clearfix"></div>
     </div>
     <?php include("include_footer_out.php");?>
 </div>

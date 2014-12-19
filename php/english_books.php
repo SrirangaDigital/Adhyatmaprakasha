@@ -50,7 +50,7 @@
 		</div>
 		<div class="colmiddle">
             <div class="archive_holder">
-                <div class="page_title"><span style="font-size: 0.9em">English Books</span></div>
+                <div class="page_title">English Books</div>
                 
 <?php
 include("connect.php");
@@ -293,6 +293,7 @@ function display_tabs($num)
             </div>
         </div>
         <?php include("include_footer.php");?>
+        <div class="clearfix"></div>
     </div>
     <?php include("include_footer_out.php");?>
 </div>

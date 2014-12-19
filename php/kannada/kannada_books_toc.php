@@ -26,7 +26,7 @@
 				<li><a href="../activity.php">Activities</a></li>
 				<li><a href="../magazine.php">Magazine</a>
 					<ul id="magnav">
-						<li><a href="..volumes.php">Volumes</a></li>
+						<li><a href="../volumes.php">Volumes</a></li>
 						<li><a href="../articles.php">Articles</a></li>
 						<li><a href="../authors.php">Authors</a></li>
 					</ul>
@@ -166,9 +166,10 @@ echo "<div class=\"page_other\">";
 
 $book_info = '';
 		
+
 if($edition != '00')
 {
-	$book_info = $book_info . "ಆವೃತ್ತಿ " . intval($edition);
+    $book_info = $book_info . "ಆವೃತ್ತಿ  " . intval($edition);
 }
 if($volume != '00')
 {
@@ -311,6 +312,7 @@ function display_tabs($num)
             </div>
         </div>
         <?php include("include_footer.php");?>
+        <div class="clearfix"></div>
     </div>
     <?php include("include_footer_out.php");?>
 </div>

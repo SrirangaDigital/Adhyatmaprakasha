@@ -121,7 +121,7 @@ if($num_rows > 0)
 		echo "
 		<span class=\"sub_titlespan\">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 		<span class=\"yearspan\">
-			<a href=\"toc.php?vol=$volume&amp;issue=$issue\">Vol.&nbsp;".intval($volume)."&nbsp;(issue. ".$issue.")&nbsp;;&nbsp;$month&nbsp;".$year."</a>
+			<a href=\"toc.php?vol=$volume&amp;issue=$issue\"><span style=\"font-size: 1.1em;\">ಸಂಪುಟ.</span>&nbsp;".intval($volume)."&nbsp;(<span style=\"font-size: 1.1em;\">ಸಂಚಿಕೆ.</span> ".$issue.")&nbsp;;&nbsp;$month&nbsp;".$year."</a>
 		</span>";
         echo "<br /><span class=\"downloadspan\"><a href=\"../../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\" target=\"_blank\">View article</a>&nbsp;|&nbsp;<a href=\"#\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download article (PDF)</a></span>";
 		echo "</li>\n";
@@ -140,6 +140,7 @@ echo "</ul>";
             </div>
 		</div>
         <?php include("include_footer.php");?>
+        <div class="clearfix"></div>
     </div>
     <?php include("include_footer_out.php");?>
 </div>
