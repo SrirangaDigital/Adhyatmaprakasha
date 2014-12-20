@@ -147,8 +147,7 @@ if($num_rows1 > 0)
 		
 		if($authid != 0)
 		{
-
-			echo "<br /><span style=\"color: #D2691E\">&mdash;</span>";
+            echo "<br /><span style=\"color: #D2691E\">&mdash;</span>";
 			$aut = preg_split('/;/',$authid);
 
 			$fl = 0;

@@ -88,7 +88,7 @@ if($db->connect_errno > 0)
 }
 
 
-echo "<div class=\"page_title\">Bibliography of $authorname</div>";
+echo "<div class=\"page_title\">$authorname ರವರ ಲೇಖನಗಳು</div>";
 echo "<ul class=\"dot\">";
 
 $query = "select * from article where authid like '%$authid%'";
