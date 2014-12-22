@@ -97,19 +97,18 @@ $month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"Ap
 if($type == "kannada")
 {
     echo "<div class=\"page_title\">$authorname ರಚಿಸಿರುವ ಗ್ರಂಥಗಳು</div>";
-    $query = "select type, book_id, title, page from kannada_books_list where authid like '%$authid%' and authorname = '$authorname' and type = '$type'"; 
+    $query = "select * from kannada_books_list where authid like '%$authid%' and authorname = '$authorname' and type = 'kannada'";
 }
 if($type == "sanskrit")
 {
     echo "<div class=\"page_title\">$authorname द्वारा लिखित पुस्तकों</div>";
-    $query = "select type, book_id, title, page from sanskrit_books_list where authid like '%$authid%' and authorname = '$authorname' and type = '$type'"; 
+    $query = "select * from sanskrit_books_list where authid like '%$authid%' and authorname = '$authorname' and type = 'sanskrit'";
 }
 if($type == "english")
 {
     echo "<div class=\"page_title\">Books written by $authorname</div>";
-    $query = "select type, book_id, title, page from english_books_list where authid like '%$authid%' and authorname = '$authorname' and type = '$type'"; 
+    $query = "select * from english_books_list where authid like '%$authid%' and authorname = '$authorname' and type = 'english'";
 }
-echo "<ul>";
 
 // echo $query;
 
@@ -118,138 +117,110 @@ echo "<ul>";
 
 $result = $db->query($query); 
 $num_rows = $result ? $result->num_rows : 0;
-
+//~ echo $num_rows;
 if($num_rows > 0)
 {
+    echo "<ul>";
+
 	for($i=1;$i<=$num_rows;$i++)
 	{
 		//~ $row=mysql_fetch_assoc($result);
 		$row = $result->fetch_assoc();
 
-		$type=$row['type'];
 		$book_id=$row['book_id'];
+        $type=$row['type'];
 		$title=$row['title'];
 		$page=$row['page'];
-		
-		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
+		$page_end=$row['page_end'];
+        $authid=$row['authid'];
+		$authorname=$row['authorname'];
+		$edition=$row['edition'];
+		$volume=$row['volume'];
+		$part=$row['part'];
+		$year=$row['year'];
+		$month=$row['month'];
+        
+        $title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
 		$title = preg_replace('/!/', "", $title);
-		
-		if(($type == "kannada") || ($type == "sanskrit") || ($type == "english"))
-		{
-			if($type == "kannada")
-			{
-				$query_aux = "select * from kannada_books_list where book_id='$book_id' and type='".$type."'";
-			}
-			else
-			{
-				$query_aux = "select * from ".$type."_books_list where book_id='$book_id' and type='".$type."'";
-			}
 			
-			//~ $result_aux = mysql_query($query_aux);
-			//~ $num_rows_aux = mysql_num_rows($result_aux);
 			
-			$result_aux = $db->query($query_aux); 
-			$num_rows_aux = $result_aux ? $result_aux->num_rows : 0;
-
-			//~ $row_aux=mysql_fetch_assoc($result_aux);
-			$row_aux = $result_aux->fetch_assoc();
-			
-			$authid=$row_aux['authid'];
-			$authorname=$row_aux['authorname'];
-			$type=$row_aux['type'];
-			$page=$row_aux['page'];
-			$page_end=$row_aux['page_end'];
-			$edition=$row_aux['edition'];
-			$volume=$row_aux['volume'];
-			$part=$row_aux['part'];
-			$year=$row_aux['year'];
-			$month=$row_aux['month'];
-			$book_id=$row_aux['book_id'];
-			
-			if($result_aux){$result_aux->free();}
-			
-			$book_info = '';
-            if($type == "kannada")
+        $book_info = '';
+        if($type == "kannada")
+        {
+            if($edition != '00')
             {
-                if($edition != '00')
-                {
-                    $edition_name = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ");
-
-                    $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ ";
-                }
-            
-                if($volume != '00')
-                {
-                    $book_info = $book_info . "  | ಸಂಪುಟ " . intval($volume);
-                }
-                if($part != '00')
-                {
-                    $book_info = $book_info . "  | ಭಾಗ " . intval($part);
-                }
-                if(intval($page) != 0)
-                {
-                    $book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
-                }
+                $edition_name = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ");
+                $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ ";
             }
-            if($type == "sanskrit")
+            if($volume != '00')
             {
-                if($edition != '00')
-                {
-                    $edition_name = array("1"=>"पहले ","2"=>"दूसरे ","3"=>"तीसरे ","4"=>"चौथे ","5"=>"पांचवें ");
-
-                    $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;संस्करण";
-                }
-                if($volume != '00')
-                {
-                    $book_info = $book_info . " | Volume " . intval($volume);
-                }
-                if($part != '00')
-                {
-                    $book_info = $book_info . " | Part " . intval($part) ;
-                }
-                if(intval($page) != 0)
-                {
-                    $book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);	
-                }
+                $book_info = $book_info . "  | ಸಂಪುಟ " . intval($volume);
             }
-            if($type == "english")
+            if($part != '00')
             {
-                if($edition != '00')
-                {
-                    $edition_name = array("1"=>"First","2"=>"Second","3"=>"Third","4"=>"Fourth","5"=>"Fifth");
-
-                    $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;Edition";
-                }
-                if($volume != '00')
-                {
-                    $book_info = $book_info . " | Volume " . intval($volume);
-                }
-                if($part != '00')
-                {
-                    $book_info = $book_info . " | Part " . intval($part);
-                }
-                if(intval($page) != 0)
-                {
-                    $book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);
-                }
+                $book_info = $book_info . "  | ಭಾಗ " . intval($part);
             }
-			$book_info = preg_replace("/^ /", "", $book_info);
-            $book_info = preg_replace("/^\|/", "", $book_info);
-            $book_info = preg_replace("/^ /", "", $book_info);
-            
-			echo "<li><span class=\"motif ".$type."_motif\"></span>";
-			echo "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
-			echo "<br /><span class=\"bookspan\">$book_info</span>";
-			echo "<br /><span class=\"downloadspan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">View TOC</a>&nbsp;|&nbsp;<a target=\"_blank\" href=\"../Volumes/$type/$book_id/index.djvu?djvuopts&amp;page=1&amp;zoom=page\">Read Book</a>&nbsp;|&nbsp;<a href=\"\" target=\"_blank\">Download Book (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download Book (PDF)</a></span>";
-			echo "</li>\n";
-		}
-	}
+            if(intval($page) != 0)
+            {
+                $book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);
+            }
+        }
+        if($type == "sanskrit")
+        {
+            if($edition != '00')
+            {
+                $edition_name = array("1"=>"पहले ","2"=>"दूसरे ","3"=>"तीसरे ","4"=>"चौथे ","5"=>"पांचवें ");
+                $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;संस्करण";
+            }
+            if($volume != '00')
+            {
+                $book_info = $book_info . " | Volume " . intval($volume);
+            }
+            if($part != '00')
+            {
+                $book_info = $book_info . " | Part " . intval($part) ;
+            }
+            if(intval($page) != 0)
+            {
+                $book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);
+            }
+        }
+        if($type == "english")
+        {
+            if($edition != '00')
+            {
+                $edition_name = array("1"=>"First","2"=>"Second","3"=>"Third","4"=>"Fourth","5"=>"Fifth");
+                $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;Edition";
+            }
+            if($volume != '00')
+            {
+                $book_info = $book_info . " | Volume " . intval($volume);
+            }
+            if($part != '00')
+            {
+                $book_info = $book_info . " | Part " . intval($part);
+            }
+            if(intval($page) != 0)
+            {
+                $book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);
+            }
+        }
+        $book_info = preg_replace("/^ /", "", $book_info);
+        $book_info = preg_replace("/^\|/", "", $book_info);
+        $book_info = preg_replace("/^ /", "", $book_info);
+        
+		echo "<li>";
+		echo "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
+		echo "<br /><span class=\"bookspan\">$book_info</span>";
+		echo "<br /><span class=\"downloadspan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">View TOC</a>&nbsp;|&nbsp;<a target=\"_blank\" href=\"../Volumes/$type/$book_id/index.djvu?djvuopts&amp;page=1&amp;zoom=page\">Read Book</a>&nbsp;|&nbsp;<a href=\"\" target=\"_blank\">Download Book (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download Book (PDF)</a></span>";
+		echo "</li>\n";
+    }
+    echo "</ul>";
 }
 else
 {
 	echo "No data in the database";
 }
-echo "</ul>";
 if($result){$result->free();}
 $db->close();
 ?> 

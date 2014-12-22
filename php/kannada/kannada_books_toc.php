@@ -38,9 +38,9 @@
 						<li><a href="../english_books.php">English Books</a></li>
 					</ul>
 				</li>
-				<li><a href="appeal.php">Appeal</a></li>
-				<li><a href="news.php">News</a></li>
-				<li><a href="contact.php">Contact</a></li>
+				<li><a href="../appeal.php">Appeal</a></li>
+				<li><a href="../news.php">News</a></li>
+				<li><a href="../contact.php">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -165,7 +165,6 @@ echo "<div class=\"page_subtitle\"><span class=\"itl\">$daname</span></div>";
 echo "<div class=\"page_other\">";
 
 $book_info = '';
-		
 
 if($edition != '00')
 {
@@ -208,7 +207,6 @@ if($num_rows > 0)
 		$slno = $row['slno'];
 		
 		$title = "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../../Volumes/$type/$book_id/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
-		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
 		if($first)
 		{
 			array_push($stack,$level);
@@ -227,10 +225,10 @@ if($num_rows > 0)
 			//$alt_link = $plus_link;
 			//$alt_link = preg_replace('/#/',"#$parent_id",$alt_link);
 			$deffer = preg_replace('/:rep:/',"$plus_link",$deffer);
-			echo $deffer;			
+			echo $deffer;
 
-			$ul_id++;			
-			$li_id++;			
+			$ul_id++;
+			$li_id++;
 			array_push($stack,$level);
 			array_push($p_stack,$ul_id);
 			//echo "<ul>\n\t<li>$title(" . display_stack($stack) . ")\n";

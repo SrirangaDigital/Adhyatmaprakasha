@@ -5,10 +5,8 @@
 <title>Adhyatma Prakash Karyalaya</title>
 <link href="style/reset.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="style/style.css" media="screen" rel="stylesheet" type="text/css" />
-
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/publication.js"></script>
-
 </head>
 
 <body>
