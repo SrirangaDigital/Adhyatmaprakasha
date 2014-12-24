@@ -10,3 +10,4 @@
 <!ELEMENT page (#PCDATA)>
 <!ELEMENT allauthors (author*)>
 <!ELEMENT author (#PCDATA)>
+<!ATTLIST author sal CDATA #REQUIRED>

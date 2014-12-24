@@ -154,7 +154,7 @@ if($db->connect_errno > 0)
 //~ $rs = mysql_select_db($database,$db) or die("No Database");
 if($letter == 'Special')
 {
-	$query = "select * from author where authorname regexp '^[a-zA-Z]' order by authorname";
+	$query = "select * from author order by authorname";
 }
 
 else
@@ -182,17 +182,20 @@ if($num_rows > 0)
 		$authorname=$row['authorname'];
         $sal=$row['sal'];
         
-		echo "<li>";
-        if($sal != '')
+        if($authorname != '')
         {
-            echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
+            echo "<li>";
+            if($sal != '')
+            {
+                echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
+            }
+            else
+            {
+                echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$authorname</a></span>";
+            }
+            echo "</li>\n";
         }
-        else
-        {
-            echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$authorname</a></span>";
-        }
-		echo "</li>\n";
-	}
+    }
 }
 else
 {
