@@ -102,7 +102,7 @@
                             <div class="letter"><a href="articles.php?letter=ಷ">ಷ</a></div>
                             <div class="letter"><a href="articles.php?letter=ಸ">ಸ</a></div>
                             <div class="letter"><a href="articles.php?letter=ಹ">ಹ</a></div>
-                            <div class="letter"><a href="articles.php?letter=Special">#</a></div>
+                            <div class="all"><a href="articles.php?letter=Special">Other</a></div>
                         </td>
                     </tr>
                 </table>

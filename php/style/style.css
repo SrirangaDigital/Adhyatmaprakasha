@@ -646,7 +646,7 @@ hr{
 }
 .content .page_title{
 	margin: 0em 0em 2em 0em;
-	font-size: 1.1em;
+	font-size: 1em;
 	color: #D2691E;
 	width: 80%;
 	border-bottom: 1px solid #D2691E;
@@ -763,6 +763,20 @@ hr{
 	font-size: 1em;
 }
 .letter a:hover{
+	text-decoration: underline;
+	color: #F05509;
+    font-weight: bold;
+}
+.all{
+	display: inline;
+}
+.all a{
+	text-decoration: none;
+	color: #D2691E;
+	font-size: 0.9em;
+    letter-spacing: 1px;
+}
+.all a:hover{
 	text-decoration: underline;
 	color: #F05509;
     font-weight: bold;

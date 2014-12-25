@@ -102,7 +102,7 @@
                             <div class="letter"><a href="authors.php?letter=ಷ">ಷ</a></div>
                             <div class="letter"><a href="authors.php?letter=ಸ">ಸ</a></div>
                             <div class="letter"><a href="authors.php?letter=ಹ">ಹ</a></div>
-                            <div class="letter"><a href="authors.php?letter=Special">#</a></div>
+                            <div class="all"><a href="authors.php?letter=Special">All</a></div>
                         </td>
                     </tr>
                 </table>
