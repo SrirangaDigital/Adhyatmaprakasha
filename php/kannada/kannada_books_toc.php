@@ -168,7 +168,7 @@ $book_info = '';
 
 if($edition != '00')
 {
-    $book_info = $book_info . "ಆವೃತ್ತಿ  " . intval($edition);
+    $book_info = $book_info . "<span style=\"font-size: 1.1em;\">ಆವೃತ್ತಿ </span> " . intval($edition);
 }
 if($volume != '00')
 {

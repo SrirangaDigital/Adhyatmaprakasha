@@ -351,22 +351,22 @@ html, body {
 .sub_titlespan a{
 	color: #3D3D3D;
 }
-.infospan {
-	color: #B22222;
+.infospan{
+	color: #000;
 	font-size: 0.9em; 
 }
 .infospan a{
-	color: #B22222;
+	color: #000;
 	text-decoration:none;
 }
 .infospan a:Hover{
 	text-decoration:underline;
 }
 .authorspan {
-	color: #3D3D3D;
+	color: #D2691E;
 }
 .authorspan a{
-	color: #3D3D3D;
+	color: #D2691E;
 	text-decoration:none;
 }
 .authorspan a:Hover{
@@ -477,7 +477,6 @@ html, body {
 }
 .colmiddle ul li{
 	font-size:0.9em;
-	color: #D2691E;
     list-style-position:inside;
 	list-style-type:disc;
 }
@@ -581,15 +580,15 @@ hr{
     font-size: 0.8em;
 }
 .bookspan {
-	color: #8B0000;
+	color: #D2691E;
 	font-size: 0.9em;
 }
 .bookspan a{
-	color: #8B0000;
+	color: #D2691E;
 	text-decoration:none;
 }
 .bookspan a:Hover{
-	color: #8B0000;
+	color: #B22222;
 	text-decoration:underline;
 }
 .downloadspan {
@@ -640,7 +639,7 @@ hr{
 .content .page_other{
 	margin-bottom: 2em;
 	font-size: 0.85em;
-	color: #B22222;
+	color: #000;
 	width: 80%;
 	text-align: left;
 }
@@ -683,7 +682,7 @@ hr{
 .column2{
 	width: 22%;
 	float: left;
-	text-align: left;	
+	text-align: left;
 	margin-left: 1.5em;
 	border-right: 1px solid #CCCCCC;
 }
@@ -700,16 +699,6 @@ hr{
 	text-align: left;
 	margin-left: 1.5em;
 	border-right: 1px solid #CCCCCC;
-}
-.magazine_author{
-	color: #D2691E;
-}
-.magazine_author a{
-	color: #D2691E;
-	text-decoration:none;
-}
-.magazine_author a:Hover{
-	text-decoration:underline;
 }
 .dot .magazine_title{
     color: #3D3D3D;

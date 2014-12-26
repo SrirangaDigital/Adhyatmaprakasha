@@ -143,11 +143,11 @@ if($num_rows1 > 0)
 		
 		echo "<li>";
 		echo "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
-		
-		
+
 		if($authid != 0)
 		{
-            echo "<br /><span style=\"color: #D2691E\">&mdash;</span>";
+
+            echo "<br /><span class=\"authorspan\">&mdash;</span>";
 			$aut = preg_split('/;/',$authid);
 
 			$fl = 0;

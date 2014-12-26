@@ -48,5 +48,5 @@ sub insert_authors()
 		$sth1->execute();
 		$sth1->finish();
 	}
-	$sth->finish();	
+	$sth->finish();
 }

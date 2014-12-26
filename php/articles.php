@@ -195,7 +195,7 @@ if($num_rows > 0)
 		
 		if($authid != 0)
 		{
-            echo "<br /><span style=\"color: #D2691E\">&mdash;</span>";
+            echo "<br /><span class=\"authorspan\">&mdash;</span>";
 			$aut = preg_split('/;/',$authid);
 
 			$fl = 0;
@@ -216,24 +216,24 @@ if($num_rows > 0)
                     {
                         if($fl == 0)
                         {
-                            echo "<span class=\"magazine_author\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
+                            echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
                             $fl = 1;
                         }
                         else
                         {
-                            echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"magazine_author\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
+                            echo "<span class=\"authorspan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($sal) . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
                         }
                     }
                     else
                     {
                         if($fl == 0)
                         {
-                            echo "<span class=\"magazine_author\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
+                            echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
                             $fl = 1;
                         }
                         else
                         {
-                            echo "<span class=\"titlespan\">;&nbsp;</span><span class=\"magazine_author\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
+                            echo "<span class=\"authorspan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$aid&amp;author=" . urlencode($authorname) . "\">$authorname</a></span>";
                         }                        
                     }
 				}

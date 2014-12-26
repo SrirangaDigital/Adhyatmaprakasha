@@ -168,7 +168,7 @@ $book_info = '';
 		
 if($edition != '00')
 {
-	$book_info = $book_info . "संस्करण " . intval($edition);
+	$book_info = $book_info . "<span style=\"font-size: 1.1em;\">संस्करण </span>" . intval($edition);
 }
 if($volume != '00')
 {

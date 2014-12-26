@@ -42,7 +42,7 @@ while($line)
 		$year = $3;
 		$count = 0;
 		$prev_pages = "";
-	}	
+	}
 	elsif($line =~ /<title>(.*)<\/title>/)
 	{
 		$title = $1;
@@ -62,7 +62,7 @@ while($line)
 			$count = 0;
 		}
 		$prev_pages = $pages;
-	}	
+	}
 	elsif($line =~ /<author sal="(.*)">(.*)<\/author>/)
 	{
         $sal = $1;
@@ -70,7 +70,7 @@ while($line)
 		$authids = $authids . ";" . get_authid($authorname);
 		$author_name = $author_name . ";" . $sal . $authorname;
 	}
-	elsif($line =~ /<allauthors\/>/)
+    elsif($line =~ /<allauthors \/>/)
 	{
 		$authids = "0";
 		$author_name = "";

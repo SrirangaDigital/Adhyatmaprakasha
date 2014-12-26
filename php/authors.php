@@ -187,11 +187,11 @@ if($num_rows > 0)
             echo "<li>";
             if($sal != '')
             {
-                echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
+                echo "<span class=\"sub_titlespan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$sal&nbsp;$authorname</a></span>";
             }
             else
             {
-                echo "<span class=\"authorspan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$authorname</a></span>";
+                echo "<span class=\"sub_titlespan\"><a href=\"auth_magazine.php?authid=$authid&amp;author=" . urlencode($sal) . "&nbsp;" . urlencode($authorname) . "\">$authorname</a></span>";
             }
             echo "</li>\n";
         }

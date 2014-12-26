@@ -182,17 +182,17 @@ if($num_rows > 0)
 		{
 			if($authid != 0)
 			{
-				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />" . $disp_author;
+				$title = "<span class=\"sub_titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />" . $disp_author;
 			}
 			else
 			{
-				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
+				$title = "<span class=\"sub_titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			}
 			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
 		}
 		else
 		{
-			$title = "<span class=\"titlespan\">$title</span>";
+			$title = "<span class=\"sub_titlespan\">$title</span>";
 			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
         }
 				

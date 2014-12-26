@@ -155,7 +155,7 @@ if($num_rows > 0)
 		{
             $edition_name = array("1"=>"पहले ","2"=>"दूसरे ","3"=>"तीसरे ","4"=>"चौथे ","5"=>"पांचवें ");
 
-			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;संस्करण";
+			$book_info = $book_info . "<span style=\"font-size: 1.1em;\">" . $edition_name{intval($edition)} . "</span>&nbsp;<span style=\"font-size: 1.1em;\">संस्करण</span>";
 		}
 		if($volume != '00')
 		{
@@ -181,17 +181,17 @@ if($num_rows > 0)
 		{
 			if($authid != 0)
 			{
-				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />" . $disp_author;
+				$title = "<span class=\"sub_titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />" . $disp_author;
 			}
 			else
 			{
-				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
+				$title = "<span class=\"sub_titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			}
 			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
 		}
 		else
 		{
-			$title = "<span class=\"titlespan\">$title</span>";
+			$title = "<span class=\"sub_titlespan\">$title</span>";
 		}
 				
 		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
