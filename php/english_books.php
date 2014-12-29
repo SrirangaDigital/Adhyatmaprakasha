@@ -41,12 +41,12 @@
 	</div>
 	<div class="content">
 		<div class="colnav">
-            <p>
-				<br /><br />
-				<span class="lang1"><a href="kannada_books.php">Kannada</a></span><br /><br />
-				<span class="lang1"><a href="sanskrit_books.php">Sanskrit</a></span><br /><br />
-				<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
-			</p>
+				<p>
+					<br /><br />
+					<span class="lang1"><a href="kannada_books.php">Kannada</a></span><br /><br />
+					<span class="lang1"><a href="sanskrit_books.php">Sanskrit</a></span><br /><br />
+					<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
+				</p>
 		</div>
 		<div class="colmiddle">
             <div class="archive_holder">
@@ -59,6 +59,7 @@ include("connect.php");
 //~ $rs = mysql_select_db($database,$db) or die("No Database");
 
 $db = @new mysqli('localhost', "$user", "$password", "$database");
+mysqli_set_charset ( $db , "utf8" );
 if($db->connect_errno > 0)
 {
 	echo 'Not connected to the database [' . $db->connect_errno . ']';
@@ -142,7 +143,7 @@ if($num_rows > 0)
 					}
 					else
 					{
-						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
+						$disp_author = $disp_author .  "<span class=\"titlespan\">;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) ."&amp;type=$type\">$authorname</a></span>";
 					}
 				}
 				if($result2){$result2->free();}
@@ -177,22 +178,22 @@ if($num_rows > 0)
 		$book_info = preg_replace("/^ /", "", $book_info);
 		$book_info = preg_replace("/^\|/", "", $book_info);
 		$book_info = preg_replace("/^ /", "", $book_info);
-        
+			
 		if($page != 0)
 		{
 			if($authid != 0)
 			{
-				$title = "<span class=\"sub_titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />" . $disp_author;
+				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />" . $disp_author;
 			}
 			else
 			{
-				$title = "<span class=\"sub_titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
+				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			}
 			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
 		}
 		else
 		{
-			$title = "<span class=\"sub_titlespan\">$title</span>";
+			$title = "<span class=\"titlespan\">$title</span>";
 			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
         }
 				
@@ -213,10 +214,10 @@ if($num_rows > 0)
 		elseif($level > $stack[sizeof($stack)-1])
 		{
 			$deffer = preg_replace('/:rep:/',"$plus_link",$deffer);
-			echo $deffer;
+			echo $deffer;			
 
-			$ul_id++;
-			$li_id++;
+			$ul_id++;			
+			$li_id++;			
 			array_push($stack,$level);
 			array_push($p_stack,$ul_id);
 			$deffer = "\n" . display_tabs(($level-1)) . "<ul class=\"dnone\" id=\"ul_id$ul_id\">\n";

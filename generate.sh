@@ -5,7 +5,7 @@ db="apk"
 usr="root"
 pwd="mysql"
 
-echo "drop database apk; create database apk;" | /usr/bin/mysql -uroot -pmysql
+echo "drop database if exists apk; create database apk   DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;" | /usr/bin/mysql -uroot -pmysql
 
 perl author_magazine.pl $host $db $usr $pwd
 perl article_magazine.pl $host $db $usr $pwd

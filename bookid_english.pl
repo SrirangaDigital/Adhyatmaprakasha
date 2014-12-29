@@ -9,6 +9,8 @@ use DBI();
 open(IN,"apk_book_id_english.xml") or die "can't open apk_book_id_english.xml\n";
 
 my $dbh=DBI->connect("DBI:mysql:database=$db;host=$host","$usr","$pwd");
+$dbh->{'mysql_enable_utf8'} = 1;
+$dbh->do('SET NAMES utf8');
 
 $sth1=$dbh->prepare("CREATE TABLE english_books_list(
 book_id varchar(4), 

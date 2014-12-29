@@ -9,7 +9,6 @@
 <script type="text/javascript" src="../js/treeview.js"></script>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/publication.js"></script>
-
 </head>
 
 <body>
@@ -38,9 +37,9 @@
 						<li><a href="../english_books.php">English Books</a></li>
 					</ul>
 				</li>
-				<li><a href="../appeal.php">Appeal</a></li>
-				<li><a href="../news.php">News</a></li>
-				<li><a href="../contact.php">Contact</a></li>
+				<li><a href="appeal.php">Appeal</a></li>
+				<li><a href="news.php">News</a></li>
+				<li><a href="contact.php">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -77,6 +76,7 @@ if(!(isValidId($book_id) && isValidType($type) && isValidTitle($book_title)))
 }
 
 $db = @new mysqli('localhost', "$user", "$password", "$database");
+mysqli_set_charset ( $db , "utf8" );
 if($db->connect_errno > 0)
 {
 	echo 'Not connected to the database [' . $db->connect_errno . ']';
@@ -206,7 +206,7 @@ if($num_rows > 0)
 		$type = $row['type'];
 		$slno = $row['slno'];
 		
-		$title = "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../../Volumes/$type/$book_id/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
+		$title = "<span class=\"sub_titlespan\"><a  href=\"../bookReader.php?book_id=$book_id&amp;page=$page&amp;type=$type\">$title</a></span>";
 		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
 		if($first)
 		{

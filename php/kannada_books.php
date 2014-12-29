@@ -5,8 +5,10 @@
 <title>Adhyatma Prakash Karyalaya</title>
 <link href="style/reset.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="style/style.css" media="screen" rel="stylesheet" type="text/css" />
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/publication.js"></script>
+
 </head>
 
 <body>
@@ -61,6 +63,8 @@ include("connect.php");
 //~ $rs = mysql_select_db($database,$db) or die("No Database");
 
 $db = @new mysqli('localhost', "$user", "$password", "$database");
+mysqli_set_charset ( $db , "utf8" );
+
 if($db->connect_errno > 0)
 {
 	echo 'Not connected to the database [' . $db->connect_errno . ']';
@@ -157,15 +161,15 @@ if($num_rows > 0)
 		{
             $edition_name = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ");
 
-			$book_info = $book_info . "<span style=\"font-size: 1.1em;\">" . $edition_name{intval($edition)} . "</span>&nbsp;<span style=\"font-size: 1.1em;\">ಆವೃತ್ತಿ</span>  | ";
+			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ  | ";
 		}
 		if($volume != '00')
 		{
-			$book_info = $book_info . "<span style=\"font-size: 1.1em;\"> ಸಂಪುಟ </span>" . intval($volume) . " | ";
+			$book_info = $book_info . " ಸಂಪುಟ " . intval($volume) . " | ";
 		}
 		if($part != '00')
 		{
-			$book_info = $book_info . "<span style=\"font-size: 1.1em;\"> ಭಾಗ  </span>" . intval($part) . " | ";
+			$book_info = $book_info . " ಭಾಗ  " . intval($part) . " | ";
 		}
 		if(intval($page) != 0)
 		{
@@ -183,17 +187,17 @@ if($num_rows > 0)
 		{
 			if($authid != '')
 			{
-				$title = "<span class=\"sub_titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />" . $disp_author;
+				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />" . $disp_author;
 			}
 			else
 			{
-				$title = "<span class=\"sub_titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
+				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			}
 			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
 		}
 		else
 		{
-			$title = "<span class=\"sub_titlespan\">$title</span>";
+			$title = "<span class=\"titlespan\">$title</span>";
 		}
 		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
 		$title = preg_replace('/---/', "&mdash;", $title);
