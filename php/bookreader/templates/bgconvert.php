@@ -2,14 +2,14 @@
 	$index = $_GET['index'];
 	$lang = $_GET['lang'];
 	$volume = $_GET['volume'];
+	$imgurl = $_GET['imgurl'];
 	$reduce = round($_GET['level']);
 	$book = $_POST['book'];
-	$imgurl = "../jpg/2/".$lang."/".$volume;
+	$imgurl = $imgurl."2/".$volume;
 	$img = split("\.",$book[$index]);
 	
 	if($reduce == 1)
 	{
-		echo "SUERE";
 		exec("php remove.php");
 		$imgurl = "../jpg/1/".$lang."/".$volume;
 		$scale = 2100;

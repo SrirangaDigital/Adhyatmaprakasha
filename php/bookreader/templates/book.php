@@ -19,8 +19,8 @@
 		$book_id = $_GET['book_id'];
 		$page = $_GET['pagenum'].".jpg";
 		//~ $search = $_GET['search'];
-		$djvurl = "../Volumes/".$type."/".$book_id;
-		//~ $imgurl = "../img//Volumes/".$volumes."/".$issue;
+		$djvurl = "../../../Volumes/djvu/".$type."/".$book_id;
+		$imgurl = "../../../Volumes/jpg/".$type."/";
 		
 		$djvulist=scandir($djvurl);
 		$cmd='';
@@ -43,6 +43,7 @@
 		//~ $book["searchText"] = $search;
 		$book["lang"] = $type;
 		$book["volume"] = $book_id;
+		$book["imgurl"] = $imgurl;
 		//~ print_r($book);
     ?>
 <script type="text/javascript">var book = <?php echo json_encode($book); ?>;</script>

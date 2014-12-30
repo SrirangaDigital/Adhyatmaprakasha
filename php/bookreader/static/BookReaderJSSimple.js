@@ -25,13 +25,13 @@ br.getPageURI = function(index, reduce, rotate) {
 	{
 		level = 2;
 	}
-	$.ajax({type: "POST", url: "../templates/bgconvert.php?level="+level+"&index="+index+"&lang="+book.lang+"&volume="+book.volume, async: true , success :function(data){br.updater(data);} , data : {book:this.book.imglist}});
+	$.ajax({type: "POST", url: "../templates/bgconvert.php?level="+level+"&index="+index+"&lang="+book.lang+"&volume="+book.volume+"&imgurl="+book.imgurl, async: true , success :function(data){br.updater(data);} , data : {book:this.book.imglist}});
 	if(level == 1)
 	{
 		return br.imagesBaseURL + "transparent.png";
 	}
-	
-	return "../../bookreader/jpg/"+level+"/"+book.lang+"/"+book.volume+"/"+ book.imglist[index]
+	level = 2;
+	return book.imgurl+level+"/"+book.volume+"/"+ book.imglist[index]
 }
 
 br.updater = function(result) {
