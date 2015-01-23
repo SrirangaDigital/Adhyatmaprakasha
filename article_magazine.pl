@@ -11,7 +11,8 @@ use DBI();
 open(IN,"apk_magazine.xml") or die "can't open apk_magazine.xml\n";
 
 my $dbh=DBI->connect("DBI:mysql:database=apk;host=localhost","root","mysql");
-
+$dbh->{'mysql_enable_utf8'} = 1;
+$dbh->do('SET NAMES utf8');
 
 $sth11r=$dbh->prepare("CREATE TABLE article(volume varchar(6),
 issue varchar(5),
