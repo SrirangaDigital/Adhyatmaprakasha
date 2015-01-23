@@ -44,7 +44,6 @@
 		$book["lang"] = $type;
 		$book["volume"] = $book_id;
 		$book["imgurl"] = $imgurl;
-		//~ print_r($book);
     ?>
 <script type="text/javascript">var book = <?php echo json_encode($book); ?>;</script>
 </head>
