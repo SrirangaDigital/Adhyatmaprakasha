@@ -883,7 +883,7 @@ BookReader.prototype.drawLeafsTwoPage = function() {
         width:  this.twoPage.scaledWL + 'px',
         zIndex: 2
     }).appendTo('#BRtwopageview');
-    
+    $(this.prefetchedImgs[indexL]).attr('id', '#pagediv'+indexL);
     var indexR = this.twoPage.currentIndexR;
     var heightR  = this._getPageHeight(indexR); 
     var widthR   = this._getPageWidth(indexR);
@@ -901,7 +901,7 @@ BookReader.prototype.drawLeafsTwoPage = function() {
         width:  this.twoPage.scaledWR + 'px',
         zIndex: 2
     }).appendTo('#BRtwopageview');
-        
+    $(this.prefetchedImgs[indexR]).attr('id', '#pagediv'+indexR);    
 
     this.displayedIndices = [this.twoPage.currentIndexL, this.twoPage.currentIndexR];
     this.setMouseHandlers2UP();
@@ -944,13 +944,7 @@ BookReader.prototype.loadLeafs = function() {
 // Pass 1 to zoom in, anything else to zoom out
 //______________________________________________________________________________
 BookReader.prototype.zoom = function(direction) {
-	//~ if(this.mode == 2 && this.reduce <= 2)
-	//~ {
-		//~ this.switchMode(this.constMode1up);
-		//~ this.mode=1;
-	//~ }
-
-    switch (this.mode) {
+ switch (this.mode) {
         case this.constMode1up:
             if (direction == 1) {
                 // XXX other cases
@@ -960,22 +954,17 @@ BookReader.prototype.zoom = function(direction) {
             }
             
         case this.constMode2up:
-			if (direction == 1) {
+            if (direction == 1) {
                 // XXX other cases
-                if(this.reduce <= 2)
-                {
-					this.switchMode(this.constMode1up);
-					return this.zoom1up('in');
-				}
                 return this.zoom2up('in');
-            }
-            else{ 
+            } else { 
                 return this.zoom2up('out');
             }
             
         case this.constModeThumb:
             // XXX update zoomThumb for named directions
             return this.zoomThumb(direction);
+            
     }
 }
 
@@ -2533,6 +2522,7 @@ BookReader.prototype.prefetchImg = function(index) {
                 'background-color': '#efefef'
             });
         }
+        $(img).attr('id', '#pagediv'+index);
         img.src = pageURI;
         img.uri = pageURI; // browser may rewrite src so we stash raw URI here
         this.prefetchedImgs[index] = img;

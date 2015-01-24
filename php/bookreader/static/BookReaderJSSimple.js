@@ -16,27 +16,35 @@ br.getPageHeight = function(index) {
     return 1200;
 }
 
-//~ cachedList = window.localStorage.cachedElements.split(";");
-//~ window.localStorage.cachedElements+=";"+"../img/"+level+"/" + book.imglist[index];
-//~ if($.inArray("../img/"+level+"/"+book.imglist[index], cachedList) < 0)
 br.getPageURI = function(index, reduce, rotate) {
-	var level = Math.round(reduce) == 1 ? 1 : (Math.round(reduce) >= 2 ? 2:2);
-	if(br.mode == 2)
-	{
-		level = 2;
-	}
-	$.ajax({type: "POST", url: "../templates/bgconvert.php?level="+level+"&index="+index+"&lang="+book.lang+"&volume="+book.volume+"&imgurl="+book.imgurl, async: true , success :function(data){br.updater(data);} , data : {book:this.book.imglist}});
+	var level = reduce <= 0.9 ? 1 : 2;
+	
 	if(level == 1)
 	{
+		$.ajax({type: "POST", url: "../templates/bgconvert.php?level="+level+"&index="+index+"&lang="+book.lang+"&volume="+book.volume+"&imgurl="+book.imgurl+"&mode="+this.mode, async: true , success :function(data){br.updater(data);} , data : {book:this.book.imglist}});
 		return br.imagesBaseURL + "transparent.png";
 	}
-	level = 2;
-	return book.imgurl+level+"/"+book.volume+"/"+ book.imglist[index]
+	else
+	{
+		$.ajax({type: "POST", url: "../templates/bgconvert.php?level="+level+"&index="+index+"&lang="+book.lang+"&volume="+book.volume+"&imgurl="+book.imgurl+"&mode="+this.mode, async: true , data : {book:this.book.imglist}});
+		return book.imgurl+level+"/"+book.volume+"/"+ book.imglist[index]
+	}
+	
 }
-
 br.updater = function(result) {
 	result = jQuery.parseJSON(result);
-	$(result.id+" img").attr('src', result.img);
+	if(result.mode == 2)
+	{
+		var img = document.getElementById(result.id);
+		if(img != null)
+		{
+			img.src = result.img;
+		}
+	}
+	else
+	{
+		$(result.id+" img").attr("src", result.img);
+	}
 }
 br.getBookId = function() {
 	return book.lang;

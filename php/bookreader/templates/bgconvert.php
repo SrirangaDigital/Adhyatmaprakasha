@@ -7,6 +7,7 @@
 	$book = $_POST['book'];
 	$imgurl = $imgurl."2/".$volume;
 	$img = split("\.",$book[$index]);
+	$mode = $_GET['mode'];
 	//~ header('Content-type: application/json');
 	
 	if($reduce == 1)
@@ -24,12 +25,12 @@
 		if(!file_exists($imgurl."/".$img[0].".jpg"))
 		{
 			$cmd="convert $tifurl/".$img[0].".tif -resize x".$scale." $imgurl/".$img[0].".jpg";
-			echo "sureshshshshsh".$cmd."\n";
 			exec($cmd);
 		}
 		
 	}
 	$array['id'] = "#pagediv".$index;
+	$array['mode'] = $mode;
 	$array['img'] = $imgurl."/".$img[0].".jpg";
 	
 	echo json_encode($array);
