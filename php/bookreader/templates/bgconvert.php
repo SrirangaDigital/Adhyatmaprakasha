@@ -5,17 +5,16 @@
 	$imgurl = $_GET['imgurl'];
 	$reduce = round($_GET['level']);
 	$book = $_POST['book'];
-	$imgurl = $imgurl."2/".$volume;
 	$img = split("\.",$book[$index]);
 	$mode = $_GET['mode'];
 	//~ header('Content-type: application/json');
 	
 	if($reduce == 1)
 	{
-		$imgurl = "../../../Volumes/jpg/".$lang."/1/".$volume;
+		$imgurl = "../../../Volumes/".$lang."_books/jpg/1/".$volume;
 		$scale = 2100;
-		$djvurl = "../../../Volumes/djvu/".$lang."/".$volume;
-		$tifurl = "../../../Volumes/tif/".$lang."/".$volume;
+		$djvurl = "../../../Volumes/".$lang."_books/djvu/".$volume;
+		$tifurl = "../../../Volumes/".$lang."_books/tif/".$volume;
 		
 		if(!file_exists($tifurl."/".$img[0].".tif"))
 		{

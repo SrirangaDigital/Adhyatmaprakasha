@@ -33,8 +33,10 @@
 	window.applicationCache.addEventListener(
 		'updateready', 
 		function(){
-			window.applicationCache.swapCache();
-			console.log('swap cache has been called');
+			if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+				window.applicationCache.swapCache();
+				//~ console.log('swap cache has been called');
+			}	
 		}, 
 		false
 	);

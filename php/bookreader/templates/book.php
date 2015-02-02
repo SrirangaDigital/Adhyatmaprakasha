@@ -19,8 +19,8 @@
 		$book_id = $_GET['book_id'];
 		$page = $_GET['pagenum'].".jpg";
 		//~ $search = $_GET['search'];
-		$djvurl = "../../../Volumes/djvu/".$type."/".$book_id;
-		$imgurl = "../../../Volumes/jpg/".$type."/";
+		$djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
+		$imgurl = "../../../Volumes/".$type."_books/jpg/2/$book_id";
 		
 		$djvulist=scandir($djvurl);
 		$cmd='';

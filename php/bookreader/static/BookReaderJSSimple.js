@@ -27,7 +27,7 @@ br.getPageURI = function(index, reduce, rotate) {
 	else
 	{
 		$.ajax({type: "POST", url: "../templates/bgconvert.php?level="+level+"&index="+index+"&lang="+book.lang+"&volume="+book.volume+"&imgurl="+book.imgurl+"&mode="+this.mode, async: true , data : {book:this.book.imglist}});
-		return book.imgurl+level+"/"+book.volume+"/"+ book.imglist[index]
+		return book.imgurl+"/"+book.imglist[index]
 	}
 	
 }
