@@ -1,0 +1,42 @@
+$def with(barcode="", error="")
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+    <title>DLI Bookreader</title>
+    <style type="text/css">
+    	form {
+    		padding-top: 20px 0px;
+    	}
+    	form input {
+    		font-size: 1.1em;    		
+    	}
+    	#barcode {
+    		width: 400px;
+    	}
+    	footer {
+    		padding-top: 50px;
+    	}
+    </style>
+</head>
+<body>
+	<h1>DLI Bookreader</h1>
+
+	<form>
+		<input type="text" name="barcode" id="barcode" placeholder="Enter DLI Barcode"/>
+		<input type="submit" name="" value="Read"/>
+	</form>
+    <div>For example, try <a href="/2020120002347">2020120002347</a>.
+        <br/>
+        <br/>
+    </div>
+
+	<div>This provides a nice interface to read books from <a href="http://www.new.dli.ernet.in/">Digital Library of India</a> using the <a href="http://archive.org/">Internet Archive</a>'s book reader.<br/><br/>
+	Code: <a href="https://github.com/anandology/dli-bookreader">https://github.com/anandology/dli-bookreader</a>
+	</div>
+
+	<footer>
+		A project by <a href="http://anandology.com/">Anand Chitipothu</a>
+	</footer>
+</body>
+</html>

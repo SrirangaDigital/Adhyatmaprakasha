@@ -70,6 +70,7 @@ if(!(isValidVolume($volume) && isValidYear($year)))
 }
 
 $db = @new mysqli('localhost', "$user", "$password", "$database");
+$db->set_charset("utf8");
 if($db->connect_errno > 0)
 {
 	echo 'Not connected to the database [' . $db->connect_errno . ']';

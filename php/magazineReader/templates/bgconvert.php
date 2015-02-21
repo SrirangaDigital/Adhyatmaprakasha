@@ -1,5 +1,6 @@
 <?php
 	$index = $_GET['index'];
+	$issue = $_GET['issue'];
 	$lang = $_GET['lang'];
 	$volume = $_GET['volume'];
 	$imgurl = $_GET['imgurl'];
@@ -11,10 +12,11 @@
 	
 	if($reduce == 1)
 	{
-		$imgurl = "../../../Volumes/".$lang."_books/jpg/1/".$volume;
+		$imgurl = "../../../Volumes/".$lang."/jpg/1/".$volume."/".$issue;
 		$scale = 2100;
-		$djvurl = "../../../Volumes/".$lang."_books/djvu/".$volume;
-		$tifurl = "../../../Volumes/".$lang."_books/tif/".$volume;
+		$djvurl = "../../../Volumes/".$lang."/djvu/".$volume."/".$issue;
+		$tifurl = "../../../Volumes/".$lang."/tif/".$volume."/".$issue;
+		
 		
 		if(!file_exists($tifurl."/".$img[0].".tif"))
 		{

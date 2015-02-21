@@ -15,13 +15,15 @@
     <script type="text/javascript" src="../static/BookReader/BookReader.js"></script>
     
     <?php
-		$type = $_GET['type'];
-		$book_id = $_GET['book_id'];
-		$page = $_GET['pagenum'].".jpg";
+		$volume = $_GET['volume'];
+		$issue = $_GET['issue'];
+		$year = $_GET['year'];
+		$month = $_GET['month'];
+		$page = $_GET['page'].".jpg";
+		$type = "magazine";
+		$djvurl = "../../../Volumes/".$type."/djvu/$volume/$issue";
+		$imgurl = "../../../Volumes/".$type."/jpg/2/$volume/$issue";
 		//~ $search = $_GET['search'];
-		$djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
-		$imgurl = "../../../Volumes/".$type."_books/jpg/2/$book_id";
-		
 		$djvulist=scandir($djvurl);
 		$cmd='';
 		
@@ -42,7 +44,8 @@
 		$book["pagenum"] = $result[0];
 		//~ $book["searchText"] = $search;
 		$book["lang"] = $type;
-		$book["volume"] = $book_id;
+		$book["volume"] = $volume;
+		$book["issue"] = $issue;
 		$book["imgurl"] = $imgurl;
     ?>
 <script type="text/javascript">var book = <?php echo json_encode($book); ?>;</script>

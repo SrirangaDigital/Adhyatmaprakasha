@@ -141,6 +141,7 @@ else
 //~ $rs = mysql_select_db($database,$db) or die("No Database");
 
 $db = @new mysqli('localhost', "$user", "$password", "$database");
+$db->set_charset("utf8");
 if($db->connect_errno > 0)
 {
 	echo '<li>Not connected to the database [' . $db->connect_errno . ']</li>';
@@ -186,7 +187,7 @@ if($num_rows > 0)
 		$month=$row['month'];
 		
 		echo "<li>";
-		echo "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
+		echo "<span class=\"sub_titlespan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">$title</a></span>";
 		echo "
 		<span class=\"sub_titlespan\">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 		<span class=\"yearspan\">
@@ -240,7 +241,7 @@ if($num_rows > 0)
 				if($result2){$result2->free();}
 			}
 		}
-		echo "<br /><span class=\"downloadspan\"><a href=\"../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\" target=\"_blank\">View article</a>&nbsp;|&nbsp;<a href=\"#\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download article (PDF)</a></span>";
+		echo "<br /><span class=\"downloadspan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">View article</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (PDF)</a></span>";
 
 		echo "</li>\n";
 	}

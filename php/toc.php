@@ -72,6 +72,7 @@ if(!(isValidVolume($volume) && isValidPart($issue)))
 }
 
 $db = @new mysqli('localhost', "$user", "$password", "$database");
+$db->set_charset("utf8");
 if($db->connect_errno > 0)
 {
 	echo 'Not connected to the database [' . $db->connect_errno . ']';
@@ -142,7 +143,7 @@ if($num_rows1 > 0)
 		$title1=addslashes($title);
 		
 		echo "<li>";
-		echo "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\">$title</a></span>";
+		echo "<span class=\"sub_titlespan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">$title</a></span>";
 
 		if($authid != 0)
 		{
@@ -196,7 +197,7 @@ if($num_rows1 > 0)
 				if($result2){$result2->free();}
 			}
 		}
-		echo "<br /><span class=\"downloadspan\"><a href=\"../Volumes/$volume/$issue/index.djvu?djvuopts&amp;page=$page.djvu&amp;zoom=page\" target=\"_blank\">View article</a>&nbsp;|&nbsp;<a href=\"#\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download article (PDF)</a></span>";
+		echo "<br /><span class=\"downloadspan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">View article</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (PDF)</a></span>";
 		echo "</li>\n";
 	}
     echo "</ul>";

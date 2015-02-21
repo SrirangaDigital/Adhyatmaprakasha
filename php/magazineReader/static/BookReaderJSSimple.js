@@ -35,12 +35,13 @@ br.getPageURI = function(index, reduce, rotate) {
 	
 	if(level == 1)
 	{
-		$.ajax({type: "POST", url: "../templates/bgconvert.php?lang="+book.lang+"&level="+level+"&index="+index+"&volume="+book.volume+"&imgurl="+book.imgurl+"&mode="+this.mode+"&month="+book.month+"&year="+book.year, async: true , success :function(data){br.updater(data);} , data : {book:this.book.imglist}});
+		$.ajax({type: "POST", url: "../templates/bgconvert.php?lang="+book.lang+"&issue="+book.issue+"&level="+level+"&index="+index+"&volume="+book.volume+"&imgurl="+book.imgurl+"&mode="+this.mode+"&month="+book.month+"&year="+book.year, async: true , success :function(data){br.updater(data);} , data : {book:this.book.imglist}});
 		return br.imagesBaseURL + "transparent.png";
 	}
 	else
 	{
-		$.ajax({type: "POST", url: "../templates/bgconvert.php?lang="+book.lang+"&level="+level+"&index="+index+"&volume="+book.volume+"&imgurl="+book.imgurl+"&mode="+this.mode+"&month="+book.month+"&year="+book.year, async: true , data : {book:this.book.imglist}});
+		$.ajax({type: "POST", url: "../templates/bgconvert.php?lang="+book.lang+"&issue="+book.issue+"&level="+level+"&index="+index+"&volume="+book.volume+"&imgurl="+book.imgurl+"&mode="+this.mode+"&month="+book.month+"&year="+book.year, async: true , data : {book:this.book.imglist}});
+		console.log(book.volume+"surehsisnskjh");
 		return book.imgurl+"/"+book.imglist[index]
 	}
 	
