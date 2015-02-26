@@ -2747,7 +2747,6 @@ BookReader.prototype.search = function(term) {
         url    += '&q='+term;
         //~ url    += '&q='+escape(term); ORIGINAL WAS LIKE THIS
         url    += '&month='+book.month;
-        //~ console.log('search called with term=' + url);
     term = term.replace(/\//g, ' '); // strip slashes, since this goes in the url
     this.searchTerm = term;
     
