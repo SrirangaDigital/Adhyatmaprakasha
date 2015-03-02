@@ -79,4 +79,12 @@
 			?>
         </p>
     </div>
+      <div class="visitors">
+		<table class="visit">
+			<th>Visitors</th>
+			<tr>
+				<td><?php include("php/count.php")?></td>
+			</tr>
+		</table>
+	</div>
 </div>
