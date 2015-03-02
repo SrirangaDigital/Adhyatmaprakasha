@@ -244,7 +244,7 @@ if($num_rows > 0)
 				if($result2){$result2->free();}
 			}
 		}
-		echo "<br /><span class=\"downloadspan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">View article</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (PDF)</a></span>";
+		//~ echo "<br /><span class=\"downloadspan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">View article</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (PDF)</a></span>";
 
 		echo "</li>\n";
 	}

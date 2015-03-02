@@ -18,7 +18,6 @@
 	{
 		$row = $result->fetch_assoc();
 		$query = "update topviewed set hits = ".($row["hits"]+1)." , viewed_date =  ".date("Y-m-d")." where bookid = ".$row["bookid"]." and language = '".$type."'";
-		echo $query;
 		$db->query($query);
 	}
 	elseif($num_rows == 0)

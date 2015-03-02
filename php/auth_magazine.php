@@ -127,7 +127,7 @@ if($num_rows > 0)
 		<span class=\"yearspan\">
 			<a href=\"toc.php?vol=$volume&amp;issue=$issue\"><span style=\"font-size: 1.1em;\">ಸಂಪುಟ.</span>&nbsp;".intval($volume)."&nbsp;(<span style=\"font-size: 1.1em;\">ಸಂಚಿಕೆ.</span> ".$issue.")&nbsp;;&nbsp;$month&nbsp;".$year."</a>
 		</span>";
-        echo "<br /><span class=\"downloadspan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">View article</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (PDF)</a></span>";
+        //~ echo "<br /><span class=\"downloadspan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">View article</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (DjVu)</a>&nbsp;|&nbsp;<a href=\"javascript:void(0);\">Download article (PDF)</a></span>";
 		echo "</li>\n";
 	}
 }
