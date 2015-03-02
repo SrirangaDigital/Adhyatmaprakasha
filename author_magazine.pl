@@ -9,7 +9,7 @@ use DBI();
 
 open(IN,"apk_magazine.xml") or die "can't open apk_magazine.xml\n";
 
-my $dbh=DBI->connect("DBI:mysql:database=apk;host=localhost","root","mysql");
+my $dbh=DBI->connect("DBI:mysql:database=$db;host=$host","$usr","$pwd");
 $dbh->{'mysql_enable_utf8'} = 1;
 $dbh->do('SET NAMES utf8');
 
