@@ -146,7 +146,7 @@ if($num_rows1 > 0)
 		$title1=addslashes($title);
 		
 		echo "<li>";
-		echo "<span class=\"sub_titlespan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">$title</a></span>";
+		echo "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">$title</a></span>";
 
 		if($authid != 0)
 		{

@@ -211,7 +211,7 @@ if($num_rows > 0)
 		$type = $row['type'];
 		$slno = $row['slno'];
 		
-		$title = "<span class=\"sub_titlespan\"><a href=\"../bookReader.php?book_id=$book_id&amp;page=$page&amp;type=$type\">$title</a></span>";
+		$title = "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../bookReader.php?book_id=$book_id&amp;page=$page&amp;type=$type\">$title</a></span>";
 		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
 		if($first)
 		{

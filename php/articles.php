@@ -190,7 +190,7 @@ if($num_rows > 0)
 		$month=$row['month'];
 		
 		echo "<li>";
-		echo "<span class=\"sub_titlespan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">$title</a></span>";
+		echo "<span class=\"sub_titlespan\"><a target=\"_blank\"  href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">$title</a></span>";
 		echo "
 		<span class=\"sub_titlespan\">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 		<span class=\"yearspan\">

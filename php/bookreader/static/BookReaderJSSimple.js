@@ -47,12 +47,6 @@ br.getPageURI = function(index, reduce, rotate) {
 	
 }
 br.updater = function(result) {
-		setTimeout(function(){
-            $(br.popup).fadeOut('slow', function() {
-                br.removeProgressPopup();
-            })        
-        },br.timeout);
-        
 	result = jQuery.parseJSON(result);
 	if(result.mode == 2)
 	{
@@ -66,6 +60,11 @@ br.updater = function(result) {
 	{
 		$(result.id+" img").attr("src", result.img);
 	}
+	setTimeout(function(){
+            $(br.popup).fadeOut('slow', function() {
+                br.removeProgressPopup();
+            })        
+        },br.timeout);
 }
 br.getBookId = function() {
 	return book.lang;
