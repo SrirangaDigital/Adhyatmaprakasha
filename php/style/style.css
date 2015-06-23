@@ -7,7 +7,7 @@ html, body {
 	font-weight: normal;
 	line-height: 1.5;
 	margin: 0;
-	font-family: sans-serif; 
+	font-family: 'Open Sans', sans-serif; 
 }
 .page {
 	width: 980px;
@@ -768,5 +768,78 @@ hr{
 .all a:hover{
 	text-decoration: underline;
 	color: #F05509;
-    font-weight: bold;
+	font-weight: bold;
+}
+.stitle{
+	font-size: 0.85em;
+	line-height: 2em;
+	margin: 0em 0em 0em 2em;
+}
+.left{
+	text-align: right;
+	vertical-align: middle;
+}
+.label{
+	color: #D2691E;
+	font-size: 0.9em;
+	margin: 0em 2em 0em 0em;
+}
+.buttons{
+	color: #D2691E;
+	font-size: 0.9em;
+}
+#kannada{
+	margin-top: -17em;
+	width: 290px;
+	float: right;
+	padding-top: 2em;
+}
+#sanskrit{
+	margin-top: -17em;
+	width: 290px;
+	float: right;
+	padding-top: 2em;
+}
+.keys{
+	width: 38px;
+	height: 27px;
+	float: left;
+	color: #800000;
+	border-right: 1px solid #D2691E;
+	border-bottom: 1px solid #D2691E;
+	padding: 0px;
+	text-align: center;
+	cursor:pointer;
+}
+.tline {
+	border-top: 1px solid #D2691E;
+}
+.lline {
+	border-left: 1px solid #D2691E;
+}
+.submit{
+	padding-bottom: 2em;
+	padding-top: 0em;
+}
+#button2{
+	margin-top: 1em;
+	padding: 0.2em;
+	margin-left: 2em;
+}
+#button{
+	margin-top: 1em;
+	padding: 0.2em;
+	margin-left: 2em;
+}
+.keys:HOVER{
+	background-color: #2D0A01;
+	color: #fff;
+}
+#kan{
+	margin: 1em 0em 0em 3em;
+	color: #D2691E;
+}
+#san{
+	margin: 1em 0em 0em 3em;
+	color: #D2691E;
 }

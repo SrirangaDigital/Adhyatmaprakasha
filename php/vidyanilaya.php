@@ -6,6 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Adhyatma Prakash Karyalaya</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
 <link href="style/reset.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="style/style.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
@@ -38,7 +39,7 @@
 				</li>
 				<li><a href="appeal.php">Appeal</a></li>
 				<li><a href="news.php">News</a></li>
-				<li><a href="contact.php">Contact</a></li>
+				<li><a href="search.php">Search</a></li>
 			</ul>
 		</div>
 	</div>

@@ -42,6 +42,7 @@
 				<li><a href="appeal.php">Appeal</a></li>
 				<li><a class="active" href="news.php">News</a></li>
 				<li><a href="contact.php">Contact</a></li>
+				<li><a href="search.php">Search</a></li>
 			</ul>
 		</div>
 	</div>

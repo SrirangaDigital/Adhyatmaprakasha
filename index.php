@@ -1,12 +1,12 @@
 <?php
 session_start();
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Adhyatma Prakash Karyalaya</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
 <link href="php/style/reset.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="php/style/style.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
@@ -40,6 +40,7 @@ session_start();
 				<li><a href="php/appeal.php">Appeal</a></li>
 				<li><a href="php/news.php">News</a></li>
 				<li><a href="php/contact.php">Contact</a></li>
+				<li><a href="php/search.php">Search</a></li>
 			</ul>
 		</div>
 	</div>
