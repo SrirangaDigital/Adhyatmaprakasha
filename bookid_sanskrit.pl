@@ -12,6 +12,10 @@ my $dbh=DBI->connect("DBI:mysql:database=$db;host=$host","$usr","$pwd");
 $dbh->{'mysql_enable_utf8'} = 1;
 $dbh->do('SET NAMES utf8');
 
+$sth_drop=$dbh->prepare("DROP TABLE IF EXISTS sanskrit_books_list");
+$sth_drop->execute();
+$sth_drop->finish();
+
 $sth1=$dbh->prepare("CREATE TABLE sanskrit_books_list(
 book_id varchar(4), 
 level int(2),

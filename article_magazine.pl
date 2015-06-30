@@ -14,6 +14,10 @@ my $dbh=DBI->connect("DBI:mysql:database=$db;host=localhost",$usr,$pwd);
 $dbh->{'mysql_enable_utf8'} = 1;
 $dbh->do('SET NAMES utf8');
 
+$sth_drop=$dbh->prepare("DROP TABLE IF EXISTS article");
+$sth_drop->execute();
+$sth_drop->finish();
+
 $sth11r=$dbh->prepare("CREATE TABLE article(volume varchar(6),
 issue varchar(5),
 month varchar(50),

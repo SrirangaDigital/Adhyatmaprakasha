@@ -13,6 +13,10 @@ my $dbh=DBI->connect("DBI:mysql:database=$db;host=$host","$usr","$pwd");
 $dbh->{'mysql_enable_utf8'} = 1;
 $dbh->do('SET NAMES utf8');
 
+$sth_drop=$dbh->prepare("DROP TABLE IF EXISTS author_sanskrit");
+$sth_drop->execute();
+$sth_drop->finish();
+
 $sth11=$dbh->prepare("CREATE TABLE author_sanskrit(authorname varchar(400), authid int(6) auto_increment, primary key(authid))auto_increment=10001 ENGINE=MyISAM;");
 $sth11->execute();
 $sth11->finish();

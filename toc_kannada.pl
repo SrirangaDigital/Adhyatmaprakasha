@@ -13,6 +13,14 @@ my $dbh=DBI->connect("DBI:mysql:database=$db;host=$host","$usr","$pwd");
 $dbh->{'mysql_enable_utf8'} = 1;
 $dbh->do('SET NAMES utf8');
 
+$sth_drop=$dbh->prepare("DROP TABLE IF EXISTS kannada_book_toc");
+$sth_drop->execute();
+$sth_drop->finish();
+
+$sth_drop=$dbh->prepare("DROP TABLE IF EXISTS kannada_book_toc");
+$sth_drop->execute();
+$sth_drop->finish();
+
 $sth1=$dbh->prepare("CREATE TABLE kannada_book_toc(
 book_id varchar(10),
 btitle varchar(2000),
@@ -57,7 +65,7 @@ while($line)
 	}
 	else
 	{
-		print $line . "\n";
+		#~ print $line . "\n";
 	}
 
 $line = <IN>;
@@ -78,4 +86,3 @@ sub insert_to_db()
 	$sth2->execute();
 	$sth2->finish();
 }
-
