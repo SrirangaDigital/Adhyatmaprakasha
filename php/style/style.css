@@ -147,9 +147,10 @@ html, body {
 	font-size: 0.8em;
 }
 .col1 .title{
-	font-size: 1em;
+	font-size: 2em;
 	color: #D2691E;
-	margin-bottom: 0.5em;
+	text-align: center;
+	margin-bottom: 0.75em;
 }
 .col1 .subtitle{
 	font-size: 0.9em;
@@ -172,7 +173,6 @@ html, body {
 .col1 li a{
 	color:#3D3D3D;
 }
-
 /* For categorywise display in Kannada Books*/
 .col1 ul li ul{
 	margin:0em 0em 0em 5em;
@@ -344,6 +344,11 @@ html, body {
 }
 .titlespan a{
 	color: #D2691E;
+	text-decoration:none;
+}
+.titlespan a:Hover{
+	color: #000000;
+	text-decoration:underline;
 }
 .sub_titlespan{
 	color: #3D3D3D;
@@ -773,7 +778,8 @@ hr{
 .stitle{
 	font-size: 0.85em;
 	line-height: 2em;
-	margin: 0em 0em 0em 2em;
+	margin: 0em 0em 0em 1.5em;
+	color: #D2691E;
 }
 .left{
 	text-align: right;
@@ -787,6 +793,28 @@ hr{
 .buttons{
 	color: #D2691E;
 	font-size: 0.9em;
+}
+
+.archive_search {
+	margin: 0em 0em 0em 2em;
+	width: 40em;
+	line-height: 1.5em;
+}
+.archive_search table{
+	margin: 0em 0em 0em 0em;
+	width: 300px;
+}
+.archive_search input{
+	background: none;
+	border: 1px solid #CCCCCC;
+}
+.archive_search .wide{
+	width: 20em;
+}
+.archive_search .med{
+	height: 2em;
+	width: 5em;
+	margin: 2em 2em 0em 0em; 
 }
 #kannada{
 	margin-top: -17em;
