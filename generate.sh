@@ -17,6 +17,7 @@ perl author_sanskrit.pl $host $db $usr $pwd
 perl bookid_english.pl $host $db $usr $pwd
 perl toc_english.pl $host $db $usr $pwd
 
+perl book_categories_kannada.pl $host $db $usr $pwd
 perl bookid_kannada.pl $host $db $usr $pwd
 perl toc_kannada.pl $host $db $usr $pwd
 
