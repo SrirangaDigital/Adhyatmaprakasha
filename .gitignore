@@ -1,4 +1,7 @@
 Volumes/
 php/magazineReader/templates/appcache.manifest
 php/bookreader/templates/appcache.manifest
+Text/
+Volumes_xml/
+
 
