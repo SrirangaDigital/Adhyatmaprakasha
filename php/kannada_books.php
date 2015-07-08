@@ -8,7 +8,8 @@
 <title>Adhyatma Prakash Karyalaya</title>
 <link href="style/reset.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="style/style.css" media="screen" rel="stylesheet" type="text/css" />
-
+<script type="text/javascript" src="js/jquery-2.0.0.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/treeview.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/publication.js"></script>
 
@@ -63,9 +64,6 @@
 <?php
 include("connect.php");
 
-//~ $db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
-//~ $rs = mysql_select_db($database,$db) or die("No Database");
-
 $db = @new mysqli('localhost', "$user", "$password", "$database");
 mysqli_set_charset ( $db , "utf8" );
 
@@ -80,10 +78,7 @@ if($db->connect_errno > 0)
 	exit(1);
 }
 
-$query = "select * from kannada_books_list order by slno";
-
-//~ $result = mysql_query($query);
-//~ $num_rows = mysql_num_rows($result);
+$query = "select * from kannada_book_categories order by cid";
 
 $result = $db->query($query); 
 $num_rows = $result ? $result->num_rows : 0;
@@ -96,172 +91,47 @@ $li_id = 0;
 $ul_id = 0;
 
 $plus_link = "<img class=\"bpointer\" title=\"Expand\" src=\"images/plus.gif\" alt=\"Expand or Collapse\" onclick=\"display_block(this)\" />";
-//$plus_link = "<a href=\"#\" onclick=\"display_block(this)\"><img src=\"plus.gif\" alt=\"\"></a>";
 $bullet = "<img class=\"bpointer\" src=\"images/bullet_1.gif\" alt=\"Point\" />";
-$month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"April","5"=>"May","6"=>"June","7"=>"July","8"=>"August","9"=>"September","10"=>"October","11"=>"November","12"=>"December");
 
 if($num_rows > 0)
 {
 	echo "<div class=\"treeview\">";
-	for($i=1;$i<=$num_rows;$i++)
+	while($row = $result->fetch_assoc())
 	{
-		//~ $row=mysql_fetch_assoc($result);
-		$row = $result->fetch_assoc();
-
-		$book_id = $row['book_id'];
-		$level = $row['level'];
+		$cid = $row['cid'];
 		$title = $row['title'];
-		$authid = $row['authid'];
-		$authorname = $row['authorname'];
-		$page = $row['page'];
-		$page_end = $row['page_end'];
-		$edition = $row['edition'];
-		$volume = $row['volume'];
-		$part = $row['part'];
-		$type = $row['type'];
-		$year = $row['year'];
-		$month = $row['month'];
-
-		if($authid != '')
+		$query = "select * from kannada_books_list where cid = '$cid' order by slno ";
+		$result1 = $db->query($query); 
+		
+		echo "<ul id=\"ul_id".$ul_id++."\">\n";
+		echo "	<li id=\"li_id".$li_id++."\">$plus_link&nbsp;&nbsp;&nbsp;<span class=\"titlespan\">$title</span>";
+		echo "		<ul id=\"ul_id".$ul_id++."\" class=\"dnone\">";
+		//~ dnone
+		while($row1 = $result1->fetch_assoc())
 		{
-			$disp_author =  "<span class=\"authorspan\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash;</span>";
-			$aut = preg_split('/;/',$authid);
-
-			$fl = 0;
-			foreach ($aut as $aid)
-			{
-				$query2 = "select * from author_kannada where authid=$aid";
-				
-				//~ $result2 = mysql_query($query2);
-				//~ $num_rows2 = mysql_num_rows($result2);
-				
-				$result2 = $db->query($query2); 
-				$num_rows2 = $result2 ? $result2->num_rows : 0;
-
-				if($num_rows2 > 0)
-				{
-					//~ $row2=mysql_fetch_assoc($result2);
-					$row2 = $result2->fetch_assoc();
-
-					$authorname=$row2['authorname'];
-                
-					if($fl == 0)
-					{
-						$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
-						$fl = 1;
-					}
-					else
-					{
-						$disp_author = $disp_author .  "<span class=\"authorspan\">&nbsp;;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
-					}
-				}
-				if($result2){$result2->free();}
-			}
-		}
-
-		$book_info = '';
-
-		if($edition != '00')
-		{
-            $edition_name = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ");
-
-			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ  | ";
-		}
-		if($volume != '00')
-		{
-			$book_info = $book_info . " ಸಂಪುಟ " . intval($volume) . " | ";
-		}
-		if($part != '00')
-		{
-			$book_info = $book_info . " ಭಾಗ  " . intval($part) . " | ";
-		}
-		if(intval($page) != 0)
-		{
-			$book_info = $book_info . " pp " . intval($page) . " - " . intval($page_end);
-		}
-		if(intval($year) != 0)
-		{
-			$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);
-		}
-		$book_info = preg_replace("/^ /", "", $book_info);
-		$book_info = preg_replace("/^\|/", "", $book_info);
-		$book_info = preg_replace("/^ /", "", $book_info);
-			
-		if($page != 0)
-		{
+			$authid = $row1['authid'];
+			$type = $row1['type'];
+			$title = $row1['title'];
+			$book_id = $row1['book_id'];
+			echo "<li id=\"li_id".$li_id++."\">&nbsp;&nbsp;&nbsp;&nbsp;$bullet";
+			echo "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			if($authid != '')
 			{
-				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span><br />" . $disp_author;
+				$authorString = getAuthorDetails($authid,$db,$type);
+				echo "<br/>".$authorString;
 			}
-			else
+			if($row1['page'] != 0)
 			{
-				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
+				$bookInfo = getBookInfo($row1);
+				echo "<br/><span class=\"space_left infospan\">$bookInfo</span>";
 			}
-			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
-		}
-		else
-		{
-			$title = "<span class=\"titlespan\">$title</span>";
-		}
-		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
-		$title = preg_replace('/---/', "&mdash;", $title);
-		$title = preg_replace('/--/', "&ndash;", $title);
-		
-		if($first)
-		{
-			array_push($stack,$level);
-			$ul_id++;
-			echo "<ul id=\"ul_id$ul_id\">\n";
-			array_push($p_stack,$ul_id);
-			$li_id++;
-			$deffer = display_tabs($level) . "<li id=\"li_id$li_id\">:rep:$title";
-			$first = 0;
-		}
-		elseif($level > $stack[sizeof($stack)-1])
-		{
-			$deffer = preg_replace('/:rep:/',"$plus_link",$deffer);
-			echo $deffer;
-
-			$ul_id++;
-			$li_id++;
-			array_push($stack,$level);
-			array_push($p_stack,$ul_id);
-			$deffer = "\n" . display_tabs(($level-1)) . "<ul class=\"dnone\" id=\"ul_id$ul_id\">\n";
-			$deffer = $deffer . display_tabs($level) ."<li id=\"li_id$li_id\">:rep:$title";
-		}
-		elseif($level < $stack[sizeof($stack)-1])
-		{
-			$deffer = preg_replace('/:rep:/',"$bullet",$deffer);
-			echo $deffer;
 			
-			for($k=sizeof($stack)-1;(($k>=0) && ($level != $stack[$k]));$k--)
-			{
-				echo "</li>\n". display_tabs($level) ."</ul>\n";
-				$top = array_pop($stack);
-				$top1 = array_pop($p_stack);
-			}
-			$li_id++;
-			$deffer = display_tabs($level) . "</li>\n";
-			$deffer = $deffer . display_tabs($level) ."<li id=\"li_id$li_id\">:rep:$title";
+			echo "		</li>";
 		}
-		elseif($level == $stack[sizeof($stack)-1])
-		{
-			$deffer = preg_replace('/:rep:/',"$bullet",$deffer);
-			echo $deffer;
-			$li_id++;
-			$deffer = "</li>\n";
-			$deffer = $deffer . display_tabs($level) ."<li id=\"li_id$li_id\">:rep:$title";
-		}
+		echo "		</ul>";
+		echo "	</li>";
+		echo "</ul>";
 	}
-
-	$deffer = preg_replace('/:rep:/',"$bullet",$deffer);
-	echo $deffer;
-
-	for($i=0;$i<sizeof($stack);$i++)
-	{
-		echo "</li>\n". display_tabs($level) ."</ul>\n";
-	}
-
 	echo "</div>";
 }
 else
@@ -271,31 +141,6 @@ else
 
 if($result){$result->free();}
 $db->close();
-
-function display_stack($stack)
-{
-	for($j=0;$j<sizeof($stack);$j++)
-	{
-		$disp_array = $disp_array . $stack[$j] . ",";
-	}
-	return $disp_array;
-}
-
-function display_tabs($num)
-{
-	$str_tabs = "";
-	
-	if($num != 0)
-	{
-		for($tab=1;$tab<=$num;$tab++)
-		{
-			$str_tabs = $str_tabs . "\t";
-		}
-	}
-	
-	return $str_tabs;
-}
-
 ?>                 
            </div>
         </div>
@@ -306,3 +151,86 @@ function display_tabs($num)
 </div>
 </body>
 </html>
+
+
+<?php
+function display_stack($stack)
+{
+	for($j=0;$j<sizeof($stack);$j++)
+	{
+		$disp_array = $disp_array . $stack[$j] . ",";
+	}
+	return $disp_array;
+}
+
+function getAuthorDetails($authid,$db,$type)
+{
+	
+	$disp_author = "";
+	if($authid != '')
+	{
+		$disp_author =  "<span class=\"authorspan\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash;</span>";
+		$aut = preg_split('/;/',$authid);
+		$fl = 0;
+		foreach ($aut as $aid)
+		{
+			$query2 = "select * from author_kannada where authid=$aid";
+			$result2 = $db->query($query2); 
+			$row2 = $result2->fetch_assoc();
+			$authorname=$row2['authorname'];
+			if($fl == 0)
+			{
+				$disp_author = $disp_author . "<span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
+				$fl = 1;
+			}
+			else
+			{
+				$disp_author = $disp_author .  "<span class=\"authorspan\">&nbsp;;&nbsp;</span><span class=\"authorspan\"><a href=\"auth.php?authid=$aid&amp;author=" . urlencode($authorname) . "&amp;type=$type\">$authorname</a></span>";
+			}
+		}
+		$result2->free();
+	}
+	return $disp_author;
+	
+}
+function getBookInfo($row = array())
+{
+	$level = $row['level'];
+	$title = $row['title'];
+	$authorname = $row['authorname'];
+	$page = $row['page'];
+	$page_end = $row['page_end'];
+	$edition = $row['edition'];
+	$volume = $row['volume'];
+	$part = $row['part'];
+	$year = $row['year'];
+	$month = $row['month'];
+	$month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"April","5"=>"May","6"=>"June","7"=>"July","8"=>"August","9"=>"September","10"=>"October","11"=>"November","12"=>"December");		
+	$book_info = '';
+	if($edition != '00')
+	{
+		$edition_name = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ");
+		$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ  | ";
+	}
+	if($volume != '00')
+	{
+		$book_info = $book_info . " ಸಂಪುಟ " . intval($volume) . " | ";
+	}
+	if($part != '00')
+	{
+		$book_info = $book_info . " ಭಾಗ  " . intval($part) . " | ";
+	}
+	if(intval($page) != 0)
+	{
+		$book_info = $book_info . " pp " . intval($page) . " - " . intval($page_end);
+	}
+	if(intval($year) != 0)
+	{
+		$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);
+	}
+	$book_info = preg_replace("/^ /", "", $book_info);
+	$book_info = preg_replace("/^\|/", "", $book_info);
+	$book_info = preg_replace("/^ /", "", $book_info);
+	return 	$book_info;
+}
+?>
