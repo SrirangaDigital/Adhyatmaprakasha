@@ -38,7 +38,7 @@
 						$query1 = "select * from english_books_list where book_id = ".$row["bookid"]."";
 						$result1 = $db->query($query1);
 						$row1 = $result1->fetch_assoc();
-						echo "<span class=\"news\"><a href=\"".$row1["type"]."/".$row1["type"]."_books_toc.php?book_id=".$row1["book_id"]."&amp;type=".$row1["type"]."&amp;book_title=" . urlencode($row1["title"]) . "\"\">".$row1["title"]."</a></span><br />";
+						echo "<span class=\"news\"><a href=\"".$row1["type"]."/".$row1["type"]."_books_toc.php?book_id=".$row1["book_id"]."&amp;type=".$row1["type"]."&amp;book_title=" . urlencode($row1["title"]) . "\">".$row1["title"]."</a></span><br />";
 					}
 				}
 				
@@ -56,7 +56,7 @@
 						$query1 = "select * from kannada_books_list where book_id = ".$row["bookid"]."";
 						$result1 = $db->query($query1);
 						$row1 = $result1->fetch_assoc();
-						echo "<span class=\"news\"><a href=\"".$row1["type"]."/".$row1["type"]."_books_toc.php?book_id=".$row1["book_id"]."&amp;type=".$row1["type"]."&amp;book_title=" . urlencode($row1["title"]) . "\"\">".$row1["title"]."</a></span><br />";
+						echo "<span class=\"news\"><a href=\"".$row1["type"]."/".$row1["type"]."_books_toc.php?book_id=".$row1["book_id"]."&amp;type=".$row1["type"]."&amp;book_title=" . urlencode($row1["title"]) . "\">".$row1["title"]."</a></span><br />";
 					}
 				}
 			?>
@@ -73,7 +73,7 @@
 						$query1 = "select * from sanskrit_books_list where book_id = ".$row["bookid"]."";
 						$result1 = $db->query($query1);
 						$row1 = $result1->fetch_assoc();
-						echo "<span class=\"news\"><a href=\"".$row1["type"]."/".$row1["type"]."_books_toc.php?book_id=".$row1["book_id"]."&amp;type=".$row1["type"]."&amp;book_title=" . urlencode($row1["title"]) . "\"\">".$row1["title"]."</a></span><br />";
+						echo "<span class=\"news\"><a href=\"".$row1["type"]."/".$row1["type"]."_books_toc.php?book_id=".$row1["book_id"]."&amp;type=".$row1["type"]."&amp;book_title=" . urlencode($row1["title"]) . "\">".$row1["title"]."</a></span><br />";
 					}
 				}
 			?>
