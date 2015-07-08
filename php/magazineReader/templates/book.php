@@ -40,7 +40,7 @@
 		}
 	
 		$book["imglist"]=array_values($book["imglist"]);
-		$book["Title"] = "Book Reader";
+		$book["Title"] = "Adhyātmaprakāsha Kāryālaya";
 		$book["TotalPages"] = count($book["imglist"]);
 		$book["SourceURL"] = "";
 		$result = array_keys($book["imglist"], $page);
