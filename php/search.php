@@ -78,15 +78,15 @@ require_once("common.php");
 			<div class="archive_search">
 				<form method="POST" action="search-result.php">
 					<div>
-						<span class="label"><input type="checkbox" value="magazine" checked/>&nbsp;Magazine</span><span class="label"><input type="checkbox" value="eng"/>&nbsp;English Books</span><span class="label"><input type="checkbox" value="kan"/>&nbsp;Kannada Books</span><span class="label"><input type="checkbox" value="san"/>&nbsp;Sanskrit Books</span>
+						<span class="label"><input name="check[]" type="checkbox" value="magazine" checked="checked"/>&nbsp;Magazine</span><span class="label"><input name="check[]" type="checkbox" value="english"/>&nbsp;English Books</span><span class="label"><input name="check[]" type="checkbox" value="kannada"/>&nbsp;Kannada Books</span><span class="label"><input name="check[]" type="checkbox" value="sanskrit"/>&nbsp;Sanskrit Books</span>
 					</div>
-					<br/>
+ 					<br/>
 					<table>
 						<tr>
-							<td class="right"><input class="titlespan wide" name="text" type="text" id="title" onfocus="SetId('title')" placeholder="Title" style="height: 2em; margin: 0.5em 0em 0.5em 0em"/></td>
+							<td class="right"><input class="titlespan wide" name="title" type="text" id="title" onfocus="SetId('title')" placeholder="Title" style="height: 2em; margin: 0.5em 0em 0.5em 0em"/></td>
 						</tr>
 						<tr>
-							<td class="right"><input class="titlespan wide" name="text" type="text" id="author" onfocus="SetId('author')" placeholder="Author" style="height: 2em; margin: 0.5em 0em 0.5em 0em"/></td>
+							<td class="right"><input class="titlespan wide" name="author" type="text" id="author" onfocus="SetId('author')" placeholder="Author" style="height: 2em; margin: 0.5em 0em 0.5em 0em"/></td>
 						</tr>
 						<tr>
 							<td class="right"><input class="titlespan wide" name="text" type="text" id="word" onfocus="SetId('word')" placeholder="Text"  style="height: 2em; margin: 0.5em 0em 0.5em 0em"/></td>

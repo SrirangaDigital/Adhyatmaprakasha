@@ -356,6 +356,11 @@ html, body {
 .sub_titlespan a{
 	color: #3D3D3D;
 }
+.search_result{
+	color: #3D3D3D;
+	margin: 10px 0px -20px 22px;
+	font-size: 14px; 
+}
 .infospan{
 	color: #000;
 	font-size: 0.9em; 
