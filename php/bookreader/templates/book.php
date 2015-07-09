@@ -18,7 +18,13 @@
 		$type = $_GET['type'];
 		$book_id = $_GET['book_id'];
 		$page = $_GET['pagenum'].".jpg";
-		$search = ($_GET['searchText'] && $_GET['searchText'] != '') ?  $_GET['searchText'] : '';
+		
+		if(isset($_GET['searchText']) && $_GET['searchText']!='')
+		{
+			$search = $_GET['searchText'];
+			$book["searchText"] = $search;
+		}
+		
 		$djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
 		$imgurl = "../../../Volumes/".$type."_books/jpg/2/$book_id";
 		

@@ -164,7 +164,7 @@
 		
 		$iquery{'magazine'} = "(SELECT * FROM
 									(SELECT * FROM
-										(SELECT title, authid, authorname, cur_page,  page, CONCAT_WS('&&&', 'magazine', volume, issue, year, month) as info, 'type', titleid FROM searchtable_magazine WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
+										(SELECT title, authid, authorname, cur_page,  page, CONCAT_WS('&&&', 'magazine', volume, issue, year, month, titleid) as info, 'type', titleid FROM searchtable_magazine WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
 									WHERE $authorFilter) AS tb2
 								WHERE $titleFilter ORDER BY titleid, cur_page)";
 								

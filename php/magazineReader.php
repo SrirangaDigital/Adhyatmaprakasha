@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	$url ="";
 	if(isset($_GET['volume']) && $_GET['volume'] != ''){$volume = $_GET['volume']; $url = "volume=".$volume;}
 	if(isset($_GET['issue']) && $_GET['issue'] != ''){$issue = $_GET['issue']; $url .= "&issue=".$issue;}

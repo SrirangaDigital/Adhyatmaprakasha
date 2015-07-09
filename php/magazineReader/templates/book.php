@@ -20,13 +20,16 @@
     <?php
 		$volume = $_GET['volume'];
 		$issue = $_GET['issue'];
-		$year = $_GET['year'];
-		$month = $_GET['month'];
 		$page = $_GET['page'].".jpg";
 		$type = "magazine";
 		$djvurl = "../../../Volumes/".$type."/djvu/$volume/$issue";
 		$imgurl = "../../../Volumes/".$type."/jpg/2/$volume/$issue";
-		//~ $search = $_GET['search'];
+		if(isset($_GET['searchText']) && $_GET['searchText']!='')
+		{
+			$search = $_GET['searchText'];
+			$book["searchText"] = $search;
+		}
+		
 		$djvulist=scandir($djvurl);
 		$cmd='';
 		
@@ -45,7 +48,6 @@
 		$book["SourceURL"] = "";
 		$result = array_keys($book["imglist"], $page);
 		$book["pagenum"] = $result[0];
-		//~ $book["searchText"] = $search;
 		$book["lang"] = $type;
 		$book["volume"] = $volume;
 		$book["issue"] = $issue;
