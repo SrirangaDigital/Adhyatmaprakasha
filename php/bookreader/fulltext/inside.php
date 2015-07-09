@@ -1,53 +1,64 @@
 <?php
-	$volume = $_GET["volume"];
-	$issue = $_GET["issue"];
+	session_start();
+	$book_id = $_GET["book_id"];
+	$type = $_GET["type"];
 	$qtext = $_GET["q"];
+	$texts = '';
+	$texts = preg_split("/ /", $qtext);
+	$textFilter = "";
+	$searchedPages = array_values(array_unique($_SESSION['sd'][$type.$book_id]));
 	
-	$dc = mysql_connect("localhost", "root" , "mysql") or die("Not Connected to db");
-	$db = mysql_select_db("hck" , $dc) or die("Not selected DB");
+	for($ic=0;$ic<sizeof($texts);$ic++)
+	{
+		$textFilter .= $texts[$ic] . "* ";
+	}
 	
-	mysql_set_charset("utf8",$dc);
+	include("../../connect.php");
+	$db = @new mysqli('localhost', "$user", "$password", "$database");
+	$db->set_charset("utf8");
+	if($db->connect_errno > 0)
+	{
+		echo 'Not connected to the database [' . $db->connect_errno . ']';
+		echo "</div></div>";
+		include("include_footer.php");
+		echo "<div class=\"clearfix\"></div></div>";
+		include("include_footer_out.php");
+		echo "</body></html>";
+		exit(1);
+	}
 	
 	$sd["q"] = $qtext;
-	//~ $sd["q"] = "Searching Text";
 	$sd["indexed"] = true;
-	$j = 0;
-	$query = "select * from searchtable where text regexp '$qtext' and cur_page NOT REGEXP '[a-z]' and volume = '$volume' and issue = '$issue'";
-	
 	$sd["matches"]="";
 	$array ="";
-	$result = mysql_query($query) or die ("query failed".mysql_error());
 	
-	while($row = mysql_fetch_assoc($result))
+	for($a=0;$a<count($searchedPages);$a++)
 	{
-		$query1 = "select * from word where word regexp '$qtext' and pagenum = ".$row["cur_page"];
-		$result1 = mysql_query($query1);
+		$query1 = "SELECT * FROM
+						(SELECT * FROM
+							(SELECT * FROM
+								(SELECT * FROM word_books WHERE MATCH (word) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1 
+							WHERE type = '$type') as tb2
+						WHERE book_id = '$book_id') as tb3
+					WHERE pagenum = '$searchedPages[$a]'";
+		
+		$result1 = $db->query($query1) or die("query Failed ".$db->error);
+		$num_rows1 = $result1->num_rows;
 		$cord = array();
 		$array = "";
-		$row["text"] = txtTrimer($row["text"] , $qtext);
 		
-		while($row1 = mysql_fetch_assoc($result1))
+		for($b = 0; $b < $num_rows1; $b++)
 		{
-			$sumne = preg_split("/,/", $row1['cords']);
-			for($i=0; $i<count($sumne);$i++)
-			{
-				$sumne[$i] = floor($sumne[$i]/(($row1['width']+$row1['height'])/2010));
-			}
-			$cord[] = array("l" => $sumne[0],"b" => $sumne[1],"r" => $sumne[2],"t" => $sumne[3]);
+			$row1=$result1->fetch_assoc();
+			$cord[] = array("l" => $row1['l'],"b" => $row1["b"],"r" => $row1["r"],"t" => $row1["t"]);
 		}
-		$array["text"] = $row["text"];
-		//~ $array["text"] = "text";
-		$array["par"][] = array( "page" => $row["cur_page"] , "boxes" => $cord);
+		
+		$row1["text"] = "Text Found in";
+		$qtext = "Text";
+		$row1["text"] = preg_replace("/Text/" , "{{{".$qtext."}}}" , $row1["text"]);
+		$array["text"] = $row1["text"];
+		$array["par"][] = array( "page" => $row1["pagenum"] , "boxes" => $cord);
 		$sd["matches"][] = $array;
 	}
 	echo json_encode($sd);
-	
-	function txtTrimer($text , $qtext){
-		//~ return 200 character from $row["text"]
-		$pos = stripos($text ,  $qtext);
-		($pos - 75 ) < 0 ? $start = 0 : $start = $pos - 75; $end = 200;
-		$text = substr($text ,$start , $end);
-		$text = preg_replace("/$qtext/i" , "{{{".$qtext."}}}" , $text); 
-		return $text;
-	}
 ?>

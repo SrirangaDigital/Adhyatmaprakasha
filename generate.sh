@@ -40,9 +40,17 @@ perl searchtable_books.pl $host $db $usr $pwd 'english'
 perl searchtable_books.pl $host $db $usr $pwd 'sanskrit'
 perl searchtable_magazine.pl $host $db $usr $pwd 'magazine'
 
+echo "USE $db; DROP TABLE IF EXISTS word_books;" | /usr/bin/mysql -u$usr -p$pwd
+echo "\nWord Insertion..........";
+perl wordInsertBooks.pl $host $db $usr $pwd 'kannada'
+perl wordInsertBooks.pl $host $db $usr $pwd 'english'
+perl wordInsertBooks.pl $host $db $usr $pwd 'sanskrit'
+perl wordInsertMagazine.pl $host $db $usr $pwd 'magazine'
+
 echo "\nIndexing..........\n";
 echo "create fulltext index text_index_books on searchtable_books (text);" | /usr/bin/mysql -uroot -p$pwd $db 
 echo "create fulltext index text_index_magazine on searchtable_magazine (text);" | /usr/bin/mysql -uroot -p$pwd $db 
-
+echo "create fulltext index word_index_books on word_books (word);" | /usr/bin/mysql -uroot -p$pwd $db 
+echo "create fulltext index word_index_magazine on word_magazine (word);" | /usr/bin/mysql -uroot -p$pwd $db 
 
 #~ /usr/bin/mysql -uroot -pmysql apk < ap.sql

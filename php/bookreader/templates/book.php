@@ -18,7 +18,7 @@
 		$type = $_GET['type'];
 		$book_id = $_GET['book_id'];
 		$page = $_GET['pagenum'].".jpg";
-		//~ $search = $_GET['search'];
+		$search = ($_GET['searchText'] && $_GET['searchText'] != '') ?  $_GET['searchText'] : '';
 		$djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
 		$imgurl = "../../../Volumes/".$type."_books/jpg/2/$book_id";
 		
@@ -40,9 +40,9 @@
 		$book["SourceURL"] = "";
 		$result = array_keys($book["imglist"], $page);
 		$book["pagenum"] = $result[0];
-		//~ $book["searchText"] = $search;
+		$book["searchText"] = $search;
 		$book["lang"] = $type;
-		$book["volume"] = $book_id;
+		$book["book_id"] = $book_id;
 		$book["imgurl"] = $imgurl;
     ?>
 <script type="text/javascript">var book = <?php echo json_encode($book); ?>;</script>

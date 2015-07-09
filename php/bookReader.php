@@ -4,7 +4,7 @@
 	if(isset($_GET['type']) && $_GET['type'] != ''){$type = $_GET['type']; $url = "type=".$type;}
 	if(isset($_GET['book_id']) && $_GET['book_id'] != ''){$book_id = $_GET['book_id']; $url .= "&book_id=".$book_id;}
 	if(isset($_GET['page']) && $_GET['page'] != ''){$page = preg_split("/-/",$_GET['page']); $url .= "&pagenum=".$page[0];}
-	
+	if(isset($_GET['text']) && $_GET['text'] != ''){$text = $_GET['text']; $url .= "&searchText=".$text;}
 	//~ *******************Top View Book Hits*************************
 	include("connect.php");
 	$db = @new mysqli('localhost', "$user", "$password", "$database");
@@ -27,5 +27,6 @@
 	}
 	$_SESSION[$type.$book_id] = $type.$book_id;
 	//~ *******************Top View Book Hits*************************
+	//~ print_r($_SESSION['sd']);
 	header("Location: bookreader/templates/book.php?".$url);
 ?>
