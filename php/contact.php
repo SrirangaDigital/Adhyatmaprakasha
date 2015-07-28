@@ -89,6 +89,8 @@
                             Rayadurga-515865<br />
                             AndhraPradesh, India<br />
                             Phone No. 91-8495-251485<br />
+                            Mobile No. 91-94904-77602<br />
+							Mobile No. 91-77029-86402
                         </td>
                         <td>
                             Adhyatma Prakasha Karyalaya<br />
