@@ -1,4 +1,5 @@
 <div id="kannada">
+	<p>Kannada Keyboard</p>
 	<div class="keys tline lline" id="a" onclick="InsertText('ಅ')">ಅ</div>
 	<div class="keys tline" id="A" onclick="InsertText('ಆ')">ಆ</div>
 	<div class="keys tline" id="i" onclick="InsertText('ಇ')">ಇ</div>

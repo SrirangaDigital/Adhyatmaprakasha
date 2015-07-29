@@ -16,7 +16,7 @@
 $(document).ready(function()
 {
 	$("#sanskrit").hide();
-	$("#kannada").hide();
+	$("#kannada").show();
 	$("#kan").click(function()
 	{
 		$("#kannada").fadeIn();
@@ -68,7 +68,7 @@ $(document).ready(function()
 	</div>
 	<div class="content">
 		<div class="col1">
-			<div class="title">Search</div>
+			<div class="search_title">Search</div>
 <?php
 
 include("connect.php");
@@ -78,7 +78,10 @@ require_once("common.php");
 			<div class="archive_search">
 				<form method="POST" action="search-result.php">
 					<div>
-						<span class="label"><input name="check[]" type="checkbox" value="magazine" checked="checked"/>&nbsp;Magazine</span><span class="label"><input name="check[]" type="checkbox" value="english"/>&nbsp;English Books</span><span class="label"><input name="check[]" type="checkbox" value="kannada"/>&nbsp;Kannada Books</span><span class="label"><input name="check[]" type="checkbox" value="sanskrit"/>&nbsp;Sanskrit Books</span>
+						<span class="label"><input name="check[]" type="checkbox" value="magazine" checked="checked"/>&nbsp;&nbsp;Magazine</span><br />
+						<span class="label"><input name="check[]" type="checkbox" value="english"/>&nbsp;&nbsp;English Books</span><br />
+						<span class="label"><input name="check[]" type="checkbox" value="kannada"/>&nbsp;&nbsp;Kannada Books</span><br />
+						<span class="label"><input name="check[]" type="checkbox" value="sanskrit"/>&nbsp;&nbsp;Sanskrit Books</span>
 					</div>
  					<br/>
 					<table>

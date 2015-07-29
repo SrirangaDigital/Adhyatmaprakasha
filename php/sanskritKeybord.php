@@ -1,4 +1,5 @@
 <div id="sanskrit">
+	<p>Sanskrit Keyboard</p>	
 	<div class="keys tline lline" id="a" onclick="InsertText('अ')">अ</div>
 	<div class="keys tline" id="A" onclick="InsertText('आ')">आ</div>
 	<div class="keys tline" id="i" onclick="InsertText('इ')">इ</div>

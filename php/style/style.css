@@ -843,16 +843,24 @@ hr{
 	margin: 2em 2em 0em 0em; 
 }
 #kannada{
-	margin-top: -17em;
+	margin-top: -19em;
 	width: 290px;
 	float: right;
 	padding-top: 2em;
 }
+#kannada p{
+	color: #D2691E;
+	font-size: 0.8em;
+}
 #sanskrit{
-	margin-top: -17em;
+	margin-top: -19em;
 	width: 290px;
 	float: right;
 	padding-top: 2em;
+}
+#sanskrit p{
+	color: #D2691E;
+	font-size: 0.8em;
 }
 .keys{
 	width: 38px;
@@ -896,4 +904,23 @@ hr{
 #san{
 	margin: 1em 0em 0em 3em;
 	color: #D2691E;
+}
+input {
+    -moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    border-radius: 10px; /* CSS3 */
+	border: 2px solid #888;
+	padding: 4px;
+	-moz-box-shadow: 2px 2px 3px #555;
+	-webkit-box-shadow: 2px 2px 3px #555;
+	box-shadow: 2px 2px 3px #555;
+	font-size: 1em;
+	background-color: #F8F8F8;
+	outline: none;
+}
+.search_title{
+	font-size: 1.5em;
+	color: #D2691E;
+	text-align: center;
+	margin-bottom: 0.75em;
 }
