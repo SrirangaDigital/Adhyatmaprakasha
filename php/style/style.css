@@ -350,6 +350,17 @@ html, body {
 	color: #000000;
 	text-decoration:underline;
 }
+.treeview .titlespan{
+	color: #D2691E;
+}
+.treeview .titlespan a{
+	color: #D2691E;
+	text-decoration:none;
+}
+.treeview .titlespan a:Hover{
+	color: #000000;
+	text-decoration:underline;
+}
 .sub_titlespan{
 	color: #3D3D3D;
 }
@@ -380,6 +391,16 @@ html, body {
 	text-decoration:none;
 }
 .authorspan a:Hover{
+	text-decoration:underline;
+}
+.treeview .authorspan {
+	color: #D2691E;
+}
+.treeview .authorspan a{
+	color: #D2691E;
+	text-decoration:none;
+}
+.treeview .authorspan a:Hover{
 	text-decoration:underline;
 }
 /* style for tables */
