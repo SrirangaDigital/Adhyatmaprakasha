@@ -21,6 +21,13 @@
 			<span class="news"><a href="php/circulars/intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
 		</p>
 	</div>
+	<br />
+    <div class="widget">
+		<div class="title">Adhyatmaprakasha Blog</div>
+		<p>
+			<span class="news"><a href="http://adhyatmaprakashakaryalaya.blogspot.in/">This blog is about activity performed in APK</a></span>
+		</p>	
+	</div>
 	<div class="rule"></div>
 	<div class="widget">
         <div class="title">Top viewed books</div>
