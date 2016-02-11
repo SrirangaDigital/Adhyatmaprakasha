@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/aplogo.ico">
 <title>Adhyatma Prakash Karyalaya</title>
 <link href="style/reset.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="style/style.css" media="screen" rel="stylesheet" type="text/css" />

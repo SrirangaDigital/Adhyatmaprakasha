@@ -7,6 +7,7 @@
 
     <title>$book['Title']</title>
     <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="../../images/aplogo.ico">
     <link rel="stylesheet" type="text/css" href="../static/BookReader/BookReader.css"/>
     <link rel="stylesheet" type="text/css" href="../static/BookReaderDemo.css"/>
     <script type="text/javascript" src="../static/BookReader/jquery-1.4.2.min.js"></script>
