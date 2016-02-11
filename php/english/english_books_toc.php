@@ -34,7 +34,7 @@
 						<li><a href="../authors.php">Authors</a></li>
 					</ul>
 				</li>
-				<li><a class="active" href="publications.php">Publications</a>
+				<li><a class="active" href="../publications.php">Publications</a>
 					<ul id="pubnav">
 						<li><a href="../kannada_books.php">Kannada Books</a></li>
 						<li><a href="../sanskrit_books.php">Sanskrit Books</a></li>
@@ -315,7 +315,7 @@ function display_tabs($num)
 ?>               
             </div>
         </div>
-        <?php include("../include_footer.php");?>
+        <?php include("include_footer.php");?>
         <div class="clearfix"></div>
     </div>
     <?php include("include_footer_out.php");?>
