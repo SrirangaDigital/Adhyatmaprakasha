@@ -28,6 +28,13 @@
 			<span class="news"><a href="http://adhyatmaprakashakaryalaya.blogspot.in/">This blog is about activity performed in APK</a></span>
 		</p>	
 	</div>
+	<br />
+    <div class="widget">
+		<div class="title">Programs List of 2016</div>
+		<p>
+			<span class="news"><a href="images/2016_04.pdf" target="_blank">Download PDF</a></span>
+		</p>	
+	</div>
 	<div class="rule"></div>
 	<div class="widget">
         <div class="title">Top viewed books</div>

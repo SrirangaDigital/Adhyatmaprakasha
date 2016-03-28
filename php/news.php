@@ -50,8 +50,12 @@
 	<div class="content">
 		<div class="col1">
 			<div class="title">Gallery</div>
-				<br /><br />
 				<table align="center">
+				<tr>
+					<td>
+						<span class="titlespan">2010</span><br/><br/>
+					</td>
+				</tr>
 				<tr>
 					<td>
 					<a class="vlightbox" href="images/main/1.jpg" title="saptaha 1"><img src="images/thumbnails/1.jpg" alt="saptaha 1"/></a>
@@ -73,7 +77,17 @@
 					<script src="js/visuallightbox.js" type="text/javascript"></script>
 					</td>
 				</tr>
+				<tr>
+					<td><br/><span class="titlespan">2016</span><br/><br/></td>
+				</tr>
+				<tr>
+					<td>
+						<a class="vlightbox" href="images/main/2016_04.jpg" title="Saptaha-5"><img src="images/thumbnails/2016_04.jpg" alt="Saptaha-5"/></a>
+						<script src="js/visuallightbox.js" type="text/javascript"></script>
+					</td>
+				</tr>
 				</table>
+				<br/>
 		</div>
 		<?php include("include_footer.php");?>
         <div class="clearfix"></div>
