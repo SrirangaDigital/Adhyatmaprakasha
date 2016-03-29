@@ -52,7 +52,7 @@
 			<div class="title">Gallery</div>
 				<table align="center">
 					<tr>
-						<td><span class="titlespan">2016</span><br/><br/></td>
+						<td><span class="titlespan">Program List of 2016</span><br/><br/></td>
 					</tr>
 					<tr>
 						<td>
@@ -63,7 +63,7 @@
 					</tr>
 					<tr>
 						<td>
-							<br/><span class="titlespan">2010</span><br/><br/>
+							<br/><span class="titlespan">Program List of 2010</span><br/><br/>
 						</td>
 					</tr>
 					<tr>
