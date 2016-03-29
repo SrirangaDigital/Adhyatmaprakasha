@@ -30,7 +30,7 @@
 	</div>
 	<br />
     <div class="widget">
-		<div class="title">Programs List of 2016</div>
+		<div class="title">Program List of April 2016</div>
 		<p>
 			<span class="news"><a href="php/images/2016_04.pdf" target="_blank">Download PDF</a></span>
 		</p>	
