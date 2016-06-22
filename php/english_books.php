@@ -195,12 +195,12 @@ if($num_rows > 0)
 			{
 				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			}
-			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
+			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span>&nbsp;|&nbsp;<span class=\"downloadpdf\"><a href=\"../Volumes/PDF/english/". $book_id ."/index.pdf\" download=\"". $book_id .".pdf\">Download PDF</a></span></span>";
 		}
 		else
 		{
 			$title = "<span class=\"titlespan\">$title</span>";
-			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
+			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span>&nbsp;|&nbsp;<span class=\"downloadpdf\"><a href=\"../Volumes/PDF/english/". $book_id ."/index.pdf\" download=\"". $book_id .".pdf\">Download PDF</a></span></span>";
         }
 				
 		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
