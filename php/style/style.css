@@ -924,3 +924,14 @@ input {
 	text-align: center;
 	margin-bottom: 0.75em;
 }
+.downloadpdf{
+	color: #000;
+	font-size: 0.9em; 
+}
+.downloadpdf a{
+	color: #000;
+	text-decoration:none;
+}
+.downloadpdf a:Hover{
+	text-decoration:underline;
+}
