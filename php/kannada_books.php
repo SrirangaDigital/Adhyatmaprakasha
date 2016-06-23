@@ -124,7 +124,7 @@ if($num_rows > 0)
 			if($row1['page'] != 0)
 			{
 				$bookInfo = getBookInfo($row1);
-				echo "<br/><span class=\"space_left infospan\">$bookInfo</span>";
+				echo "<br/><span class=\"space_left infospan\">$bookInfo</span>&nbsp;|&nbsp;<span class=\"downloadpdf\"><a href=\"../Volumes/PDF/kannada/". $book_id ."/index.pdf\" download=\"". $book_id .".pdf\">Download PDF</a></span>";
 			}
 			
 			echo "		</li>";
