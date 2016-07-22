@@ -118,7 +118,12 @@ if($num_rows > 0)
 		$type = $row['type'];
 		$year = $row['year'];
 		$month = $row['month'];
-
+		$nodata = '';
+		if(!file_exists("../Volumes/english_books/djvu/". $book_id ."/shared_anno.iff"))
+		{
+			continue;
+		}
+		
 		if($authid != 0)
 		{
 			$disp_author =  "<span class=\"authorspan\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash;</span>";
