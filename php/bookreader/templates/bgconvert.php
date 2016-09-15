@@ -1,7 +1,7 @@
 <?php
 	$index = $_GET['index'];
 	$lang = $_GET['lang'];
-	$volume = $_GET['volume'];
+	$volume = $_GET['book_id'];
 	$imgurl = $_GET['imgurl'];
 	$reduce = round($_GET['level']);
 	$book = $_POST['book'];
