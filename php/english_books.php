@@ -77,7 +77,7 @@ if($db->connect_errno > 0)
 	exit(1);
 }
 
-$query = "select * from english_books_list order by slno";
+$query = "select * from english_books_list order by title";
 
 //~ $result = mysql_query($query);
 //~ $num_rows = mysql_num_rows($result);
