@@ -21,7 +21,7 @@
 			<span class="news"><a href="php/circulars/intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
 		</p><br />
 		<p>
-			<span class="news"><a href="Volumes/kannada_books/jpg/2/111A/index_tamil.pdf">Translation of Paramarthika Chintamani is now available in Tamil</a></span>
+			<span class="news"><a href="Volumes/PDF/kannada/111A/index_tamil.pdf">Translation of Paramarthika Chintamani is now available in Tamil</a></span>
 		</p>
 	</div>
 	<br />
