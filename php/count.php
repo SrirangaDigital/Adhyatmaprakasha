@@ -10,22 +10,33 @@ else
 {
 	//include("connect.php");
 
-	$db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
-	$rs = mysql_select_db($database,$db) or die("No Database");
-  
+	$db = @new mysqli('localhost', "$user", "$password", "$database");
+	$db->set_charset("utf8");
+	if($db->connect_errno > 0)
+	{
+		echo 'Not connected to the database [' . $db->connect_errno . ']';
+		echo "</div></div>";
+		include("include_footer.php");
+		echo "<div class=\"clearfix\"></div></div>";
+		include("include_footer_out.php");
+		echo "</body></html>";
+		exit(1);
+	}
+
 	$update_query= "update visitor set count=count+1";
-	$result = mysql_query($update_query);
+	$result = $db->query($update_query);
  
 	$pick = "select count from visitor";
-	$pick_result = mysql_query($pick);
-	$num_results = mysql_num_rows($pick_result);
+	$pick_result = $db->query($pick);
+	$num_results = $pick_result ? $pick_result->num_rows : 0; 
 	
-	if($num_results)
+	if($num_results > 0)
 	{
-		$row = mysql_fetch_assoc($pick_result);
+		$row = $pick_result->fetch_assoc();
 		$_SESSION['visitor_number'] = $row['count'];
 		echo $_SESSION['visitor_number'];
-	}	
-	mysql_close($db);
+	}
+	if($result){$result->free();}
+	$db->close();
 }
 ?>
