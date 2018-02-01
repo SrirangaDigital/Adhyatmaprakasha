@@ -70,7 +70,10 @@
 				Yellambalase Subbarao (1923 - July, 1948)<br />
 				Y. Narasappa (1949 - 1980)<br />
 				H. S. Lakshminarasimhamurthy (1980 - 2006)<br />
-				Chandramouli Avadhani<br />
+				Chandramouli Avadhani (2007 - 2010)<br />
+				Dr Y. Ananthanarayana (2010 - 2011)<br />
+				Swami Prakashanandendra Saraswati (2011 - 2015)<br />
+				Dr. S. Hemalatha (2016 to date)<br />
 			</div>
 		</div>
 		<?php include("include_footer.php");?>
