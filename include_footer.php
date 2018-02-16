@@ -26,17 +26,17 @@
 	</div>
 	<br />
     <div class="widget">
-		<div class="title">Adhyatmaprakasha Blog</div>
+		<div class="title">Keep in touch</div>
 		<p>
-			<span class="news"><a href="http://adhyatmaprakashakaryalaya.blogspot.in/">This blog is about activity performed in APK</a></span>
+			For all the latest and regular communication and updates:<br /><br />
 		</p>	
-	</div>
-	<br />
-    <div class="widget">
-		<div class="title">Program List of April 2016</div>
-		<p>
-			<span class="news"><a href="php/images/2016_04.pdf" target="_blank">Download PDF</a></span>
-		</p>	
+			<p><img style="width: 20%;" src="php/images/whatsapp.png" /></p>
+			<p>Please send a WhatsApp message "Shri Gurubhyo Namaha" to +91-9073081405 and add the phone number as Adhyatma Prakasha Karyalaya.<br /><br /></p> 
+			<p><a href="http://www.youtube.com/c/apkbooks" target="_blank"><img style="width: 20%;" src="php/images/youtube.png" /></a></p>
+			<p>Videos and talks of scholars from Karyalaya will be available at: <span class="lang"><a href="http://www.youtube.com/c/apkbooks" target="_blank">Youtube</a></span><br /><br /></p> 
+			<p><a href="http://www.facebook.com/groups/AdhyatmaPrakasha/"" target="_blank"><img style="width: 20%;" src="php/images/facebook.png" /></a></p>
+			<p>Group interaction of like minded people is at <span class="lang"><a href="http://www.facebook.com/groups/AdhyatmaPrakasha/" target="_blank">Facebook</a></span></p>
+		<p>Please subscribe to the same</p>
 	</div>
 	<div class="rule"></div>
 	<div class="widget">
