@@ -19,7 +19,7 @@
 		<div class="title">News updates</div>
 		<p><a href="php/circulars/revised_price_list_2017.pdf" target="_blank"><img style="width: 50%;" src="php/images/revised_price_list_2017.png" /></a></p>
 		<p>
-			<span class="news"><a href="php/circulars/revised_price_list_2017.pdf">Revised price list of books</a></span><br /><br />
+			<span class="news"><a href="php/circulars/revised_price_list_2017.pdf" target="_blank">Revised price list of books</a></span><br /><br />
 		</p>
 		<p>
 			<span class="news"><a href="php/circulars/intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
