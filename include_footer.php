@@ -17,12 +17,13 @@
 <div class="col2">
     <div class="widget">
 		<div class="title">News updates</div>
+		<p><a href="php/circulars/revised_price_list_2017.pdf" target="_blank"><img style="width: 50%;" src="php/images/revised_price_list_2017.png" /></a></p>
+		<p>
+			<span class="news"><a href="php/circulars/revised_price_list_2017.pdf">Revised price list of books</a></span><br /><br />
+		</p>
 		<p>
 			<span class="news"><a href="php/circulars/intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
 		</p><br />
-		<p>
-			<span class="news"><a href="Volumes/PDF/kannada/111A/index_tamil.pdf">Translation of Paramarthika Chintamani is now available in Tamil</a></span>
-		</p>
 	</div>
 	<br />
     <div class="widget">
@@ -31,7 +32,7 @@
 			For all the latest and regular communication and updates:<br /><br />
 		</p>	
 			<p><img style="width: 20%;" src="php/images/whatsapp.png" /></p>
-			<p>Please send a WhatsApp message "Shri Gurubhyo Namaha" to +91-9073081405 and add the phone number as Adhyatma Prakasha Karyalaya.<br /><br /></p> 
+			<p>Please send a WhatsApp message "Shri Gurubhyo Namaha" to +91-8073081405 and add the phone number as Adhyatma Prakasha Karyalaya.<br /><br /></p> 
 			<p><a href="http://www.youtube.com/c/apkbooks" target="_blank"><img style="width: 20%;" src="php/images/youtube.png" /></a></p>
 			<p>Videos and talks of scholars from Karyalaya will be available at: <span class="lang"><a href="http://www.youtube.com/c/apkbooks" target="_blank">Youtube</a></span><br /><br /></p> 
 			<p><a href="http://www.facebook.com/groups/AdhyatmaPrakasha/"" target="_blank"><img style="width: 20%;" src="php/images/facebook.png" /></a></p>
