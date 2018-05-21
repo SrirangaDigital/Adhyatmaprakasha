@@ -935,3 +935,12 @@ input {
 .downloadpdf a:Hover{
 	text-decoration:underline;
 }
+
+.developedby{
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.developedby-logo{
+	height: 20px; 
+	vertical-align: middle;
+}

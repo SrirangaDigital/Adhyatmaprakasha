@@ -5,12 +5,7 @@
 			</div>
 			<div class="fright">
 				<ul>
-					<li><a href="#">Terms of Use</a></li>
-					<li>|</li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li>|</li>
-					<li><a href="php/contact.php">Contact Us</a></li>
-					<li>&nbsp;</li>
+					<li><a href="http://www.srirangadigital.com/" target="_blank">Designed, Developed and Maintained by <span class="developedby">Sriranga Digital </span> &nbsp;<img class="developedby-logo" src="images/sriranga-logo.png" alt="" /></a></li>
 				</ul>
 			</div>
 		</div>
