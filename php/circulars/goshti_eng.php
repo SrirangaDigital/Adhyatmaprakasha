@@ -121,7 +121,7 @@
 			</div>
 		</div>
 	</div>
-    <?php include("/php/include_footer_out.php");?>
+    <?php include("../include_footer_out.php");?>
 </div>
 </body>
 </html>
