@@ -319,7 +319,7 @@ function display_tabs($num)
         <?php include("include_footer.php");?>
         <div class="clearfix"></div>
     </div>
-    <?php include("include_footer_out.php");?>
+    <?php include("../include_footer_out.php");?>
 </div>
 </body>
 </html>
