@@ -58,7 +58,7 @@ session_start();
 			include("include_footer.php")
 		?>
 	</div>
-    <?php include("/php/include_footer_out.php");?>
+    <?php include("php/include_footer_out.php");?>
 </div>
 
 </body>
