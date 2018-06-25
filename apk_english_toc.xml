@@ -794,4 +794,9 @@
 		<s1 title="Adhyatma Yoga" page="0007"></s1>
 		<s1 title="Appendix" page="0021"></s1>
 	</book>
+	<book code="044" btitle="Vedanta Jijnasa">
+		<s1 title="Sri Shankara’s Advaita Vedanta" page="0001"></s1>
+		<s1 title="Mulavidya-Vada Opposed To Shankara’s Advaita" page="0024"></s1>
+		<s1 title="Clarification Of Certain Vadantic Concepts According To Shankara" page="0039"></s1>
+	</book>
 </english>
