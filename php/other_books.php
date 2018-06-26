@@ -59,7 +59,7 @@
 		</div>
 		<div class="colmiddle">
             <div class="archive_holder">
-                <div class="page_title">English Books</div>
+                <div class="page_title">Other Books</div>
                 
 <?php
 include("connect.php");
