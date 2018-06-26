@@ -57,6 +57,8 @@
 				<span class="lang1"><a href="#">Kannada</a></span><br /><br />
 				<span class="lang1"><a href="sanskrit_books.php">Sanskrit</a></span><br /><br />
 				<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
+				<span class="lang1"><a href="other_books.php">Other</a></span><br /><br />
+			</p>
 			</p>
 		</div>
 		<div class="colmiddle">
