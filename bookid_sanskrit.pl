@@ -41,7 +41,7 @@ $scount = 0;
 while($line)
 {
 	chop($line);
-	if($line =~ /<s([0-9]+) title="(.*)" author="(.*)" page="(.*)" info="(.*)" type="(.*)" date="(.*)">/)
+	if($line =~ /<s([0-9]+) title="(.*)" author="(.*)" page="(.*)" info="(.*)" type="(.*)" date="(.*)" cid="(.*)">/)
 	{
 		$level = $1;
 		$title = $2;
