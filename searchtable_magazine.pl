@@ -30,7 +30,7 @@ cur_page varchar(10),
 volume varchar(3),
 issue varchar(10),
 year varchar(10),
-month varchar(10),
+month varchar(50),
 titleid varchar(30)) ENGINE=MyISAM character set utf8 collate utf8_general_ci");
 $sth11->execute();
 $sth11->finish();
