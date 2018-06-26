@@ -128,7 +128,7 @@ sub insert_to_db()
 
 	$title =~ s/'/\\'/g;
 
-	$sth2=$dbh->prepare("insert into sanskrit_books_list values('$book_id','$level','$title','$authid','$authors','$page','$page_end','$edition','$volume','$part','$type','$year','$month','')");
+	$sth2=$dbh->prepare("insert into sanskrit_books_list values('$book_id','$level','$title','$authid','$authors','$page','$page_end','$edition','$volume','$part','$type','$year','$month','0')");
 	$sth2->execute();
 	$sth2->finish();
 }

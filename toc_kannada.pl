@@ -17,10 +17,6 @@ $sth_drop=$dbh->prepare("DROP TABLE IF EXISTS kannada_book_toc");
 $sth_drop->execute();
 $sth_drop->finish();
 
-$sth_drop=$dbh->prepare("DROP TABLE IF EXISTS kannada_book_toc");
-$sth_drop->execute();
-$sth_drop->finish();
-
 $sth1=$dbh->prepare("CREATE TABLE kannada_book_toc(
 book_id varchar(10),
 btitle varchar(2000),
@@ -82,7 +78,7 @@ sub insert_to_db()
 	$btitle =~ s/'/\\'/g;
 	$title =~ s/'/\\'/g;
     
-	$sth2=$dbh->prepare("insert into kannada_book_toc values('$book_id','$btitle','$level','$title','$page','$type','')");
+	$sth2=$dbh->prepare("insert into kannada_book_toc values('$book_id','$btitle','$level','$title','$page','$type','0')");
 	$sth2->execute();
 	$sth2->finish();
 }

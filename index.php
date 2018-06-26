@@ -36,6 +36,7 @@ session_start();
 						<li><a href="php/kannada_books.php">Kannada Books</a></li>
 						<li><a href="php/sanskrit_books.php">Sanskrit Books</a></li>
 						<li><a href="php/english_books.php">English Books</a></li>
+						<li><a href="php/other_books.php">Other Books</a></li>
 					</ul>
 				</li>
 				<li><a href="php/appeal.php">Appeal</a></li>

@@ -94,7 +94,7 @@ sub insert_word()
 	
 	my($sth1,$sth);
 
-	$sth = $dbh->prepare("insert into word_books values('$columnType','$id','$height','$width','$page','$left','$bottom','$right','$top','$word','')");
+	$sth = $dbh->prepare("insert into word_books values('$columnType','$id','$height','$width','$page','$left','$bottom','$right','$top','$word','0')");
 	$sth->execute() or die("query failes");
 	$sth->finish();
 }

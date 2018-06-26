@@ -78,7 +78,7 @@ sub insert_to_db()
 	$btitle =~ s/'/\\'/g;
 	$title =~ s/'/\\'/g;
     
-	$sth2=$dbh->prepare("insert into english_book_toc values('$book_id','$btitle','$level','$title','$page','$type','')");
+	$sth2=$dbh->prepare("insert into english_book_toc values('$book_id','$btitle','$level','$title','$page','$type','0')");
 	$sth2->execute();
 	$sth2->finish();
 }

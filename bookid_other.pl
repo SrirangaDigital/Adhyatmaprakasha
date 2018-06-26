@@ -138,7 +138,7 @@ sub insert_to_db()
 
 	$title =~ s/'/\\'/g;
 
-	$sth2=$dbh->prepare("insert into other_books_list values('$book_id','$level','$title','$authid','$authors','$page','$page_end','$edition','$volume','$part','$type','$year','$month','$language','')");
+	$sth2=$dbh->prepare("insert into other_books_list values('$book_id','$level','$title','$authid','$authors','$page','$page_end','$edition','$volume','$part','$type','$year','$month','$language','0')");
 	$sth2->execute();
 	$sth2->finish();
 }
