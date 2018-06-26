@@ -40,6 +40,7 @@
 						<li><a href="kannada_books.php">Kannada Books</a></li>
 						<li><a href="sanskrit_books.php">Sanskrit Books</a></li>
 						<li><a href="english_books.php">English Books</a></li>
+						<li><a href="other_books.php">Other Books</a></li>
 					</ul>
 				</li>
 				<li><a href="appeal.php">Appeal</a></li>
@@ -114,6 +115,11 @@ if($type == "english")
 {
     echo "<div class=\"page_title\">Books written by $authorname</div>";
     $query = "select * from english_books_list where authid like '%$authid%' and authorname = '$authorname' and type = 'english'";
+}
+if($type == "other")
+{
+    echo "<div class=\"page_title\">Books written by $authorname</div>";
+    $query = "select * from other_books_list where authid like '%$authid%' and authorname = '$authorname' and type = 'other'";
 }
 
 // echo $query;
@@ -211,6 +217,31 @@ if($num_rows > 0)
 			$book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);
 		    }
 		}
+		if($type == "other")
+		{
+		    if(isset($row['language']) && $row['language'] != '')
+		    {
+				$book_info = $book_info . $row['language'];
+		    }
+		    if($edition != '00')
+		    {
+				$edition_name = array("1"=>"First","2"=>"Second","3"=>"Third","4"=>"Fourth","5"=>"Fifth");
+				$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;Edition";
+		    }
+		    if($volume != '00')
+		    {
+				$book_info = $book_info . " | Volume " . intval($volume);
+		    }
+		    if($part != '00')
+		    {
+				$book_info = $book_info . " | Part " . intval($part);
+		    }
+		    if(intval($page) != 0)
+		    {
+				$book_info = $book_info . " | pp " . intval($page) . " - " . intval($page_end);
+		    }
+		}
+
 		$book_info = preg_replace("/^ /", "", $book_info);
 		$book_info = preg_replace("/^\|/", "", $book_info);
 		$book_info = preg_replace("/^ /", "", $book_info);
@@ -218,7 +249,7 @@ if($num_rows > 0)
 		echo "<li>";
 		echo "<span class=\"sub_titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 		echo "<br /><span class=\"bookspan\">$book_info</span>";
-		echo "<br /><span class=\"downloadspan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">View TOC</a>&nbsp;|&nbsp;<a target=\"_blank\" href=\"../Volumes/$type/$book_id/index.djvu?djvuopts&amp;page=1&amp;zoom=page\">Read Book</a>&nbsp;|&nbsp;<a href=\"\" target=\"_blank\">Download Book (DjVu)</a>&nbsp;|&nbsp;<a href=\"#\">Download Book (PDF)</a></span>";
+		echo "<br /><span class=\"downloadspan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">View TOC</a>&nbsp;|&nbsp;<a target=\"_blank\" href=\"bookReader.php?book_id=$book_id&amp;page=$page&amp;type=$type\">Read Book</a>&nbsp;|&nbsp;<a href=\"../Volumes/PDF/other/". $book_id ."/index.pdf\" download=\"". $book_id .".pdf\">Download PDF</a></span>";
 		echo "</li>\n";
 	}
     echo "</ul>";

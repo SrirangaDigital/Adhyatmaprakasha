@@ -68,7 +68,7 @@ html, body {
 }
 #nav ul li ul{
 	padding-left: 0em;
-	text-align:center;
+	text-align:left;
 	background-color:#FFFFFF;
 	display:none;
 	position:absolute;

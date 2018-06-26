@@ -35,6 +35,7 @@
 						<li><a href="kannada_books.html">Kannada Books</a></li>
 						<li><a href="sanskrit_books.html">Sanskrit Books</a></li>
 						<li><a href="english_books.html">English Books</a></li>
+						<li><a href="other_books.php">Other Books</a></li>
 					</ul>
 				</li>
 				<li><a href="appeal.php">Appeal</a></li>

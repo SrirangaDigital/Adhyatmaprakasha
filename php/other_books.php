@@ -78,7 +78,7 @@ if($db->connect_errno > 0)
 	exit(1);
 }
 
-$query = "select * from english_books_list order by title";
+$query = "select * from other_books_list order by title";
 
 //~ $result = mysql_query($query);
 //~ $num_rows = mysql_num_rows($result);
@@ -120,7 +120,7 @@ if($num_rows > 0)
 		$year = $row['year'];
 		$month = $row['month'];
 		$nodata = '';
-		if(!file_exists("../Volumes/english_books/djvu/". $book_id ."/shared_anno.iff"))
+		if(!file_exists("../Volumes/other_books/djvu/". $book_id ."/shared_anno.iff"))
 		{
 			continue;
 		}
@@ -133,7 +133,7 @@ if($num_rows > 0)
 			$fl = 0;
 			foreach ($aut as $aid)
 			{
-				$query2 = "select * from author_english where authid=$aid";
+				$query2 = "select * from author_other where authid=$aid";
 				
 				//~ $result2 = mysql_query($query2);
 				//~ $num_rows2 = mysql_num_rows($result2);
@@ -164,6 +164,10 @@ if($num_rows > 0)
 
 		$book_info = '';
 		
+		if(isset($row['language']) && $row['language'] != '')
+		{
+			$book_info = $row['language'];
+		}
 		if($edition != '00')
 		{
             $edition_name = array("1"=>"First","2"=>"Second","3"=>"Third","4"=>"Fourth","5"=>"Fifth");
@@ -202,18 +206,18 @@ if($num_rows > 0)
 				$title = "<span class=\"titlespan\"><a href=\"".$type."/".$type."_books_toc.php?book_id=$book_id&amp;type=$type&amp;book_title=" . urlencode($title) . "\">$title</a></span>";
 			}
 			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
-			if(file_exists("../Volumes/PDF/english/". $book_id ."/index.pdf"))
+			if(file_exists("../Volumes/PDF/other/". $book_id ."/index.pdf"))
 			{
-				$title .= "&nbsp;|&nbsp;<span class=\"downloadpdf\"><a href=\"../Volumes/PDF/english/". $book_id ."/index.pdf\" download=\"". $book_id .".pdf\">Download PDF</a></span>";
+				$title .= "&nbsp;|&nbsp;<span class=\"downloadpdf\"><a href=\"../Volumes/PDF/other/". $book_id ."/index.pdf\" download=\"". $book_id .".pdf\">Download PDF</a></span>";
 			}
 		}
 		else
 		{
 			$title = "<span class=\"titlespan\">$title</span>";
 			$title = $title . "<br /><span class=\"space_left\"><span class=\"infospan\">$book_info</span></span>";
-			if(file_exists("../Volumes/PDF/english/". $book_id ."/index.pdf"))
+			if(file_exists("../Volumes/PDF/other/". $book_id ."/index.pdf"))
 			{
-				$title .= "&nbsp;|&nbsp;<span class=\"downloadpdf\"><a href=\"../Volumes/PDF/english/". $book_id ."/index.pdf\" download=\"". $book_id .".pdf\">Download PDF</a></span>";
+				$title .= "&nbsp;|&nbsp;<span class=\"downloadpdf\"><a href=\"../Volumes/PDF/other/". $book_id ."/index.pdf\" download=\"". $book_id .".pdf\">Download PDF</a></span>";
 			}
         }
 				

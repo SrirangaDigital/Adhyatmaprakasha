@@ -7,13 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="../images/aplogo.ico">
 <title>Adhyatma Prakash Karyalaya</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
 <link href="../style/reset.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="../style/style.css" media="screen" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/jquery-2.0.0.min.js" charset="UTF-8"></script>
 <script type="text/javascript" src="../js/treeview.js"></script>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/publication.js"></script>
-
 </head>
 
 <body>
@@ -97,7 +97,7 @@ if($db->connect_errno > 0)
 //~ $db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
 //~ $rs = mysql_select_db($database,$db) or die("No Database");
 
-$query = "select * from sanskrit_book_toc where book_id='$book_id' and type='$type' order by slno";
+$query = "select * from other_book_toc where book_id='$book_id' and type='$type' order by slno";
 
 $result = $db->query($query); 
 $num_rows = $result ? $result->num_rows : 0;
@@ -122,7 +122,7 @@ $month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"Ap
 //~ $plus_link = "+";
 //~ $bullet = ".";
 
-$query_aux = "select * from sanskrit_books_list where book_id='$book_id' and type='sanskrit'";
+$query_aux = "select * from other_books_list where book_id='$book_id' and type='other'";
 
 $result_aux = $db->query($query_aux); 
 $num_rows_aux = $result_aux ? $result_aux->num_rows : 0;
@@ -169,13 +169,15 @@ echo "<div class=\"book_cover\"><img src=\"../images/cover.png\" alt=\"Book Cove
 */
 echo "<div class=\"page_booktitle\">$book_title</div>";
 echo "<div class=\"page_subtitle\"><span class=\"itl\">$daname</span></div>";
-echo "<div class=\"page_other\">";
 
 $book_info = '';
-		
+if(isset($row_aux['language']) && $row_aux['language'] != '')
+{
+	$book_info = $book_info . $row_aux['language'];
+}
 if($edition != '00')
 {
-	$book_info = $book_info . "संस्करण " . intval($edition);
+	$book_info = $book_info . "Edition " . intval($edition);
 }
 if($volume != '00')
 {
@@ -198,7 +200,8 @@ $book_info = preg_replace("/^ /", "", $book_info);
 $book_info = preg_replace("/^\|/", "", $book_info);
 $book_info = preg_replace("/^ /", "", $book_info);
 
-echo "$book_info</div>";
+echo "<div class=\"page_other\">$book_info</div>";
+
 if($num_rows > 0)
 {
 	echo "<div class=\"treeview\">";

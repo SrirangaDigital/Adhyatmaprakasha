@@ -12,7 +12,7 @@ function isValidLetter($letter)
 function isValidType($type)
 {
 	if(is_array($type)){return false;}
-	return preg_match("/^(kannada|english|sanskrit)$/", $type) ? true : false;
+	return preg_match("/^(kannada|english|sanskrit|other)$/", $type) ? true : false;
 }
 
 
