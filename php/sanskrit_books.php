@@ -58,7 +58,7 @@
 		</div>
 		<div class="colmiddle">
             <div class="archive_holder">
-                <div class="page_title">संस्कृतम् की पुस्तकों</div>
+                <div class="page_title">संस्कृतग्रन्थाः</div>
                 
 <?php
 include("connect.php");
@@ -162,9 +162,9 @@ if($num_rows > 0)
 		
 		if($edition != '00')
 		{
-            $edition_name = array("1"=>"पहले ","2"=>"दूसरे ","3"=>"तीसरे ","4"=>"चौथे ","5"=>"पांचवें ");
+            $edition_name = array("1"=>"प्रथम","2"=>"द्वितीय","3"=>"तृतीय","4"=>"चतुर्थ","5"=>"पञ्चम");
 
-			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;संस्करण";
+			$book_info = $book_info . $edition_name{intval($edition)} . "संस्करणम्";
 		}
 		if($volume != '00')
 		{
