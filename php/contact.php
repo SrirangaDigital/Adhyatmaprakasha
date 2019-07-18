@@ -77,15 +77,13 @@
                         </td>
                         <td>
                             Adhyatma Prakasha Karyalaya<br />
-                            Behind chandramouleshwara temple,<br />
-                            Jayalakshmipuram,<br />
-                            Mysore - 570012.<br />
-                            Karnataka, India<br />
-                            Phone No.91-821-2514080<br />
+                            68, 6th Main, 2nd Block<br />
+                            T.R. Nagar, Bengaluru- 28.<br />
+                            Ph. : 2676 5548<br />
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td colspan="2" style="text-align: center;">
                             Adhyatma Pracara Sevashrama<br />
                             Shanti nagar,<br />
                             Rayadurga-515865<br />
@@ -93,12 +91,6 @@
                             Phone No. 91-8495-251485<br />
                             Mobile No. 91-94904-77602<br />
 							Mobile No. 91-77029-86402
-                        </td>
-                        <td>
-                            Adhyatma Prakasha Karyalaya<br />
-                            68, 6th Main, 2nd Block<br />
-                            T.R. Nagar, Bengaluru- 28.<br />
-                            Ph. : 2676 5548<br />
                         </td>
                     </tr>
                 </table>
