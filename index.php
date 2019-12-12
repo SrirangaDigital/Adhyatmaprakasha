@@ -59,8 +59,8 @@ session_start();
 			</h1>
 			<p style="text-align: center;"><strong>(Adhyatma Prakasha Karyalaya – Centenary celebration)</strong></p>
 			<ul style="margin-top: 1em;">
-				<li><a href="php/centenary/details-english.pdf" target="_blank">For Details in Kannada click here</a></li>
-				<li><a href="php/centenary/details-kannada.pdf" target="_blank">For Details in English click here</a></li>
+				<li><a href="php/centenary/details-kannada.pdf" target="_blank">For Details in Kannada click here</a></li>
+				<li><a href="php/centenary/details-english.pdf" target="_blank">For Details in English click here</a></li>
 				<li><a href="php/centenary/invitation.jpg" target="_blank">Invitation</a></li>
 			</ul>
 		</div>
