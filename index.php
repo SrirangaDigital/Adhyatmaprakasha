@@ -54,6 +54,15 @@ session_start();
 				The Karyalaya, which was registered as a Public Charitable Trust in 1992, has continued the work for which it was founded using the three principal instruments - lectures, books and monthly magazine and Vidyanilaya - selected by Swamiji for this purpose.<br /><br />
 				The Karyalaya has four branches in addition, at Bangalore, Mysore, Mattur (Shimoga) and Rayadurga (A.P.).
 			</div>
+			<h1 style="margin-top: 1.5em;text-align: center;color: #D2691E;font-size: 1.6em;line-height: 1.8em;">
+				ಅಧ್ಯಾತ್ಮಪ್ರಕಾಶಕಾರ್ಯಾಲಯ ಸ್ಥಾಪನಾ<br />ಶತಮಾನೋತ್ಸವ<br />(1920-2020)	
+			</h1>
+			<p style="text-align: center;"><strong>(Adhyatma Prakasha Karyalaya – Centenary celebration)</strong></p>
+			<ul style="margin-top: 1em;">
+				<li><a href="php/centenary/details-english.pdf" target="_blank">For Details in Kannada click here</a></li>
+				<li><a href="php/centenary/details-kannada.pdf" target="_blank">For Details in English click here</a></li>
+				<li><a href="php/centenary/invitation.jpg" target="_blank">Invitation</a></li>
+			</ul>
 		</div>
 		<?php
 			include("include_footer.php")
