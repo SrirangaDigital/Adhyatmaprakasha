@@ -66,6 +66,7 @@
 				<p class="work-cmt">Working Committee members are:</p>
 				<ul>
 					<li>Sri Sridhar A (Working Committee Chairman)</li>
+					<li>Sri Prabhakar Chandrashekar (Manager)</li>
 					<li>Sri Vidhyashankara A.</li>
 					<li>Sri Narasimhashetty</li>
 					<li>Sri Ba. Ra. Subbaraya</li>
