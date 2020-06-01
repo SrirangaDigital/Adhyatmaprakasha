@@ -9,7 +9,7 @@
 <title>Adhyatma Prakash Karyalaya</title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
 <link href="style/reset.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="style/style.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="style/style.css?v=1.1" media="screen" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -50,17 +50,29 @@
 		<div class="col1">
 			<div class="title">About Us</div>
 			<div class="list">
-				AdhyatmaPrakasha Karyalaya is governed by a trust committee. The present Trust Committee members are:
+				<p class="trust-cmt">AdhyatmaPrakasha Karyalaya is governed by a trust committee. The present Trust Committee members are:</p>
 				<ul>
-				<li>K. Srinivasa, Holenarasipura (President)</li>
-				<li>Vedabrahma Sri Keshava Avadhani, Mattur (Member)</li>
-				<li>H. Venkata Narasappa, Bangalore (Member)</li>
-				<li>Srinath, Charterd Accountant, Bangalore (Member)</li>
-				<li>Y. V. Shankaranarayana Rao, Mysore (Member)</li>
-				<li>A. R. Nagaraja, Mysore (Member)</li>
-				<li>Dr. Y. Ananthanarayana (Member - Chairman Working Committee)</li>
-				<li> L. Vijaya Raghav (Member)</li>
-				</ul>
+					<li>K. Srinivasa, Holenarasipura (Trust Committee Chairman)</li>
+					<li>Sri Ravi</li>
+					<li>Sri L. Vijayaraghava</li>
+					<li>Ve. Br. Sri Ashwathanarayana Avadani</li>
+					<li>Ve. Br. Sri M. R. Keshava Avadani</li>
+					<li>Dr. Y. Ananthanarayana</li>
+					<li>Sri B. V. Vinay</li>
+					<li>Sri T. S. Ravichandra</li>
+				</ul>		
+			</div>
+			<div class="list">
+				<p class="work-cmt">Working Committee members are:</p>
+				<ul>
+					<li>Sri Sridhar A (Working Committee Chairman)</li>
+					<li>Sri Vidhyashankara A.</li>
+					<li>Sri Narasimhashetty</li>
+					<li>Sri Ba. Ra. Subbaraya</li>
+					<li>Sri Bharath Kumar</li>
+					<li>Sri H. R. Manjunath</li>
+					<li>Sri H. S. Nagendra</li>
+				</ul>				
 			</div>
 		</div>
 		<?php include("include_footer.php");?>

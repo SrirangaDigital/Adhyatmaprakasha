@@ -170,6 +170,9 @@ html, body {
 	list-style-type:disc;
 	list-style-position:inside;
 }
+.col1 .list ul{
+	margin-bottom: 2em;
+}
 .col1 li a{
 	color:#3D3D3D;
 }
@@ -943,4 +946,9 @@ input {
 .developedby-logo{
 	height: 20px; 
 	vertical-align: middle;
+}
+.trust-cmt, .work-cmt{
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
 }
