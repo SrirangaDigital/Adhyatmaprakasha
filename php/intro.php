@@ -115,16 +115,13 @@
 		<div class="col2">
 			<div class="widget">
 				<div class="title">News updates</div>
+				<p><a href="circulars/revised_price_list_2017.pdf" target="_blank"><img style="width: 50%;" src="images/revised_price_list_2017.png" /></a></p>
 				<p>
-					<span class="news"><a href="openbook.php?bcode=es1&lang=english" target="_blank">दक्षिणभारत-शाङ्करवेदान्त-विद्वद्गोष्ठी (स्मरणसञ्चिका) </a></span><br />
-					<span class="news"><a href="openbook.php?bcode=es1&lang=english" target="_blank">DakṣiṇaBhārata-ŚāṅkaraVedānta-VidvadGoṣṭhi (Commemoration Volume)</a></span><br /><br />
-
-					<span class="news"><a href="circulars/reportmar17.php">A brief report on the Vedanta Vidvadgoshthi</a></span><br />
-					<span class="news"><a href="circulars/reportkanmar17.pdf" target="_blank">ದಕ್ಷಿಣ ವೇದಾಂತ ಶಾಂಕರ ವೇದಾಂತ ವಿದ್ವದ್ಗೋಷ್ಠಿಯ ಬಗ್ಗೆ ಒಂದು ವರದಿ.</a></span><br /><br />
-
-					<span class="news"><a href="circulars/goshti_eng.php">Dakshina Bharata Shaankara Vedanta Vidvadgoshti</a></span><br />
-					<span class="news"><a href="circulars/kan.pdf" target="_blank">ದಕ್ಷಿಣ ಭಾರತ ಶಾಂಕರ ವೇದಾಂತ ವಿದ್ವದ್ಗೋಷ್ಟಿ</a></span>
+					<span class="news"><a href="circulars/revised_price_list_2017.pdf" target="_blank">Revised price list of books</a></span><br /><br />
 				</p>
+				<p>
+					<span class="news"><a href="circulars/intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
+				</p><br />
 			</div>
 			<div class="rule"></div>
 			<div class="widget">
