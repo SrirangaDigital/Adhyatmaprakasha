@@ -865,6 +865,26 @@ hr{
 	color: #D2691E;
 	font-size: 0.8em;
 }
+#hindi{
+	margin-top: -19em;
+	width: 290px;
+	float: right;
+	padding-top: 2em;
+}
+#hindi p{
+	color: #D2691E;
+	font-size: 0.8em;
+}
+#tamil{
+	margin-top: -19em;
+	width: 290px;
+	float: right;
+	padding-top: 2em;
+}
+#tamil p{
+	color: #D2691E;
+	font-size: 0.8em;
+}
 .keys{
 	width: 38px;
 	height: 27px;
@@ -905,6 +925,14 @@ hr{
 	color: #D2691E;
 }
 #san{
+	margin: 1em 0em 0em 3em;
+	color: #D2691E;
+}
+#hin{
+	margin: 1em 0em 0em 3em;
+	color: #D2691E;
+}
+#tam{
 	margin: 1em 0em 0em 3em;
 	color: #D2691E;
 }

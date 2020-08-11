@@ -146,6 +146,7 @@
 		$iquery{'english'} = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM english_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM english_book_toc where $titleFilter)";
 		$iquery{'kannada'} = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM kannada_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM kannada_book_toc where $titleFilter)";
 		$iquery{'sanskrit'} = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM sanskrit_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM sanskrit_book_toc where $titleFilter)";
+		$iquery{'other'} = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM other_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM other_book_toc where $titleFilter)";
 		
 		for($ic=0;$ic<sizeof($check);$ic++)
 		{
@@ -189,6 +190,12 @@
 										(SELECT title, authid, authorname, cur_page, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info, type, book_id FROM searchtable_books WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
 									WHERE $authorFilter) AS tb2
 								WHERE $titleFilter and type = 'sanskrit' ORDER BY book_id, cur_page)";
+								
+		$iquery{'other'} = "(SELECT * FROM
+									(SELECT * FROM
+										(SELECT title, authid, authorname, cur_page, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info, type, book_id FROM searchtable_books WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
+									WHERE $authorFilter) AS tb2
+								WHERE $titleFilter and type = 'other' ORDER BY book_id, cur_page)";
 								
 		
 		for($ic=0;$ic<sizeof($check);$ic++)

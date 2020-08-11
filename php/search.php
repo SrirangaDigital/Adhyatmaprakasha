@@ -16,17 +16,37 @@
 <script>
 $(document).ready(function()
 {
+	$("#hindi").hide();
 	$("#sanskrit").hide();
+	$("#tamil").hide();
 	$("#kannada").show();
 	$("#kan").click(function()
 	{
 		$("#kannada").fadeIn();
 		$("#sanskrit").hide();
+		$("#hindi").hide();
+		$("#tamil").hide();
 	});
 	$("#san").click(function()
 	{
 		$("#sanskrit").fadeIn();
 		$("#kannada").hide();
+		$("#hindi").hide();
+		$("#tamil").hide();
+	});
+	$("#hin").click(function()
+	{
+		$("#hindi").fadeIn();
+		$("#kannada").hide();
+		$("#sanskrit").hide();
+		$("#tamil").hide();
+	});
+	$("#tam").click(function()
+	{
+		$("#tamil").fadeIn();
+		$("#kannada").hide();
+		$("#sanskrit").hide();
+		$("#hindi").hide();
 	});
 });
 </script>
@@ -83,7 +103,8 @@ require_once("common.php");
 						<span class="label"><input name="check[]" type="checkbox" value="magazine" checked="checked"/>&nbsp;&nbsp;Magazine</span><br />
 						<span class="label"><input name="check[]" type="checkbox" value="english"/>&nbsp;&nbsp;English Books</span><br />
 						<span class="label"><input name="check[]" type="checkbox" value="kannada"/>&nbsp;&nbsp;Kannada Books</span><br />
-						<span class="label"><input name="check[]" type="checkbox" value="sanskrit"/>&nbsp;&nbsp;Sanskrit Books</span>
+						<span class="label"><input name="check[]" type="checkbox" value="sanskrit"/>&nbsp;&nbsp;Sanskrit Books</span><br />
+						<span class="label"><input name="check[]" type="checkbox" value="other"/>&nbsp;&nbsp;Other Books</span>
 					</div>
  					<br/>
 					<table>
@@ -106,11 +127,15 @@ require_once("common.php");
 				</form>
 				<?php include("kannadaKeybord.php"); ?>
 				<?php include("sanskritKeybord.php"); ?>
+				<?php include("hindiKeybord.php"); ?>
+				<?php include("tamilKeybord.php"); ?>
 		</div>
 		<div class="stitle">
 			<span>Input modes for Kannada and Sanskrit</span><br/>
 			<button id="kan">Kannada</button>
 			<button id="san">Sanskrit</button>
+			<button id="hin">Hindi</button>
+			<button id="tam">Tamil</button>
 		</div>
 		</div>
 		<?php include("include_footer.php");?>
