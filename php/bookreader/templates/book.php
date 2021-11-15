@@ -29,18 +29,18 @@
 		$djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
 		$imgurl = "../../../Volumes/".$type."_books/jpg/2/$book_id";
 		
-		$djvulist=scandir($djvurl);
+		$djvulist=scandir($imgurl);
 		$cmd='';
 		
 		for($i=0;$i<count($djvulist);$i++)
 		{
-			if($djvulist[$i] != '.' && $djvulist[$i] != '..' && preg_match('/(\.djvu)/' , $djvulist[$i]) && !preg_match('/(index\.djvu)/' , $djvulist[$i]))
+			if($djvulist[$i] != '.' && $djvulist[$i] != '..' && preg_match('/(\.jpg)/' , $djvulist[$i]))
 			{
 				$img = preg_split("/\./",$djvulist[$i]);
 				$book["imglist"][$i]= $img[0].".jpg";
 			}
 		}
-	
+
 		$book["imglist"]=array_values($book["imglist"]);
 		$book["Title"] = "Adhyātmaprakāsha Kāryālaya";
 		$book["TotalPages"] = count($book["imglist"]);

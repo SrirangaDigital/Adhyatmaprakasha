@@ -88,6 +88,7 @@ $query = "select * from english_books_list order by title";
 $result = $db->query($query); 
 $num_rows = $result ? $result->num_rows : 0;
 
+
 $stack = array();
 $p_stack = array();
 $first = 1;
@@ -102,6 +103,7 @@ $month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"Ap
 
 if($num_rows > 0)
 {
+
 	echo "<div class=\"treeview\">";
 	for($i=1;$i<=$num_rows;$i++)
 	{
@@ -124,7 +126,7 @@ if($num_rows > 0)
 		$nodata = '';
 		if(!file_exists("../Volumes/english_books/djvu/". $book_id ."/shared_anno.iff"))
 		{
-			continue;
+			//continue;
 		}
 		
 		if($authid != 0)
