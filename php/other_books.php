@@ -124,7 +124,7 @@ if($num_rows > 0)
 		$nodata = '';
 		if(!file_exists("../Volumes/other_books/djvu/". $book_id ."/shared_anno.iff"))
 		{
-			continue;
+			//continue;
 		}
 		
 		if($authid != 0)
