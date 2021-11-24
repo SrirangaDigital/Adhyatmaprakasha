@@ -17,9 +17,9 @@
 <div class="col2">
     <div class="widget">
 		<div class="title">News updates</div>
-		<p><a href="circulars/revised_price_list_2017.pdf" target="_blank"><img style="width: 50%;" src="images/revised_price_list_2017.png" /></a></p>
+		<p><a href="circulars/revised_price_list_2021.pdf" target="_blank"><img style="width: 50%;" src="images/revised_price_list_2017.png" /></a></p>
 		<p>
-			<span class="news"><a href="circulars/revised_price_list_2017.pdf" target="_blank">Revised price list of books</a></span><br /><br />
+			<span class="news"><a href="circulars/revised_price_list_2021.pdf" target="_blank">Revised price list of books</a></span><br /><br />
 		</p>
 		<p>
 			<span class="news"><a href="circulars/intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
@@ -37,7 +37,20 @@
 		<div class="title">Program List of April 2016</div>
 		<p>
 			<span class="news"><a href="images/2016_04.pdf" target="_blank">Download PDF</a></span>
+		</p>
+	</div><br /><br />
+	<div class="widget">
+		<div class="title">Keep in touch</div>
+		<p>
+			For all the latest and regular communication and updates:<br /><br />
 		</p>	
+			<p><img style="width: 20%;" src="images/whatsapp.png" alt="whatsapp_image" /></p>
+			<p>Please send a WhatsApp message "Shri Gurubhyo Namaha" to +91-8073081405 and add the phone number as Adhyatma Prakasha Karyalaya.<br /><br /></p> 
+			<p><a href="http://www.youtube.com/c/apkbooks" target="_blank"><img style="width: 20%;" src="images/youtube.png" /></a></p>
+			<p>Videos and talks of scholars from Karyalaya will be available at: <span class="lang"><a href="http://www.youtube.com/c/apkbooks" target="_blank">Youtube</a></span><br /><br /></p> 
+			<p><a href="http://www.facebook.com/groups/AdhyatmaPrakasha/" target="_blank"><img style="width: 20%;" src="images/facebook.png" /></a></p>
+			<p>Group interaction of like minded people is at <span class="lang"><a href="http://www.facebook.com/groups/AdhyatmaPrakasha/" target="_blank">Facebook</a></span></p>
+		<p>Please subscribe to the same</p>
 	</div>
 	<div class="rule"></div>
 	<div class="widget">

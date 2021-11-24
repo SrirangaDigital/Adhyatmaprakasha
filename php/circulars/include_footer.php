@@ -17,9 +17,9 @@
 <div class="col2">
     <div class="widget">
 		<div class="title">News updates</div>
-		<p><a href="revised_price_list_2017.pdf" target="_blank"><img style="width: 50%;" src="../images/revised_price_list_2017.png" /></a></p>
+		<p><a href="APK_catalog.pdf" target="_blank"><img style="width: 50%;" src="../images/revised_price_list_2017.png" /></a></p>
 		<p>
-			<span class="news"><a href="revised_price_list_2017.pdf" target="_blank">Revised price list of books</a></span><br /><br />
+			<span class="news"><a href="circulars/revised_price_list_2021.pdf" target="_blank">Revised price list of books</a></span><br /><br />
 		</p>
 		<p>
 			<span class="news"><a href="intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
