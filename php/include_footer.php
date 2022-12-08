@@ -25,6 +25,7 @@
 			<span class="news"><a href="circulars/intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
 		</p><br />
 	</div>
+	<p style="text-align: right; font-size: 16px" class="news"><a class="title" href="images/Jayanthi.pdf">ವೇದಾಂತ ಸಪ್ತಾಹ ಆಹ್ವಾನ ಪತ್ರಿಕೆ</a></p>
 	<br />
     <div class="widget">
 		<div class="title">Adhyatmaprakasha Blog</div>
@@ -45,12 +46,14 @@
 			For all the latest and regular communication and updates:<br /><br />
 		</p>	
 			<p><img style="width: 20%;" src="images/whatsapp.png" alt="whatsapp_image" /></p>
-			<p>Please send a WhatsApp message "Shri Gurubhyo Namaha" to +91-8073081405 and add the phone number as Adhyatma Prakasha Karyalaya.<br /><br /></p> 
+			<p>Please send a WhatsApp message "Shri Gurubhyo Namaha" to +91-8073081405 and add the phone number as Adhyatma Prakasha Karyalaya to get messages on adhyatma in Kannada.<br /><br /></p> 
 			<p><a href="http://www.youtube.com/c/apkbooks" target="_blank"><img style="width: 20%;" src="images/youtube.png" /></a></p>
 			<p>Videos and talks of scholars from Karyalaya will be available at: <span class="lang"><a href="http://www.youtube.com/c/apkbooks" target="_blank">Youtube</a></span><br /><br /></p> 
 			<p><a href="http://www.facebook.com/groups/AdhyatmaPrakasha/" target="_blank"><img style="width: 20%;" src="images/facebook.png" /></a></p>
 			<p>Group interaction of like minded people is at <span class="lang"><a href="http://www.facebook.com/groups/AdhyatmaPrakasha/" target="_blank">Facebook</a></span></p>
 		<p>Please subscribe to the same</p>
+		<p><a href="https://twitter.com/AKaryalaya/" target="_blank"><img src="images/twitter.png" alt="twitter image" width="43px" height="43px"/></a></p>
+			<p>Please follow twitter handle of Adhyatma Prakasha Karyalaya <span class="lang"><a href=" https://twitter.com/AKaryalaya/" target="_blank">Twitter</a></span></p>
 	</div>
 	<div class="rule"></div>
 	<div class="widget">
