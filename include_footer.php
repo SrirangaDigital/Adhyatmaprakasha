@@ -25,7 +25,7 @@
 			<span class="news"><a href="php/circulars/intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
 		</p><br />
 	</div>
-	<p style="text-align: right; font-size: 16px" class="news"><a class="title" href="images/Jayanthi.pdf">ವೇದಾಂತ ಸಪ್ತಾಹ ಆಹ್ವಾನ ಪತ್ರಿಕೆ</a></p><br />
+	<p style="text-align: right; font-size: 16px" class="news"><a class="title" href="php/images/Jayanthi.pdf">ವೇದಾಂತ ಸಪ್ತಾಹ ಆಹ್ವಾನ ಪತ್ರಿಕೆ</a></p><br />
     <div class="widget">
 		<div class="title">Keep in touch</div>
 		<p>
