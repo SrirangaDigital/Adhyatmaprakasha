@@ -53,8 +53,9 @@ session_start();
 				Right from his childhood until his nirvana at the age of 96, Swamiji was deeply involved in the study of Vedanta, particularly the works of <span class="emph">Sri Shankaracharya.</span> He lectured extensively and wrote articles and books prolifically on this subject in Kannada, Sanskrit and English, thus earning the epithet Purusha Saraswati.<br /><br />
 				The Karyalaya, which was registered as a Public Charitable Trust in 1992, has continued the work for which it was founded using the three principal instruments - lectures, books and monthly magazine and Vidyanilaya - selected by Swamiji for this purpose.<br /><br />
 				The Karyalaya has four branches in addition, at Bangalore, Mysore, Mattur (Shimoga) and Rayadurga (A.P.).
-			</div>
-			<h1 style="margin-top: 1.5em;text-align: center;color: #D2691E;font-size: 1.6em;line-height: 1.8em;">
+			</div><br />
+			<p style="text-align: center; font-size: 16px" class="news"><a class="title" href="php/images/Jayanthi.pdf">ವೇದಾಂತ ಸಪ್ತಾಹ ಆಹ್ವಾನ ಪತ್ರಿಕೆ</a></p>
+			<h1 style="margin-top: 1.3em;text-align: center;color: #D2691E;font-size: 1.6em;line-height: 1.8em;">
 				ಅಧ್ಯಾತ್ಮಪ್ರಕಾಶಕಾರ್ಯಾಲಯ ಸ್ಥಾಪನಾ<br />ಶತಮಾನೋತ್ಸವ<br />(1920-2020)	
 			</h1>
 			<p style="text-align: center;"><strong>(Adhyatma Prakasha Karyalaya – Centenary celebration)</strong></p>
