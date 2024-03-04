@@ -52,10 +52,8 @@
 			<div class="list">
 				<p class="trust-cmt">AdhyatmaPrakasha Karyalaya is governed by a trust committee. The present Trust Committee members are:</p>
 				<ul>
-					<li>K. Srinivasa, Holenarasipura (Trust Committee Chairman)</li>
-					<li>Sri Ravi</li>
+					<li>Sri Ravi (Trust Committee Chairman)</li>
 					<li>Sri L. Vijayaraghava</li>
-					<li>Ve. Br. Sri Ashwathanarayana Avadani</li>
 					<li>Ve. Br. Sri M. R. Keshava Avadani</li>
 					<li>Dr. Y. Ananthanarayana</li>
 					<li>Sri B. V. Vinay</li>
