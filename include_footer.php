@@ -25,8 +25,17 @@
 			<span class="news"><a href="php/circulars/intro.php">ಶ್ರೀ ಸಚ್ಚಿದಾನಂದ ಅಧ್ಯಾತ್ಮವಿದ್ಯಾಲಯ - ಪರಿಚಯ ಪತ್ರ ಮತ್ತು ಪಾಠಕ್ರಮ</a></span>
 		</p><br />
 	</div>
+
+	<p><a href="php/images/apk.pdf" target="_blank"> ಶ್ರೀ ಶ್ರೀ ಸಚ್ಚಿದಾನಂದೇಂದ್ರ ಸರಸ್ವತೀ ಸದ್ಗುರುಗಳ 144ನೆ ಜಯಂತಿ ಮಹೋತ್ಸವ</a></p>
+	<!-- <p>ಸಚ್ಚಿದಾನಂದೇಂದ್ರ ಸರಸ್ವತೀ ಸದ್ಗುರುಗಳ 144ನೆ ಜಯಂತಿ ಮಹೋತ್ಸವ</p> -->
+
+	<br />
 	<p><a href="php/images/apk_page.jpeg" target="_blank"><img style="width: 20%;" src="php/images/apk_page.jpeg" /></a></p>
 	<p>ಗೀತಾಜಯಂತೀ ಉತ್ಸವ</p>
+
+	
+
+
 
 	<p style="text-align: right; font-size: 16px" class="news"><a class="title" href="php/images/Jayanthi.pdf">ವೇದಾಂತ ಸಪ್ತಾಹ ಆಹ್ವಾನ ಪತ್ರಿಕೆ</a></p><br />
     <div class="widget">
