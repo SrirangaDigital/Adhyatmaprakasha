@@ -191,7 +191,7 @@ if(intval($page) != 0)
 }
 if(intval($year) != 0)
 {
-	$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);
+	$book_info = $book_info . " | " . $month_name[intval($month)] . " " . intval($year);
 }
 
 $book_info = preg_replace("/^ /", "", $book_info);

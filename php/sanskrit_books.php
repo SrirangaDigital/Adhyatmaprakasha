@@ -164,7 +164,7 @@ if($num_rows > 0)
 		{
             $edition_name = array("1"=>"प्रथम","2"=>"द्वितीय","3"=>"तृतीय","4"=>"चतुर्थ","5"=>"पञ्चम");
 
-			$book_info = $book_info . $edition_name{intval($edition)} . "संस्करणम्";
+			$book_info = $book_info . $edition_name[intval($edition)] . "संस्करणम्";
 		}
 		if($volume != '00')
 		{
@@ -180,7 +180,7 @@ if($num_rows > 0)
 		}
 		if(intval($year) != 0)
 		{
-			$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);
+			$book_info = $book_info . " | " . $month_name[intval($month)] . " " . intval($year);
 		}
 		$book_info = preg_replace("/^ /", "", $book_info);
 		$book_info = preg_replace("/^\|/", "", $book_info);

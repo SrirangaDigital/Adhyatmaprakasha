@@ -174,7 +174,7 @@ if($num_rows > 0)
 		{
             $edition_name = array("1"=>"First","2"=>"Second","3"=>"Third","4"=>"Fourth","5"=>"Fifth");
 
-			$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;Edition";
+			$book_info = $book_info . $edition_name[intval($edition)] . "&nbsp;Edition";
 		}
 		if($volume != '00')
 		{
@@ -190,7 +190,7 @@ if($num_rows > 0)
 		}
         if(intval($year) != 0)
 		{
-			$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);
+			$book_info = $book_info . " | " . $month_name[intval($month)] . " " . intval($year);
 		}
 		
 		$book_info = preg_replace("/^ /", "", $book_info);

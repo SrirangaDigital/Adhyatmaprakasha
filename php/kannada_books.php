@@ -214,7 +214,7 @@ function getBookInfo($row = array())
 	if($edition != '00')
 	{
 		$edition_name = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ");
-		$book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;ಆವೃತ್ತಿ  | ";
+		$book_info = $book_info . $edition_name[intval($edition)] . "&nbsp;ಆವೃತ್ತಿ  | ";
 	}
 	if($volume != '00')
 	{
@@ -230,7 +230,7 @@ function getBookInfo($row = array())
 	}
 	if(intval($year) != 0)
 	{
-		$book_info = $book_info . " | " . $month_name{intval($month)} . " " . intval($year);
+		$book_info = $book_info . " | " . $month_name[intval($month)] . " " . intval($year);
 	}
 	$book_info = preg_replace("/^ /", "", $book_info);
 	$book_info = preg_replace("/^\|/", "", $book_info);
