@@ -26,22 +26,28 @@
 			$book["searchText"] = $search;
 		}
 		
-		$djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
-		$imgurl = "../../../Volumes/".$type."_books/jpg/2/$book_id";
-		
-		$djvulist=scandir($imgurl);
-		$cmd='';
-		
-		for($i=0;$i<count($djvulist);$i++)
-		{
-			if($djvulist[$i] != '.' && $djvulist[$i] != '..' && preg_match('/(\.jpg)/' , $djvulist[$i]))
-			{
-				$img = preg_split("/\./",$djvulist[$i]);
-				$book["imglist"][$i]= $img[0].".jpg";
-			}
-		}
+		$folders_to_remove = array('..', '.');
+		// $djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
+		// $imgurl = "../../../Volumes/".$type."_books/jpg/2/$book_id";		
 
-		$book["imglist"]=array_values($book["imglist"]);
+		// $djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
+		$imgurl = "../../../Volumes/".$type."_books/" . $book_id . "/jpg/2";
+		
+		$imgslist = array_diff(scandir($imgurl), $folders_to_remove);
+		//$djvulist=scandir($imgurl);
+		//$cmd='';
+		
+		// for($i=0;$i<count($djvulist);$i++)
+		// {
+		// 	if($djvulist[$i] != '.' && $djvulist[$i] != '..' && preg_match('/(\.jpg)/' , $djvulist[$i]))
+		// 	{
+		// 		$img = preg_split("/\./",$djvulist[$i]);
+		// 		$book["imglist"][$i]= $img[0].".jpg";
+		// 	}
+		// }
+
+		//$book["imglist"]=array_values($book["imglist"]);
+		$book["imglist"]=$imgslist;
 		$book["Title"] = "Adhyātmaprakāsha Kāryālaya";
 		$book["TotalPages"] = count($book["imglist"]);
 		$book["SourceURL"] = "";
@@ -51,9 +57,10 @@
 		$book["lang"] = $type;
 		$book["book_id"] = $book_id;
 		$book["imgurl"] = $imgurl;
+		$book["bigImageUrl"] =  "../../../Volumes/".$type."_books/" . $book_id . "/jpg/1";
     ?>
 <script type="text/javascript">var book = <?php echo json_encode($book); ?>;</script>
-<script>$.ajax({url: "filesRemover.php", async: true});</script>
+<!-- <script>$.ajax({url: "filesRemover.php", async: true});</script> -->
 </head>
 <script type="text/javascript" src="../static/BookReader/cacheUpdater.js"></script>
 <script type="text/javascript" src="../static/BookReader/checkCached.js"></script>
