@@ -33,7 +33,7 @@
 		// $djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
 		$imgurl = "../../../Volumes/".$type."_books/" . $book_id . "/jpg/2";
 		
-		$imgslist = array_diff(scandir($imgurl), $folders_to_remove);
+		$imgslist = array_values(array_diff(scandir($imgurl), $folders_to_remove));
 		//$djvulist=scandir($imgurl);
 		//$cmd='';
 		
