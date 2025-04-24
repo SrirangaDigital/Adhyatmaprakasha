@@ -72,8 +72,15 @@ while($line)
 	{
         $sal = $1;
 		$authorname = $2;
-		$authids = $authids . ";" . get_authid($authorname);
+		$authids = $authids . ";" . get_authid($authorname, $sal);
 		$author_name = $author_name . ";" . $sal . $authorname;
+	}	
+	elsif($line =~ /<author>(.*)<\/author>/)
+	{
+        $sal = "";
+		$authorname = $1;
+		$authids = $authids . ";" . get_authid($authorname, $sal);
+		$author_name = $author_name . ";" . $authorname;
 	}
     elsif($line =~ /<allauthors \/>/)
 	{
@@ -111,7 +118,7 @@ sub insert_article()
 
 sub get_authid()
 {
-	my($authorname) = @_;
+	my($authorname, $sal) = @_;
 	my($sth,$ref,$authid);
 
 	$authorname =~ s/'/\\'/g;

@@ -30,6 +30,12 @@ while($line)
         $sal = $1;
 		$authorname = $2;
 		insert_authors($authorname,$sal);
+	}	
+	elsif($line =~ /<author>(.*)<\/author>/)
+	{
+        $sal = "";
+		$authorname = $1;
+		insert_authors($authorname,$sal);
 	}
 	$line = <IN>;
 }
@@ -40,7 +46,7 @@ $dbh->disconnect();
 
 sub insert_authors()
 {
-	my($authorname) = @_;
+	my($authorname,$sal) = @_;
 
 	$authorname =~ s/'/\\'/g;
 	
