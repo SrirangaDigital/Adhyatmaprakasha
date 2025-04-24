@@ -125,8 +125,6 @@ $query1 = "select * from article where volume='$volume' and issue='$issue' order
 $result1 = $db->query($query1); 
 $num_rows1 = $result1 ? $result1->num_rows : 0;
 
-//~ $result1 = mysql_query($query1);
-//~ $num_rows1 = mysql_num_rows($result1);
 
 if($num_rows1 > 0)
 {
@@ -140,7 +138,7 @@ if($num_rows1 > 0)
 		$titleid=$row1['titleid'];
 		$title=$row1['title'];
 		$page=$row1['page'];
-		$authid=$row1['authid'];
+		$authid=trim($row1['authid']);
 		$volume=$row1['volume'];
 		$issue=$row1['issue'];
 		$year=$row1['year'];
@@ -151,7 +149,8 @@ if($num_rows1 > 0)
 		echo "<li>";
 		echo "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=$page&amp;year=$year&amp;month=$month\">$title</a></span>";
 
-		if($authid != 0)
+
+		if(isset($authid) && $authid!= '' && $authid != 0)
 		{
 
             echo "<br /><span class=\"authorspan\">&mdash;</span>";
