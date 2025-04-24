@@ -23,27 +23,34 @@
 		$issue = $_GET['issue'];
 		$page = $_GET['page'].".jpg";
 		$type = "magazine";
-		$djvurl = "../../../Volumes/".$type."/djvu/$volume/$issue";
-		$imgurl = "../../../Volumes/".$type."/jpg/2/$volume/$issue";
+		$folders_to_remove = array('..', '.');
+		
+		// $djvurl = "../../../Volumes/".$type."/djvu/$volume/$issue";
+		// $imgurl = "../../../Volumes/".$type."/jpg/2/$volume/$issue";
+		
+		$imgurl = "../../../Volumes/" . $type . "/" . $volume . "/" . $issue . "/jpg/2/";
+		$imgslist = array_values(array_diff(scandir($imgurl), $folders_to_remove));
+
+		
 		if(isset($_GET['searchText']) && $_GET['searchText']!='')
 		{
 			$search = $_GET['searchText'];
 			$book["searchText"] = $search;
 		}
 		
-		$djvulist=scandir($djvurl);
-		$cmd='';
+		// $djvulist=scandir($djvurl);
+		// $cmd='';
 		
-		for($i=0;$i<count($djvulist);$i++)
-		{
-			if($djvulist[$i] != '.' && $djvulist[$i] != '..' && preg_match('/(\.djvu)/' , $djvulist[$i]) && !preg_match('/(index\.djvu)/' , $djvulist[$i]))
-			{
-				$img = preg_split("/\./",$djvulist[$i]);
-				$book["imglist"][$i]= $img[0].".jpg";
-			}
-		}
+		// for($i=0;$i<count($djvulist);$i++)
+		// {
+		// 	if($djvulist[$i] != '.' && $djvulist[$i] != '..' && preg_match('/(\.djvu)/' , $djvulist[$i]) && !preg_match('/(index\.djvu)/' , $djvulist[$i]))
+		// 	{
+		// 		$img = preg_split("/\./",$djvulist[$i]);
+		// 		$book["imglist"][$i]= $img[0].".jpg";
+		// 	}
+		// }
 	
-		$book["imglist"]=array_values($book["imglist"]);
+		$book["imglist"] = $imgslist;
 		$book["Title"] = "Adhyātmaprakāsha Kāryālaya";
 		$book["TotalPages"] = count($book["imglist"]);
 		$book["SourceURL"] = "";
@@ -53,8 +60,9 @@
 		$book["volume"] = $volume;
 		$book["issue"] = $issue;
 		$book["imgurl"] = $imgurl;
+		$book["bigImageUrl"] =  "../../../Volumes/" . $type . "/" . $volume . "/" . $issue . "/jpg/1";
     ?>
-<script type="text/javascript">var book = <?php echo json_encode($book); ?>;</script>
+<script type="text/javascript">var book = <?php echo json_encode($book); ?>; console.log(book);</script>
 <script>$.ajax({url: "filesRemover.php", async: true});</script>
 </head>
 <script type="text/javascript" src="../static/BookReader/cacheUpdater.js"></script>
