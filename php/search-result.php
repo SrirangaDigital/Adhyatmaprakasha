@@ -172,7 +172,7 @@
 										(SELECT title, authid, authorname, cur_page,  page, CONCAT_WS('&&&', 'magazine', volume, issue, year, month, titleid) as info, 'type', titleid FROM searchtable_magazine WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
 									WHERE $authorFilter) AS tb2
 								WHERE $titleFilter ORDER BY titleid, cur_page)";
-										
+
 		$iquery['english'] = "(SELECT * FROM
 									(SELECT * FROM
 										(SELECT title, authid, authorname, cur_page,  page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info , type, book_id FROM searchtable_books WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
@@ -213,7 +213,7 @@
 	$num_rows = $result ? $result->num_rows : 0;
 	$bullet = "<img class=\"bpointer\" src=\"images/bullet_1.gif\" alt=\"Point\" />";
 	echo "<div class=\"page_booktitle\">Search Result</div>";
-	$_SESSION['sd'] = "";
+	$_SESSION['sd'] = [];
 	
 	if($num_rows)
 	{
@@ -269,17 +269,60 @@
 				if($text != '')
 				{
 					$roman = 1;
-					preg_match("/[a-z]/", $row['cur_page']) ? $displayCurPage = romanNumerals($roman++) : ( (intval($row['cur_page']) == 0) ? $displayCurPage = romanNumerals($roman++) : $displayCurPage = intval($row['cur_page']));
+
+					//preg_match("/[a-z]/", $row['cur_page']) ? $displayCurPage = romanNumerals($roman++) : ( (intval($row['cur_page']) == 0) ? $displayCurPage = romanNumerals($roman++) : $displayCurPage = intval($row['cur_page']));
+					if(preg_match("/[a-z]/", $row['cur_page'])){  
+						$displayCurPage = romanNumerals($roman++); 
+					} else {
+						if(intval($row['cur_page']) == 0) { 
+							$displayCurPage = romanNumerals($roman++);
+						}
+						else{
+							$displayCurPage = intval($row['cur_page']);							
+						}
+					}
 					echo '<br/><span class="sub_titlespan">Text match found at page(s) : </span>';
-					($type == 'magazine') ?	( $searchResult = "<span class=\"infospan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=" . $row['cur_page'] . "&amp;year=$year&amp;month=$month&amp;text=$text\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp;" AND $_SESSION['sd'][$type.$volume.$issue][] = $row['cur_page']) : ( $searchResult =  "<span class=\"infospan\"><a href=\"bookReader.php?book_id=$currentId&amp;page=" . $row['cur_page'] . "&amp;type=$type&amp;text=$text\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp" AND $_SESSION['sd'][$type.$currentId][] = $row['cur_page']);
+					//if($type == 'magazine') ?	( $searchResult = "<span class=\"infospan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=" . $row['cur_page'] . "&amp;year=$year&amp;month=$month&amp;text=$text\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp;" AND $_SESSION['sd'][$type.$volume.$issue][] = $row['cur_page']) : ( $searchResult =  "<span class=\"infospan\"><a href=\"bookReader.php?book_id=$currentId&amp;page=" . $row['cur_page'] . "&amp;type=$type&amp;text=$text\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp" AND $_SESSION['sd'][$type.$currentId][] = $row['cur_page']);
+					if($type == 'magazine') {	
+						$searchResult = "<span class=\"infospan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=" . $row['cur_page'] . "&amp;year=$year&amp;month=$month\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp;";
+						$key = $type.$volume.$issue;
+						$_SESSION['sd'][$key][] = $row['cur_page']; 
+					} 
+					else 
+					{
+						$searchResult =  "<span class=\"infospan\"><a href=\"bookReader.php?book_id=$currentId&amp;page=" . $row['cur_page'] . "&amp;type=$type\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp";
+						$key = 	$type.$currentId;
+						$_SESSION['sd'][$key][] = $row['cur_page'];
+					}
 					echo $searchResult;
 				}
 				$oldId = $currentId;
 			}
 			elseif($text != '')
 			{
-				preg_match("/[a-z]/", $row['cur_page']) ? $displayCurPage = romanNumerals($roman++) : ( (intval($row['cur_page']) == 0) ? $displayCurPage = romanNumerals($roman++) : $displayCurPage = intval($row['cur_page']));
-				($type == 'magazine') ?	($searchResult = "<span class=\"infospan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=" . $row['cur_page'] . "&amp;year=$year&amp;month=$month&amp;text=$text\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp;"  AND $_SESSION['sd'][$type.$volume.$issue][] = $row['cur_page']) : ($searchResult =  "<span class=\"infospan\"><a href=\"bookReader.php?book_id=$currentId&amp;page=" . $row['cur_page'] . "&amp;type=$type&amp;text=$text\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp" AND $_SESSION['sd'][$type.$currentId][] = $row['cur_page']);
+				//preg_match("/[a-z]/", $row['cur_page']) ? $displayCurPage = romanNumerals($roman++) : ( (intval($row['cur_page']) == 0) ? $displayCurPage = romanNumerals($roman++) : $displayCurPage = intval($row['cur_page']));
+				if(preg_match("/[a-z]/", $row['cur_page'])) { 
+					$displayCurPage = romanNumerals($roman++);
+				} 
+				else 
+				{
+					if(intval($row['cur_page']) == 0) { 
+						$displayCurPage = romanNumerals($roman++);
+					} 
+					else 
+					{
+						$displayCurPage = intval($row['cur_page']);
+					}
+				}
+				if($type == 'magazine'){
+					$searchResult = "<span class=\"infospan\"><a href=\"magazineReader.php?volume=$volume&amp;issue=$issue&amp;page=" . $row['cur_page'] . "&amp;year=$year&amp;month=$month\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp;"; 
+					$_SESSION['sd'][$type.$volume.$issue][] = $row['cur_page'];
+				} 
+				else 
+				{
+					$searchResult =  "<span class=\"infospan\"><a href=\"bookReader.php?book_id=$currentId&amp;page=" . $row['cur_page'] . "&amp;type=$type\" target=\"_blank\">" . $displayCurPage . "</a> </span>&nbsp"; 
+					$_SESSION['sd'][$type.$currentId][] = $row['cur_page'];
+				}
 				echo $searchResult;
 			}
 			$first = 1;
