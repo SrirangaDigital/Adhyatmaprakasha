@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+use HTML::Entities;
 use POSIX;
 $host = $ARGV[0];
 $db = $ARGV[1];
@@ -22,7 +23,7 @@ l int(10),
 b int(10),
 t int(10),
 r int(10),
-word varchar(50),
+word varchar(200),
 wordid int(10) NOT NULL AUTO_INCREMENT,
 PRIMARY KEY (wordid))AUTO_INCREMENT=1001  ENGINE=MyISAM character set utf8 collate utf8_general_ci");
 $sth11->execute();
@@ -45,6 +46,7 @@ for($i2=0;$i2<@book_id;$i2++)
 		chop($files[$i3]);
 		$file = $files[$i3];
 		open(IN,"Volumes_xml/$type/$id/$file")or die ("cannot open Volumes_xml/$type/$id/$file");
+		
 		$line = <IN>;
 		while($line)
 		{
@@ -76,14 +78,17 @@ sub insert_word()
 	my($columnType,$id,$height,$width,$page,$cords,$word) = @_;
 	
 	#~ $word =~ s/\&apos;/'/g;
+	$word = decode_entities($word);
 	$word =~ s/\\/\//g;
-	$word =~ s/'/\\'/g;
 	$word =~ s/\"/\\"/g;
 	$word =~ s/\n/ /g;
 	$word =~ s///g;
 	$word =~ s///g;
 	$word =~ s///g;
 	$word =~ s/^\s+|\s+$//g;
+	$word =~ s/\(/\\(/g;
+	$word =~ s/\)/\\)/g;
+	$word =~ s/'/\\'/g;
 	#~ Base image size is 800X1200
 	#~ Also note that coordinate has already been shifted to top left from bottom left (DjVu)
 	@sumne = split(/,/, $cords);
@@ -93,9 +98,9 @@ sub insert_word()
 	$right = floor($sumne[3] * 1200 / $height);
 	
 	my($sth1,$sth);
-
-	$sth = $dbh->prepare("insert into word_books values('$columnType','$id','$height','$width','$page','$left','$bottom','$right','$top','$word','0')");
-	$sth->execute() or die("query failes");
+	$query = "insert into word_books values('$columnType','$id','$height','$width','$page','$left','$bottom','$right','$top','$word','0')";
+	$sth = $dbh->prepare($query);
+	$sth->execute() or die("query failes $query");
 	$sth->finish();
 }
 
