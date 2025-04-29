@@ -63,7 +63,7 @@
 		$book["bigImageUrl"] =  "../../../Volumes/" . $type . "/" . $volume . "/" . $issue . "/jpg/1";
     ?>
 <script type="text/javascript">var book = <?php echo json_encode($book); ?>; console.log(book);</script>
-<script>$.ajax({url: "filesRemover.php", async: true});</script>
+<!-- <script>$.ajax({url: "filesRemover.php", async: true});</script> -->
 </head>
 <script type="text/javascript" src="../static/BookReader/cacheUpdater.js"></script>
 <script type="text/javascript" src="../static/BookReader/checkCached.js"></script>
