@@ -142,17 +142,17 @@
 
 	if($text == '')
 	{
-		$iquery{'magazine'} = "(SELECT title, authid, authorname, page, CONCAT_WS('&&&', 'magazine', volume, issue, year, month, titleid) as info FROM article WHERE $authorFilter AND $titleFilter ORDER BY volume, issue, page)";
-		$iquery{'english'} = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM english_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM english_book_toc where $titleFilter)";
-		$iquery{'kannada'} = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM kannada_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM kannada_book_toc where $titleFilter)";
-		$iquery{'sanskrit'} = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM sanskrit_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM sanskrit_book_toc where $titleFilter)";
-		$iquery{'other'} = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM other_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM other_book_toc where $titleFilter)";
+		$iquery['magazine'] = "(SELECT title, authid, authorname, page, CONCAT_WS('&&&', 'magazine', volume, issue, year, month, titleid) as info FROM article WHERE $authorFilter AND $titleFilter ORDER BY volume, issue, page)";
+		$iquery['english'] = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM english_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM english_book_toc where $titleFilter)";
+		$iquery['kannada'] = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM kannada_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM kannada_book_toc where $titleFilter)";
+		$iquery['sanskrit'] = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM sanskrit_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM sanskrit_book_toc where $titleFilter)";
+		$iquery['other'] = "(SELECT title , authid, authorname, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info FROM other_books_list WHERE $authorFilter AND $titleFilter ORDER BY volume, part, page) UNION ALL (SELECT title , 'authid', 'authorname' , page,CONCAT_WS('&&&', type, 'volume', 'part', 'year', 'month', book_id, 'edition', 'atitle') as info FROM other_book_toc where $titleFilter)";
 		
 		for($ic=0;$ic<sizeof($check);$ic++)
 		{
 			if($check[$ic] != '')
 			{
-				$query = $query . " UNION ALL " . $iquery{$check[$ic]};
+				$query = $query . " UNION ALL " . $iquery[$check[$ic]];
 			}
 		}
 		$query = preg_replace("/^ UNION ALL /", "", $query);
@@ -167,31 +167,31 @@
 			$textFilter .= $texts[$ic] . "* ";
 		}
 		
-		$iquery{'magazine'} = "(SELECT * FROM
+		$iquery['magazine'] = "(SELECT * FROM
 									(SELECT * FROM
 										(SELECT title, authid, authorname, cur_page,  page, CONCAT_WS('&&&', 'magazine', volume, issue, year, month, titleid) as info, 'type', titleid FROM searchtable_magazine WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
 									WHERE $authorFilter) AS tb2
 								WHERE $titleFilter ORDER BY titleid, cur_page)";
-								
-		$iquery{'english'} = "(SELECT * FROM
+										
+		$iquery['english'] = "(SELECT * FROM
 									(SELECT * FROM
 										(SELECT title, authid, authorname, cur_page,  page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info , type, book_id FROM searchtable_books WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
 									WHERE $authorFilter) AS tb2
 								WHERE $titleFilter and type = 'english' ORDER BY book_id, cur_page)";
 								
-		$iquery{'kannada'} = "(SELECT * FROM
+		$iquery['kannada'] = "(SELECT * FROM
 									(SELECT * FROM
 										(SELECT title, authid, authorname, cur_page,  page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info, type, book_id FROM searchtable_books WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
 									WHERE $authorFilter) AS tb2
 								WHERE $titleFilter and type = 'kannada' ORDER BY book_id, cur_page)";
 								
-		$iquery{'sanskrit'} = "(SELECT * FROM
+		$iquery['sanskrit'] = "(SELECT * FROM
 									(SELECT * FROM
 										(SELECT title, authid, authorname, cur_page, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info, type, book_id FROM searchtable_books WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
 									WHERE $authorFilter) AS tb2
 								WHERE $titleFilter and type = 'sanskrit' ORDER BY book_id, cur_page)";
 								
-		$iquery{'other'} = "(SELECT * FROM
+		$iquery['other'] = "(SELECT * FROM
 									(SELECT * FROM
 										(SELECT title, authid, authorname, cur_page, page, CONCAT_WS('&&&', type, volume, part, year, month, book_id, edition, 'btitle') as info, type, book_id FROM searchtable_books WHERE MATCH (text) AGAINST ('$textFilter' IN BOOLEAN MODE)) AS tb1
 									WHERE $authorFilter) AS tb2
@@ -202,7 +202,7 @@
 		{
 			if($check[$ic] != '')
 			{
-				$query = $query . " UNION ALL " . $iquery{$check[$ic]};
+				$query = $query . " UNION ALL " . $iquery[$check[$ic]];
 			}
 		}
 		$query = preg_replace("/^ UNION ALL /", "", $query);
@@ -408,7 +408,7 @@ function getBookInfo($row = array(), $db)
 	
 	if($edition != '00')
 	{
-		($type == 'kannada') ? ($edition_name  = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ") AND $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;&nbsp;ಆವೃತ್ತಿ") : (($type == 'english') ? ($edition_name = array("1"=>"First","2"=>"Second","3"=>"Third","4"=>"Fourth","5"=>"Fifth") AND $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;&nbsp;Edition") : ($edition_name = array("1"=>"पहले ","2"=>"दूसरे ","3"=>"तीसरे ","4"=>"चौथे ","5"=>"पांचवें ") AND  $book_info = $book_info . $edition_name{intval($edition)} . "&nbsp;संस्करण"));
+		($type == 'kannada') ? ($edition_name  = array("1"=>"ಮೊದಲನೇ","2"=>"ಎರಡನೇ","3"=>"ಮೂರನೇ","4"=>"ನಾಲ್ಕನೇ","5"=>"ಐದನೇ","6"=>"ಆರನೇ","7"=>"ಏಳನೇ","8"=>"ಎಂಟನೇ","9"=>"ಒಂಬತ್ತನೇ","10"=>"ಹತ್ತನೇ","19"=>"ಹತ್ತೊಂಭತ್ತನೇ") AND $book_info = $book_info . $edition_name[intval($edition)] . "&nbsp;&nbsp;ಆವೃತ್ತಿ") : (($type == 'english') ? ($edition_name = array("1"=>"First","2"=>"Second","3"=>"Third","4"=>"Fourth","5"=>"Fifth") AND $book_info = $book_info . $edition_name[intval($edition)] . "&nbsp;&nbsp;Edition") : ($edition_name = array("1"=>"पहले ","2"=>"दूसरे ","3"=>"तीसरे ","4"=>"चौथे ","5"=>"पांचवें ") AND  $book_info = $book_info . $edition_name[intval($edition)] . "&nbsp;संस्करण"));
 	}
 	if($volume != '00')
 	{
@@ -420,7 +420,7 @@ function getBookInfo($row = array(), $db)
 	}
 	if(intval($year) != 0)
 	{
-		$book_info = $book_info . "&nbsp;&nbsp;|&nbsp;&nbsp;" . $month_name{intval($month)} . " " . intval($year);
+		$book_info = $book_info . "&nbsp;&nbsp;|&nbsp;&nbsp;" . $month_name[intval($month)] . " " . intval($year);
 	}
 	
 	$book_info = preg_replace("/^ +/", "", $book_info);
