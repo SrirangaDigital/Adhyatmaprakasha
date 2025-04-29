@@ -20,11 +20,11 @@
 		$book_id = $_GET['book_id'];
 		$page = $_GET['pagenum'].".jpg";
 
-		if(isset($_GET['searchText']) && $_GET['searchText']!='')
-		{
-			$search = $_GET['searchText'];
-			$book["searchText"] = $search;
-		}
+		// if(isset($_GET['searchText']) && $_GET['searchText']!='')
+		// {
+		// 	$search = $_GET['searchText'];
+		// 	$book["searchText"] = $search;
+		// }
 		
 		$folders_to_remove = array('..', '.');
 		// $djvurl = "../../../Volumes/".$type."_books/djvu/$book_id";
@@ -53,10 +53,10 @@
 		$book["SourceURL"] = "";
 		$result = array_keys($book["imglist"], $page);
 		$book["pagenum"] = $result[0];
-		if(isset($_GET['searchText']) && $_GET['searchText']!='')
-		{
-			$book["searchText"] = $search;
-		}
+		// if(isset($_GET['searchText']) && $_GET['searchText']!='')
+		// {
+		// 	$book["searchText"] = $search;
+		// }
 		$book["lang"] = $type;
 		$book["book_id"] = $book_id;
 		$book["imgurl"] = $imgurl;
