@@ -1,70 +1,20 @@
-<?php
-	session_start();
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="../images/aplogo.ico">
-<title>Adhyatma Prakash Karyalaya</title>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
-<link href="../style/reset.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="../style/style.css" media="screen" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/jquery-2.0.0.min.js" charset="UTF-8"></script>
-<script type="text/javascript" src="../js/treeview.js"></script>
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/publication.js"></script>
-</head>
+<?php include(__DIR__ . "/../inc/include_header.php");?>
 
-<body>
-<div class="page">
-	<div class="header">
-		<div class="logo"><img src="../images/aplogo.png" alt="AP-Logo"/></div>
-		<div class="logokalash"><img src="../images/kalash.png" alt="kalash"/></div>
-		<div class="title">Adhyātmaprakāsha Kāryālaya</div>
-		<div class="subtitle">एतज्ज्ञेयं नित्यमेवात्मसंस्थम् | नातः परं वेदितव्यं हि किञ्चित् ||</div>
-		<div id="nav">
-			<ul>
-				<li><a href="../../index.php">Home</a></li>
-				<li><a href="../about.php">About</a></li>
-				<li><a href="../activity.php">Activities</a></li>
-				<li><a href="../magazine.php">Magazine</a>
-					<ul id="magnav">
-						<li><a href="../volumes.php">Volumes</a></li>
-						<li><a href="../articles.php">Articles</a></li>
-						<li><a href="../authors.php">Authors</a></li>
-					</ul>
-				</li>
-				<li><a class="active" href="../publications.php">Publications</a>
-					<ul id="pubnav">
-						<li><a href="../kannada_books.php">Kannada Books</a></li>
-						<li><a href="../sanskrit_books.php">Sanskrit Books</a></li>
-						<li><a href="../english_books.php">English Books</a></li>
-						<li><a href="../other_books.php">Other Books</a></li>
-					</ul>
-				</li>
-				<li><a href="../appeal.php">Appeal</a></li>
-				<li><a href="../news.php">News</a></li>
-				<li><a href="../contact.php">Contact</a></li>
-				<li><a href="../search.php">Search</a></li>
-			</ul>
-		</div>
-	</div>
 	<div class="content">
 		<div class="colnav">
             <p>
 				<br /><br />
-				<span class="lang1"><a href="../kannada_books.php">Kannada</a></span><br /><br />
-				<span class="lang1"><a href="../sanskrit_books.php">Sanskrit</a></span><br /><br />
-				<span class="lang1"><a href="../english_books.php">English</a></span><br /><br />
-				<span class="lang1"><a href="../other_books.php">Other</a></span><br /><br />
+				<span class="lang1"><a href="kannada_books.php">Kannada</a></span><br /><br />
+				<span class="lang1"><a href="sanskrit_books.php">Sanskrit</a></span><br /><br />
+				<span class="lang1"><a href="english_books.php">English</a></span><br /><br />
+				<span class="lang1"><a href="other_books.php">Other</a></span><br /><br />
 			</p>
 		</div>
 		<div class="colmiddle">
             <div class="archive_holder">
 <?php
-include("../connect.php");
-require_once("../common.php");
+include(__DIR__ . "/../inc/connect.php");
+require_once("common.php");
 
 if(isset($_GET['book_id'])){$book_id = $_GET['book_id'];}else{$book_id = '';}
 if(isset($_GET['type'])){$type = $_GET['type'];}else{$type = '';}
@@ -98,7 +48,7 @@ if($db->connect_errno > 0)
 //~ $db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
 //~ $rs = mysql_select_db($database,$db) or die("No Database");
 
-$query = "select * from english_book_toc where book_id='$book_id' and type='$type' order by slno";
+$query = "select * from kannada_book_toc where book_id='$book_id' and type='$type' order by slno";
 
 $result = $db->query($query); 
 $num_rows = $result ? $result->num_rows : 0;
@@ -114,16 +64,16 @@ $first = 1;
 $li_id = 0;
 $ul_id = 0;
 
-$plus_link = "<img class=\"bpointer\" title=\"Expand\" src=\"../images/plus.gif\" alt=\"Expand or Collapse\" onclick=\"display_block_inside(this)\" />";
+$plus_link = "<img class=\"bpointer\" title=\"Expand\" src=\"images/plus.gif\" alt=\"Expand or Collapse\" onclick=\"display_block_inside(this)\" />";
 //$plus_link = "<a href=\"#\" onclick=\"display_block(this)\"><img src=\"plus.gif\" alt=\"\"></a>";
-$bullet = "<img class=\"bpointer\" src=\"../images/bullet_1.gif\" alt=\"Point\" />";
+$bullet = "<img class=\"bpointer\" src=\"images/bullet_1.gif\" alt=\"Point\" />";
 
 $month_name = array("0"=>"","1"=>"January","2"=>"February","3"=>"March","4"=>"April","5"=>"May","6"=>"June","7"=>"July","8"=>"August","9"=>"September","10"=>"October","11"=>"November","12"=>"December");
 
 //~ $plus_link = "+";
 //~ $bullet = ".";
 
-$query_aux = "select * from english_books_list where book_id='$book_id' and type='english'";
+$query_aux = "select * from kannada_books_list where book_id='$book_id' and type='kannada'";
 
 $result_aux = $db->query($query_aux); 
 $num_rows_aux = $result_aux ? $result_aux->num_rows : 0;
@@ -170,20 +120,22 @@ echo "<div class=\"book_cover\"><img src=\"../images/cover.png\" alt=\"Book Cove
 */
 echo "<div class=\"page_booktitle\">$book_title</div>";
 echo "<div class=\"page_subtitle\"><span class=\"itl\">$daname</span></div>";
+echo "<div class=\"page_other\">";
 
 $book_info = '';
 		
+
 if($edition != '00')
 {
-	$book_info = $book_info . "Edition " . intval($edition);
+    $book_info = $book_info . "ಆವೃತ್ತಿ  " . intval($edition);
 }
 if($volume != '00')
 {
-	$book_info = $book_info . " | Volume " . intval($volume);
+	$book_info = $book_info . " |  ಸಂಪುಟ " . intval($volume);
 }
 if($part != '00')
 {
-	$book_info = $book_info . " | Part " . intval($part);
+	$book_info = $book_info . " | ಭಾಗ  " . intval($part);
 }
 if(intval($page) != 0)
 {
@@ -198,8 +150,7 @@ $book_info = preg_replace("/^ /", "", $book_info);
 $book_info = preg_replace("/^\|/", "", $book_info);
 $book_info = preg_replace("/^ /", "", $book_info);
 
-echo "<div class=\"page_other\">$book_info</div>";
-
+echo "$book_info</div>";
 if($num_rows > 0)
 {
 	echo "<div class=\"treeview\">";
@@ -214,7 +165,7 @@ if($num_rows > 0)
 		$type = $row['type'];
 		$slno = $row['slno'];
 		
-		$title = "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"../bookReader.php?book_id=$book_id&amp;page=$page&amp;type=$type\">$title</a></span>";
+		$title = "<span class=\"sub_titlespan\"><a target=\"_blank\" href=\"bookReader.php?book_id=$book_id&amp;page=$page&amp;type=$type\">$title</a></span>";
 		$title = preg_replace('/!!(.*)!!/', "<i>$1</i>", $title);
 		if($first)
 		{
@@ -318,10 +269,13 @@ function display_tabs($num)
 ?>               
             </div>
         </div>
-        <?php include("include_footer.php");?>
+        <?php include(__DIR__ ."/../inc/include_sidebar.php");?>
         <div class="clearfix"></div>
     </div>
-    <?php include("../include_footer_out.php");?>
-</div>
-</body>
-</html>
+
+<script type="text/javascript" src="js/jquery-2.0.0.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/treeview.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/publication.js"></script>
+
+<?php include(__DIR__ ."/../inc/include_footer.php");?>

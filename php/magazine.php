@@ -1,51 +1,5 @@
-<?php
-	session_start();
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="images/aplogo.ico">
-<title>Adhyatma Prakash Karyalaya</title>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
-<link href="style/reset.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="style/style.css" media="screen" rel="stylesheet" type="text/css" />
-</head>
+<?php include(__DIR__ . "/../inc/include_header.php");?>
 
-<body>
-<div class="page">
-	<div class="header">
-		<div class="logo"><img src="images/aplogo.png" alt="AP-Logo"/></div>
-		<div class="logokalash"><img src="images/kalash.png" alt="kalash"/></div>
-		<div class="title">Adhyātmaprakāsha Kāryālaya</div>
-		<div class="subtitle">एतज्ज्ञेयं नित्यमेवात्मसंस्थम् | नातः परं वेदितव्यं हि किञ्चित् ||</div>
-		<div id="nav">
-			<ul>
-				<li><a href="../index.php">Home</a></li>
-				<li><a href="about.php">About</a></li>
-				<li><a href="activity.php">Activities</a></li>
-				<li><a class="active" href="magazine.php">Magazine</a>
-					<ul id="magnav">
-						<li><a href="volumes.php">Volumes</a></li>
-						<li><a href="articles.php">Articles</a></li>
-						<li><a href="authors.php">Authors</a></li>
-					</ul>
-				</li>
-				<li><a href="publications.php">Publications</a>
-					<ul id="pubnav">
-						<li><a href="kannada_books.php">Kannada Books</a></li>
-						<li><a href="sanskrit_books.php">Sanskrit Books</a></li>
-						<li><a href="english_books.php">English Books</a></li>
-						<li><a href="other_books.php">Other Books</a></li>
-					</ul>
-				</li>
-				<li><a href="appeal.php">Appeal</a></li>
-				<li><a href="news.php">News</a></li>
-				<li><a href="contact.php">Contact</a></li>
-				<li><a href="search.php">Search</a></li>
-			</ul>
-		</div>
-	</div>
 	<div class="content">
 		<div class="colnav">
 				<p>
@@ -58,29 +12,19 @@
 		<div class="colmiddle">
 			<div class="title">Monthly Magazine</div>
 			<div class="list">
-				This Archive houses all the issues of Adhyatmaprakasha magazine from 1923 to 2006.<br /><br />
-				Adhyatmaprakasha, a monthly Spiritual Kannada magazine, published from the Karyalaya, was started in the year 1923, with Sri Yellambalase Subbarao as its editor and it's main contributor. In the words of the editor, in the first issue of the magazine, the basic premise with which the magazine was started is that the root of the tree of spiritual knowledge is Vedanta, which in turn resides in the Upanishads. Therefore our main purpose would be, to introduce to the Kannada speaking world, the doctrine of Upanishads and other schools of philosophy which support the teachings of Upanishads.<br /><br />
-				Currently it has around 3000 subscribers. In addition to articles on Adhyatma by various scholars, the magazine also contains information on Karyalaya's activities and Saptaha's and Shibiras as-well as information on Publications of the Karyalaya are announced in the news section.<br /><br />
+				This Archive houses all the issues of Adhyatmaprakasha magazine from 1923 to 2024.<br /><br />
+				Adhyatmaprakasha, a monthly Spiritual Kannada magazine, published from the Karyalaya, was started in the year 1923, with Sri Yellambalase Subbarao as its editor and its main contributor. In the words of the editor, in the first issue of the magazine, the basic premise with which the magazine was started is that the root of the tree of spiritual knowledge is Vedanta, which in turn resides in the Upanishads. Therefore our main purpose would be, to introduce to the Kannada speaking world, the doctrine of Upanishads and other schools of philosophy which support the teachings of Upanishads.<br /><br />
+				Currently it has around 2600 subscribers. In addition to articles on Adhyatma by various scholars, the magazine also contains information on Karyalaya's activities and Saptaha's and Shibira's as well as information on Publications of the Karyalaya are announced in the news section.<br /><br />
 
 				This Magazine can be browsed by 
 				<span class="emph"><a href="articles.php">Articles</a></span>, 
 				<span class="emph"><a href="authors.php">Authors</a></span> and by 
-				<span class="emph"><a href="volumes.php">Volumes</a></span>.<br /><br />
-			
-				Editors:<br />
-				Yellambalase Subbarao (1923 - July, 1948)<br />
-				Y. Narasappa (1949 - 1980)<br />
-				H. S. Lakshminarasimhamurthy (1980 - 2006)<br />
-				Chandramouli Avadhani (2007 - 2010)<br />
-				Dr Y. Ananthanarayana (2010 - 2011)<br />
-				Swami Prakashanandendra Saraswati (2011 - 2015)<br />
-				Dr. S. Hemalatha (2016 to date)<br />
+				<span class="emph"><a href="volumes.php">Volumes</a></span>.<br />
 			</div>
 		</div>
-		<?php include("include_footer.php");?>
+		<?php include(__DIR__ ."/../inc/include_sidebar.php");?>
         <div class="clearfix"></div>
 	</div>
-	<?php include("include_footer_out.php");?>
-</div>
-</body>
-</html>
+
+<?php include(__DIR__ ."/../inc/include_footer.php");?>
+

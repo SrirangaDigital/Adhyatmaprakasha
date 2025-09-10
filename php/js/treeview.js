@@ -55,14 +55,14 @@ function display_block_inside(ele)
 	//var imgele = ele.childNodes[0];
 	var str = $(ele).attr("src");
 	
-	if(str == "../images/plus.gif")
+	if(str == "images/plus.gif")
 	{
-		$(ele).attr("src","../images/minus.gif");
+		$(ele).attr("src","images/minus.gif");
 		$(ele).attr("title","Collapse");
 	}
 	else
 	{
-		$(ele).attr("src","../images/plus.gif");
+		$(ele).attr("src","images/plus.gif");
 		$(ele).attr("title","Expand");
 	}
 	$(tid).slideToggle(200);

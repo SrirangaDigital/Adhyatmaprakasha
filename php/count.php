@@ -1,6 +1,6 @@
  <?php
 
-include("connect.php");
+include(__DIR__ . "/../inc/connect.php");
 
 if(isset($_SESSION['visitor_number']))
 {

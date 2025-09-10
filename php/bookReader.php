@@ -6,7 +6,7 @@
 	if(isset($_GET['page']) && $_GET['page'] != ''){$page = preg_split("/-/",$_GET['page']); $url .= "&pagenum=".$page[0];}
 	if(isset($_GET['text']) && $_GET['text'] != ''){$text = $_GET['text']; $url .= "&searchText=".$text;}
 	//~ *******************Top View Book Hits*************************
-	include("connect.php");
+	include(__DIR__ . "/../inc/connect.php");
 	$db = @new mysqli('localhost', "$user", "$password", "$database");
 	mysqli_set_charset ( $db , "utf8" );
 	
