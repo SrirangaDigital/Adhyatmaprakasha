@@ -18,6 +18,7 @@ session_start();
 
 <body>
 <div class="page">
+
 	<header>
 		<div class="header">
 			<div class="logo"><img src="<?php echo $base_url; ?>php/images/aplogo.png" alt="AP-Logo"/></div>
@@ -29,14 +30,14 @@ session_start();
 					<li><a href="<?php echo $base_url; ?>">Home</a></li>
 					<li><a href="<?php echo $base_url; ?>php/about.php">About</a></li>
 					<li><a href="<?php echo $base_url; ?>php/activity.php">Activities</a></li>
-					<li><a href="<?php echo $base_url; ?>php/magazine.php">Magazine</a>
+					<li><a id="magazine" href="<?php echo $base_url; ?>php/magazine.php">Magazine</a>
 						<ul id="magnav">
 							<li><a href="<?php echo $base_url; ?>php/volumes.php">Volumes</a></li>
 							<li><a href="<?php echo $base_url; ?>php/articles.php">Articles</a></li>
 							<li><a href="<?php echo $base_url; ?>php/authors.php">Authors</a></li>
 						</ul>
 					</li>
-					<li><a href="<?php echo $base_url; ?>php/publications.php">Publications</a>
+					<li><a id="publications" href="<?php echo $base_url; ?>php/publications.php">Publications</a>
 						<ul id="pubnav">
 							<li><a href="<?php echo $base_url; ?>php/kannada_books.php">Kannada Books</a></li>
 							<li><a href="<?php echo $base_url; ?>php/sanskrit_books.php">Sanskrit Books</a></li>
