@@ -12,7 +12,7 @@
 					<li>Sri Srinath</li>
 					<li>Sri B. V. Vinay</li>
 					<li>Sri T. S. Ravichandra</li>
-					<li>Smt Dr. Manjushri Hegde</li>
+					<li>Smt Dr. Manjushree Hegde</li>
 				</ul>		
 			</div>
 			<div class="list">

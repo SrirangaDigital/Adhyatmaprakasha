@@ -34,7 +34,7 @@
                         <td>
                             Adhyatma Prakasha Karyalaya<br />
                             68 (New number 6), 6th Main, 2nd Block,<br />
-                            T.R. Nagar, Bengaluru &ndash; 560070<br />
+                            Thyagaraja Nagara, Bengaluru &ndash; 560070<br />
                             Karnataka State, India<br />
                             Ph.: +91-80-2676 5548  <br />
                             Mobile No. +91-96066 91002<br />
