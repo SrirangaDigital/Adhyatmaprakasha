@@ -412,12 +412,12 @@ html, body {
 	font-size:1em;
 }
 .pubtbl_contact{
-	width:600px;
+	text-align: center;
 	font-size:0.8em;
+	width: 100%;
 }
 .pubtbl_contact td{
 	vertical-align:top;
-	width:300px;
 	padding:1em;
 	border:1px solid #CCCCCC;
 }

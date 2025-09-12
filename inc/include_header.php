@@ -13,7 +13,7 @@ session_start();
 	<title>Adhyatma Prakash Karyalaya</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
 	<link href="<?php echo $base_url; ?>php/style/reset.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="<?php echo $base_url; ?>php/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $base_url; ?>php/style/style.css?v=1.1" media="screen" rel="stylesheet" type="text/css" />
 </head>
 
 <body>

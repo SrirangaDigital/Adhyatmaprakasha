@@ -12,13 +12,15 @@
                             Hassan District &ndash; 573211<br />
                             Karnataka, India<br />
                             Phone No. +91-8175-273820.<br />
+                            Mobile No. +91-95357 90641<br />
+                            Mobile No. (Ravi) +91-94483 50001<br />
                             <span class="emph"><a href="mailto:secretary@adhyatmaprakasha.org">secretary@adhyatmaprakasha.org</a></span><br />
                         </td>
                     </tr>
                 </table>
 			</div>
 			<div class="title">Other Branches are:</div>
-			<div>
+			<div style="text-align: center;">
                 <table class="pubtbl_contact">
                     <tr>
                         <td>
@@ -27,7 +29,7 @@
                             Matturu (Shimoga)-577203<br />
                             Karnataka, India<br />
                             Phone No. +91-8182-237724<br />
-                            Mobile No. 9448836895<br />
+                            Mobile No. +91-9448836895<br />
                         </td>
                         <td>
                             Adhyatma Prakasha Karyalaya<br />
@@ -35,6 +37,8 @@
                             T.R. Nagar, Bengaluru<br />
                             Karnataka, India 560 028.<br />
                             Ph.: +91-80-2676 5548  <br />
+                            Mobile No. +91-96066 91002<br />
+                            Mobile No. (Ravi) +91-94483 50001<br />
                             shankara.bhaskara@gmail.com
                         </td>
                     </tr>
