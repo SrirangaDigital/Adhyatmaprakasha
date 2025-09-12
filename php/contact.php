@@ -26,7 +26,7 @@
                         <td>
                             Adhyatma Prakasha Karyalaya<br />
                             c/o Shankaramutt, <br />
-                            Matturu (Shimoga)-577203<br />
+                            Matturu (Shimoga) &ndash; 577203<br />
                             Karnataka State, India<br />
                             Phone No. +91-8182-237724<br />
                             Mobile No. +91-9448836895<br />
@@ -34,8 +34,8 @@
                         <td>
                             Adhyatma Prakasha Karyalaya<br />
                             68 (New number 6), 6th Main, 2nd Block,<br />
-                            T.R. Nagar, Bengaluru<br />
-                            Karnataka State, India 560 070.<br />
+                            T.R. Nagar, Bengaluru &ndash; 560070<br />
+                            Karnataka State, India<br />
                             Ph.: +91-80-2676 5548  <br />
                             Mobile No. +91-96066 91002<br />
                             Mobile No. (Ravi) +91-94483 50001<br />
@@ -46,7 +46,7 @@
                         <td colspan="2" style="text-align: center;">
                             Adhyatma Pracara Sevashrama<br />
                             Shanti nagar,<br />
-                            Rayadurga-515865<br />
+                            Rayadurga &ndash; 515865<br />
                             AndhraPradesh State, India<br />
                             Phone No. +91-8495-251485<br />
                             Mobile No. +91-94904-77602<br />
