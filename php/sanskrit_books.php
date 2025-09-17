@@ -14,6 +14,15 @@
 		<div class="colmiddle">
             <div class="archive_holder">
                 <div class="page_title">संस्कृतग्रन्थाः</div>
+					<div style="text-align: end; margin-bottom: 30px;">
+						<form>
+							  <input class="titlespan" style="width: 70%; height: 30px;" type="text" id="search-input" name="search-input" placeholder="Type here and press enter to find the title"><br>
+						      <input type="hidden" id="language" name="language" value="sanskrit">
+						</form>
+					</div>
+		            <div id="search-results-holder"></div>                	
+                	<div class="books_from_db">
+
                 
 <?php
 include(__DIR__ . "/../inc/connect.php");
@@ -251,11 +260,16 @@ function display_tabs($num)
 	return $str_tabs;
 }
 
-?>                  
+?>              </div>    
             </div>
         </div>
         <?php include(__DIR__ ."/../inc/include_sidebar.php");?>
         <div class="clearfix"></div>
     </div>
+
+<script type="text/javascript" src="js/jquery-2.0.0.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/treeview.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/publication.js"></script>
 
 <?php include(__DIR__ . "/../inc/include_footer.php");?>

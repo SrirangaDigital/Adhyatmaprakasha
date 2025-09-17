@@ -980,3 +980,28 @@ input {
 	font-weight: bold;
 	margin-bottom: 0.5em;
 }
+
+p.search-results-heading{
+	font-size: 20px;
+	color: #8f4814;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+p.search-results-endhere{
+	margin-top: 30px;
+	border-bottom: 2px solid #8f4814;
+	margin-bottom: 30px;
+}
+
+span.authorspanspace{
+	margin-left: 20px;
+}
+
+p.search-title-errors{
+	text-align: center; 
+	color: red; 
+	font-weight: bold;
+	margin-bottom: 40px;
+}

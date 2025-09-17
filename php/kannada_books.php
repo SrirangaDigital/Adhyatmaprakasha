@@ -14,7 +14,14 @@
 		<div class="colmiddle">
             <div class="archive_holder">
                 <div class="page_title">ಕನ್ನಡ ಪುಸ್ತಕಗಳು</div>
-                
+					<div style="text-align: end; margin-bottom: 30px;">
+						<form>
+							  <input class="titlespan" style="width: 70%; height: 30px;" type="text" id="search-input" name="search-input" placeholder="Type here and press enter to find the title"><br>
+						      <input type="hidden" id="language" name="language" value="kannada">
+						</form>
+					</div>
+		            <div id="search-results-holder"></div>                	
+                	<div class="books_from_db">
 <?php
 include(__DIR__ . "/../inc/connect.php");
 
@@ -96,6 +103,7 @@ else
 if($result){$result->free();}
 $db->close();
 ?>                 
+				</div>		
            </div>
         </div>
         <?php include(__DIR__ ."/../inc/include_sidebar.php");?>
