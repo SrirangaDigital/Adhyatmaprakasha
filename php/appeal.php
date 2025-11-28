@@ -22,8 +22,6 @@
 				<p>SB Ac/NO: <b>3092500100000201</b> or QR Code</p>
 				<p style="margin-top: 30px"><img src="images/qr-code-apk.png" width="300px" height="300px" alt="QR Code for APK" /><br /><br /></p>
 				<p><br /></p>
-				<p>SBI - TATA SILK FARM (Bangalore); IFSC: <b>SBIN0040199</b></p>
-				<p>SB A/C No: <b>54010112859</b></p>
 				<p>UPI ID: <b>adhyatma@kbl</b></p>
 			</div>
 		</div>

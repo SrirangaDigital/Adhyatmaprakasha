@@ -4,28 +4,42 @@
 		<div class="col1">
 			<div class="title">About Us</div>
 			<div class="list">
-				<p class="trust-cmt">AdhyatmaPrakasha Karyalaya is governed by a trust committee. The present Trust Committee members are:</p>
-				<ul>
-					<li>Sri Ravi (Trust Committee Chairman)</li>
-					<li>Ve. Br. Sri M. R. Keshava Avadani</li>
-					<li>Sri L. Vijayaraghava</li>
-					<li>Sri Srinath</li>
-					<li>Sri B. V. Vinay</li>
-					<li>Sri T. S. Ravichandra</li>
-					<li>Smt Dr. Manjushree Hegde</li>
-				</ul>		
+			  <p class="trust-cmt">
+				AdhyatmaPrakasha Karyalaya is governed by a trust committee. The present
+				Trust Committee members are:
+			  </p>
+			  <ul>
+				<li>Sri Ravi (Trust Committee Chairman)</li>
+				<li>Ve. Br. Sri M. R. Keshava Avadani</li>
+				<li>Sri L. Vijayaraghava</li>
+				<li>Sri S Srinath</li>
+				<li>Sri B. V. Vinay</li>
+				<li>Sri T. S. Ravichandra</li>
+				<li>Smt Dr. Manjushree Hegde</li>
+			  </ul>
 			</div>
 			<div class="list">
-				<p class="work-cmt">Working Committee members are:</p>
-				<ul>
-					<li>Sri Sridhar A (Working Committee Chairman)</li>
-					<li>Sri Vidhyashankara A.</li>
-					<li>Sri Narasimhashetty</li>
-					<li>Sri Ba. Ra. Subbaraya</li>
-					<li>Sri Bharath Kumar</li>
-					<li>Sri H. R. Manjunath</li>
-					<li>Sri H. S. Nagendra</li>
-				</ul>				
+			  <p class="work-cmt">Working Committee (Holenarasipura) members are:</p>
+			  <ul>
+				<li>Sri Sridhar A (Working Committee Chairman)</li>
+				<li>Sri Vidhyashankara A.</li>
+				<li>Sri Narasimhashetty</li>
+				<li>Sri Ba. Ra. Subbaraya</li>
+				<li>Sri Bharath Kumar</li>
+				<li>Sri H. R. Manjunath</li>
+				<li>Sri H. S. Nagendra</li>
+			  </ul>
+			</div>
+			<div class="list">
+			  <p class="work-cmt">Working Committee (Bengaluru) members are:</p>
+			  <ul>
+				<li>Sri Ravi (Working Committee Chairman)</li>
+				<li>Sri S Srinath</li>
+				<li>Sri T S Ravichandar</li>
+				<li>Sri H J Ravi</li>
+				<li>Sri M B Sudarshana Sharma</li>
+				<li>Sri Laxmish Bhat</li>
+			  </ul>
 			</div>
 		</div>
 		<?php include(__DIR__ ."/../inc/include_sidebar.php");?>
