@@ -986,48 +986,314 @@
 		</s1>
 	</book>	
 	<book code="053" btitle="Śri Śaṅkara Bhagavatpāda Vṛttānta Sāra Sarvasva">
-<s1 title="Preface" page="0000f"></s1>
-<s1 title="Helpful Works" page="0000i"></s1>
-<s1 title="Publisher's Note" page="0000n"></s1>
-<s1 title="The Translator" page="0000p"></s1>
-<s1 title="Translation Editor's Note" page="0000q"></s1>
-<s1 title="Key to Transliteration and Pronunciation" page="0000u"></s1>
-<s1 title="1. Source Material for the Biography of Ācārya" page="0001"></s1>
-<s1 title="2. Śaṅkara's Time of Manifestation" page="0020"></s1>
-<s1 title="3. Ācārya's Birth and His Parents" page="0037"></s1>
-<s1 title="4. Childhood, Learning and Renunciation in a Hurry" page="0058"></s1>
-<s1 title="5. Vedānta Study at the Feet of Govinda Bhagavatpāda" page="0076"></s1>
-<s1 title="6. Writing of the Bhāṣyas" page="0106"></s1>
-<s1 title="7. Meeting with Kumārila Bhaṭṭa" page="0125"></s1>
-<s1 title="8. A Critique of the Maṇḍana Episode" page="0140"></s1>
-<s1 title="9. Argumentation with Maṇḍana" page="0160"></s1>
-<s1 title="10. Argumentation with Ubhayabhārati" page="0205"></s1>
-<s1 title="11. Maṇḍana becoming Disciple of Śaṅkara" page="0238"></s1>
-<s1 title="12. Journey towards South" page="0245"></s1>
-<s1 title="13. Śriṅgeri" page="0253"></s1>
-<s1 title="14. Ācārya's Devotion to His Mother" page="0281"></s1>
-<s1 title="15. Ācārya's Nationwide Conquest" page="0289"></s1>
-<s1 title="16. Ascending the Sarvajña Pīṭha and Disappearance" page="0311"></s1>
-<s1 title="17. Ācārya's Works: Benifits to the World at Large" page="0326"></s1>
-<s1 title="18. Important Texts of Śaṅkara" page="0333"></s1>
-<s1 title="19. Teachings of Ācārya" page="0346"></s1>
-<s1 title="20. The Vedāntic Tradition of Ācārya" page="0363"></s1>
-<s1 title="21. The Systems of Sub-Commentaries on Advaita" page="0368"></s1>
-<s1 title="22. The Prakaraṇa Books of Ācārya" page="0381"></s1>
-<s1 title="23. Hymns that are in the Name of Ācārya" page="0388"></s1>
-<s1 title="24. Ācārya and TantraŚāstra" page="0391"></s1>
-<s1 title="25. Maṭhas Established by Ācārya" page="0397"></s1>
-<s1 title="26. Conclusion" page="0413"></s1>
-<s1 title="Appendix I - Purāṇas Scrutinizing Śaṅkara" page="0416"></s1>
-<s1 title="Appendix II - Purāṇas that defame the Ācārya" page="0441"></s1>
-<s1 title="Appendix III - Opinions of People of Other Creeds" page="0447"></s1>
-<s1 title="Appendix IV - Opinions of People who have Tried to Establish the Date of Śaṅkara" page="0458"></s1>
-<s1 title="Appendix V - Śaṅkara Vijaya Texts" page="0469"></s1>
-<s1 title="Appendix VI - Śaṅkara Vijaya Texts (continued)" page="0476"></s1>
-<s1 title="Appendix VII - Śaṅkara Vijaya Texts (continued)" page="0479"></s1>
-<s1 title="Appendix VIII - Stotras Related to Ācārya's History" page="0485"></s1>
-<s1 title="Appendix IX - Sacred Traditions of the Maṭhas and Pontiff Lineages" page="0503"></s1>
-<s1 title="Glossary" page="0589"></s1>
-</book>
-
+		<s1 title="Preface" page="0000f"></s1>
+		<s1 title="Helpful Works" page="0000i"></s1>
+		<s1 title="Publisher's Note" page="0000n"></s1>
+		<s1 title="The Translator" page="0000p"></s1>
+		<s1 title="Translation Editor's Note" page="0000q"></s1>
+		<s1 title="Key to Transliteration and Pronunciation" page="0000u"></s1>
+		<s1 title="1. Source Material for the Biography of Ācārya" page="0001"></s1>
+		<s1 title="2. Śaṅkara's Time of Manifestation" page="0020"></s1>
+		<s1 title="3. Ācārya's Birth and His Parents" page="0037"></s1>
+		<s1 title="4. Childhood, Learning and Renunciation in a Hurry" page="0058"></s1>
+		<s1 title="5. Vedānta Study at the Feet of Govinda Bhagavatpāda" page="0076"></s1>
+		<s1 title="6. Writing of the Bhāṣyas" page="0106"></s1>
+		<s1 title="7. Meeting with Kumārila Bhaṭṭa" page="0125"></s1>
+		<s1 title="8. A Critique of the Maṇḍana Episode" page="0140"></s1>
+		<s1 title="9. Argumentation with Maṇḍana" page="0160"></s1>
+		<s1 title="10. Argumentation with Ubhayabhārati" page="0205"></s1>
+		<s1 title="11. Maṇḍana becoming Disciple of Śaṅkara" page="0238"></s1>
+		<s1 title="12. Journey towards South" page="0245"></s1>
+		<s1 title="13. Śriṅgeri" page="0253"></s1>
+		<s1 title="14. Ācārya's Devotion to His Mother" page="0281"></s1>
+		<s1 title="15. Ācārya's Nationwide Conquest" page="0289"></s1>
+		<s1 title="16. Ascending the Sarvajña Pīṭha and Disappearance" page="0311"></s1>
+		<s1 title="17. Ācārya's Works: Benifits to the World at Large" page="0326"></s1>
+		<s1 title="18. Important Texts of Śaṅkara" page="0333"></s1>
+		<s1 title="19. Teachings of Ācārya" page="0346"></s1>
+		<s1 title="20. The Vedāntic Tradition of Ācārya" page="0363"></s1>
+		<s1 title="21. The Systems of Sub-Commentaries on Advaita" page="0368"></s1>
+		<s1 title="22. The Prakaraṇa Books of Ācārya" page="0381"></s1>
+		<s1 title="23. Hymns that are in the Name of Ācārya" page="0388"></s1>
+		<s1 title="24. Ācārya and TantraŚāstra" page="0391"></s1>
+		<s1 title="25. Maṭhas Established by Ācārya" page="0397"></s1>
+		<s1 title="26. Conclusion" page="0413"></s1>
+		<s1 title="Appendix I - Purāṇas Scrutinizing Śaṅkara" page="0416"></s1>
+		<s1 title="Appendix II - Purāṇas that defame the Ācārya" page="0441"></s1>
+		<s1 title="Appendix III - Opinions of People of Other Creeds" page="0447"></s1>
+		<s1 title="Appendix IV - Opinions of People who have Tried to Establish the Date of Śaṅkara" page="0458"></s1>
+		<s1 title="Appendix V - Śaṅkara Vijaya Texts" page="0469"></s1>
+		<s1 title="Appendix VI - Śaṅkara Vijaya Texts (continued)" page="0476"></s1>
+		<s1 title="Appendix VII - Śaṅkara Vijaya Texts (continued)" page="0479"></s1>
+		<s1 title="Appendix VIII - Stotras Related to Ācārya's History" page="0485"></s1>
+		<s1 title="Appendix IX - Sacred Traditions of the Maṭhas and Pontiff Lineages" page="0503"></s1>
+		<s1 title="Glossary" page="0589"></s1>
+	</book>
+	<book code="054" btitle="Sri Shankara's Adwaitha Siddhantha">
+		<s1 title="Foreword" page="0000d"></s1>
+		<s1 title="Preface" page="0000f"></s1>
+		<s1 title="Sri Shankara's Adwaitha Siddhanta" page="0001"></s1>
+		<s1 title="Mulavidya Vada" page="0035"></s1>
+		<s1 title="Steps to the Realisation of the Highest Reality According to Shree Shankaracharya" page="0049"></s1>
+		<s1 title="Moksha or Salvation" page="0059"></s1>
+		<s1 title="Sree Sankara Bhagavathpoojyapadebhyo Namaha" page="0067"></s1>
+		<s1 title="The Following Quotations Show as if the Seed Exists in Deep Sleep" page="0077"></s1>
+	</book>
+	<book code="055" btitle="Gateway to the Upanishads">
+		<s1 title="Preface" page="0000a"></s1>
+		<s1 title="I. Introduction" page="0000b"></s1>
+		<s1 title="II. Short Stories from the Upanishads" page="0001">
+			<s2 title="1. The teaching is for the most deserving. (Chandongya)" page="0001"></s2>
+			<s2 title="2. The desire to learn should be strong (Kathopanishad)" page="0002"></s2>
+			<s2 title="3. True Knowledge (Chandogya)" page="0004"></s2>
+			<s2 title="4. Complete Knowledge (Chandongya)" page="0005"></s2>
+			<s2 title="5. Living with the Guru (Chandongya)" page="0006"></s2>
+			<s2 title="6. One should not be desperate to be a Guru (Brihadaranyaka)" page="0008"></s2>
+			<s2 title="7. One should always be interested in True Knowledge (Prashnopanishad)" page="009"></s2>
+			<s2 title="8. Discussion needs patience (Brihadaranyaka)" page="0010"></s2>
+			<s2 title="9. The wealth of knowledge is greater than the wealth of money (Chandongya)" page="0012"></s2>
+			<s2 title="10. A Brahmajnani is holy whatsoever (Chandongya)" page="0013"></s2>
+			<s2 title="11. Brahmajnana is greater than happiness of all worlds (Brihadaranyaka)" page="0014"></s2>
+			<s2 title="12. All our power is derived from the Lord (Kena)" page="0015"></s2>
+			<s2 title="13. Single pointed contemplation is required to realise the Absolute (Taittiriya)" page="0017"></s2>
+		</s1>
+		<s1 title="III. The Philosophy of the Upanishads" page="0017">
+			<s2 title="1. Names of Brahman" page="0018"></s2>
+			<s2 title="2. The two forms of Brahman" page="0018"></s2>
+			<s2 title="3. The nature of Parabrahman" page="0019"></s2>
+			<s2 title="4. What's the relationship between jivas and Brahman?" page="0020"></s2>
+			<s2 title="5. what is the relationship between Brahman and the world?" page="0020"></s2>
+		</s1>
+		<s1 title="IV. Certain spiritual practices mentioned in the Upanishads" page="0020">
+			<s2 title="1. How to meditate upon Brahman?" page="0021">
+				<s3 title="B. Disciplines to be followed to attain the Ultimate Knowledge" page="0022"></s3>
+			</s2>
+		</s1>
+		<s1 title="V. Analogies mentioned in the Upanishads" page="0024">
+			<s2 title="1. Fire, breath (Brihadaranyaka)" page="0024"></s2>
+			<s2 title="2. Banyan Seed (Chandongya)" page="0025"></s2>
+			<s2 title="3. Salt dissolved in water (Chandongya)" page="0026"></s2>
+			<s2 title="4. The man from the kingdom of Gandhara (Chandongya)" page="0027"></s2>
+			<s2 title="5. Two birds (Mundaka)" page="0028"></s2>
+			<s2 title="6. Bow and arrow (Mundaka)" page="0028"></s2>
+			<s2 title="7. Chariot, Horse (Kathopanishad)" page="0029"></s2>
+			<s2 title="8. The big fish (Brihadaranyaka)" page="0030"></s2>
+			<s2 title="9. The tied bird (Chandongya)" page="0031"></s2>
+			<s2 title="10. Honey (Chandongya)" page="0032"></s2>
+			<s2 title="11. Sounds and sound from a common source (Brihadaranyaka)" page="0032"></s2>
+			<s2 title="12. Crystal of salt (Brihadaranyaka)" page="0033"></s2>
+			<s2 title="13. Rivers, sea (Mundaka)" page="0034"></s2>
+		</s1>
+		<s1 title="VI. Epilogue" page="0035"></s1>
+		<s1 title="VII. Shantimantras" page="0035">
+			<s2 title="1. Sham no mitrah sham varunah (Krishnayajurveda; Taittiriya Upanishad)" page="0036"></s2>
+			<s2 title="2. Saha navavatu (Krishnayajurveda; Kathopanishad, Svetasvatara)" page="0038"></s2>
+			<s2 title="3. Yashchandasamrshabho vishwaroopah (Krishnayajurveda; Taittiriya)" page="0039"></s2>
+			<s2 title="4. Aham vrkshasya rerivaa (Krishnayajurveda; Taittiriya)" page="0040"></s2>
+			<s2 title="5. Bhadram karnebhih shrunuyama devaah (Atharvaveda; Mundaka, Prashna, Mandukya)" page="0042"></s2>
+			<s2 title="6. Poornamadah poornamidam (Shuklayajurveda; Ishavasya, Brihadaranyaka)" page="0044"></s2>
+			<s2 title="7. Apyayantu mamaangaani (Samaveda; Kena, Chandogya)" page="0045"></s2>
+			<s2 title="8. Vangme Manasi Pratishthita (Rigveda; Aitareya)" page="0046"></s2>
+			<s2 title="9. Om Namo Brahmadibhyo (Salutations to the Guru)" page="0047"></s2>
+		</s1>
+	</book>
+	<book code="056" btitle="Collected Books and Articles on Vedanta(Guide Lines to Shankara Vedanta; Adhyatma Yoga; Avasthaatraya Viveka; Teaching of Brahman through the Attributions of Avidya and Maya; Prospectus for Teaching Genuine Vedanta; Articles of Devarao Kulkarni on Vedanta)">
+		<s1 title="Guide Lines to Shankara Vedanta" page="0007">
+			<s2 title="Publisher's Note" page="0003"></s2>
+			<s2 title="About the Book" page="0008"></s2>
+			<s2 title="Introduction" page="0009"></s2>
+			<s2 title="Universal Acceptance and Comprehensive Vision of Life" page="0015">
+				<s3 title="I. Specific Feature of Vedantas (Upanishads)" page="0015"></s3>
+				<s3 title="II. Universal Acceptance or Common Experience" page="0019"></s3>
+				<s3 title="III. Poornaanubhava or Comprehensive Vision of Life" page="0023">
+					<s4 title="A. Partial view of life according to the physical science and all other systems of Philosophy except Vedānta" page="0023"></s4>
+					<s4 title="B. Vedantic View Regarding the Universe" page="0025"></s4>
+					<s4 title="C. Method of observing the life as a whole" page="0028"></s4>
+					<s4 title="D. Correct meaning of the term Sārvatrika Purna Anubhava" page="0031"></s4>
+				</s3>
+				<s3 title="IV. Conclusive Remarks Regarding the First Fundamental" page="0033"></s3>
+			</s2>
+			<s2 title="Cognising the Witnessing Principle of Life" page="0036">
+				<s3 title="I. Nature of Witnessing self" page="0036"></s3>
+				<s3 title="II. Difference Between Intellectual Experience and Instuitional Experience" page="0040"></s3>
+				<s3 title="III. The Witness as Distinct from Active Ego." page="0043"></s3>
+				<s3 title="IV. Misconceptions Regarding the Witness as Many and One According to Sub-Commentaries" page="0048"></s3>
+				<s3 title="V. Witnes is Self-Established Reality" page="0055"></s3>
+				<s3 title="VI. Some Important Sentences Regarding the Nature of Witnessing Consciousness" page="0059"></s3>
+			</s2>
+			<s2 title="Concluding Remarks" page="0064"></s2>
+			<s2 title="The Unique Methodology of Vedānta: Adhyārōpa and Apavāda" page="0065">
+				<s3 title="I. Why this methodology of Adhyārōpa and Apavāda alone is employed exclusively in Vedānta" page="0065"></s3>
+				<s3 title="II. Nature of Methodology" page="0067"></s3>
+				<s3 title="III. The Meaning of the word Rescission" page="0071"></s3>
+				<s3 title="IV. Kalpita Samvruti alone should be taken in this methodology, but not the Lōka-samvruti" page="0072"></s3>
+				<s3 title="V. Teaching of brahman by means of super imposition is only for negating what it is not correctly" page="0074"></s3>
+				<s3 title="VI. Different ways of the usage of the Attributions" page="0079"></s3>
+				<s3 title="VII. A few references from the Bhāshyas about the importance of the Adhyārōpa-Apavāda method" page="0084"></s3>
+				<s3 title="VIII. Misunderstandings regarding the methodology and conclusive remarks regarding the 3rd fundamental" page="0087"></s3>
+			</s2>
+			<s2 title="Vyavahāra Dṛshti (the Empirical standpoint) and Paramārtha Dṛshti (the Transcendental standpoint)" page="0090">
+				<s3 title="I. Basis for Dividing the two standpoint" page="0090"></s3>
+				<s3 title="II. Shankara recognizes the two viewpoints of reality" page="0096"></s3>
+				<s3 title="III. Usage of this distiction of two standpoints" page="0101"></s3>
+			</s2>
+			<s2 title="Difference between Kartrutantra and Vastutantra Sādhanās" page="0105">
+				<s3 title="I. Nature of Kartrutantra and Vastu Tantra Jnāna" page="0105"></s3>
+				<s3 title="II. An Objection" page="0107"></s3>
+				<s3 title="III. Reply: Mere knowledge of a thing can produce a result" page="0109"></s3>
+				<s3 title="IV. Difference between the knowldege regarding the outer things and the knowledge of the true nature of the self" page="0110"></s3>
+				<s3 title="V. Some misconceptions due to not knowing this differnce between Kartṛ Tantra and Vastu Tantra Prakriyas" page="0112"></s3>
+				<s3 title="VI. A Crucial Analysation" page="0114"></s3>
+				<s3 title="VII. Benefit of knowing this difference" page="0118"></s3>
+			</s2>
+			<s2 title="Conclusion" page="0119"></s2>
+		</s1>
+		<s1 title="Adhyatma Yoga" page="0121">
+			<s2 title="About the Book" page="0122"></s2>
+			<s2 title="Publishers Note to the Second Print" page="0123"></s2>
+			<s2 title="Preface" page="0124"></s2>
+			<s2 title="Introduction" page="0129"></s2>
+			<s2 title="Adhyatma" page="0134"></s2>
+			<s2 title="Adhyatma Yoga" page="0142"></s2>
+			<s2 title="Misconceptions" page="0154"></s2>
+			<s2 title="Appendix" page="0163">
+				<s3 title="Shravana (listening)" page="0163"></s3>
+				<s3 title="An Example" page="0164"></s3>
+				<s3 title="Manana (Reflection)" page="0169"></s3>
+			</s2>		
+			<s2 title="Conclusion" page="0181"></s2>
+		</s1>
+		<s1 title="Avasthaatraya Viveka" page="0183">
+			<s2 title="About the Book" page="0184"></s2>
+			<s2 title="Introduction" page="0187"></s2>
+			<s2 title="The Uniqueness of Avathatraya Viveka" page="0195"></s2>
+			<s2 title="Various Aspects of the Avasthaas" page="0197"></s2>
+			<s2 title="Chapter-1 - Four Aspects of Waking State" page="0197">
+				<s3 title="I. From the standpoint of physical (i. e., material) Science" page="0199"></s3>
+				<s3 title="II. From the standpoint of Psychology" page="0201"></s3>
+				<s3 title="III. From the standpoint of religious aspects" page="0201"></s3>
+				<s3 title="IV. From the standpoint Vedanta" page="0202"></s3>
+			</s2>
+			<s2 title="Chapter-2 - Four Aspects of Dream State" page="0209">
+				<s3 title="I. Dream state from the empirical i. e., waking standpoint" page="0209"></s3>
+				<s3 title="II. From the Scriptural standpoit (i. e., from the point of view of Religion) or Vaidika Vyavahaara Dristi" page="0211"></s3>
+				<s3 title="III. Dream state from the standpoint of Witnessing principal of life i. e., SAAKSHI" page="0214"></s3>
+				<s3 title="IV. Observing the dream from the standpoint of the dream state itself" page="0218"></s3>
+			</s2>
+			<s2 title="Chapter-3 - Four Aspects of Deep Sleep State" page="0231">
+				<s3 title="I. From the standpoint of fatigue" page="0231"></s3>
+				<s3 title="II. From the standpoint of seed-form of world and vaasanaas" page="0232"></s3>
+				<s3 title="III. From the standpoint of causal ignorance" page="0234"></s3>
+				<s3 title="IV. From the standpoint of the direct intuition of the deep sleep" page="0235"></s3>
+			</s2>
+			<s2 title="Chapter-4 - Determining the Nature of Turiya" page="0243">
+				<s3 title="I. Description of the three states from four different viewpoints" page="0243"></s3>
+				<s3 title="II. Determining the true nature of the Self through the Viveka" page="0247"></s3>
+				<s3 title="III. Process of determining the nature of Turīya (Turīyatva Pratipatti Kramaha)" page="00251">
+					<s4 title="i. Pramātritva Nirākarana" page="0252"></s4>
+					<s4 title="ii. Agrahana Nirākarana and Bījabhāva Nirākarana" page="0253"></s4>
+					<s4 title="iii. Anekātmatva Nirākarana" page="0255"></s4>
+					<s4 title="iv. Vishvādi Sthāni dharma Nirākarana" page="0256"></s4>
+					<s4 title="v. Jāgradādi Sthānadharma Nirākarana" page="0256"></s4>
+					<s4 title="vi. Sadvitiyatva Nirākarana" page="0257"></s4>
+				</s3>
+				<s3 title="IV. Significance of the method of getting Turīya according to Bhaashya" page="0258"></s3>
+				<s3 title="V. Examining the Nature of the Intuitional Experience of the Present Moment Also Leads to the Determination of Turiya Which is the Real Nature of the Self" page="0261"></s3>
+				<s3 title="VI. Turīya Vedane Kramaha" page="0263"></s3>
+				<s3 title="VII. Steps to initiation of the Self-knowledge" page="0267"></s3>
+			</s2>
+		</s1>
+		<s1 title="Teaching of Brahman Through the Attributions of Avidya and Maya" page="0273">
+			<s2 title="About the Book" page="0274"></s2>
+			<s2 title="Introduction" page="0277"></s2>
+			<s2 title="Chapter-1 - Vidya-Avidya Adhyaropa and Brahma-Bodha" page="0283">
+				<s3 title="I. The Methodology of Vedanta" page="0283"></s3>
+				<s3 title="II. Is there any difference between Adhyaropa and Adhyasa?" page="0285"></s3>
+				<s3 title="III. Common Experience of knowledge and ignorance in our daily life: Three aspects of Avidya" page="0288"></s3>
+				<s3 title="IV. Ignorance regarding one's own true nature" page="0290"></s3>
+				<s3 title="V. Two Categories of Avidya" page="0292"></s3>
+				<s3 title="VI. Why should we not say that the ignorance pertains to the Self and why should we understand that the ignorance pertains to the mind?" page="0294"></s3>
+				<s3 title="VII. There are no Dealings such as Vidya and Avidya in Brahman" page="0296"></s3>
+				<s3 title="VIII. What is the correct view to take about these concepts of Vidya and Avidya?" page="0299"></s3>
+				<s3 title="IX. Avidya is not a Potence of Brahman" page="0303"></s3>
+				<s3 title="X. Ajnana is not Bhaavaroopa, Sanatani and Anirvachaniya" page="0305"></s3>
+				<s3 title="XI. Jnānavritti and Jneyaavagati" page="0307"></s3>
+				<s3 title="XII. Pramanabhuta Jnana and Phalabhuta jnana" page="0311"></s3>
+				<s3 title="XIII. Regarding Eka-jiva vāda and nānā-jiva vāda" page="0316"></s3>
+			</s2>
+			<s2 title="Chapter-2 - Maya-Mayavitva Adhyaropa and Brahma-Bodha" page="0327">
+				<s3 title="I. Four Aspeeects of Maya" page="0327">
+					<s4 title="(a) Maya is Avidya-Kalpita" page="0327"></s4>
+					<s4 title="(b) Maya is Vyakta-Avyaktastmaka" page="0329"></s4>
+					<s4 title="(c). Maya is Anirvachaniya" page="0331"></s4>
+					<s4 title="(d). Maya is Ishvara Shakti" page="0332"></s4>			
+				</s3>
+				<s3 title="II. An Objection Raised by Moola-Vidya-Vadins" page="0337"></s3>
+				<s3 title="III. Some defects of Moolaavidya-Vada" page="0342"></s3>
+			</s2>
+			<s2 title="Appendix" page="0349">
+				<s3 title="Some View Points Regarding Avidya and Maya" page="0349"></s3>
+			</s2>
+		</s1>
+		<s1 title="Prospectus For Teaching Genuine Vedanta" page="0353">
+			<s2 title="About the Book" page="0354"></s2>
+			<s2 title="Publisher's Note" page="0357"></s2>
+			<s2 title="Prospectus For Teaching Genuine Vedanta" page="0359"></s2>
+			<s2 title="1. Genuine Texts For Study" page="0361"></s2>
+			<s2 title="2. Fundamentals of Vedanta" page="0361">
+				<s3 title="I. The Rudimentary Principal of Universal acceptance and Comprehensive Vision of Life" page="0361"></s3>
+				<s3 title="II. Cognising Witnessing Principal of Life" page="0362"></s3>
+				<s3 title="III. Methodology of Vedanta" page="0362"></s3>
+				<s3 title="IV. Difference between Kartru Tantra and Vastu Tantra" page="0363"></s3>
+				<s3 title="V. Two Different Standpoints viz., Vyavahara Drishti (Empirical Standpoint) and Paramartha Drishti (Transcendental or Absolute Standpoint)" page="0363"></s3>
+				<s3 title="VI. Methodology of Avastharaya or the three states of Consciousness" page="0364"></s3>
+				<s3 title="VII. Various Aspects of the Three Avasthas" page="0364"></s3>
+				<s3 title="VIII. Determining the Nature of Turiya" page="0365"></s3>
+				<s3 title="IX. Godhood of the Self" page="0365"></s3>
+				<s3 title="X. Benefit of the Self-Knowledge" page="0365"></s3>
+				<s3 title="XI. Direct Means of Self-Knowledge" page="0366"></s3>
+				<s3 title="XII. Essential Qualifications to Attain Self-Knowledge" page="0366"></s3>
+				<s3 title="XIII. Co-operative Means to Self-Knowledge and Their Utility in Practical Life" page="0367"></s3>
+				<s3 title="XIV. Accessory Means to Self-Knowledge" page="0367"></s3>
+				<s3 title="XV. Misconceptions about Certain Technical Terms" page="0368"></s3>
+				<s3 title="XVI. Comparative Study of Philosophies" page="0368"></s3>
+				<s3 title="XVII. Misinterpretations of Shankara's Genuine Teachings" page="0369"></s3>
+			</s2>
+			<s2 title="Bio-Data" page="0370"></s2>
+		</s1>
+		<s1 title="Articles of Devarao Kulkarni on Vedanta" page="0375">
+			<s2 title="About the Book" page="0376"></s2>
+			<s2 title="1. Letter dated 26th Dec.1989" page="0379"></s2>
+			<s2 title="2. Note on Avadhuta Sanyasa" page="0384"></s2>
+			<s2 title="3. Clarification Regarding Shabdaadaatmani Samyajnaaanotpatti Prakarah " page="0385"></s2>
+			<s2 title="4. Jeevanmukti Viveka" page="0387"></s2>
+			<s2 title="5. Rama Tatva" page="0390"></s2>
+			<s2 title="6. Vasanakshaya and Manonasha" page="0393"></s2>
+			<s2 title="7. Manonasha" page="0399"></s2>
+			<s2 title="8. Contemplation on Discrimination" page="0403"></s2>
+			<s2 title="9. Adhyasa" page="0406"></s2>
+			<s2 title="10. Clarification Regarding two types of Adhyasa" page="0412"></s2>
+			<s2 title="11. Translation of Mulavidyaanirasa P.No. 85, 86 and 87 (section 64)" page="0414"></s2>
+			<s2 title="12. Supplementary to Evidence about the Existence of God (Eswara)" page="0426">
+				<s3 title="I. Arguments of the theists" page="0426"></s3>
+				<s3 title="II. Brahman as the cause of the Universe According to Vedanta" page="0434">
+					<s4 title="(a). Theories of Causation According to Indian Philosophers" page="0434"></s4>
+					<s4 title="(b). Scrutiny about the Samkhya's Opinion about the Causation" page="0435"></s4>
+					<s4 title="(c). Scrutiny of Some of the Modern Theories about Causation" page="0437"></s4>
+					<s4 title="(d). Scrutiny of the Theory of Vaisheshikas" page="0439"></s4>
+					<s4 title="(e). Scrutiny of the Theory of ‘Arambhavada’" page="0440"></s4>
+					<s4 title="(f). Vedantic View" page="0442"></s4>
+					<s4 title="(g). Conclusion" page="0444"></s4>
+				</s3>		
+			</s2>
+			<s2 title="13. Significance of Mandukya Bhashya Mantra No.7" page="0444"></s2>
+			<s2 title="14. Determining the Nature of Turiya" page="0446"></s2>
+			<s2 title="15. Significance of Karika 2-4 According to MRV" page="0460"></s2>
+			<s2 title="16. The Significance of G.K.3-23 (P.No.332 of 2011 edition)" page="0467"></s2>
+			<s2 title="17. Significance of Mandukya Karika 3-26 : (letter dated. 05.02.1990)" page="0470"></s2>
+			<s2 title="18. Clarification Regarding Shabdaaparokshavaada and Manoaparokshavaada" page="0485"></s2>
+			<s2 title="19. Regarding the Conflict Between Avachchedavaada and Aabhaasavaada: (29.09.1989)" page="0492"></s2>
+			<s2 title="20. Regarding Practical Vedanta as told by Ramakrishnaiats" page="0496"></s2>
+		</s1>
+	</book>
 </english>

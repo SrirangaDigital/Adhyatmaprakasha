@@ -3,5 +3,7 @@ php/magazineReader/templates/appcache.manifest
 php/bookreader/templates/appcache.manifest
 Text/
 Volumes_xml/
-
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
 
