@@ -35,15 +35,15 @@
 			<!-- <p>Please send a WhatsApp message "Shri Gurubhyo Namaha" to +91-8073081405 and add the phone number as Adhyatma Prakasha Karyalaya to get messages on adhyatma in Kannada.<br /><br /></p>  -->
 			<p>WhatsApp Broadcast on Adhyatma : <span style="color: #D2691E;">8073081405</span></p>
 			<p style="margin-bottom: 20px;">WhatsApp Communication with Karyalaya : <span style="color: #D2691E;">9535790641</span></p>
-			<p><a href="http://www.youtube.com/c/apkbooks" target="_blank"><img style="width: 20%;" src="<?php echo $base_url; ?>php/images/youtube.png" /></a></p>
-			<p>Videos and talks of scholars from Karyalaya will be available at: <span class="lang"><a href="http://www.youtube.com/c/apkbooks" target="_blank">Youtube</a></span><br /><br /></p> 
+			<p><a href="http://www.youtube.com/apkbooks" target="_blank"><img style="width: 20%;" src="<?php echo $base_url; ?>php/images/youtube.png" /></a></p>
+			<p>Videos and talks of scholars from Karyalaya will be available at: <span class="lang"><a href="http://www.youtube.com/apkbooks" target="_blank">Youtube</a></span><br /><br /></p> 
 
 			<p><a href="http://www.facebook.com/groups/AdhyatmaPrakasha/" target="_blank"><img style="width: 20%;" src="<?php echo $base_url; ?>php/images/facebook.png" /></a></p>
 			<p>Group interaction of like minded people is at <span class="lang"><a href="http://www.facebook.com/groups/AdhyatmaPrakasha/" target="_blank">Facebook</a></span></p>
 			<p>Please subscribe to the same</p>
 
-			<p><a href="https://twitter.com/AKaryalaya/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="twitter image" width="43px" height="43px"/></a></p>
-			<p>Please follow twitter handle of Adhyatma Prakasha Karyalaya <span class="lang"><a href=" https://twitter.com/AKaryalaya/" target="_blank">Twitter</a></span></p>
+			<p style="margin-top: 20px;"><a href="https://x.com/AKaryalaya/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="twitter image" width="43px" height="43px"/></a></p>
+			<p>Please follow twitter handle of Adhyatma Prakasha Karyalaya <span class="lang"><a href=" https://x.com/AKaryalaya/" target="_blank">Twitter</a></span></p>
 
 	</div>
 	<div class="rule"></div>
