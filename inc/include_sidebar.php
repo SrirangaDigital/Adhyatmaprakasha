@@ -32,7 +32,9 @@
 			For all the latest and regular communication and updates:<br /><br />
 		</p>	
 			<p><img style="width: 20%;" src="<?php echo $base_url; ?>php/images/whatsapp.png" /></p>
-			<p>Please send a WhatsApp message "Shri Gurubhyo Namaha" to +91-8073081405 and add the phone number as Adhyatma Prakasha Karyalaya to get messages on adhyatma in Kannada.<br /><br /></p> 
+			<!-- <p>Please send a WhatsApp message "Shri Gurubhyo Namaha" to +91-8073081405 and add the phone number as Adhyatma Prakasha Karyalaya to get messages on adhyatma in Kannada.<br /><br /></p>  -->
+			<p>WhatsApp Broadcast on Adhyatma : <span style="color: #D2691E;">8073081405</span></p>
+			<p style="margin-bottom: 20px;">WhatsApp Communication with Karyalaya : <span style="color: #D2691E;">9535790641</span></p>
 			<p><a href="http://www.youtube.com/c/apkbooks" target="_blank"><img style="width: 20%;" src="<?php echo $base_url; ?>php/images/youtube.png" /></a></p>
 			<p>Videos and talks of scholars from Karyalaya will be available at: <span class="lang"><a href="http://www.youtube.com/c/apkbooks" target="_blank">Youtube</a></span><br /><br /></p> 
 
