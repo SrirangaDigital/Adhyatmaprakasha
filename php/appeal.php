@@ -14,9 +14,12 @@
 				<p>You can donate to Karyalaya by transferring money to the below accounts and by contacting the Holenarsipura office <b>(Phone No.+91-8175-273820; Mb: 9535790641; email: secretary@adhyatmaprakasha.org)</b> or the Bengaluru office <b>(Phone No. +91-80-26765548; Mb: 9606691002; email: shankara.bhaskara@gmail.com;  Ravi Mobile number: 9448350001)</b>, depending on the branch you have transferred.</p>
 				<p><br /></p>				
 				<p><br /></p>
+				<p style="color: #28a745; font-weight: bold;">📢 All donations to Adhyatma Prakasha Karyalaya are tax-exempt under Section 80G of the Income Tax Act.</p>
+				<p><br /></p>
 				<p><b>Bank Details:</b></p>
 				<p><br /></p>
 				<p>NAME: <b>ADHYATMA PRAKASHA KARYALAYA</b></p>
+				<p>Institution PAN: <b>AAATA1391E</b></p>
 				<p><br /></p>
 				<p>Karnataka Bank Ltd Holenarasipur; IFSC: <b>KARB0000309</b></p>
 				<p>SB Ac/NO: <b>3092500100000201</b> or QR Code</p>
